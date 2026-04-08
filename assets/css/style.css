@@ -125,16 +125,18 @@ nav a:hover { color: var(--accent); }
 
 .post-content h2 {
   font-size: 1.5rem;
-  margin: 36px 0 16px;
+  margin: 48px 0 20px;
   color: #f0f6fc;
   padding-bottom: 8px;
   border-bottom: 1px solid var(--border);
+  clear: both;
 }
 
 .post-content h3 {
   font-size: 1.2rem;
-  margin: 28px 0 12px;
+  margin: 36px 0 16px;
   color: #f0f6fc;
+  clear: both;
 }
 
 .post-content p { margin-bottom: 16px; }
@@ -225,4 +227,55 @@ nav a:hover { color: var(--accent); }
   nav a { margin-left: 16px; }
   nav a:first-child { margin-left: 0; }
   .post-header h1 { font-size: 1.5rem; }
+  .mermaid svg { max-width: 100%; }
+}
+
+/* Mermaid diagrams */
+.mermaid {
+  margin: 28px 0;
+  padding: 24px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow-x: auto;
+  text-align: center;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tables */
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 0.95rem;
+}
+
+.post-content th,
+.post-content td {
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.post-content th {
+  background: var(--bg-secondary);
+  color: #f0f6fc;
+  font-weight: 600;
+}
+
+.post-content tr:nth-child(even) {
+  background: rgba(22, 27, 34, 0.5);
+}
+
+/* Figure captions */
+.post-content em {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  margin-top: -8px;
+  margin-bottom: 20px;
 }
