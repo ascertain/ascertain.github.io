@@ -1,0 +1,44 @@
+title: "Kashif's Engineering Blog"
+description: "Test Automation | Agentic AI Workflows | DevOps | Quality Engineering"
+author: "Mohammad Kashif"
+email: mo.kashif@gmail.com
+url: "https://ascertain.github.io"
+baseurl: ""
+
+# Social
+github_username: ascertain
+linkedin_username: md-kashif
+
+# Build
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+paginate: 5
+
+# Theme
+remote_theme: pages-themes/minimal@v0.2.0
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-remote-theme
+
+# SEO
+twitter:
+  card: summary
+social:
+  name: Mohammad Kashif
+  links:
+    - https://github.com/ascertain
+    - https://www.linkedin.com/in/md-kashif/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Mohammad Kashif"
+      comments: true
