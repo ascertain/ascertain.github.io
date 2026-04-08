@@ -15,14 +15,12 @@ highlighter: rouge
 permalink: /:year/:month/:day/:title/
 paginate: 5
 
-# Theme
-remote_theme: pages-themes/minimal@v0.2.0
+# Theme (using custom layouts + CSS, no remote theme)
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-paginate
-  - jekyll-remote-theme
 
 # SEO
 twitter:
