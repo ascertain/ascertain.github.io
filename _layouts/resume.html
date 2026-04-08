@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/resume.css' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  {% seo %}
+</head>
+<body>
+
+  <!-- Floating nav -->
+  <nav class="floating-nav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#education">Education</a>
+    <a href="{{ '/' | relative_url }}" class="nav-blog"><i class="fas fa-arrow-left"></i> Blog</a>
+  </nav>
+
+  {{ content }}
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.author }}</p>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/md-kashif" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ascertain" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:mo.kashif@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll for nav
+    document.querySelectorAll('.floating-nav a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+    // Highlight active section
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 120) current = s.id;
+      });
+      document.querySelectorAll('.floating-nav a').forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+      });
+    });
+  </script>
+</body>
+</html>
