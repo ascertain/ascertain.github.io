@@ -8,31 +8,6 @@
 // ── Provider Registry ────────────────────────────────────
 
 const AI_PROVIDERS = {
-  // ── FREE: No API key required ──────────────────────────
-  'huggingface-free': {
-    label: 'HuggingFace Mistral (Free)',
-    model: 'mistralai/Mistral-7B-Instruct-v0.3',
-    needsKey: false,
-    getKeyUrl: null,
-    keyStorageId: null,
-    call: callHuggingFaceFree,
-  },
-  'huggingface-qwen-free': {
-    label: 'HuggingFace Qwen 2.5 (Free)',
-    model: 'Qwen/Qwen2.5-72B-Instruct',
-    needsKey: false,
-    getKeyUrl: null,
-    keyStorageId: null,
-    call: callHuggingFaceFree,
-  },
-  'huggingface-llama-free': {
-    label: 'HuggingFace Llama 3.2 (Free)',
-    model: 'meta-llama/Llama-3.2-3B-Instruct',
-    needsKey: false,
-    getKeyUrl: null,
-    keyStorageId: null,
-    call: callHuggingFaceFree,
-  },
   // ── FREE KEY: Requires a free API key ──────────────────
   'groq': {
     label: 'Groq — Llama 3.3 70B (Free Key)',
@@ -73,6 +48,31 @@ const AI_PROVIDERS = {
     getKeyUrl: 'https://openrouter.ai/keys',
     keyStorageId: 'rb_key_openrouter',
     call: callOpenRouter,
+  },
+  // ── HuggingFace: Free token required ───────────────────
+  'huggingface-mistral': {
+    label: 'HuggingFace Mistral 7B (Free Token)',
+    model: 'mistralai/Mistral-7B-Instruct-v0.3',
+    needsKey: true,
+    getKeyUrl: 'https://huggingface.co/settings/tokens',
+    keyStorageId: 'rb_key_huggingface',
+    call: callHuggingFace,
+  },
+  'huggingface-qwen': {
+    label: 'HuggingFace Qwen 2.5 72B (Free Token)',
+    model: 'Qwen/Qwen2.5-72B-Instruct',
+    needsKey: true,
+    getKeyUrl: 'https://huggingface.co/settings/tokens',
+    keyStorageId: 'rb_key_huggingface',
+    call: callHuggingFace,
+  },
+  'huggingface-llama': {
+    label: 'HuggingFace Llama 3.2 3B (Free Token)',
+    model: 'meta-llama/Llama-3.2-3B-Instruct',
+    needsKey: true,
+    getKeyUrl: 'https://huggingface.co/settings/tokens',
+    keyStorageId: 'rb_key_huggingface',
+    call: callHuggingFace,
   },
 };
 
@@ -461,18 +461,23 @@ async function fetchJobFromURL() {
 // AI PROVIDER IMPLEMENTATIONS
 // ══════════════════════════════════════════════════════════
 
-// ── HuggingFace Free Inference (No key needed) ───────────
+// ── HuggingFace (Free token required for CORS) ──────────
 
-async function callHuggingFaceFree(prompt, providerId) {
+async function callHuggingFace(prompt, providerId) {
   var provider = AI_PROVIDERS[providerId];
-  // Use the HuggingFace Inference API with router endpoint for better CORS support
+  var apiKey = getProviderKey(providerId);
+  if (!apiKey) throw new Error('HuggingFace token required (free).\n\n1. Go to huggingface.co/settings/tokens\n2. Sign up (free) with Google/GitHub\n3. Click "Create new token" (read access is enough)\n4. Paste it above and click Save Key');
+
   var url = 'https://router.huggingface.co/hf-inference/models/' + provider.model + '/v1/chat/completions';
 
   var resp;
   try {
     resp = await fetch(url, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + apiKey,
+      },
       body: JSON.stringify({
         model: provider.model,
         messages: [
@@ -484,33 +489,31 @@ async function callHuggingFaceFree(prompt, providerId) {
       }),
     });
   } catch (networkErr) {
-    throw new Error(
-      'Network error connecting to HuggingFace. This may be due to browser restrictions.\n\n' +
-      'FIX: Switch to Groq (recommended) — get a free key at console.groq.com/keys'
-    );
+    throw new Error('Network error connecting to HuggingFace. Check your internet connection and try again.');
   }
 
   if (!resp.ok) {
     var err = await resp.json().catch(function() { return {}; });
+    if (resp.status === 401) {
+      throw new Error('Invalid HuggingFace token. Go to huggingface.co/settings/tokens to create a new one.');
+    }
     if (resp.status === 503) {
-      throw new Error('Model is loading — please wait 30s and try again, or switch to Groq (recommended).');
+      throw new Error('Model is loading — please wait 30s and try again, or switch to Groq.');
     }
     if (resp.status === 429) {
-      throw new Error('Rate limited by HuggingFace. Switch to Groq for unlimited free usage.');
+      throw new Error('Rate limited by HuggingFace. Try again shortly or switch to Groq.');
     }
-    throw new Error(err.error || 'HuggingFace returned ' + resp.status + '. Try switching to Groq.');
+    throw new Error(err.error || 'HuggingFace returned ' + resp.status);
   }
 
   var data = await resp.json();
-  // OpenAI-compatible response format
   if (data.choices && data.choices[0] && data.choices[0].message) {
     return extractHTML(data.choices[0].message.content);
   }
-  // Legacy format fallback
   if (Array.isArray(data) && data[0] && data[0].generated_text) {
     return extractHTML(data[0].generated_text);
   }
-  throw new Error('Unexpected response from HuggingFace. Try switching to Groq.');
+  throw new Error('Unexpected response from HuggingFace. Try Groq instead.');
 }
 
 // ── Groq (Free key — Llama, Mixtral, DeepSeek) ──────────
@@ -736,7 +739,7 @@ async function regenerateWithModel(section) {
 // ── Prompt Builders ──────────────────────────────────────
 
 function buildResumePrompt(profile, job) {
-  return 'You are an expert resume writer. Generate a professional, ATS-friendly resume in clean HTML format.\n\n' +
+  return 'You are an expert resume writer specializing in EU and Nordic job markets (Norway, Sweden, Denmark). Generate a professional, ATS-friendly resume in clean HTML format following EU/Norwegian CV standards.\n\n' +
     'CANDIDATE INFORMATION:\n' +
     '- Name: ' + (profile.fullName || 'Not provided') + '\n' +
     '- Email: ' + (profile.email || 'Not provided') + '\n' +
@@ -754,21 +757,25 @@ function buildResumePrompt(profile, job) {
     '- Company: ' + (job.company || 'Not specified') + '\n' +
     '- Job Description: ' + job.description + '\n\n' +
     (job.notes ? 'ADDITIONAL INSTRUCTIONS: ' + job.notes + '\n\n' : '') +
-    'REQUIREMENTS:\n' +
-    '1. Output ONLY clean HTML (no <html>, <head>, <body> tags — just resume content).\n' +
-    '2. Use a centered header with name, contact info in a <div class="resume-header">.\n' +
-    '3. Use <p class="resume-contact"> for contact details.\n' +
-    '4. Use <h2> for section headers: PROFESSIONAL SUMMARY, EXPERIENCE, SKILLS, EDUCATION, CERTIFICATIONS.\n' +
-    '5. Tailor the experience and summary to match the job description.\n' +
-    '6. Use strong action verbs and quantified achievements.\n' +
-    '7. Highlight keywords from the job description naturally.\n' +
-    '8. Keep it to 1-2 pages worth of content.\n' +
-    '9. Use <ul> with <li> for bullet points.\n' +
-    '10. Do NOT include any CSS, style tags, or code block markers.';
+    'EU/NORWEGIAN CV FORMAT REQUIREMENTS:\n' +
+    '1. Output ONLY clean HTML (no <html>, <head>, <body> tags).\n' +
+    '2. STRICT MAX 2 PAGES — be concise. If content is too much, summarize older roles into 1-2 lines each.\n' +
+    '3. Use compact font sizing: name in <h1 style="font-size:1.5rem;margin:0">, sections in <h2 style="font-size:1rem;margin:16px 0 6px;border-bottom:2px solid #2c3e50;padding-bottom:3px">.\n' +
+    '4. Header: centered name + subtitle line with title/headline. Contact info on ONE line: email | phone | location | LinkedIn. Use <div class="resume-header"> and <p class="resume-contact">.\n' +
+    '5. Sections in this exact order: PROFILE (3-4 lines max), KEY SKILLS (use a compact 3-column inline list), PROFESSIONAL EXPERIENCE, EDUCATION & CERTIFICATIONS, LANGUAGES.\n' +
+    '6. For experience: Company, Title, Dates on one line. Use 3-4 bullet points max per recent role, 1-2 for older roles. Use <ul style="margin:4px 0 8px 18px;padding:0"> with <li style="margin:2px 0">.\n' +
+    '7. Keep spacing tight: use margin/padding of 2-6px between elements. Every line must earn its space.\n' +
+    '8. Use strong action verbs and quantified achievements. Highlight JD keywords naturally.\n' +
+    '9. Include a LANGUAGES section at the end (e.g., English — Fluent, Norwegian — Basic).\n' +
+    '10. Do NOT include photo, age, nationality, marital status, or personal ID number.\n' +
+    '11. Do NOT use any <style> tags or external CSS. Only inline styles for sizing/spacing.\n' +
+    '12. Do NOT wrap in code blocks. Output raw HTML only.\n' +
+    '13. All text must be clearly readable: use color #1a1a1a for body text, #2c3e50 for headings.\n' +
+    '14. For skills, use: <div style="display:flex;flex-wrap:wrap;gap:6px"> with <span style="background:#f0f4f8;padding:3px 10px;border-radius:4px;font-size:0.85rem"> per skill.';
 }
 
 function buildCoverLetterPrompt(profile, job) {
-  return 'You are an expert cover letter writer. Generate a professional cover letter in clean HTML format.\n\n' +
+  return 'You are an expert cover letter writer for EU/Nordic job markets. Generate a professional cover letter in clean HTML format following Norwegian/Scandinavian business letter conventions.\n\n' +
     'CANDIDATE INFORMATION:\n' +
     '- Name: ' + (profile.fullName || 'Not provided') + '\n' +
     '- Email: ' + (profile.email || 'Not provided') + '\n' +
@@ -784,11 +791,13 @@ function buildCoverLetterPrompt(profile, job) {
     (job.notes ? 'ADDITIONAL INSTRUCTIONS: ' + job.notes + '\n\n' : '') +
     'REQUIREMENTS:\n' +
     '1. Output ONLY clean HTML (no <html>, <head>, <body> tags).\n' +
-    '2. Format as a business letter: date, greeting, 3-4 paragraphs, closing.\n' +
-    '3. Connect experience to key JD requirements with specific examples.\n' +
-    '4. Be genuine, confident, specific — no generic filler.\n' +
-    '5. Keep under 400 words. Use <p> tags.\n' +
-    '6. Do NOT include any CSS, style tags, or code block markers.';
+    '2. Start with sender info (name, address, email, phone) aligned right, then date, then recipient.\n' +
+    '3. Use "Dear Hiring Manager," if no specific name.\n' +
+    '4. 3-4 paragraphs: enthusiasm for role/company, connect experience to JD requirements with specifics, closing with call to action.\n' +
+    '5. Professional but warm Scandinavian tone — direct, humble, collaborative.\n' +
+    '6. Keep under 350 words. Use <p> tags.\n' +
+    '7. Sign off with "Kind regards," / "Med vennlig hilsen," followed by candidate name.\n' +
+    '8. Do NOT include any CSS, style tags, or code block markers.';
 }
 
 // ── HTML Sanitizer ───────────────────────────────────────
@@ -810,47 +819,77 @@ function sanitizeHTML(html) {
   return temp.innerHTML;
 }
 
-// ── Edit Preview ─────────────────────────────────────────
+// ── Edit & Save Preview ──────────────────────────────────
 
 function editPreview(section) {
   var paper = document.getElementById(section === 'resume' ? 'resumePreview' : 'coverPreview');
-  var isEditing = paper.contentEditable === 'true';
-  if (isEditing) {
-    paper.contentEditable = 'false';
-    if (section === 'resume') generatedResume = paper.innerHTML;
-    else generatedCover = paper.innerHTML;
-    showToast('Changes saved', 'success');
-  } else {
-    paper.contentEditable = 'true';
-    paper.focus();
-    showToast('Editing mode — click "Edit" again to save', 'info');
-  }
+  var editBtn = document.getElementById(section === 'resume' ? 'editBtnResume' : 'editBtnCover');
+  var saveBtn = document.getElementById(section === 'resume' ? 'saveBtnResume' : 'saveBtnCover');
+
+  paper.contentEditable = 'true';
+  paper.focus();
+  editBtn.classList.add('rb-hidden');
+  saveBtn.classList.remove('rb-hidden');
+  showToast('Editing mode — click "Save" when done', 'info');
+}
+
+function savePreview(section) {
+  var paper = document.getElementById(section === 'resume' ? 'resumePreview' : 'coverPreview');
+  var editBtn = document.getElementById(section === 'resume' ? 'editBtnResume' : 'editBtnCover');
+  var saveBtn = document.getElementById(section === 'resume' ? 'saveBtnResume' : 'saveBtnCover');
+
+  paper.contentEditable = 'false';
+  if (section === 'resume') generatedResume = paper.innerHTML;
+  else generatedCover = paper.innerHTML;
+
+  saveBtn.classList.add('rb-hidden');
+  editBtn.classList.remove('rb-hidden');
+  showToast('Changes saved!', 'success');
 }
 
 // ── Export: PDF ──────────────────────────────────────────
 
-function exportPDF() {
-  var activePane = document.querySelector('.rb-preview-pane.active');
-  var paper = activePane.querySelector('.rb-preview-paper');
-  var type = activePane.id.indexOf('resume') !== -1 ? 'Resume' : 'Cover_Letter';
+function exportPDF(section) {
+  var paper, type, pane;
+  if (section === 'resume') {
+    paper = document.getElementById('resumePreview');
+    type = 'Resume';
+  } else if (section === 'cover') {
+    paper = document.getElementById('coverPreview');
+    type = 'Cover_Letter';
+  } else {
+    pane = document.querySelector('.rb-preview-pane.active');
+    paper = pane.querySelector('.rb-preview-paper');
+    type = pane.id.indexOf('resume') !== -1 ? 'Resume' : 'Cover_Letter';
+  }
   var name = document.getElementById('fullName').value.trim() || 'Document';
 
   showToast('Generating PDF...', 'info');
   html2pdf().set({
-    margin: 0.5,
-    filename: name.replace(/\s+/g, '_') + '_' + type + '.pdf',
+    margin: [0.4, 0.5, 0.4, 0.5],
+    filename: name.replace(/\\s+/g, '_') + '_' + type + '.pdf',
     image: { type: 'jpeg', quality: 0.98 },
-    html2canvas: { scale: 2, useCORS: true },
-    jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
-  }).from(paper).save().then(function() { showToast('PDF downloaded!', 'success'); });
+    html2canvas: { scale: 2, useCORS: true, letterRendering: true },
+    jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' },
+    pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
+  }).from(paper).save().then(function() { showToast(type.replace('_', ' ') + ' PDF downloaded!', 'success'); });
 }
 
 // ── Export: DOCX ─────────────────────────────────────────
 
-function exportDOCX() {
-  var activePane = document.querySelector('.rb-preview-pane.active');
-  var paper = activePane.querySelector('.rb-preview-paper');
-  var type = activePane.id.indexOf('resume') !== -1 ? 'Resume' : 'Cover_Letter';
+function exportDOCX(section) {
+  var paper, type, pane;
+  if (section === 'resume') {
+    paper = document.getElementById('resumePreview');
+    type = 'Resume';
+  } else if (section === 'cover') {
+    paper = document.getElementById('coverPreview');
+    type = 'Cover_Letter';
+  } else {
+    pane = document.querySelector('.rb-preview-pane.active');
+    paper = pane.querySelector('.rb-preview-paper');
+    type = pane.id.indexOf('resume') !== -1 ? 'Resume' : 'Cover_Letter';
+  }
   var name = document.getElementById('fullName').value.trim() || 'Document';
 
   showToast('Generating DOCX...', 'info');
@@ -887,9 +926,16 @@ function exportDOCX() {
 
 // ── Export: Clipboard ────────────────────────────────────
 
-function copyToClipboard() {
-  var activePane = document.querySelector('.rb-preview-pane.active');
-  var paper = activePane.querySelector('.rb-preview-paper');
+function copyToClipboard(section) {
+  var paper;
+  if (section === 'resume') {
+    paper = document.getElementById('resumePreview');
+  } else if (section === 'cover') {
+    paper = document.getElementById('coverPreview');
+  } else {
+    var pane = document.querySelector('.rb-preview-pane.active');
+    paper = pane.querySelector('.rb-preview-paper');
+  }
   navigator.clipboard.writeText(paper.innerText).then(function() {
     showToast('Copied to clipboard!', 'success');
   }).catch(function() {

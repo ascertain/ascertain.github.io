@@ -37,10 +37,10 @@ permalink: /resume-builder/
             <option value="gemini">Google Gemini 2.0 Flash (Free Key)</option>
             <option value="openrouter-free">OpenRouter — Free Models (Free Key)</option>
           </optgroup>
-          <optgroup label="No API Key (may be slow or rate-limited)">
-            <option value="huggingface-free">HuggingFace Mistral (Free, No Key)</option>
-            <option value="huggingface-qwen-free">HuggingFace Qwen 2.5 (Free, No Key)</option>
-            <option value="huggingface-llama-free">HuggingFace Llama 3.2 (Free, No Key)</option>
+          <optgroup label="HuggingFace — Free Token">
+            <option value="huggingface-mistral">HuggingFace Mistral 7B (Free Token)</option>
+            <option value="huggingface-qwen">HuggingFace Qwen 2.5 72B (Free Token)</option>
+            <option value="huggingface-llama">HuggingFace Llama 3.2 3B (Free Token)</option>
           </optgroup>
         </select>
       </div>
@@ -83,19 +83,19 @@ permalink: /resume-builder/
       <div class="rb-form-grid">
         <div class="rb-field">
           <label for="fullName">Full Name *</label>
-          <input type="text" id="fullName" placeholder="Mohammad Kashif">
+          <input type="text" id="fullName" placeholder="John Doe">
         </div>
         <div class="rb-field">
           <label for="email">Email *</label>
-          <input type="email" id="email" placeholder="you@example.com">
+          <input type="email" id="email" placeholder="john.doe@email.com">
         </div>
         <div class="rb-field">
           <label for="phone">Phone</label>
-          <input type="tel" id="phone" placeholder="+46 70 123 4567">
+          <input type="tel" id="phone" placeholder="+47 400 12 345">
         </div>
         <div class="rb-field">
           <label for="location">Location</label>
-          <input type="text" id="location" placeholder="Stockholm, Sweden">
+          <input type="text" id="location" placeholder="Oslo, Norway">
         </div>
         <div class="rb-field">
           <label for="linkedin">LinkedIn URL</label>
@@ -109,27 +109,27 @@ permalink: /resume-builder/
 
       <div class="rb-field rb-field-full">
         <label for="summary">Professional Summary</label>
-        <textarea id="summary" rows="4" placeholder="15+ years in test automation, quality engineering, and DevOps..."></textarea>
+        <textarea id="summary" rows="4" placeholder="Experienced software engineer with 10+ years in full-stack development, cloud architecture, and team leadership..."></textarea>
       </div>
 
       <div class="rb-field rb-field-full">
         <label for="experience">Work Experience <small>(paste your full experience — the AI will tailor it)</small></label>
-        <textarea id="experience" rows="10" placeholder="Senior SDET at Company X (2020-Present)&#10;- Built Playwright automation framework&#10;- Reduced regression time by 60%&#10;&#10;QA Lead at Company Y (2016-2020)&#10;- Led team of 8 testers..."></textarea>
+        <textarea id="experience" rows="10" placeholder="Software Engineer at Company X (2020-Present)&#10;- Led development of microservices architecture&#10;- Improved system performance by 40%&#10;&#10;Developer at Company Y (2016-2020)&#10;- Built React frontend serving 1M+ users..."></textarea>
       </div>
 
       <div class="rb-field rb-field-full">
         <label for="skills">Skills <small>(comma-separated)</small></label>
-        <textarea id="skills" rows="3" placeholder="Playwright, Selenium, Python, CI/CD, Docker, Kubernetes, GCP, AI/ML, Agile..."></textarea>
+        <textarea id="skills" rows="3" placeholder="JavaScript, TypeScript, React, Python, Java, CI/CD, Docker, Kubernetes, AWS, GCP, Agile..."></textarea>
       </div>
 
       <div class="rb-field rb-field-full">
         <label for="education">Education</label>
-        <textarea id="education" rows="3" placeholder="B.Tech Computer Science — University Name (2008)&#10;AWS Certified Solutions Architect"></textarea>
+        <textarea id="education" rows="3" placeholder="M.Sc. Computer Science — University Name (2015)&#10;B.Sc. Information Technology — University Name (2012)"></textarea>
       </div>
 
       <div class="rb-field rb-field-full">
         <label for="certifications">Certifications & Awards</label>
-        <textarea id="certifications" rows="2" placeholder="ISTQB, AWS SAA, Google Cloud Professional..."></textarea>
+        <textarea id="certifications" rows="2" placeholder="AWS Solutions Architect, Google Cloud Engineer, ISTQB, PMP..."></textarea>
       </div>
     </div>
 
@@ -232,10 +232,15 @@ permalink: /resume-builder/
     <!-- Resume Preview -->
     <div class="rb-preview-pane active" id="preview-resume">
       <div class="rb-preview-toolbar">
-        <button class="rb-btn rb-btn-sm" onclick="editPreview('resume')">Edit</button>
+        <button class="rb-btn rb-btn-sm rb-btn-edit" id="editBtnResume" onclick="editPreview('resume')">Edit</button>
+        <button class="rb-btn rb-btn-sm rb-btn-save rb-hidden" id="saveBtnResume" onclick="savePreview('resume')">Save</button>
         <select class="rb-regen-select" id="regenModelResume" title="Pick a different model to regenerate">
         </select>
-        <button class="rb-btn rb-btn-sm rb-btn-regen" onclick="regenerateWithModel('resume')">Regenerate with this model</button>
+        <button class="rb-btn rb-btn-sm rb-btn-regen" onclick="regenerateWithModel('resume')">Regenerate</button>
+        <div class="rb-toolbar-spacer"></div>
+        <button class="rb-btn rb-btn-sm rb-btn-export" onclick="exportPDF('resume')">PDF</button>
+        <button class="rb-btn rb-btn-sm rb-btn-export" onclick="exportDOCX('resume')">DOCX</button>
+        <button class="rb-btn rb-btn-sm" onclick="copyToClipboard('resume')">Copy</button>
       </div>
       <div class="rb-preview-paper" id="resumePreview" contenteditable="false">
         <p class="rb-preview-placeholder">Your AI-generated resume will appear here...</p>
@@ -245,10 +250,15 @@ permalink: /resume-builder/
     <!-- Cover Letter Preview -->
     <div class="rb-preview-pane" id="preview-cover">
       <div class="rb-preview-toolbar">
-        <button class="rb-btn rb-btn-sm" onclick="editPreview('cover')">Edit</button>
+        <button class="rb-btn rb-btn-sm rb-btn-edit" id="editBtnCover" onclick="editPreview('cover')">Edit</button>
+        <button class="rb-btn rb-btn-sm rb-btn-save rb-hidden" id="saveBtnCover" onclick="savePreview('cover')">Save</button>
         <select class="rb-regen-select" id="regenModelCover" title="Pick a different model to regenerate">
         </select>
-        <button class="rb-btn rb-btn-sm rb-btn-regen" onclick="regenerateWithModel('cover')">Regenerate with this model</button>
+        <button class="rb-btn rb-btn-sm rb-btn-regen" onclick="regenerateWithModel('cover')">Regenerate</button>
+        <div class="rb-toolbar-spacer"></div>
+        <button class="rb-btn rb-btn-sm rb-btn-export" onclick="exportPDF('cover')">PDF</button>
+        <button class="rb-btn rb-btn-sm rb-btn-export" onclick="exportDOCX('cover')">DOCX</button>
+        <button class="rb-btn rb-btn-sm" onclick="copyToClipboard('cover')">Copy</button>
       </div>
       <div class="rb-preview-paper" id="coverPreview" contenteditable="false">
         <p class="rb-preview-placeholder">Your AI-generated cover letter will appear here...</p>
@@ -258,9 +268,8 @@ permalink: /resume-builder/
     <div class="rb-export-actions">
       <button class="rb-btn" onclick="goToStep(2)">← Back to JD</button>
       <div class="rb-export-group">
-        <button class="rb-btn rb-btn-export" onclick="exportPDF()">Download PDF</button>
-        <button class="rb-btn rb-btn-export" onclick="exportDOCX()">Download DOCX</button>
-        <button class="rb-btn rb-btn-export" onclick="copyToClipboard()">Copy to Clipboard</button>
+        <button class="rb-btn rb-btn-export" onclick="exportPDF()">Download All PDF</button>
+        <button class="rb-btn rb-btn-export" onclick="exportDOCX()">Download All DOCX</button>
       </div>
     </div>
   </section>

@@ -548,59 +548,105 @@
   display: flex;
   gap: 8px;
   margin-bottom: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.rb-toolbar-spacer {
+  flex: 1;
+}
+.rb-btn-edit {
+  background: #1e40af;
+  border-color: #1e40af;
+  color: #fff;
+}
+.rb-btn-edit:hover {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+.rb-btn-save {
+  background: #059669;
+  border-color: #059669;
+  color: #fff;
+  animation: rb-pulse-save 1s ease infinite;
+}
+.rb-btn-save:hover {
+  background: #10b981;
+  border-color: #10b981;
+  color: #fff;
+}
+@keyframes rb-pulse-save {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.4); }
+  50% { box-shadow: 0 0 0 6px rgba(5, 150, 105, 0); }
 }
 .rb-preview-paper {
   background: #ffffff;
   color: #1a1a1a;
-  padding: 48px;
+  padding: 40px 48px;
   border-radius: 4px;
   min-height: 500px;
-  font-family: 'Georgia', 'Times New Roman', serif;
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.88rem;
+  line-height: 1.5;
   box-shadow: 0 4px 24px rgba(0,0,0,0.4);
   position: relative;
+  overflow-wrap: break-word;
 }
 .rb-preview-paper[contenteditable="true"] {
-  outline: 2px solid var(--accent);
-  outline-offset: -2px;
+  outline: 3px solid #2563eb;
+  outline-offset: -3px;
+  background: #fffef5;
 }
 .rb-preview-paper h1 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: #1a1a1a;
-  margin-bottom: 4px;
-  font-family: 'Inter', sans-serif;
+  margin: 0 0 2px;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  text-align: center;
 }
 .rb-preview-paper h2 {
-  font-size: 1.1rem;
+  font-size: 0.92rem;
   color: #2c3e50;
   border-bottom: 2px solid #2c3e50;
-  padding-bottom: 4px;
-  margin: 20px 0 10px;
-  font-family: 'Inter', sans-serif;
+  padding-bottom: 3px;
+  margin: 14px 0 6px;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  font-weight: 700;
 }
 .rb-preview-paper h3 {
-  font-size: 1rem;
+  font-size: 0.88rem;
   color: #333;
-  margin: 12px 0 4px;
-  font-family: 'Inter', sans-serif;
+  margin: 8px 0 3px;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
 }
-.rb-preview-paper p { margin: 6px 0; }
+.rb-preview-paper p {
+  margin: 3px 0;
+  font-size: 0.86rem;
+}
 .rb-preview-paper ul {
-  margin: 6px 0 6px 20px;
+  margin: 4px 0 8px 18px;
+  padding: 0;
 }
-.rb-preview-paper li { margin: 3px 0; }
+.rb-preview-paper li {
+  margin: 2px 0;
+  font-size: 0.86rem;
+  line-height: 1.4;
+}
 .rb-preview-paper .resume-header {
   text-align: center;
-  margin-bottom: 16px;
-  padding-bottom: 16px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
   border-bottom: 2px solid #2c3e50;
 }
 .rb-preview-paper .resume-contact {
-  color: #555;
-  font-size: 0.88rem;
+  color: #444;
+  font-size: 0.82rem;
+  text-align: center;
+  margin: 2px 0;
 }
 .rb-preview-paper .resume-contact a {
   color: #2c3e50;
@@ -611,7 +657,7 @@
   text-align: center;
   padding: 100px 0;
   font-style: italic;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 /* ── Export actions ───────────────────────────────────── */
