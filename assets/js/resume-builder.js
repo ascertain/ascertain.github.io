@@ -58,17 +58,17 @@ const AI_PROVIDERS = {
     keyStorageId: 'rb_key_huggingface',
     call: callHuggingFace,
   },
-  'huggingface-qwen': {
-    label: 'HuggingFace Qwen 2.5 72B (Free Token)',
-    model: 'Qwen/Qwen2.5-72B-Instruct',
+  'huggingface-phi': {
+    label: 'HuggingFace Phi 3.5 Mini (Free Token)',
+    model: 'microsoft/Phi-3.5-mini-instruct',
     needsKey: true,
     getKeyUrl: 'https://huggingface.co/settings/tokens',
     keyStorageId: 'rb_key_huggingface',
     call: callHuggingFace,
   },
-  'huggingface-llama': {
-    label: 'HuggingFace Llama 3.2 3B (Free Token)',
-    model: 'meta-llama/Llama-3.2-3B-Instruct',
+  'huggingface-zephyr': {
+    label: 'HuggingFace Zephyr 7B (Free Token)',
+    model: 'HuggingFaceH4/zephyr-7b-beta',
     needsKey: true,
     getKeyUrl: 'https://huggingface.co/settings/tokens',
     keyStorageId: 'rb_key_huggingface',
@@ -468,7 +468,7 @@ async function callHuggingFace(prompt, providerId) {
   var apiKey = getProviderKey(providerId);
   if (!apiKey) throw new Error('HuggingFace token required (free).\n\n1. Go to huggingface.co/settings/tokens\n2. Sign up (free) with Google/GitHub\n3. Click "Create new token" (read access is enough)\n4. Paste it above and click Save Key');
 
-  var url = 'https://router.huggingface.co/hf-inference/models/' + provider.model + '/v1/chat/completions';
+  var url = 'https://api-inference.huggingface.co/models/' + provider.model + '/v1/chat/completions';
 
   var resp;
   try {
