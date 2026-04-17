@@ -69,11 +69,11 @@
   color: #fff;
 }
 .rb-step-dot.completed {
-  color: var(--success);
-  border-color: var(--success);
+  color: #a8b3c3;
+  border-color: #a8b3c3;
 }
 .rb-step-dot.completed span {
-  background: var(--success);
+  background: #a8b3c3;
   color: #fff;
 }
 .rb-step-connector {
@@ -279,7 +279,7 @@
 
 /* ── Sections ────────────────────────────────────────── */
 .rb-section {
-  background: #161b22;
+  background: #a8b3c3;
   border: 2px solid #30363d;
   border-radius: 12px;
   padding: 28px;
@@ -410,8 +410,8 @@
 .rb-upload-status.success {
   display: block;
   background: #0a1f15;
-  border: 1px solid var(--success);
-  color: var(--success);
+  border: 1px solid #a8b3c3;
+  color: #a8b3c3;
 }
 .rb-upload-status.error {
   display: block;
