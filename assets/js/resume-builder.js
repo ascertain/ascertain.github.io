@@ -80,7 +80,7 @@ const AI_PROVIDERS = {
 let currentStep = 1;
 let generatedResume = '';
 let generatedCover = '';
-let currentProvider = 'huggingface-free';
+let currentProvider = 'groq';
 
 // ── DOM Ready ────────────────────────────────────────────
 
@@ -344,34 +344,52 @@ function getJobData() {
 
 async function callHuggingFaceFree(prompt, providerId) {
   var provider = AI_PROVIDERS[providerId];
-  var url = 'https://api-inference.huggingface.co/models/' + provider.model;
+  // Use the HuggingFace Inference API with router endpoint for better CORS support
+  var url = 'https://router.huggingface.co/hf-inference/models/' + provider.model + '/v1/chat/completions';
 
-  var resp = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      inputs: prompt,
-      parameters: {
-        max_new_tokens: 3000,
+  var resp;
+  try {
+    resp = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: provider.model,
+        messages: [
+          { role: 'system', content: 'You are an expert resume and cover letter writer. Output clean HTML only. No code blocks.' },
+          { role: 'user', content: prompt }
+        ],
+        max_tokens: 3000,
         temperature: 0.7,
-        return_full_text: false,
-      },
-    }),
-  });
+      }),
+    });
+  } catch (networkErr) {
+    throw new Error(
+      'Network error connecting to HuggingFace. This may be due to browser restrictions.\n\n' +
+      'FIX: Switch to Groq (recommended) — get a free key at console.groq.com/keys'
+    );
+  }
 
   if (!resp.ok) {
     var err = await resp.json().catch(function() { return {}; });
     if (resp.status === 503) {
-      throw new Error('Model is loading — please wait 30s and try again, or switch to another model.');
+      throw new Error('Model is loading — please wait 30s and try again, or switch to Groq (recommended).');
     }
-    throw new Error(err.error || 'HuggingFace returned ' + resp.status);
+    if (resp.status === 429) {
+      throw new Error('Rate limited by HuggingFace. Switch to Groq for unlimited free usage.');
+    }
+    throw new Error(err.error || 'HuggingFace returned ' + resp.status + '. Try switching to Groq.');
   }
 
   var data = await resp.json();
+  // OpenAI-compatible response format
+  if (data.choices && data.choices[0] && data.choices[0].message) {
+    return extractHTML(data.choices[0].message.content);
+  }
+  // Legacy format fallback
   if (Array.isArray(data) && data[0] && data[0].generated_text) {
     return extractHTML(data[0].generated_text);
   }
-  throw new Error('Unexpected response from HuggingFace. Try a different model.');
+  throw new Error('Unexpected response from HuggingFace. Try switching to Groq.');
 }
 
 // ── Groq (Free key — Llama, Mixtral, DeepSeek) ──────────
@@ -379,9 +397,11 @@ async function callHuggingFaceFree(prompt, providerId) {
 async function callGroq(prompt, providerId) {
   var provider = AI_PROVIDERS[providerId];
   var apiKey = getProviderKey(providerId);
-  if (!apiKey) throw new Error('Groq API key required. Get one free at console.groq.com/keys — or switch to a free model above.');
+  if (!apiKey) throw new Error('Groq API key required (free, takes 10 seconds).\n\n1. Go to console.groq.com/keys\n2. Sign up with Google/GitHub\n3. Create an API key\n4. Paste it above and click Save Key');
 
-  var resp = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+  var resp;
+  try {
+    resp = await fetch('https://api.groq.com/openai/v1/chat/completions', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -397,9 +417,15 @@ async function callGroq(prompt, providerId) {
       max_tokens: 4096,
     }),
   });
+  } catch (networkErr) {
+    throw new Error('Network error connecting to Groq. Check your internet connection and try again.');
+  }
 
   if (!resp.ok) {
     var err = await resp.json().catch(function() { return {}; });
+    if (resp.status === 401) {
+      throw new Error('Invalid Groq API key. Please check your key and save it again.');
+    }
     throw new Error((err.error && err.error.message) || 'Groq returned ' + resp.status);
   }
 
@@ -528,6 +554,8 @@ async function generateResume() {
   var provider = AI_PROVIDERS[currentProvider];
   showToast('Generating with ' + provider.label + '...', 'info');
 
+  hideError();
+
   try {
     // Generate sequentially to avoid rate limits on free APIs
     var resumeHtml = await callAI(buildResumePrompt(profile, job));
@@ -541,10 +569,7 @@ async function generateResume() {
     goToStepDirect(3);
     showToast('Generated with ' + provider.label + '! Not happy? Pick another model and regenerate.', 'success');
   } catch (err) {
-    showToast('Error: ' + err.message, 'error');
-    if (provider.needsKey) {
-      showToast('Tip: Switch to a free model (no key needed) in the provider bar above.', 'info');
-    }
+    showError('Generation Failed', err.message);
   } finally {
     btn.querySelector('.rb-btn-text').classList.remove('rb-hidden');
     btn.querySelector('.rb-btn-loading').classList.add('rb-hidden');
@@ -583,7 +608,7 @@ async function regenerateWithModel(section) {
 
     showToast(section + ' regenerated with ' + provider.label + '!', 'success');
   } catch (err) {
-    showToast('Error: ' + err.message, 'error');
+    showError('Regeneration Failed', err.message);
   }
 }
 
@@ -768,8 +793,28 @@ function showToast(message, type) {
   toast.textContent = message;
   document.body.appendChild(toast);
   requestAnimationFrame(function() { toast.classList.add('show'); });
+  var duration = type === 'error' ? 8000 : 4000;
   setTimeout(function() {
     toast.classList.remove('show');
     setTimeout(function() { toast.remove(); }, 300);
-  }, 4000);
+  }, duration);
+}
+
+// ── Inline Error Banner ──────────────────────────────────
+
+function showError(title, message) {
+  var banner = document.getElementById('errorBanner');
+  var titleEl = document.getElementById('errorTitle');
+  var msgEl = document.getElementById('errorMessage');
+  if (!banner) { showToast(title + ': ' + message, 'error'); return; }
+  titleEl.textContent = title;
+  msgEl.textContent = message;
+  banner.classList.remove('rb-hidden');
+  banner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  showToast(title + ' — see details above', 'error');
+}
+
+function hideError() {
+  var banner = document.getElementById('errorBanner');
+  if (banner) banner.classList.add('rb-hidden');
 }

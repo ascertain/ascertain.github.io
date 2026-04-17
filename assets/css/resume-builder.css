@@ -554,9 +554,65 @@
   transform: translateY(0);
   opacity: 1;
 }
-.rb-toast.success { background: #0a1f15; border: 1px solid var(--success); color: var(--success); }
-.rb-toast.error { background: #1f0a0a; border: 1px solid var(--danger); color: var(--danger); }
-.rb-toast.info { background: #0d1f3c; border: 1px solid var(--accent); color: var(--accent); }
+.rb-toast.success { background: #0a2f1a; border: 2px solid var(--success); color: #4aea6e; }
+.rb-toast.error { background: #3d0a0a; border: 2px solid #f85149; color: #ff9590; font-size: 1rem; max-width: 500px; }
+.rb-toast.info { background: #0d1f3c; border: 2px solid var(--accent); color: #79b8ff; }
+
+/* ── Inline Error Banner ─────────────────────────────── */
+.rb-error-banner {
+  background: #2d0a0a;
+  border: 2px solid #f85149;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  animation: rb-error-shake 0.4s ease;
+}
+@keyframes rb-error-shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+.rb-error-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px 20px;
+}
+.rb-error-icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.rb-error-content {
+  flex: 1;
+}
+.rb-error-content strong {
+  display: block;
+  font-size: 1.1rem;
+  color: #ff9590;
+  margin-bottom: 6px;
+}
+.rb-error-content p {
+  color: #ffb3ae;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  white-space: pre-line;
+}
+.rb-error-close {
+  background: none;
+  border: none;
+  color: #ff9590;
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.rb-error-close:hover {
+  color: #fff;
+}
 
 /* ── Responsive ──────────────────────────────────────── */
 @media (max-width: 768px) {

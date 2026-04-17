@@ -24,21 +24,23 @@ permalink: /resume-builder/
   <!-- ═══ AI PROVIDER SETUP ═══ -->
   <div class="rb-api-banner" id="apiBanner">
     <div class="rb-api-inner">
-      <strong>AI Provider:</strong> Works out of the box with <strong>free open-source models</strong> (no key needed). Add your own API key for premium models.
+      <strong>AI Provider:</strong> Get a <strong>free Groq API key</strong> (takes 10 seconds) for the best results, or use other providers.
       <div class="rb-provider-selector">
         <label for="providerSelect">Model:</label>
         <select id="providerSelect" onchange="onProviderChange()">
-          <optgroup label="Free — No API Key Required">
-            <option value="huggingface-free" selected>HuggingFace Mistral (Free)</option>
-            <option value="huggingface-qwen-free">HuggingFace Qwen 2.5 (Free)</option>
-            <option value="huggingface-llama-free">HuggingFace Llama 3.2 (Free)</option>
-          </optgroup>
-          <optgroup label="Free API Key Required">
-            <option value="groq">Groq — Llama 3.3 70B (Free Key)</option>
+          <optgroup label="⚡ Recommended — Free API Key (fast & reliable)">
+            <option value="groq" selected>Groq — Llama 3.3 70B (Free Key)</option>
             <option value="groq-mixtral">Groq — Mixtral 8x7B (Free Key)</option>
             <option value="groq-deepseek">Groq — DeepSeek R1 Distill (Free Key)</option>
+          </optgroup>
+          <optgroup label="Other Providers — Free API Key">
             <option value="gemini">Google Gemini 2.0 Flash (Free Key)</option>
             <option value="openrouter-free">OpenRouter — Free Models (Free Key)</option>
+          </optgroup>
+          <optgroup label="No API Key (may be slow or rate-limited)">
+            <option value="huggingface-free">HuggingFace Mistral (Free, No Key)</option>
+            <option value="huggingface-qwen-free">HuggingFace Qwen 2.5 (Free, No Key)</option>
+            <option value="huggingface-llama-free">HuggingFace Llama 3.2 (Free, No Key)</option>
           </optgroup>
         </select>
       </div>
@@ -48,6 +50,18 @@ permalink: /resume-builder/
         <a href="#" id="getKeyLink" target="_blank" rel="noopener" class="rb-btn rb-btn-sm">Get Free Key</a>
       </div>
       <small class="rb-api-note">Keys are stored only in your browser's localStorage. Never sent anywhere except the selected provider's API.</small>
+    </div>
+  </div>
+
+  <!-- ═══ ERROR BANNER ═══ -->
+  <div class="rb-error-banner rb-hidden" id="errorBanner">
+    <div class="rb-error-inner">
+      <span class="rb-error-icon">⚠️</span>
+      <div class="rb-error-content">
+        <strong id="errorTitle">Error</strong>
+        <p id="errorMessage"></p>
+      </div>
+      <button class="rb-error-close" onclick="hideError()">&times;</button>
     </div>
   </div>
 
@@ -187,7 +201,7 @@ permalink: /resume-builder/
       </button>
     </div>
     <div class="rb-model-note">
-      <small>Using: <strong id="currentModelLabel">HuggingFace Mistral (Free)</strong> — change model in the provider bar above</small>
+      <small>Using: <strong id="currentModelLabel">Groq — Llama 3.3 70B</strong> — change model in the provider bar above</small>
     </div>
   </section>
 
