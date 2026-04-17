@@ -1,0 +1,225 @@
+---
+layout: default
+title: AI Resume Builder
+permalink: /resume-builder/
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/resume-builder.css' | relative_url }}">
+
+<div class="rb-app" id="resumeBuilderApp">
+
+  <!-- ═══ HEADER ═══ -->
+  <div class="rb-hero">
+    <h1>AI Resume Builder</h1>
+    <p class="rb-subtitle">Upload your resume + paste a job description = tailored resume & cover letter in seconds</p>
+    <div class="rb-steps-indicator">
+      <div class="rb-step-dot active" data-step="1"><span>1</span> Your Profile</div>
+      <div class="rb-step-connector"></div>
+      <div class="rb-step-dot" data-step="2"><span>2</span> Job Description</div>
+      <div class="rb-step-connector"></div>
+      <div class="rb-step-dot" data-step="3"><span>3</span> Preview & Export</div>
+    </div>
+  </div>
+
+  <!-- ═══ API KEY SETUP ═══ -->
+  <div class="rb-api-banner" id="apiBanner">
+    <div class="rb-api-inner">
+      <strong>AI Provider:</strong> This tool uses the Gemini API (free tier). 
+      <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Get your free API key here</a>.
+      <div class="rb-api-row">
+        <input type="password" id="apiKeyInput" placeholder="Paste your Gemini API key" autocomplete="off">
+        <button class="rb-btn rb-btn-sm" onclick="saveApiKey()">Save Key</button>
+      </div>
+      <small class="rb-api-note">Your key is stored only in your browser's localStorage. It is never sent to any server other than Google's Gemini API.</small>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 1: YOUR PROFILE ═══ -->
+  <section class="rb-section" id="section1">
+    <div class="rb-section-header">
+      <div class="rb-section-number">1</div>
+      <h2>Your Profile</h2>
+    </div>
+
+    <div class="rb-input-tabs">
+      <button class="rb-tab active" data-tab="paste">Paste Details</button>
+      <button class="rb-tab" data-tab="upload">Upload Resume</button>
+      <button class="rb-tab" data-tab="linkedin">LinkedIn Import</button>
+    </div>
+
+    <!-- Tab: Paste -->
+    <div class="rb-tab-content active" id="tab-paste">
+      <div class="rb-form-grid">
+        <div class="rb-field">
+          <label for="fullName">Full Name *</label>
+          <input type="text" id="fullName" placeholder="Mohammad Kashif">
+        </div>
+        <div class="rb-field">
+          <label for="email">Email *</label>
+          <input type="email" id="email" placeholder="you@example.com">
+        </div>
+        <div class="rb-field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" placeholder="+46 70 123 4567">
+        </div>
+        <div class="rb-field">
+          <label for="location">Location</label>
+          <input type="text" id="location" placeholder="Stockholm, Sweden">
+        </div>
+        <div class="rb-field">
+          <label for="linkedin">LinkedIn URL</label>
+          <input type="url" id="linkedin" placeholder="https://linkedin.com/in/yourprofile">
+        </div>
+        <div class="rb-field">
+          <label for="github">GitHub / Portfolio</label>
+          <input type="url" id="github" placeholder="https://github.com/yourhandle">
+        </div>
+      </div>
+
+      <div class="rb-field rb-field-full">
+        <label for="summary">Professional Summary</label>
+        <textarea id="summary" rows="4" placeholder="15+ years in test automation, quality engineering, and DevOps..."></textarea>
+      </div>
+
+      <div class="rb-field rb-field-full">
+        <label for="experience">Work Experience <small>(paste your full experience — the AI will tailor it)</small></label>
+        <textarea id="experience" rows="10" placeholder="Senior SDET at Company X (2020-Present)&#10;- Built Playwright automation framework&#10;- Reduced regression time by 60%&#10;&#10;QA Lead at Company Y (2016-2020)&#10;- Led team of 8 testers..."></textarea>
+      </div>
+
+      <div class="rb-field rb-field-full">
+        <label for="skills">Skills <small>(comma-separated)</small></label>
+        <textarea id="skills" rows="3" placeholder="Playwright, Selenium, Python, CI/CD, Docker, Kubernetes, GCP, AI/ML, Agile..."></textarea>
+      </div>
+
+      <div class="rb-field rb-field-full">
+        <label for="education">Education</label>
+        <textarea id="education" rows="3" placeholder="B.Tech Computer Science — University Name (2008)&#10;AWS Certified Solutions Architect"></textarea>
+      </div>
+
+      <div class="rb-field rb-field-full">
+        <label for="certifications">Certifications & Awards</label>
+        <textarea id="certifications" rows="2" placeholder="ISTQB, AWS SAA, Google Cloud Professional..."></textarea>
+      </div>
+    </div>
+
+    <!-- Tab: Upload -->
+    <div class="rb-tab-content" id="tab-upload">
+      <div class="rb-upload-zone" id="uploadZone">
+        <div class="rb-upload-icon">📄</div>
+        <p>Drag & drop your resume here</p>
+        <p class="rb-upload-sub">or click to browse — supports <strong>.pdf, .docx, .txt</strong></p>
+        <input type="file" id="resumeFile" accept=".pdf,.docx,.txt,.doc" hidden>
+        <button class="rb-btn" onclick="document.getElementById('resumeFile').click()">Choose File</button>
+      </div>
+      <div class="rb-upload-status" id="uploadStatus"></div>
+    </div>
+
+    <!-- Tab: LinkedIn -->
+    <div class="rb-tab-content" id="tab-linkedin">
+      <div class="rb-linkedin-box">
+        <div class="rb-linkedin-icon">in</div>
+        <h3>Import from LinkedIn</h3>
+        <p>Export your LinkedIn profile data and upload the PDF here:</p>
+        <ol>
+          <li>Go to LinkedIn → <strong>Me</strong> → <strong>Settings & Privacy</strong></li>
+          <li>Click <strong>Get a copy of your data</strong></li>
+          <li>Or: Visit your profile → <strong>More</strong> → <strong>Save to PDF</strong></li>
+          <li>Upload the downloaded PDF above</li>
+        </ol>
+        <button class="rb-btn" onclick="switchTab('upload')">Upload LinkedIn PDF</button>
+      </div>
+    </div>
+
+    <div class="rb-section-actions">
+      <button class="rb-btn rb-btn-primary" onclick="goToStep(2)">Next: Job Description →</button>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 2: JOB DESCRIPTION ═══ -->
+  <section class="rb-section rb-hidden" id="section2">
+    <div class="rb-section-header">
+      <div class="rb-section-number">2</div>
+      <h2>Job Description</h2>
+    </div>
+
+    <div class="rb-field rb-field-full">
+      <label for="jobTitle">Target Job Title</label>
+      <input type="text" id="jobTitle" placeholder="Senior SDET / Staff Test Automation Engineer">
+    </div>
+
+    <div class="rb-field rb-field-full">
+      <label for="companyName">Company Name</label>
+      <input type="text" id="companyName" placeholder="Spotify">
+    </div>
+
+    <div class="rb-field rb-field-full">
+      <label for="jobDescription">Paste the full Job Description *</label>
+      <textarea id="jobDescription" rows="15" placeholder="We are looking for an experienced Senior SDET to join our engineering team...&#10;&#10;Requirements:&#10;- 5+ years of test automation experience&#10;- Experience with Playwright or Selenium&#10;- CI/CD pipeline experience&#10;- Strong coding skills in Python or TypeScript..."></textarea>
+    </div>
+
+    <div class="rb-field rb-field-full">
+      <label for="additionalNotes">Additional Instructions for AI <small>(optional)</small></label>
+      <textarea id="additionalNotes" rows="3" placeholder="Focus on my leadership experience. Highlight my GCP certifications. Keep it to 1 page."></textarea>
+    </div>
+
+    <div class="rb-section-actions">
+      <button class="rb-btn" onclick="goToStep(1)">← Back</button>
+      <button class="rb-btn rb-btn-primary rb-btn-generate" onclick="generateResume()" id="generateBtn">
+        <span class="rb-btn-text">Generate with AI</span>
+        <span class="rb-btn-loading rb-hidden">Generating...</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 3: PREVIEW & EXPORT ═══ -->
+  <section class="rb-section rb-hidden" id="section3">
+    <div class="rb-section-header">
+      <div class="rb-section-number">3</div>
+      <h2>Preview & Export</h2>
+    </div>
+
+    <div class="rb-preview-tabs">
+      <button class="rb-preview-tab active" data-preview="resume">Resume</button>
+      <button class="rb-preview-tab" data-preview="cover">Cover Letter</button>
+    </div>
+
+    <!-- Resume Preview -->
+    <div class="rb-preview-pane active" id="preview-resume">
+      <div class="rb-preview-toolbar">
+        <button class="rb-btn rb-btn-sm" onclick="editPreview('resume')">Edit</button>
+        <button class="rb-btn rb-btn-sm" onclick="regenerateSection('resume')">Regenerate</button>
+      </div>
+      <div class="rb-preview-paper" id="resumePreview" contenteditable="false">
+        <p class="rb-preview-placeholder">Your AI-generated resume will appear here...</p>
+      </div>
+    </div>
+
+    <!-- Cover Letter Preview -->
+    <div class="rb-preview-pane" id="preview-cover">
+      <div class="rb-preview-toolbar">
+        <button class="rb-btn rb-btn-sm" onclick="editPreview('cover')">Edit</button>
+        <button class="rb-btn rb-btn-sm" onclick="regenerateSection('cover')">Regenerate</button>
+      </div>
+      <div class="rb-preview-paper" id="coverPreview" contenteditable="false">
+        <p class="rb-preview-placeholder">Your AI-generated cover letter will appear here...</p>
+      </div>
+    </div>
+
+    <div class="rb-export-actions">
+      <button class="rb-btn" onclick="goToStep(2)">← Back to JD</button>
+      <div class="rb-export-group">
+        <button class="rb-btn rb-btn-export" onclick="exportPDF()">Download PDF</button>
+        <button class="rb-btn rb-btn-export" onclick="exportDOCX()">Download DOCX</button>
+        <button class="rb-btn rb-btn-export" onclick="copyToClipboard()">Copy to Clipboard</button>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- Libraries for export -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="https://unpkg.com/docx@8.5.0/build/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://unpkg.com/mammoth@1.6.0/mammoth.browser.min.js"></script>
+<script src="{{ '/assets/js/resume-builder.js' | relative_url }}"></script>
