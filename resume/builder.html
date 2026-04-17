@@ -21,16 +21,33 @@ permalink: /resume-builder/
     </div>
   </div>
 
-  <!-- ═══ API KEY SETUP ═══ -->
+  <!-- ═══ AI PROVIDER SETUP ═══ -->
   <div class="rb-api-banner" id="apiBanner">
     <div class="rb-api-inner">
-      <strong>AI Provider:</strong> This tool uses the Gemini API (free tier). 
-      <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Get your free API key here</a>.
-      <div class="rb-api-row">
-        <input type="password" id="apiKeyInput" placeholder="Paste your Gemini API key" autocomplete="off">
-        <button class="rb-btn rb-btn-sm" onclick="saveApiKey()">Save Key</button>
+      <strong>AI Provider:</strong> Works out of the box with <strong>free open-source models</strong> (no key needed). Add your own API key for premium models.
+      <div class="rb-provider-selector">
+        <label for="providerSelect">Model:</label>
+        <select id="providerSelect" onchange="onProviderChange()">
+          <optgroup label="Free — No API Key Required">
+            <option value="huggingface-free" selected>HuggingFace Mistral (Free)</option>
+            <option value="huggingface-qwen-free">HuggingFace Qwen 2.5 (Free)</option>
+            <option value="huggingface-llama-free">HuggingFace Llama 3.2 (Free)</option>
+          </optgroup>
+          <optgroup label="Free API Key Required">
+            <option value="groq">Groq — Llama 3.3 70B (Free Key)</option>
+            <option value="groq-mixtral">Groq — Mixtral 8x7B (Free Key)</option>
+            <option value="groq-deepseek">Groq — DeepSeek R1 Distill (Free Key)</option>
+            <option value="gemini">Google Gemini 2.0 Flash (Free Key)</option>
+            <option value="openrouter-free">OpenRouter — Free Models (Free Key)</option>
+          </optgroup>
+        </select>
       </div>
-      <small class="rb-api-note">Your key is stored only in your browser's localStorage. It is never sent to any server other than Google's Gemini API.</small>
+      <div class="rb-api-row rb-hidden" id="apiKeyRow">
+        <input type="password" id="apiKeyInput" placeholder="Paste your API key" autocomplete="off">
+        <button class="rb-btn rb-btn-sm" onclick="saveApiKey()">Save Key</button>
+        <a href="#" id="getKeyLink" target="_blank" rel="noopener" class="rb-btn rb-btn-sm">Get Free Key</a>
+      </div>
+      <small class="rb-api-note">Keys are stored only in your browser's localStorage. Never sent anywhere except the selected provider's API.</small>
     </div>
   </div>
 
@@ -169,6 +186,9 @@ permalink: /resume-builder/
         <span class="rb-btn-loading rb-hidden">Generating...</span>
       </button>
     </div>
+    <div class="rb-model-note">
+      <small>Using: <strong id="currentModelLabel">HuggingFace Mistral (Free)</strong> — change model in the provider bar above</small>
+    </div>
   </section>
 
   <!-- ═══ SECTION 3: PREVIEW & EXPORT ═══ -->
@@ -187,7 +207,9 @@ permalink: /resume-builder/
     <div class="rb-preview-pane active" id="preview-resume">
       <div class="rb-preview-toolbar">
         <button class="rb-btn rb-btn-sm" onclick="editPreview('resume')">Edit</button>
-        <button class="rb-btn rb-btn-sm" onclick="regenerateSection('resume')">Regenerate</button>
+        <select class="rb-regen-select" id="regenModelResume" title="Pick a different model to regenerate">
+        </select>
+        <button class="rb-btn rb-btn-sm rb-btn-regen" onclick="regenerateWithModel('resume')">Regenerate with this model</button>
       </div>
       <div class="rb-preview-paper" id="resumePreview" contenteditable="false">
         <p class="rb-preview-placeholder">Your AI-generated resume will appear here...</p>
@@ -198,7 +220,9 @@ permalink: /resume-builder/
     <div class="rb-preview-pane" id="preview-cover">
       <div class="rb-preview-toolbar">
         <button class="rb-btn rb-btn-sm" onclick="editPreview('cover')">Edit</button>
-        <button class="rb-btn rb-btn-sm" onclick="regenerateSection('cover')">Regenerate</button>
+        <select class="rb-regen-select" id="regenModelCover" title="Pick a different model to regenerate">
+        </select>
+        <button class="rb-btn rb-btn-sm rb-btn-regen" onclick="regenerateWithModel('cover')">Regenerate with this model</button>
       </div>
       <div class="rb-preview-paper" id="coverPreview" contenteditable="false">
         <p class="rb-preview-placeholder">Your AI-generated cover letter will appear here...</p>

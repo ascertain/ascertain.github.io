@@ -118,6 +118,65 @@
   color: var(--text-muted);
   font-size: 0.78rem;
 }
+.rb-provider-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.rb-provider-selector label {
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--text);
+  white-space: nowrap;
+}
+.rb-provider-selector select {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.88rem;
+  cursor: pointer;
+  max-width: 420px;
+}
+.rb-provider-selector select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+.rb-model-note {
+  text-align: center;
+  margin-top: 10px;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
+.rb-regen-select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.82rem;
+  cursor: pointer;
+  max-width: 260px;
+}
+.rb-regen-select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+.rb-btn-regen {
+  background: #1f6feb;
+  border-color: #1f6feb;
+  color: #fff;
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+.rb-btn-regen:hover {
+  background: #388bfd;
+  border-color: #388bfd;
+  color: #fff;
+}
 .rb-api-banner.saved {
   border-color: var(--success);
   background: #0a1f15;
