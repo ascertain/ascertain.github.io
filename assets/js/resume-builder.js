@@ -1013,26 +1013,41 @@ function exportPDF(section) {
 
   showToast('Generating PDF — please wait...', 'info');
   try {
-    // Clone the paper content into a visible off-screen container for html2pdf
+    // Clone into a visible container so html2canvas can render it
     var clone = document.createElement('div');
     clone.innerHTML = paper.innerHTML;
-    clone.style.cssText = 'position:fixed;left:-9999px;top:0;width:794px;background:#fff;color:#1a1a1a;font-family:Segoe UI,Helvetica Neue,Arial,sans-serif;font-size:11pt;line-height:1.5;padding:40px 48px;';
+    clone.style.cssText = 'position:absolute;left:0;top:0;width:794px;z-index:-1;opacity:1;' +
+      'background:#ffffff;color:#1a1a1a;' +
+      'font-family:Segoe UI,Helvetica Neue,Arial,sans-serif;' +
+      'font-size:11pt;line-height:1.5;padding:40px 48px;' +
+      'overflow:visible;';
     document.body.appendChild(clone);
 
-    html2pdf().set({
-      margin: [0.3, 0.4, 0.3, 0.4],
-      filename: name + '_' + type + '.pdf',
-      image: { type: 'jpeg', quality: 0.98 },
-      html2canvas: { scale: 2, useCORS: true, letterRendering: true, backgroundColor: '#ffffff' },
-      jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' },
-      pagebreak: { mode: ['css', 'legacy'] },
-    }).from(clone).save().then(function() {
-      document.body.removeChild(clone);
-      showToast(type.replace('_', ' ') + ' PDF downloaded!', 'success');
-    }).catch(function(err) {
-      if (clone.parentNode) document.body.removeChild(clone);
-      showToast('PDF export failed: ' + err.message, 'error');
-    });
+    // Small delay to let browser paint the clone
+    setTimeout(function() {
+      html2pdf().set({
+        margin: [0.3, 0.4, 0.3, 0.4],
+        filename: name + '_' + type + '.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: {
+          scale: 2,
+          useCORS: true,
+          letterRendering: true,
+          backgroundColor: '#ffffff',
+          scrollY: 0,
+          scrollX: 0,
+          windowWidth: 900,
+        },
+        jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' },
+        pagebreak: { mode: ['css', 'legacy'] },
+      }).from(clone).save().then(function() {
+        if (clone.parentNode) document.body.removeChild(clone);
+        showToast(type.replace('_', ' ') + ' PDF downloaded!', 'success');
+      }).catch(function(err) {
+        if (clone.parentNode) document.body.removeChild(clone);
+        showToast('PDF export failed: ' + err.message, 'error');
+      });
+    }, 100);
   } catch (err) {
     showToast('PDF export failed: ' + err.message, 'error');
   }
