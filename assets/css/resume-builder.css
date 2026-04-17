@@ -519,6 +519,11 @@
   border-color: #2ea043;
   color: #fff;
 }
+.rb-btn-lg {
+  padding: 12px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
 .rb-section-actions {
   display: flex;
   justify-content: space-between;

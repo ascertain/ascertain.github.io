@@ -1000,20 +1000,34 @@ function exportPDF(section) {
     type = 'Cover_Letter';
   } else {
     pane = document.querySelector('.rb-preview-pane.active');
-    paper = pane.querySelector('.rb-preview-paper');
-    type = pane.id.indexOf('resume') !== -1 ? 'Resume' : 'Cover_Letter';
+    paper = pane ? pane.querySelector('.rb-preview-paper') : null;
+    type = (pane && pane.id.indexOf('resume') !== -1) ? 'Resume' : 'Cover_Letter';
   }
-  var name = document.getElementById('fullName').value.trim() || 'Document';
 
-  showToast('Generating PDF...', 'info');
-  html2pdf().set({
-    margin: [0.4, 0.5, 0.4, 0.5],
-    filename: name.replace(/\\s+/g, '_') + '_' + type + '.pdf',
-    image: { type: 'jpeg', quality: 0.98 },
-    html2canvas: { scale: 2, useCORS: true, letterRendering: true },
-    jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' },
-    pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
-  }).from(paper).save().then(function() { showToast(type.replace('_', ' ') + ' PDF downloaded!', 'success'); });
+  if (!paper || !paper.innerText.trim() || paper.querySelector('.rb-preview-placeholder')) {
+    showToast('Nothing to export yet — generate with AI or use the sample template first.', 'error');
+    return;
+  }
+
+  var name = (document.getElementById('fullName').value.trim() || 'Document').replace(/\s+/g, '_');
+
+  showToast('Generating PDF — please wait...', 'info');
+  try {
+    html2pdf().set({
+      margin: [0.4, 0.5, 0.4, 0.5],
+      filename: name + '_' + type + '.pdf',
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { scale: 2, useCORS: true, letterRendering: true },
+      jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' },
+      pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
+    }).from(paper).save().then(function() {
+      showToast(type.replace('_', ' ') + ' PDF downloaded!', 'success');
+    }).catch(function(err) {
+      showToast('PDF export failed: ' + err.message, 'error');
+    });
+  } catch (err) {
+    showToast('PDF export failed: ' + err.message, 'error');
+  }
 }
 
 // ── Export: DOCX ─────────────────────────────────────────
@@ -1028,10 +1042,16 @@ function exportDOCX(section) {
     type = 'Cover_Letter';
   } else {
     pane = document.querySelector('.rb-preview-pane.active');
-    paper = pane.querySelector('.rb-preview-paper');
-    type = pane.id.indexOf('resume') !== -1 ? 'Resume' : 'Cover_Letter';
+    paper = pane ? pane.querySelector('.rb-preview-paper') : null;
+    type = (pane && pane.id.indexOf('resume') !== -1) ? 'Resume' : 'Cover_Letter';
   }
-  var name = document.getElementById('fullName').value.trim() || 'Document';
+
+  if (!paper || !paper.innerText.trim() || paper.querySelector('.rb-preview-placeholder')) {
+    showToast('Nothing to export yet — generate with AI or use the sample template first.', 'error');
+    return;
+  }
+
+  var name = (document.getElementById('fullName').value.trim() || 'Document').replace(/\s+/g, '_');
 
   showToast('Generating DOCX...', 'info');
   try {
@@ -1048,6 +1068,12 @@ function exportDOCX(section) {
         children.push(new docx.Paragraph({ text: trimmed, spacing: { after: 80 } }));
       }
     });
+
+    if (children.length === 0) {
+      showToast('No content to export.', 'error');
+      return;
+    }
+
     var doc = new docx.Document({
       sections: [{ properties: { page: { margin: { top: 720, right: 720, bottom: 720, left: 720 } } }, children: children }],
     });
@@ -1055,10 +1081,14 @@ function exportDOCX(section) {
       var url = URL.createObjectURL(blob);
       var a = document.createElement('a');
       a.href = url;
-      a.download = name.replace(/\s+/g, '_') + '_' + type + '.docx';
+      a.download = name + '_' + type + '.docx';
+      document.body.appendChild(a);
       a.click();
+      document.body.removeChild(a);
       URL.revokeObjectURL(url);
       showToast('DOCX downloaded!', 'success');
+    }).catch(function(err) {
+      showToast('DOCX error: ' + err.message, 'error');
     });
   } catch (err) {
     showToast('DOCX error: ' + err.message, 'error');

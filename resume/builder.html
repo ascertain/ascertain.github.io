@@ -271,8 +271,10 @@ permalink: /resume-builder/
     <div class="rb-export-actions">
       <button class="rb-btn" onclick="goToStep(2)">← Back to JD</button>
       <div class="rb-export-group">
-        <button class="rb-btn rb-btn-export" onclick="exportPDF()">Download All PDF</button>
-        <button class="rb-btn rb-btn-export" onclick="exportDOCX()">Download All DOCX</button>
+        <button class="rb-btn rb-btn-export rb-btn-lg" onclick="exportPDF('resume')">⬇ Resume PDF</button>
+        <button class="rb-btn rb-btn-export rb-btn-lg" onclick="exportDOCX('resume')">⬇ Resume DOCX</button>
+        <button class="rb-btn rb-btn-export rb-btn-lg" onclick="exportPDF('cover')">⬇ Cover Letter PDF</button>
+        <button class="rb-btn rb-btn-export rb-btn-lg" onclick="exportDOCX('cover')">⬇ Cover Letter DOCX</button>
       </div>
     </div>
   </section>
