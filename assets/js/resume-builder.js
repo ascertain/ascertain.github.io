@@ -1013,16 +1013,24 @@ function exportPDF(section) {
 
   showToast('Generating PDF — please wait...', 'info');
   try {
+    // Clone the paper content into a visible off-screen container for html2pdf
+    var clone = document.createElement('div');
+    clone.innerHTML = paper.innerHTML;
+    clone.style.cssText = 'position:fixed;left:-9999px;top:0;width:794px;background:#fff;color:#1a1a1a;font-family:Segoe UI,Helvetica Neue,Arial,sans-serif;font-size:11pt;line-height:1.5;padding:40px 48px;';
+    document.body.appendChild(clone);
+
     html2pdf().set({
-      margin: [0.4, 0.5, 0.4, 0.5],
+      margin: [0.3, 0.4, 0.3, 0.4],
       filename: name + '_' + type + '.pdf',
       image: { type: 'jpeg', quality: 0.98 },
-      html2canvas: { scale: 2, useCORS: true, letterRendering: true },
+      html2canvas: { scale: 2, useCORS: true, letterRendering: true, backgroundColor: '#ffffff' },
       jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' },
-      pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
-    }).from(paper).save().then(function() {
+      pagebreak: { mode: ['css', 'legacy'] },
+    }).from(clone).save().then(function() {
+      document.body.removeChild(clone);
       showToast(type.replace('_', ' ') + ' PDF downloaded!', 'success');
     }).catch(function(err) {
+      if (clone.parentNode) document.body.removeChild(clone);
       showToast('PDF export failed: ' + err.message, 'error');
     });
   } catch (err) {
