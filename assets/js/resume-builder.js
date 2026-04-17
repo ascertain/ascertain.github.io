@@ -209,8 +209,8 @@ function goToStep(step) {
       return;
     }
   }
-  if (step === 3 && currentStep === 2) {
-    showToast('Please click "Generate with AI" first', 'info');
+  if (step === 3 && !generatedResume) {
+    showToast('Please generate with AI or use the sample template first', 'info');
     return;
   }
   goToStepDirect(step);
@@ -775,7 +775,7 @@ function buildResumePrompt(profile, job) {
 }
 
 function buildCoverLetterPrompt(profile, job) {
-  return 'You are an expert cover letter writer for EU/Nordic job markets. Generate a professional cover letter in clean HTML format following Norwegian/Scandinavian business letter conventions.\n\n' +
+  return 'You are an expert cover letter writer for EU/Nordic job markets. Generate a professional, beautifully formatted cover letter in clean HTML following Norwegian/Scandinavian business letter conventions.\n\n' +
     'CANDIDATE INFORMATION:\n' +
     '- Name: ' + (profile.fullName || 'Not provided') + '\n' +
     '- Email: ' + (profile.email || 'Not provided') + '\n' +
@@ -789,15 +789,156 @@ function buildCoverLetterPrompt(profile, job) {
     '- Company: ' + (job.company || 'Not specified') + '\n' +
     '- Job Description: ' + job.description + '\n\n' +
     (job.notes ? 'ADDITIONAL INSTRUCTIONS: ' + job.notes + '\n\n' : '') +
-    'REQUIREMENTS:\n' +
-    '1. Output ONLY clean HTML (no <html>, <head>, <body> tags).\n' +
-    '2. Start with sender info (name, address, email, phone) aligned right, then date, then recipient.\n' +
-    '3. Use "Dear Hiring Manager," if no specific name.\n' +
-    '4. 3-4 paragraphs: enthusiasm for role/company, connect experience to JD requirements with specifics, closing with call to action.\n' +
-    '5. Professional but warm Scandinavian tone — direct, humble, collaborative.\n' +
-    '6. Keep under 350 words. Use <p> tags.\n' +
-    '7. Sign off with "Kind regards," / "Med vennlig hilsen," followed by candidate name.\n' +
-    '8. Do NOT include any CSS, style tags, or code block markers.';
+    'FORMAT & STYLE REQUIREMENTS:\n' +
+    '1. Output ONLY clean HTML (no <html>, <head>, <body>, <style> tags). No code blocks.\n' +
+    '2. LAYOUT: Use a proper business letter layout with clear visual hierarchy:\n' +
+    '   a) Sender block (top-right): name in bold, address, email, phone — use <div style="text-align:right;margin-bottom:20px;font-size:0.86rem;color:#333;line-height:1.6">\n' +
+    '   b) Date: left-aligned, formatted as "17 April 2026" — use <p style="margin:0 0 16px;font-size:0.86rem;color:#555">\n' +
+    '   c) Recipient: "Hiring Manager" + company name — use <p> tags with margin 0 0 6px\n' +
+    '   d) Salutation: "Dear Hiring Manager," — bold, with 14px bottom margin\n' +
+    '3. BODY: 3-4 well-crafted paragraphs with <p style="margin:0 0 12px;font-size:0.86rem;line-height:1.6">:\n' +
+    '   a) Opening: Express genuine interest in the role at the company. Reference the specific job title.\n' +
+    '   b) Relevance: Connect 2-3 specific achievements/experiences from the candidate\'s background to the job requirements. Use concrete numbers and outcomes.\n' +
+    '   c) Cultural fit: Show knowledge of the company and why the candidate is drawn to their mission/culture.\n' +
+    '   d) Closing: Express enthusiasm and availability. Include a call to action.\n' +
+    '4. SIGN-OFF: "Kind regards," or "Med vennlig hilsen," followed by the candidate name in bold — with 20px top margin.\n' +
+    '5. TONE: Professional but warm. Scandinavian style — direct, humble, collaborative. Avoid generic filler phrases.\n' +
+    '6. LENGTH: 250-350 words. Quality over quantity.\n' +
+    '7. All inline styles only. No CSS classes except structural ones. Colors: #1a1a1a body text, #333 secondary, #555 muted.\n' +
+    '8. Must look like a properly formatted professional letter when rendered in HTML.';
+}
+
+// ── Sample Template (no AI needed) ───────────────────────
+
+function buildSampleResume(profile, job) {
+  var name = profile.fullName || 'Your Name';
+  var title = job.title || 'Professional Title';
+  var contactParts = [];
+  if (profile.email) contactParts.push(profile.email);
+  if (profile.phone) contactParts.push(profile.phone);
+  if (profile.location) contactParts.push(profile.location);
+  if (profile.linkedin) contactParts.push('<a href="' + profile.linkedin + '">LinkedIn</a>');
+  if (profile.github) contactParts.push('<a href="' + profile.github + '">GitHub</a>');
+
+  var html = '<div class="resume-header">' +
+    '<h1 style="font-size:1.5rem;margin:0">' + escText(name) + '</h1>' +
+    '<p style="margin:2px 0;color:#555;font-size:0.9rem">' + escText(title) + '</p>' +
+    '<p class="resume-contact">' + (contactParts.length ? contactParts.join(' &nbsp;|&nbsp; ') : 'email@example.com | +47 000 00 000 | Oslo, Norway') + '</p>' +
+    '</div>';
+
+  // Profile
+  html += '<h2 style="font-size:0.92rem;margin:14px 0 6px;border-bottom:2px solid #2c3e50;padding-bottom:3px;text-transform:uppercase;letter-spacing:0.5px;font-weight:700;color:#2c3e50">PROFILE</h2>';
+  html += '<p style="margin:3px 0;font-size:0.86rem">' + escText(profile.summary || 'Experienced professional with a strong background in ' + title + '. Proven track record of delivering high-quality results, driving innovation, and collaborating effectively with cross-functional teams.') + '</p>';
+
+  // Key Skills
+  if (profile.skills) {
+    html += '<h2 style="font-size:0.92rem;margin:14px 0 6px;border-bottom:2px solid #2c3e50;padding-bottom:3px;text-transform:uppercase;letter-spacing:0.5px;font-weight:700;color:#2c3e50">KEY SKILLS</h2>';
+    html += '<div style="display:flex;flex-wrap:wrap;gap:6px">';
+    profile.skills.split(',').forEach(function(s) {
+      s = s.trim();
+      if (s) html += '<span style="background:#f0f4f8;padding:3px 10px;border-radius:4px;font-size:0.85rem;color:#1a1a1a">' + escText(s) + '</span>';
+    });
+    html += '</div>';
+  }
+
+  // Experience
+  html += '<h2 style="font-size:0.92rem;margin:14px 0 6px;border-bottom:2px solid #2c3e50;padding-bottom:3px;text-transform:uppercase;letter-spacing:0.5px;font-weight:700;color:#2c3e50">PROFESSIONAL EXPERIENCE</h2>';
+  if (profile.experience) {
+    var lines = profile.experience.split('\n').filter(function(l) { return l.trim(); });
+    lines.forEach(function(line) {
+      var trimmed = line.trim();
+      if (/^[-•–]/.test(trimmed)) {
+        html += '<li style="margin:2px 0;font-size:0.86rem;line-height:1.4;list-style:disc;margin-left:18px">' + escText(trimmed.replace(/^[-•–]\s*/, '')) + '</li>';
+      } else {
+        html += '<h3 style="font-size:0.88rem;color:#333;margin:8px 0 3px;font-weight:600">' + escText(trimmed) + '</h3>';
+      }
+    });
+  } else {
+    html += '<h3 style="font-size:0.88rem;color:#333;margin:8px 0 3px;font-weight:600">' + escText(title) + ' — Company Name (20XX–Present)</h3>';
+    html += '<ul style="margin:4px 0 8px 18px;padding:0">';
+    html += '<li style="margin:2px 0;font-size:0.86rem">Led key projects and delivered measurable improvements</li>';
+    html += '<li style="margin:2px 0;font-size:0.86rem">Collaborated with cross-functional teams to drive results</li>';
+    html += '<li style="margin:2px 0;font-size:0.86rem">Implemented best practices and modern technologies</li>';
+    html += '</ul>';
+  }
+
+  // Education
+  html += '<h2 style="font-size:0.92rem;margin:14px 0 6px;border-bottom:2px solid #2c3e50;padding-bottom:3px;text-transform:uppercase;letter-spacing:0.5px;font-weight:700;color:#2c3e50">EDUCATION & CERTIFICATIONS</h2>';
+  if (profile.education || profile.certifications) {
+    if (profile.education) html += '<p style="margin:3px 0;font-size:0.86rem">' + escText(profile.education) + '</p>';
+    if (profile.certifications) html += '<p style="margin:3px 0;font-size:0.86rem"><strong>Certifications:</strong> ' + escText(profile.certifications) + '</p>';
+  } else {
+    html += '<p style="margin:3px 0;font-size:0.86rem">B.Sc. / M.Sc. — University Name (Year)</p>';
+  }
+
+  // Languages
+  html += '<h2 style="font-size:0.92rem;margin:14px 0 6px;border-bottom:2px solid #2c3e50;padding-bottom:3px;text-transform:uppercase;letter-spacing:0.5px;font-weight:700;color:#2c3e50">LANGUAGES</h2>';
+  html += '<p style="margin:3px 0;font-size:0.86rem">English — Fluent &nbsp; | &nbsp; Norwegian — Basic/Intermediate</p>';
+
+  return html;
+}
+
+function buildSampleCoverLetter(profile, job) {
+  var name = profile.fullName || 'Your Name';
+  var title = job.title || 'the advertised position';
+  var company = job.company || 'your company';
+  var today = new Date();
+  var dateStr = today.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+
+  var html = '<div style="text-align:right;margin-bottom:20px;font-size:0.86rem;color:#333;line-height:1.6">';
+  html += '<strong>' + escText(name) + '</strong><br>';
+  if (profile.location) html += escText(profile.location) + '<br>';
+  if (profile.email) html += escText(profile.email) + '<br>';
+  if (profile.phone) html += escText(profile.phone) + '<br>';
+  html += '</div>';
+
+  html += '<p style="margin:0 0 16px;font-size:0.86rem;color:#555">' + dateStr + '</p>';
+
+  html += '<p style="margin:0 0 6px;font-size:0.86rem"><strong>Hiring Manager</strong></p>';
+  html += '<p style="margin:0 0 20px;font-size:0.86rem">' + escText(company) + '</p>';
+
+  html += '<p style="margin:0 0 14px;font-size:0.88rem"><strong>Dear Hiring Manager,</strong></p>';
+
+  html += '<p style="margin:0 0 12px;font-size:0.86rem;line-height:1.6">' +
+    'I am writing to express my strong interest in the <strong>' + escText(title) + '</strong> position at <strong>' + escText(company) + '</strong>. ' +
+    (profile.summary ? escText(profile.summary.substring(0, 200)) : 'With extensive experience in this field, I am confident that my skills and background align well with the requirements of this role.') +
+    '</p>';
+
+  html += '<p style="margin:0 0 12px;font-size:0.86rem;line-height:1.6">' +
+    'Throughout my career, I have developed deep expertise in ' +
+    (profile.skills ? escText(profile.skills.split(',').slice(0, 5).join(', ')) : 'key technologies and methodologies relevant to this role') +
+    '. I am passionate about delivering high-quality results and thrive in collaborative, agile environments where continuous improvement is valued.</p>';
+
+  html += '<p style="margin:0 0 12px;font-size:0.86rem;line-height:1.6">' +
+    'I would welcome the opportunity to discuss how my experience and skills can contribute to ' + escText(company) + '\'s continued success. ' +
+    'I am available for an interview at your convenience and look forward to hearing from you.</p>';
+
+  html += '<p style="margin:20px 0 4px;font-size:0.86rem">Kind regards,</p>';
+  html += '<p style="margin:0;font-size:0.86rem"><strong>' + escText(name) + '</strong></p>';
+
+  return html;
+}
+
+function escText(str) {
+  var div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+function useSampleTemplate() {
+  var profile = getProfileData();
+  var job = getJobData();
+
+  var resumeHtml = buildSampleResume(profile, job);
+  var coverHtml = buildSampleCoverLetter(profile, job);
+
+  generatedResume = resumeHtml;
+  generatedCover = coverHtml;
+  document.getElementById('resumePreview').innerHTML = resumeHtml;
+  document.getElementById('coverPreview').innerHTML = coverHtml;
+
+  goToStepDirect(3);
+  showToast('Sample template loaded — edit it, then export as PDF or DOCX!', 'success');
 }
 
 // ── HTML Sanitizer ───────────────────────────────────────

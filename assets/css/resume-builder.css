@@ -478,6 +478,17 @@
   border-color: #388bfd;
   color: #fff;
 }
+.rb-btn-secondary {
+  background: transparent;
+  border: 2px solid #8b949e;
+  color: #c9d1d9;
+  font-weight: 600;
+}
+.rb-btn-secondary:hover {
+  background: rgba(139, 148, 158, 0.15);
+  border-color: #c9d1d9;
+  color: #fff;
+}
 .rb-btn-generate {
   min-width: 200px;
   position: relative;
@@ -658,6 +669,20 @@
   padding: 100px 0;
   font-style: italic;
   font-family: 'Segoe UI', sans-serif;
+}
+/* Cover letter specific */
+#preview-cover .rb-preview-paper {
+  padding: 48px 56px;
+  line-height: 1.65;
+}
+#preview-cover .rb-preview-paper p {
+  font-size: 0.86rem;
+  line-height: 1.65;
+  margin: 0 0 12px;
+  color: #1a1a1a;
+}
+#preview-cover .rb-preview-paper strong {
+  color: #1a1a1a;
 }
 
 /* ── Export actions ───────────────────────────────────── */
