@@ -84,23 +84,23 @@
 
 /* ── API Banner ──────────────────────────────────────── */
 .rb-api-banner {
-  background: #0f2444;
-  border: 1px solid #3b82f6;
+  background: #dde1e7;
+  border: 1px solid #b0b8c4;
   border-radius: 10px;
   margin-bottom: 24px;
   overflow: hidden;
 }
 .rb-api-inner {
-  padding: 16px 20px;
+  padding: 18px 22px;
   font-size: 0.95rem;
-  color: #e2e8f0;
+  color: #1e293b;
   line-height: 1.6;
 }
 .rb-api-inner strong {
-  color: #fff;
+  color: #0f172a;
 }
 .rb-api-inner a {
-  color: #60a5fa;
+  color: #1d4ed8;
   text-decoration: underline;
 }
 .rb-api-row {
@@ -113,18 +113,18 @@
   flex: 1;
   padding: 10px 14px;
   border-radius: 6px;
-  border: 1px solid #475569;
-  background: #1e293b;
-  color: #f1f5f9;
+  border: 1px solid #94a3b8;
+  background: #fff;
+  color: #1e293b;
   font-size: 0.93rem;
 }
 .rb-api-row input::placeholder {
-  color: #64748b;
+  color: #94a3b8;
 }
 .rb-api-row input:focus {
   outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
 }
 .rb-api-row .rb-btn {
   background: #2563eb;
@@ -151,7 +151,7 @@
 .rb-api-note {
   display: block;
   margin-top: 8px;
-  color: #94a3b8;
+  color: #475569;
   font-size: 0.82rem;
 }
 .rb-provider-selector {
@@ -163,16 +163,16 @@
 .rb-provider-selector label {
   font-weight: 600;
   font-size: 0.9rem;
-  color: #e2e8f0;
+  color: #1e293b;
   white-space: nowrap;
 }
 .rb-provider-selector select {
   flex: 1;
   padding: 8px 12px;
   border-radius: 6px;
-  border: 1px solid #475569;
-  background: #1e293b;
-  color: #f1f5f9;
+  border: 1px solid #94a3b8;
+  background: #fff;
+  color: #1e293b;
   font-size: 0.9rem;
   cursor: pointer;
   max-width: 420px;
@@ -214,11 +214,11 @@
   color: #fff;
 }
 .rb-api-banner.saved {
-  border-color: #22c55e;
-  background: #0c2a1a;
+  border-color: #16a34a;
+  background: #dcfce7;
 }
 .rb-api-banner.saved .rb-api-inner {
-  color: #d1fae5;
+  color: #14532d;
 }
 
 /* ── Job URL Fetch ───────────────────────────────────── */
