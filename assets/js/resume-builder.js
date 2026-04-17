@@ -50,27 +50,27 @@ const AI_PROVIDERS = {
     call: callOpenRouter,
   },
   // ── HuggingFace: Free token required ───────────────────
+  'huggingface-qwen': {
+    label: 'HuggingFace Qwen 2.5 72B (Free Token)',
+    model: 'Qwen/Qwen2.5-72B-Instruct',
+    needsKey: true,
+    getKeyUrl: 'https://huggingface.co/settings/tokens/new?ownUserPermissions=inference.serverless.write&tokenType=fineGrained',
+    keyStorageId: 'rb_key_huggingface',
+    call: callHuggingFace,
+  },
   'huggingface-mistral': {
     label: 'HuggingFace Mistral 7B (Free Token)',
     model: 'mistralai/Mistral-7B-Instruct-v0.3',
     needsKey: true,
-    getKeyUrl: 'https://huggingface.co/settings/tokens',
+    getKeyUrl: 'https://huggingface.co/settings/tokens/new?ownUserPermissions=inference.serverless.write&tokenType=fineGrained',
     keyStorageId: 'rb_key_huggingface',
     call: callHuggingFace,
   },
-  'huggingface-phi': {
-    label: 'HuggingFace Phi 3.5 Mini (Free Token)',
-    model: 'microsoft/Phi-3.5-mini-instruct',
+  'huggingface-llama': {
+    label: 'HuggingFace Llama 3.1 8B (Free Token)',
+    model: 'meta-llama/Llama-3.1-8B-Instruct',
     needsKey: true,
-    getKeyUrl: 'https://huggingface.co/settings/tokens',
-    keyStorageId: 'rb_key_huggingface',
-    call: callHuggingFace,
-  },
-  'huggingface-zephyr': {
-    label: 'HuggingFace Zephyr 7B (Free Token)',
-    model: 'HuggingFaceH4/zephyr-7b-beta',
-    needsKey: true,
-    getKeyUrl: 'https://huggingface.co/settings/tokens',
+    getKeyUrl: 'https://huggingface.co/settings/tokens/new?ownUserPermissions=inference.serverless.write&tokenType=fineGrained',
     keyStorageId: 'rb_key_huggingface',
     call: callHuggingFace,
   },
@@ -466,9 +466,9 @@ async function fetchJobFromURL() {
 async function callHuggingFace(prompt, providerId) {
   var provider = AI_PROVIDERS[providerId];
   var apiKey = getProviderKey(providerId);
-  if (!apiKey) throw new Error('HuggingFace token required (free).\n\n1. Go to huggingface.co/settings/tokens\n2. Sign up (free) with Google/GitHub\n3. Click "Create new token" (read access is enough)\n4. Paste it above and click Save Key');
+  if (!apiKey) throw new Error('HuggingFace token required (free).\n\n1. Go to huggingface.co/settings/tokens\n2. Sign up (free) with Google/GitHub\n3. Click "Create new token" → Fine-grained → enable "Make calls to Inference Providers"\n4. Paste it above and click Save Key');
 
-  var url = 'https://api-inference.huggingface.co/models/' + provider.model + '/v1/chat/completions';
+  var url = 'https://router.huggingface.co/v1/chat/completions';
 
   var resp;
   try {
