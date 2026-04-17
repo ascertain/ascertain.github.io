@@ -184,6 +184,18 @@ permalink: /resume-builder/
     </div>
 
     <div class="rb-field rb-field-full">
+      <label for="jobUrl">Fetch from Job Posting URL <small>(auto-extract job details)</small></label>
+      <div class="rb-url-row">
+        <input type="url" id="jobUrl" placeholder="https://linkedin.com/jobs/view/... or any job posting URL">
+        <button class="rb-btn rb-btn-fetch" id="fetchUrlBtn" onclick="fetchJobFromURL()">
+          <span class="rb-btn-text">Fetch Job</span>
+          <span class="rb-btn-loading rb-hidden">Fetching...</span>
+        </button>
+      </div>
+      <div class="rb-url-divider">— OR paste manually —</div>
+    </div>
+
+    <div class="rb-field rb-field-full">
       <label for="jobDescription">Paste the full Job Description *</label>
       <textarea id="jobDescription" rows="15" placeholder="We are looking for an experienced Senior SDET to join our engineering team...&#10;&#10;Requirements:&#10;- 5+ years of test automation experience&#10;- Experience with Playwright or Selenium&#10;- CI/CD pipeline experience&#10;- Strong coding skills in Python or TypeScript..."></textarea>
     </div>

@@ -336,6 +336,127 @@ function getJobData() {
   };
 }
 
+// ── Fetch Job from URL ───────────────────────────────────
+
+async function fetchJobFromURL() {
+  var urlInput = document.getElementById('jobUrl');
+  var url = urlInput.value.trim();
+
+  if (!url) {
+    showToast('Please enter a job posting URL', 'error');
+    urlInput.focus();
+    return;
+  }
+
+  // Basic URL validation
+  try { new URL(url); } catch (e) {
+    showToast('Please enter a valid URL (starting with https://)', 'error');
+    return;
+  }
+
+  var btn = document.getElementById('fetchUrlBtn');
+  btn.querySelector('.rb-btn-text').classList.add('rb-hidden');
+  btn.querySelector('.rb-btn-loading').classList.remove('rb-hidden');
+  btn.disabled = true;
+
+  showToast('Fetching job posting...', 'info');
+
+  try {
+    // Use a public CORS proxy to fetch the page content
+    var proxyUrls = [
+      'https://api.allorigins.win/raw?url=' + encodeURIComponent(url),
+      'https://corsproxy.io/?' + encodeURIComponent(url),
+    ];
+
+    var html = '';
+    var fetched = false;
+    for (var i = 0; i < proxyUrls.length; i++) {
+      try {
+        var resp = await fetch(proxyUrls[i], { signal: AbortSignal.timeout(15000) });
+        if (resp.ok) {
+          html = await resp.text();
+          fetched = true;
+          break;
+        }
+      } catch (proxyErr) {
+        continue;
+      }
+    }
+
+    if (!fetched || !html) {
+      throw new Error('Could not fetch the page. The site may block external access. Please copy-paste the job description manually.');
+    }
+
+    // Parse HTML and extract text content
+    var parser = new DOMParser();
+    var doc = parser.parseFromString(html, 'text/html');
+
+    // Remove noise elements
+    doc.querySelectorAll('script, style, nav, header, footer, iframe, noscript, svg, img, link, meta').forEach(function(el) { el.remove(); });
+
+    // Try to find the main job content by common selectors
+    var jobContent = '';
+    var selectors = [
+      '.job-description', '.jobs-description', '.job-details',
+      '.description__text', '.show-more-less-html', '.job-view-layout',
+      '[data-job-description]', '.posting-requirements', '.job-posting',
+      'article', 'main', '[role="main"]',
+    ];
+
+    for (var s = 0; s < selectors.length; s++) {
+      var el = doc.querySelector(selectors[s]);
+      if (el && el.innerText && el.innerText.trim().length > 100) {
+        jobContent = el.innerText.trim();
+        break;
+      }
+    }
+
+    // Fallback: get body text
+    if (!jobContent) {
+      jobContent = (doc.body && doc.body.innerText) || '';
+    }
+
+    // Clean up excessive whitespace
+    jobContent = jobContent.replace(/\n{3,}/g, '\n\n').replace(/[ \t]{2,}/g, ' ').trim();
+
+    if (jobContent.length < 50) {
+      throw new Error('Could not extract enough content from the page. Please copy-paste the job description manually.');
+    }
+
+    // Truncate if extremely long (keep first 8000 chars)
+    if (jobContent.length > 8000) {
+      jobContent = jobContent.substring(0, 8000) + '\n\n[Content truncated — edit if needed]';
+    }
+
+    // Fill the textarea
+    document.getElementById('jobDescription').value = jobContent;
+
+    // Try to auto-detect title and company from the page
+    var pageTitle = doc.querySelector('title');
+    if (pageTitle) {
+      var titleText = pageTitle.textContent || '';
+      // Common patterns: "Job Title at Company" or "Job Title - Company"
+      var titleMatch = titleText.match(/^(.+?)\s*(?:at|[-–|@])\s*(.+?)(?:\s*[-–|]|$)/i);
+      if (titleMatch) {
+        if (!document.getElementById('jobTitle').value) {
+          document.getElementById('jobTitle').value = titleMatch[1].trim();
+        }
+        if (!document.getElementById('companyName').value) {
+          document.getElementById('companyName').value = titleMatch[2].trim();
+        }
+      }
+    }
+
+    showToast('Job posting fetched! Review the extracted content below.', 'success');
+  } catch (err) {
+    showError('Fetch Failed', err.message);
+  } finally {
+    btn.querySelector('.rb-btn-text').classList.remove('rb-hidden');
+    btn.querySelector('.rb-btn-loading').classList.add('rb-hidden');
+    btn.disabled = false;
+  }
+}
+
 // ══════════════════════════════════════════════════════════
 // AI PROVIDER IMPLEMENTATIONS
 // ══════════════════════════════════════════════════════════
