@@ -35,7 +35,7 @@ permalink: /kashif-blog/
     <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
     <p class="post-meta">
       {{ post.date | date: "%B %d, %Y" }}
-      {% if post.tags %} · {% for tag in post.tags %}<span class="tag">{{ tag }}</span> {% endfor %}{% endif %}
+      {% if post.tags %} · {% assign hidden_tags = "kashif,mohammad-kashif,kashif-subrati,kashif-sdet,kashif-quality-engineer,kashif-automation-specialist,kashif-testing-blog" | split: "," %}{% for tag in post.tags %}{% unless hidden_tags contains tag %}<span class="tag">{{ tag }}</span> {% endunless %}{% endfor %}{% endif %}
     </p>
     <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
   </li>
