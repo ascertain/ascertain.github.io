@@ -1,0 +1,43 @@
+---
+layout: default
+title: "Kashif's Blog"
+permalink: /kashif-blog/
+---
+
+<style>
+  .blog-header {
+    text-align: center;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 40px 24px 32px;
+    margin-bottom: 40px;
+  }
+  .blog-header h1 {
+    font-size: 2.2rem;
+    color: #f0f6fc;
+    margin-bottom: 8px;
+  }
+  .blog-header p {
+    color: #8b949e;
+    font-size: 1.05rem;
+  }
+</style>
+
+<div class="blog-header">
+  <h1>📝 Kashif's Engineering Blog</h1>
+  <p>Test Automation · AI & Agentic Workflows · DevOps · Quality Engineering</p>
+</div>
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <p class="post-meta">
+      {{ post.date | date: "%B %d, %Y" }}
+      {% if post.tags %} · {% for tag in post.tags %}<span class="tag">{{ tag }}</span> {% endfor %}{% endif %}
+    </p>
+    <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+  </li>
+  {% endfor %}
+</ul>

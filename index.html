@@ -1,18 +1,243 @@
 ---
 layout: default
+title: "Mohammad Kashif — Automation Specialist"
 ---
 
-<h1>Latest Posts</h1>
+<style>
+  .hero-home {
+    text-align: center;
+    padding: 60px 0 40px;
+  }
+  .hero-home .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1f6feb, #8957e5);
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    border: 3px solid #30363d;
+  }
+  .hero-home h1 {
+    font-size: 2.6rem;
+    margin-bottom: 8px;
+    color: #f0f6fc;
+  }
+  .hero-home .tagline {
+    font-size: 1.2rem;
+    color: #58a6ff;
+    margin-bottom: 24px;
+    font-weight: 600;
+  }
+  .hero-home .intro {
+    max-width: 680px;
+    margin: 0 auto 32px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #c9d1d9;
+  }
+  .home-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+  }
+  .home-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 28px 24px;
+    text-align: center;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .home-card:hover {
+    border-color: #58a6ff;
+    transform: translateY(-3px);
+  }
+  .home-card .icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+  .home-card h3 {
+    color: #f0f6fc;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+  }
+  .home-card p {
+    color: #8b949e;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  .expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin: 32px 0;
+  }
+  .expertise-item {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    padding: 20px;
+    border-left: 3px solid #1f6feb;
+  }
+  .expertise-item h4 {
+    color: #58a6ff;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+  }
+  .expertise-item p {
+    color: #8b949e;
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  .home-cta {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px 0 20px;
+  }
+  .home-cta a {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: opacity 0.2s;
+  }
+  .home-cta a:hover { opacity: 0.85; }
+  .btn-primary { background: #1f6feb; color: #fff; }
+  .btn-secondary { background: #21262d; color: #c9d1d9; border: 1px solid #30363d; }
+  .btn-accent { background: #238636; color: #fff; }
+  .section-title {
+    font-size: 1.5rem;
+    color: #f0f6fc;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .connect-links {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 24px 0;
+  }
+  .connect-links a {
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    background: #161b22;
+    transition: border-color 0.2s;
+  }
+  .connect-links a:hover { border-color: #58a6ff; }
+  .cert-badges {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 24px 0;
+  }
+  .cert-badge {
+    background: #1f6feb22;
+    color: #58a6ff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+</style>
 
-<ul class="post-list">
-  {% for post in site.posts %}
-  <li>
-    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-    <p class="post-meta">
-      {{ post.date | date: "%B %d, %Y" }}
-      {% if post.tags %} · {% for tag in post.tags %}<span class="tag">{{ tag }}</span> {% endfor %}{% endif %}
-    </p>
-    <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
-  </li>
-  {% endfor %}
-</ul>
+<div class="hero-home">
+  <div class="avatar">MK</div>
+  <h1>Mohammad Kashif</h1>
+  <p class="tagline">Automation Specialist · SDET · Quality Engineer · AI Enthusiast</p>
+  <p class="intro">
+    15+ years turning chaotic software releases into smooth, confident deliveries.
+    I build test automation frameworks, design CI/CD pipelines, and bring AI-driven quality engineering
+    to teams that ship products used by <strong>300M+ users worldwide</strong>.
+    From <strong>IKEA</strong> to <strong>Truecaller</strong> to <strong>LEGO</strong> — I've helped global brands
+    deliver software that works, scales, and earns user trust.
+  </p>
+
+  <div class="cert-badges">
+    <span class="cert-badge">🏅 ISTQB</span>
+    <span class="cert-badge">☁️ AWS</span>
+    <span class="cert-badge">☁️ GCP</span>
+    <span class="cert-badge">📋 ITIL</span>
+    <span class="cert-badge">🔒 Ethical Hacking</span>
+    <span class="cert-badge">📊 Six Sigma Green Belt</span>
+  </div>
+</div>
+
+<h2 class="section-title">What I Do</h2>
+
+<div class="expertise-grid">
+  <div class="expertise-item">
+    <h4>🤖 Test Automation</h4>
+    <p>Playwright, Selenium, Cypress, Appium — building frameworks that run thousands of tests in minutes.</p>
+  </div>
+  <div class="expertise-item">
+    <h4>🧠 AI & Agentic Workflows</h4>
+    <p>LLM-powered exploratory testing, intelligent automation agents, and AI-driven quality pipelines.</p>
+  </div>
+  <div class="expertise-item">
+    <h4>☁️ Cloud & DevOps</h4>
+    <p>GCP, AWS, Docker, Kubernetes, Terraform — infrastructure as code and cloud-native delivery.</p>
+  </div>
+  <div class="expertise-item">
+    <h4>🚀 CI/CD Engineering</h4>
+    <p>GitHub Actions, Jenkins, GitLab CI — automated pipelines from commit to production.</p>
+  </div>
+  <div class="expertise-item">
+    <h4>📊 Quality Strategy</h4>
+    <p>Shift-left testing, quality governance, test pyramid design, and whole-team quality culture.</p>
+  </div>
+  <div class="expertise-item">
+    <h4>🧑‍💻 Real-Time Testing</h4>
+    <p>Exploratory testing, UX validation, accessibility audits, and real-device mobile testing.</p>
+  </div>
+</div>
+
+<h2 class="section-title">Explore</h2>
+
+<div class="home-cards">
+  <a href="{{ '/kashif-blog/' | relative_url }}" class="home-card" style="text-decoration:none;">
+    <div class="icon">📝</div>
+    <h3>Blog</h3>
+    <p>Engineering insights on testing, automation, AI workflows, and quality strategy.</p>
+  </a>
+  <a href="{{ '/kashif-resume/' | relative_url }}" class="home-card" style="text-decoration:none;">
+    <div class="icon">📄</div>
+    <h3>Resume</h3>
+    <p>Full professional experience, skills, certifications, and career highlights.</p>
+  </a>
+  <a href="https://github.com/ascertain" target="_blank" class="home-card" style="text-decoration:none;">
+    <div class="icon">💻</div>
+    <h3>GitHub</h3>
+    <p>Open-source projects, automation frameworks, and engineering tools.</p>
+  </a>
+</div>
+
+<div class="home-cta">
+  <a href="{{ '/kashif-blog/' | relative_url }}" class="btn-primary">Read the Blog</a>
+  <a href="{{ '/kashif-resume/' | relative_url }}" class="btn-secondary">View Resume</a>
+  <a href="https://www.linkedin.com/in/md-kashif/" target="_blank" class="btn-accent">Connect on LinkedIn</a>
+</div>
+
+<h2 class="section-title">Connect</h2>
+
+<div class="connect-links">
+  <a href="https://github.com/ascertain" target="_blank">🐙 GitHub</a>
+  <a href="https://www.linkedin.com/in/md-kashif/" target="_blank">💼 LinkedIn</a>
+  <a href="mailto:mo.kashif@gmail.com">✉️ Email</a>
+</div>
