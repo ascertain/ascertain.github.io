@@ -15,6 +15,7 @@ highlighter: rouge
 permalink: /:year/:month/:day/:title/
 paginate: 5
 future: true
+theme: null
 
 # Theme (using custom layouts + CSS, no remote theme)
 
