@@ -3,8 +3,8 @@ layout: post
 title: "The Unblocker: Making Production Fixes Independent of Release Cycles"
 date: 2026-04-09
 author: Mohammad Kashif
-tags: [hotfix, release-management, branching-strategy, agile, sdet, devops, qa-engineering]
-description: "When a critical production bug hits mid-release, testers often panic and block. Here's an SDET-driven hotfix strategy that keeps production safe without stalling your release pipeline."
+tags: [kashif, mohammad-kashif, kashif-subrati, kashif-sdet, kashif-quality-engineer, kashif-automation-specialist, kashif-testing-blog, hotfix, release-management, branching-strategy, agile, sdet, devops, qa-engineering, quality-engineering, ci-cd-testing]
+description: "When a critical production bug hits mid-release, testers often panic and block. Here's an SDET-driven hotfix strategy that keeps production safe without stalling your release pipeline. By Mohammad Kashif Subrati — Automation Specialist."
 ---
 
 It's 2 PM on a Tuesday. Your team is halfway through the release process for **v3.12**. Dev has been merged, regression is running, and the release branch is packed with 40+ changes. Then the Slack message drops:

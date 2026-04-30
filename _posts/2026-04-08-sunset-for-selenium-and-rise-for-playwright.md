@@ -3,8 +3,8 @@ layout: post
 title: "Sunset for Selenium and Rise for Playwright"
 date: 2026-04-08
 author: Mohammad Kashif
-tags: [playwright, selenium, test-automation, qa-engineering]
-description: "After years of building enterprise test suites with Selenium, here's why we made the switch to Playwright — and how it transformed our testing culture."
+tags: [kashif, mohammad-kashif, kashif-subrati, kashif-sdet, kashif-quality-engineer, kashif-automation-specialist, kashif-testing-blog, playwright, selenium, test-automation, qa-engineering, sdet, quality-engineering, automation]
+description: "After years of building enterprise test suites with Selenium, here's why we made the switch to Playwright — and how it transformed our testing culture. By Mohammad Kashif Subrati — Automation Specialist."
 ---
 
 For over a decade, **Selenium** was the undisputed king of browser automation. Every QA engineer knew it. Every job listing mentioned it. It was the first tool you learned and the last one you questioned.

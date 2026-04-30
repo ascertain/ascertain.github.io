@@ -1,10 +1,49 @@
 ---
 layout: post
-title: "Automation Is Not Enough: Why Real-Time Testing Is the Voice Your Users Actually Need"
+title: "The Green Illusion: When Passing Tests Hide Failing Experiences"
 date: 2026-04-30
 author: Mohammad Kashif
-tags: [testing, automation, exploratory-testing, real-time-testing, regression, quality-engineering, sdet, user-experience]
-description: "Test automation dominates the QA conversation — but it's real-time, human-driven testing that catches what users actually feel. Here's why your automation strategy is incomplete without it."
+tags: [kashif, mohammad-kashif, kashif-subrati, kashif-sdet, kashif-quality-engineer, kashif-automation-specialist, kashif-testing-blog, testing, automation, exploratory-testing, real-time-testing, regression, quality-engineering, sdet, user-experience, manual-testing-vs-automation, test-strategy, end-to-end-testing, ci-cd-testing, software-quality, ux-testing, functional-testing, test-pyramid, playwright, selenium, qa-best-practices, appium, cypress, api-testing, performance-testing, mobile-testing, devops, agile-testing, shift-left-testing, continuous-testing]
+categories: [testing, quality-engineering, kashif-blog]
+description: "Your CI is green, your coverage is high, and your dashboards glow with confidence — but your users are frustrated. Here's why automation without exploratory and real-time testing is a beautiful lie. By Mohammad Kashif Subrati — SDET, Automation Specialist & Quality Engineer."
+keywords:
+  - Mohammad Kashif
+  - Kashif Subrati
+  - Mohammad Kashif Subrati
+  - Kashif SDET
+  - Kashif Automation Specialist
+  - Kashif testing blog
+  - Kashif quality engineer
+  - Kashif automation engineer
+  - Kashif Subrati SDET
+  - Kashif Subrati automation specialist
+  - test automation vs manual testing
+  - why automation is not enough
+  - exploratory testing importance
+  - real time testing vs automated testing
+  - test automation limitations
+  - regression testing automation
+  - software testing strategy 2026
+  - SDET best practices
+  - quality engineering approach
+  - user experience testing
+  - functional testing automation
+  - real user testing
+  - end to end testing strategy
+  - CI CD pipeline testing
+  - test pyramid real world
+  - exploratory testing vs scripted testing
+  - mobile testing real devices
+  - accessibility testing automation
+  - when to automate tests
+  - human testing vs automated testing
+  - Kashif blog on testing
+  - Mohammad Kashif SDET blog
+  - shift left testing strategy
+  - continuous testing approach
+  - agile testing best practices
+image: /assets/img/green-illusion-testing-blog.png
+canonical_url: "https://ascertain.github.io/2026/04/30/automation-is-not-enough-real-time-testing-matters/"
 ---
 
 Every conference talk, every LinkedIn post, every job description — they all scream the same thing: **automate everything**. And I get it. Automation is powerful. It's fast. It's repeatable. It gives you confidence in your regression suite. But here's the uncomfortable truth nobody wants to say out loud:

@@ -3,8 +3,8 @@ layout: post
 title: "The A11y Agent: Automating WCAG Compliance Across Selenium, Playwright, Cypress & Appium"
 date: 2026-04-17
 author: Mohammad Kashif
-tags: [accessibility, wcag, automation, playwright, selenium, appium, cypress, a11y, compliance, agentic-ai, sdet]
-description: "Build a reusable Accessibility Agent and Skill that plugs into Selenium, Playwright, Cypress, or Appium — and validates against WCAG 2.0, 2.1, and 2.2 conformance levels mapped to EU, US, and APAC regulations."
+tags: [kashif, mohammad-kashif, kashif-subrati, kashif-sdet, kashif-quality-engineer, kashif-automation-specialist, kashif-testing-blog, accessibility, wcag, automation, playwright, selenium, appium, cypress, a11y, compliance, agentic-ai, sdet, quality-engineering, ci-cd-testing]
+description: "Build a reusable Accessibility Agent and Skill that plugs into Selenium, Playwright, Cypress, or Appium — and validates against WCAG 2.0, 2.1, and 2.2 conformance levels mapped to EU, US, and APAC regulations. By Mohammad Kashif Subrati — Automation Specialist."
 ---
 
 Accessibility isn't optional anymore. It's **law**. Whether you're shipping a web app in the US, a mobile app in the EU, or a digital product across APAC — your software must meet accessibility standards. And the testing industry has been slow to automate this properly.
