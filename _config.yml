@@ -1,6 +1,6 @@
 title: "Kashif — Discoverer"
-description: "Test Automation | Agentic AI Workflows | DevOps | Quality Engineering"
-author: "Mohammad Kashif"
+description: "Mohammad Kashif Subrati | Ascertain | Test Automation Specialist | SDET | Quality Engineer | DevOps | AI Workflows | Kashif Subrati Blog"
+author: "Mohammad Kashif Subrati"
 email: mo.kashif@gmail.com
 url: "https://ascertain.github.io"
 baseurl: ""
@@ -28,10 +28,26 @@ plugins:
 twitter:
   card: summary
 social:
-  name: Mohammad Kashif
+  name: Mohammad Kashif Subrati
   links:
     - https://github.com/ascertain
     - https://www.linkedin.com/in/md-kashif/
+
+# Site-wide keywords for SEO
+keywords:
+  - ascertain
+  - kashif
+  - subrati
+  - mohammad kashif
+  - mohammad kashif subrati
+  - kashif subrati
+  - ascertain kashif
+  - ascertain subrati
+  - kashif automation specialist
+  - kashif subrati sdet
+  - kashif subrati automation
+  - ascertain blog
+  - ascertain github
 
 # Defaults
 defaults:
