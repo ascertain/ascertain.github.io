@@ -9,8 +9,8 @@ title: "Mohammad Kashif — Automation Specialist"
     padding: 60px 0 40px;
   }
   .hero-home .avatar {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     background: linear-gradient(135deg, #1f6feb, #8957e5);
     color: #fff;
@@ -20,7 +20,8 @@ title: "Mohammad Kashif — Automation Specialist"
     align-items: center;
     justify-content: center;
     margin: 0 auto 24px;
-    border: 3px solid #30363d;
+    border: 3px solid #484f58;
+    box-shadow: 0 0 30px rgba(31, 111, 235, 0.15);
   }
   .hero-home h1 {
     font-size: 2.6rem;
@@ -28,17 +29,49 @@ title: "Mohammad Kashif — Automation Specialist"
     color: #f0f6fc;
   }
   .hero-home .tagline {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: #58a6ff;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
     font-weight: 600;
   }
   .hero-home .intro {
-    max-width: 680px;
-    margin: 0 auto 32px;
+    max-width: 700px;
+    margin: 0 auto 20px;
     font-size: 1.05rem;
-    line-height: 1.8;
+    line-height: 1.85;
+    color: #e6edf3;
+  }
+  .hero-home .intro strong {
+    color: #f0f6fc;
+  }
+  .personal-section {
+    max-width: 700px;
+    margin: 0 auto 32px;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 28px 32px;
+  }
+  .personal-section h3 {
+    color: #f0f6fc;
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+  }
+  .personal-section p {
     color: #c9d1d9;
+    font-size: 0.98rem;
+    line-height: 1.8;
+    margin-bottom: 12px;
+  }
+  .personal-section p:last-child {
+    margin-bottom: 0;
+  }
+  .personal-section strong {
+    color: #f0f6fc;
+  }
+  .personal-section .place {
+    color: #58a6ff;
+    font-weight: 600;
   }
   .home-cards {
     display: grid;
@@ -52,11 +85,12 @@ title: "Mohammad Kashif — Automation Specialist"
     border-radius: 12px;
     padding: 28px 24px;
     text-align: center;
-    transition: border-color 0.2s, transform 0.2s;
+    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
   }
   .home-card:hover {
     border-color: #58a6ff;
     transform: translateY(-3px);
+    box-shadow: 0 4px 20px rgba(88, 166, 255, 0.08);
   }
   .home-card .icon {
     font-size: 2rem;
@@ -84,6 +118,10 @@ title: "Mohammad Kashif — Automation Specialist"
     border-radius: 10px;
     padding: 20px;
     border-left: 3px solid #1f6feb;
+    transition: border-color 0.2s;
+  }
+  .expertise-item:hover {
+    border-color: #58a6ff;
   }
   .expertise-item h4 {
     color: #58a6ff;
@@ -91,7 +129,7 @@ title: "Mohammad Kashif — Automation Specialist"
     font-size: 0.95rem;
   }
   .expertise-item p {
-    color: #8b949e;
+    color: #c9d1d9;
     font-size: 0.85rem;
     line-height: 1.5;
   }
@@ -109,11 +147,11 @@ title: "Mohammad Kashif — Automation Specialist"
     font-weight: 600;
     text-decoration: none;
     font-size: 1rem;
-    transition: opacity 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
   }
-  .home-cta a:hover { opacity: 0.85; }
+  .home-cta a:hover { opacity: 0.85; transform: translateY(-1px); }
   .btn-primary { background: #1f6feb; color: #fff; }
-  .btn-secondary { background: #21262d; color: #c9d1d9; border: 1px solid #30363d; }
+  .btn-secondary { background: #21262d; color: #e6edf3; border: 1px solid #30363d; }
   .btn-accent { background: #238636; color: #fff; }
   .section-title {
     font-size: 1.5rem;
@@ -133,13 +171,13 @@ title: "Mohammad Kashif — Automation Specialist"
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
-    padding: 8px 16px;
+    padding: 10px 18px;
     border: 1px solid #30363d;
     border-radius: 8px;
     background: #161b22;
-    transition: border-color 0.2s;
+    transition: border-color 0.2s, transform 0.2s;
   }
-  .connect-links a:hover { border-color: #58a6ff; }
+  .connect-links a:hover { border-color: #58a6ff; transform: translateY(-1px); }
   .cert-badges {
     display: flex;
     gap: 12px;
@@ -154,6 +192,13 @@ title: "Mohammad Kashif — Automation Specialist"
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 600;
+    border: 1px solid rgba(31, 111, 235, 0.2);
+  }
+  .divider {
+    border: none;
+    border-top: 1px solid #30363d;
+    margin: 48px auto;
+    max-width: 200px;
   }
 </style>
 
@@ -161,12 +206,18 @@ title: "Mohammad Kashif — Automation Specialist"
   <div class="avatar">MK</div>
   <h1>Mohammad Kashif</h1>
   <p class="tagline">Automation Specialist · SDET · Quality Engineer · AI Enthusiast</p>
+
   <p class="intro">
-    15+ years turning chaotic software releases into smooth, confident deliveries.
-    I build test automation frameworks, design CI/CD pipelines, and bring AI-driven quality engineering
-    to teams that ship products used by <strong>300M+ users worldwide</strong>.
-    From <strong>IKEA</strong> to <strong>Truecaller</strong> to <strong>LEGO</strong> — I've helped global brands
-    deliver software that works, scales, and earns user trust.
+    I'm Kashif — I live in beautiful <strong>Malmö, Sweden</strong> with my wife and kid. 
+    A proud hybrid family — my roots in <strong>India</strong>, my wife from <strong>Morocco</strong>, 
+    and our home in Scandinavia.
+  </p>
+
+  <p class="intro">
+    I'm the kind of person who loves to automate everything — but never at the cost of quality. 
+    <strong>Quality is not just what I do, it's who I am.</strong> It's always on the top of my mind — 
+    whether I'm writing a test framework, reviewing a pipeline, or shipping a feature. 
+    I believe automation should serve quality, not replace the thinking behind it.
   </p>
 
   <div class="cert-badges">
@@ -179,7 +230,35 @@ title: "Mohammad Kashif — Automation Specialist"
   </div>
 </div>
 
+<div class="personal-section">
+  <h3>🌍 Beyond the Code</h3>
+  <p>
+    In my free time, I write blogs and contribute to the <strong>QA community</strong> — especially 
+    in the test automation space. If I can help one engineer automate smarter or think deeper about 
+    quality, that's a good day.
+  </p>
+  <p>
+    When I'm not at the keyboard, I'm spending time with my family. We visit 
+    <span class="place">India</span> and <span class="place">Morocco</span> as often as we can. 
+    India — what a beautiful place — it's my birthplace, and every trip back feels like coming home. 
+    And Morocco — the seafood is incredible, and there's nothing better than enjoying it with 
+    my wife in her home country by the sea.
+  </p>
+  <p>
+    A hybrid family, living in a beautiful country, raising our kid with the best of three cultures. 
+    Life is good. ☀️
+  </p>
+</div>
+
+<hr class="divider">
+
 <h2 class="section-title">What I Do</h2>
+
+<p class="intro" style="text-align: center;">
+  <strong>15+ years</strong> building test automation frameworks, CI/CD pipelines, and quality engineering 
+  practices — shipping products used by <strong>300M+ users</strong> at 
+  <strong>IKEA</strong>, <strong>Truecaller</strong>, and <strong>LEGO</strong>.
+</p>
 
 <div class="expertise-grid">
   <div class="expertise-item">
@@ -208,6 +287,8 @@ title: "Mohammad Kashif — Automation Specialist"
   </div>
 </div>
 
+<hr class="divider">
+
 <h2 class="section-title">Explore</h2>
 
 <div class="home-cards">
@@ -233,6 +314,8 @@ title: "Mohammad Kashif — Automation Specialist"
   <a href="{{ '/kashif-resume/' | relative_url }}" class="btn-secondary">View Resume</a>
   <a href="https://www.linkedin.com/in/md-kashif/" target="_blank" class="btn-accent">Connect on LinkedIn</a>
 </div>
+
+<hr class="divider">
 
 <h2 class="section-title">Connect</h2>
 
