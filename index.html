@@ -196,6 +196,70 @@ keywords:
     margin: 48px auto;
     max-width: 200px;
   }
+  .simplerx-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: linear-gradient(135deg, #161b22 0%, #1c2431 100%);
+    border-top: 2px solid #1f6feb;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
+  }
+  .simplerx-banner .rx-icon {
+    font-size: 1.5rem;
+  }
+  .simplerx-banner .rx-text {
+    color: #e6edf3;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  .simplerx-banner .rx-text strong {
+    color: #58a6ff;
+  }
+  .simplerx-banner .rx-btn {
+    display: inline-block;
+    padding: 8px 20px;
+    background: #1f6feb;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: opacity 0.2s, transform 0.2s;
+    white-space: nowrap;
+  }
+  .simplerx-banner .rx-btn:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+  }
+  .simplerx-banner .rx-close {
+    background: none;
+    border: none;
+    color: #8b949e;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 4px 8px;
+    line-height: 1;
+    transition: color 0.2s;
+  }
+  .simplerx-banner .rx-close:hover {
+    color: #f0f6fc;
+  }
+  @media (max-width: 600px) {
+    .simplerx-banner {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+      padding: 12px 16px;
+    }
+  }
 </style>
 
 <div class="hero-home">
@@ -292,22 +356,20 @@ keywords:
 
 <hr class="divider">
 
-<h2 class="section-title">Personal Projects</h2>
-
-<div class="home-cards">
-  <a href="https://play.google.com/store/apps/details?id=app.simplerx.mobile&hl=en" target="_blank" class="home-card" style="text-decoration:none;">
-    <div class="icon">💊</div>
-    <h3>SimpleRx</h3>
-    <p>An app that simplifies medical reports — making health information easy to understand for everyone.</p>
-  </a>
-</div>
-
-<hr class="divider">
-
 <h2 class="section-title">Connect</h2>
 
 <div class="connect-links">
   <a href="https://github.com/ascertain" target="_blank">🐙 GitHub</a>
   <a href="https://www.linkedin.com/in/md-kashif/" target="_blank">💼 LinkedIn</a>
   <a href="mailto:mo.kashif@gmail.com">✉️ Email</a>
+</div>
+
+<!-- Sticky SimpleRx Banner -->
+<div class="simplerx-banner" id="simplerx-banner">
+  <span class="rx-icon">💊</span>
+  <span class="rx-text">
+    We just launched <strong>SimpleRx</strong> — an app that simplifies medical reports. Try it out and share your feedback!
+  </span>
+  <a href="https://play.google.com/store/apps/details?id=app.simplerx.mobile&hl=en" target="_blank" class="rx-btn">Try SimpleRx on Google Play</a>
+  <button class="rx-close" onclick="document.getElementById('simplerx-banner').style.display='none'" aria-label="Close">✕</button>
 </div>
