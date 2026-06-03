@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Segoe UI, sans-serif">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0d1117" rx="12"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#e6edf3" font-size="18" font-weight="bold">Hub-and-Spoke Multi-Cloud Architecture</text>
+  
+  <!-- Central Hub -->
+  <circle cx="400" cy="250" r="70" fill="#1f6feb" stroke="#58a6ff" stroke-width="2"/>
+  <text x="400" y="240" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">DATA &amp;</text>
+  <text x="400" y="258" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">ANALYTICS</text>
+  <text x="400" y="276" text-anchor="middle" fill="#fff" font-size="11">HUB</text>
+  
+  <!-- GCP Spoke -->
+  <circle cx="150" cy="150" r="55" fill="#238636" stroke="#3fb950" stroke-width="2"/>
+  <text x="150" y="145" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">GCP</text>
+  <text x="150" y="163" text-anchor="middle" fill="#d2f4d3" font-size="10">BigQuery · AI/ML</text>
+  <line x1="200" y1="185" x2="340" y2="220" stroke="#3fb950" stroke-width="2" stroke-dasharray="5,3"/>
+  
+  <!-- AWS Spoke -->
+  <circle cx="650" cy="150" r="55" fill="#da3633" stroke="#f85149" stroke-width="2"/>
+  <text x="650" y="145" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">AWS</text>
+  <text x="650" y="163" text-anchor="middle" fill="#ffd6d5" font-size="10">Infra · Scale</text>
+  <line x1="600" y1="185" x2="460" y2="220" stroke="#f85149" stroke-width="2" stroke-dasharray="5,3"/>
+  
+  <!-- Azure Spoke -->
+  <circle cx="150" cy="370" r="55" fill="#8957e5" stroke="#a371f7" stroke-width="2"/>
+  <text x="150" y="365" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">Azure</text>
+  <text x="150" y="383" text-anchor="middle" fill="#e2d5f7" font-size="10">Identity · M365</text>
+  <line x1="200" y1="340" x2="340" y2="280" stroke="#a371f7" stroke-width="2" stroke-dasharray="5,3"/>
+  
+  <!-- Kubernetes Spoke -->
+  <circle cx="650" cy="370" r="55" fill="#f78166" stroke="#ffa657" stroke-width="2"/>
+  <text x="650" y="365" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">K8s</text>
+  <text x="650" y="383" text-anchor="middle" fill="#ffe2d5" font-size="10">Portability</text>
+  <line x1="600" y1="340" x2="460" y2="280" stroke="#ffa657" stroke-width="2" stroke-dasharray="5,3"/>
+  
+  <!-- SaaS Sources -->
+  <rect x="320" y="420" width="160" height="40" rx="8" fill="#30363d" stroke="#484f58" stroke-width="1"/>
+  <text x="400" y="445" text-anchor="middle" fill="#8b949e" font-size="11">SaaS Data Sources</text>
+  <line x1="400" y1="420" x2="400" y2="320" stroke="#484f58" stroke-width="1.5" stroke-dasharray="4,3"/>
+  
+  <!-- Private Interconnect Label -->
+  <rect x="280" y="470" width="240" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="400" y="485" text-anchor="middle" fill="#58a6ff" font-size="10">🔒 Private Interconnects (Equinix / Megaport)</text>
+</svg>

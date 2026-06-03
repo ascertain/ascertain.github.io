@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Segoe UI, sans-serif">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#0d1117" rx="12"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#e6edf3" font-size="16" font-weight="bold">AWS vs Azure vs GCP — Where Each Wins</text>
+  
+  <!-- AWS Column -->
+  <rect x="30" y="60" width="230" height="310" rx="10" fill="#1c1e24" stroke="#da3633" stroke-width="2"/>
+  <rect x="30" y="60" width="230" height="40" rx="10" fill="#da3633"/>
+  <rect x="30" y="90" width="230" height="10" fill="#da3633"/>
+  <text x="145" y="85" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold">☁️ AWS</text>
+  <text x="145" y="125" text-anchor="middle" fill="#f85149" font-size="11" font-weight="bold">BEST FOR</text>
+  <text x="145" y="148" text-anchor="middle" fill="#e6edf3" font-size="11">Enterprise Scale</text>
+  <text x="145" y="166" text-anchor="middle" fill="#e6edf3" font-size="11">Massive Ecosystem</text>
+  <text x="145" y="184" text-anchor="middle" fill="#e6edf3" font-size="11">Mature IaaS</text>
+  <line x1="60" y1="200" x2="230" y2="200" stroke="#30363d" stroke-width="1"/>
+  <text x="145" y="222" text-anchor="middle" fill="#8b949e" font-size="10" font-weight="bold">SERVICES</text>
+  <text x="145" y="244" text-anchor="middle" fill="#8b949e" font-size="10">EC2 · S3 · Lambda</text>
+  <text x="145" y="262" text-anchor="middle" fill="#8b949e" font-size="10">EKS · Redshift</text>
+  <text x="145" y="280" text-anchor="middle" fill="#8b949e" font-size="10">Direct Connect</text>
+  <line x1="60" y1="296" x2="230" y2="296" stroke="#30363d" stroke-width="1"/>
+  <text x="145" y="318" text-anchor="middle" fill="#ffa657" font-size="10" font-weight="bold">⚠️ WATCH OUT</text>
+  <text x="145" y="338" text-anchor="middle" fill="#8b949e" font-size="10">Complex pricing</text>
+  <text x="145" y="356" text-anchor="middle" fill="#8b949e" font-size="10">Overwhelming choices</text>
+  
+  <!-- Azure Column -->
+  <rect x="285" y="60" width="230" height="310" rx="10" fill="#1c1e24" stroke="#8957e5" stroke-width="2"/>
+  <rect x="285" y="60" width="230" height="40" rx="10" fill="#8957e5"/>
+  <rect x="285" y="90" width="230" height="10" fill="#8957e5"/>
+  <text x="400" y="85" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold">☁️ Azure</text>
+  <text x="400" y="125" text-anchor="middle" fill="#a371f7" font-size="11" font-weight="bold">BEST FOR</text>
+  <text x="400" y="148" text-anchor="middle" fill="#e6edf3" font-size="11">Microsoft Integration</text>
+  <text x="400" y="166" text-anchor="middle" fill="#e6edf3" font-size="11">Identity (Entra ID)</text>
+  <text x="400" y="184" text-anchor="middle" fill="#e6edf3" font-size="11">Hybrid Cloud</text>
+  <line x1="315" y1="200" x2="485" y2="200" stroke="#30363d" stroke-width="1"/>
+  <text x="400" y="222" text-anchor="middle" fill="#8b949e" font-size="10" font-weight="bold">SERVICES</text>
+  <text x="400" y="244" text-anchor="middle" fill="#8b949e" font-size="10">Azure AD · Arc</text>
+  <text x="400" y="262" text-anchor="middle" fill="#8b949e" font-size="10">AKS · Azure SQL</text>
+  <text x="400" y="280" text-anchor="middle" fill="#8b949e" font-size="10">ExpressRoute</text>
+  <line x1="315" y1="296" x2="485" y2="296" stroke="#30363d" stroke-width="1"/>
+  <text x="400" y="318" text-anchor="middle" fill="#ffa657" font-size="10" font-weight="bold">⚠️ WATCH OUT</text>
+  <text x="400" y="338" text-anchor="middle" fill="#8b949e" font-size="10">Restrictive licensing</text>
+  <text x="400" y="356" text-anchor="middle" fill="#8b949e" font-size="10">MS ecosystem lock-in</text>
+  
+  <!-- GCP Column -->
+  <rect x="540" y="60" width="230" height="310" rx="10" fill="#1c1e24" stroke="#238636" stroke-width="2"/>
+  <rect x="540" y="60" width="230" height="40" rx="10" fill="#238636"/>
+  <rect x="540" y="90" width="230" height="10" fill="#238636"/>
+  <text x="655" y="85" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold">☁️ GCP</text>
+  <text x="655" y="125" text-anchor="middle" fill="#3fb950" font-size="11" font-weight="bold">BEST FOR</text>
+  <text x="655" y="148" text-anchor="middle" fill="#e6edf3" font-size="11">Data &amp; Analytics</text>
+  <text x="655" y="166" text-anchor="middle" fill="#e6edf3" font-size="11">AI / Machine Learning</text>
+  <text x="655" y="184" text-anchor="middle" fill="#e6edf3" font-size="11">Kubernetes (GKE)</text>
+  <line x1="570" y1="200" x2="740" y2="200" stroke="#30363d" stroke-width="1"/>
+  <text x="655" y="222" text-anchor="middle" fill="#8b949e" font-size="10" font-weight="bold">SERVICES</text>
+  <text x="655" y="244" text-anchor="middle" fill="#8b949e" font-size="10">BigQuery · Vertex AI</text>
+  <text x="655" y="262" text-anchor="middle" fill="#8b949e" font-size="10">GKE · Cloud Run</text>
+  <text x="655" y="280" text-anchor="middle" fill="#8b949e" font-size="10">Interconnect</text>
+  <line x1="570" y1="296" x2="740" y2="296" stroke="#30363d" stroke-width="1"/>
+  <text x="655" y="318" text-anchor="middle" fill="#ffa657" font-size="10" font-weight="bold">⚠️ WATCH OUT</text>
+  <text x="655" y="338" text-anchor="middle" fill="#8b949e" font-size="10">Smaller DC footprint</text>
+  <text x="655" y="356" text-anchor="middle" fill="#8b949e" font-size="10">Less enterprise legacy</text>
+</svg>
