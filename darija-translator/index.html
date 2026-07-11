@@ -248,7 +248,7 @@
         <input type="password" id="cfgGroq" placeholder="gsk_..." autocomplete="off">
         
         <label>🤗 Hugging Face Space URL (for Whisper transcription)</label>
-        <input type="text" id="cfgHfSpace" placeholder="https://your-name-darija-backend.hf.space">
+        <input type="text" id="cfgHfSpace" placeholder="https://subrati-darija-backend.hf.space" value="https://subrati-darija-backend.hf.space">
         
         <button class="save-btn" onclick="saveConfig()">💾 Save Configuration</button>
         
@@ -281,7 +281,7 @@ let audioStream = null;
 function getConfig() {
     return {
         groqKey: localStorage.getItem('darija_groq_key') || '',
-        hfSpaceUrl: localStorage.getItem('darija_hf_space') || ''
+        hfSpaceUrl: localStorage.getItem('darija_hf_space') || 'https://subrati-darija-backend.hf.space'
     };
 }
 
@@ -412,18 +412,25 @@ function stopRecording() {
 async function processAudio(audioBlob) {
     const cfg = getConfig();
     
-    // If HF Space is configured, use it for Whisper transcription
+    // If HF Space is configured, use it for Whisper transcription (Gradio API)
     if (cfg.hfSpaceUrl) {
         setStatus('🧠 Whisper AI transcribing...', 'success');
         document.getElementById('heardText').textContent = '⏳ Processing audio...';
         
         try {
-            const formData = new FormData();
-            formData.append('audio', audioBlob, 'recording.webm');
-            formData.append('language', direction.from === 'ar' ? 'ar' : (direction.from === 'hi' ? 'hi' : 'en'));
+            // Convert blob to base64 for Gradio API
+            const arrayBuffer = await audioBlob.arrayBuffer();
+            const base64 = btoa(String.fromCharCode(...new Uint8Array(arrayBuffer)));
+            const dataUrl = `data:audio/webm;base64,${base64}`;
+            const lang = direction.from === 'ar' ? 'ar' : (direction.from === 'hi' ? 'hi' : 'en');
             
-            const resp = await fetch(cfg.hfSpaceUrl + '/transcribe', { method: 'POST', body: formData });
-            const data = await resp.json();
+            const resp = await fetch(cfg.hfSpaceUrl + '/api/transcribe', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ data: [dataUrl, lang] })
+            });
+            const result = await resp.json();
+            const data = JSON.parse(result.data[0]);
             
             if (data.text && data.text.trim()) {
                 document.getElementById('heardText').textContent = '🎯 Heard: ' + data.text;
@@ -433,41 +440,49 @@ async function processAudio(audioBlob) {
                 document.getElementById('heardText').textContent = '(no speech detected)';
             }
         } catch (err) {
-            setStatus('❌ HF Space error: ' + err.message, 'error');
+            setStatus('❌ HF Space error: ' + err.message + '. Falling back to Groq...', 'error');
+            // Fallback to Groq Whisper if HF fails
+            if (cfg.groqKey) {
+                await transcribeWithGroq(audioBlob, cfg);
+                return;
+            }
         }
     } else if (cfg.groqKey) {
-        // Use Groq's Whisper API directly for transcription
-        setStatus('🧠 Groq Whisper transcribing...', 'success');
-        document.getElementById('heardText').textContent = '⏳ Processing audio...';
-        
-        try {
-            const formData = new FormData();
-            formData.append('file', audioBlob, 'recording.webm');
-            formData.append('model', 'whisper-large-v3');
-            formData.append('language', direction.from === 'ar' ? 'ar' : (direction.from === 'hi' ? 'hi' : 'en'));
-            formData.append('response_format', 'json');
-            
-            const resp = await fetch('https://api.groq.com/openai/v1/audio/transcriptions', {
-                method: 'POST',
-                headers: { 'Authorization': 'Bearer ' + cfg.groqKey },
-                body: formData
-            });
-            
-            const data = await resp.json();
-            
-            if (data.text && data.text.trim()) {
-                document.getElementById('heardText').textContent = '🎯 Heard: ' + data.text;
-                await translateWithGroq(data.text.trim());
-            } else {
-                setStatus('No speech detected.', 'error');
-                document.getElementById('heardText').textContent = '(no speech detected)';
-            }
-        } catch (err) {
-            setStatus('❌ Groq Whisper error: ' + err.message, 'error');
-        }
+        await transcribeWithGroq(audioBlob, cfg);
     }
     
     resetMicLabel();
+}
+
+async function transcribeWithGroq(audioBlob, cfg) {
+    setStatus('🧠 Groq Whisper transcribing...', 'success');
+    document.getElementById('heardText').textContent = '⏳ Processing audio...';
+    
+    try {
+        const formData = new FormData();
+        formData.append('file', audioBlob, 'recording.webm');
+        formData.append('model', 'whisper-large-v3');
+        formData.append('language', direction.from === 'ar' ? 'ar' : (direction.from === 'hi' ? 'hi' : 'en'));
+        formData.append('response_format', 'json');
+        
+        const resp = await fetch('https://api.groq.com/openai/v1/audio/transcriptions', {
+            method: 'POST',
+            headers: { 'Authorization': 'Bearer ' + cfg.groqKey },
+            body: formData
+        });
+        
+        const data = await resp.json();
+        
+        if (data.text && data.text.trim()) {
+            document.getElementById('heardText').textContent = '🎯 Heard: ' + data.text;
+            await translateWithGroq(data.text.trim());
+        } else {
+            setStatus('No speech detected.', 'error');
+            document.getElementById('heardText').textContent = '(no speech detected)';
+        }
+    } catch (err) {
+        setStatus('❌ Groq Whisper error: ' + err.message, 'error');
+    }
 }
 
 function resetMicLabel() {
