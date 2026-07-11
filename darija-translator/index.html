@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>🇲🇦 Darija Translator | Kashif Subrati</title>
+    <meta name="description" content="Free Moroccan Darija to English/Hindi translator with AI speech recognition">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #1a1a2e;
+            color: #eee;
+            min-height: 100vh;
+            padding: 16px;
+            padding-bottom: 80px;
+        }
+        .header {
+            text-align: center;
+            padding: 16px 0;
+            border-bottom: 1px solid #333;
+            margin-bottom: 16px;
+        }
+        .header h1 { font-size: 1.5rem; color: #00d4aa; }
+        .header p { font-size: 0.85rem; color: #888; margin-top: 4px; }
+        .header a { color: #00d4aa; text-decoration: none; font-size: 0.8rem; }
+        
+        .mode-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        .mode-btn {
+            padding: 10px 20px;
+            border: 2px solid #333;
+            border-radius: 20px;
+            background: transparent;
+            color: #aaa;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .mode-btn.active {
+            border-color: #00d4aa;
+            color: #00d4aa;
+            background: rgba(0, 212, 170, 0.1);
+        }
+        
+        .direction-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            padding: 12px;
+            background: #16213e;
+            border-radius: 12px;
+        }
+        .lang-label { font-size: 1rem; font-weight: 600; }
+        .swap-btn {
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            border: 2px solid #00d4aa;
+            background: transparent;
+            color: #00d4aa;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .mic-area { text-align: center; margin: 24px 0; }
+        .mic-btn {
+            width: 100px; height: 100px;
+            border-radius: 50%;
+            border: 3px solid #00d4aa;
+            background: rgba(0, 212, 170, 0.1);
+            color: #00d4aa;
+            font-size: 2.5rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        .mic-btn.recording {
+            border-color: #ff4757;
+            background: rgba(255, 71, 87, 0.2);
+            color: #ff4757;
+            animation: pulse 1s infinite;
+        }
+        @keyframes pulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.05)} }
+        .mic-label { margin-top: 8px; font-size: 0.85rem; color: #888; }
+        .heard-text {
+            margin-top: 10px;
+            padding: 8px 14px;
+            background: rgba(0,212,170,0.08);
+            border-radius: 10px;
+            font-size: 0.9rem;
+            color: #aaa;
+            min-height: 24px;
+            direction: auto;
+        }
+        
+        .text-input-area { margin: 16px 0; }
+        .text-input-area textarea {
+            width: 100%;
+            min-height: 80px;
+            padding: 12px;
+            border: 2px solid #333;
+            border-radius: 12px;
+            background: #16213e;
+            color: #eee;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        .text-input-area textarea:focus { border-color: #00d4aa; outline: none; }
+        .translate-btn {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 12px;
+            background: #00d4aa;
+            color: #1a1a2e;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+        
+        .results { margin-top: 20px; }
+        .result-card {
+            background: #16213e;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 12px;
+            border-left: 4px solid #00d4aa;
+        }
+        .result-card .source { font-size: 0.85rem; color: #888; margin-bottom: 4px; }
+        .result-card .text { font-size: 1.2rem; line-height: 1.4; }
+        .result-card .meta { font-size: 0.75rem; color: #666; margin-top: 8px; }
+        
+        .status { text-align: center; padding: 8px; font-size: 0.85rem; color: #888; }
+        .status.error { color: #ff4757; }
+        .status.success { color: #00d4aa; }
+        
+        .config-panel {
+            margin-top: 20px;
+            padding: 16px;
+            background: #16213e;
+            border-radius: 12px;
+            border: 1px solid #333;
+        }
+        .config-panel h3 { color: #00d4aa; margin-bottom: 12px; font-size: 0.95rem; }
+        .config-panel label { display: block; font-size: 0.8rem; color: #888; margin-top: 8px; }
+        .config-panel input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            background: #1a1a2e;
+            color: #eee;
+            font-size: 0.85rem;
+            margin-top: 4px;
+        }
+        .config-panel .save-btn {
+            margin-top: 12px;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 8px;
+            background: #00d4aa;
+            color: #1a1a2e;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .config-panel .note { font-size: 0.75rem; color: #666; margin-top: 8px; }
+        
+        .backend-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+        .badge-groq { background: rgba(255,165,2,0.2); color: #ffa502; }
+        .badge-hf { background: rgba(255,215,0,0.2); color: #ffd700; }
+        .badge-local { background: rgba(0,212,170,0.2); color: #00d4aa; }
+        
+        .footer {
+            text-align: center;
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid #333;
+            font-size: 0.8rem;
+            color: #666;
+        }
+        .footer a { color: #00d4aa; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🇲🇦 Darija Translator</h1>
+        <p>Moroccan Arabic ↔ English ↔ Hindi | AI-Powered | Free</p>
+        <a href="https://ascertain.github.io">← Back to Portfolio</a>
+    </div>
+    
+    <div class="mode-toggle">
+        <button class="mode-btn active" id="btnVoice" onclick="setMode('voice')">🎤 Voice</button>
+        <button class="mode-btn" id="btnText" onclick="setMode('text')">⌨️ Type</button>
+        <button class="mode-btn" id="btnConfig" onclick="setMode('config')">⚙️ Setup</button>
+    </div>
+    
+    <div class="direction-bar">
+        <span class="lang-label" id="srcLang">🇲🇦 Darija</span>
+        <button class="swap-btn" onclick="swapDirection()">⇄</button>
+        <span class="lang-label" id="tgtLang">🇬🇧 English</span>
+    </div>
+    
+    <!-- Voice Mode -->
+    <div class="mic-area" id="voiceMode">
+        <button class="mic-btn" id="micBtn" onclick="toggleRecording()">🎤</button>
+        <p class="mic-label" id="micLabel">Tap to start → speak → tap to stop & translate</p>
+        <div class="heard-text" id="heardText"></div>
+        <div style="margin-top:8px;">
+            <span class="backend-badge" id="backendBadge">⚡ Groq API</span>
+        </div>
+    </div>
+    
+    <!-- Text Mode -->
+    <div class="text-input-area" id="textMode" style="display:none">
+        <textarea id="inputText" placeholder="Type Darija text here..." dir="auto"></textarea>
+        <button class="translate-btn" onclick="translateText()">Translate</button>
+    </div>
+    
+    <!-- Config Panel -->
+    <div class="config-panel" id="configMode" style="display:none">
+        <h3>⚙️ API Configuration</h3>
+        <p style="font-size:0.8rem;color:#aaa;margin-bottom:12px;">
+            Keys are stored in your browser only (localStorage). Never sent anywhere except the API provider.
+        </p>
+        
+        <label>⚡ Groq API Key (Primary - fastest)</label>
+        <input type="password" id="cfgGroq" placeholder="gsk_..." autocomplete="off">
+        
+        <label>🤗 Hugging Face Space URL (for Whisper transcription)</label>
+        <input type="text" id="cfgHfSpace" placeholder="https://your-name-darija-backend.hf.space">
+        
+        <button class="save-btn" onclick="saveConfig()">💾 Save Configuration</button>
+        
+        <p class="note">
+            🔒 Keys stay in YOUR browser. Get free keys:<br>
+            • <a href="https://console.groq.com/keys" target="_blank" style="color:#00d4aa">Groq (free)</a> — Translation AI<br>
+            • <a href="https://huggingface.co/spaces" target="_blank" style="color:#00d4aa">HF Spaces (free)</a> — Whisper backend
+        </p>
+    </div>
+    
+    <div class="status" id="status"></div>
+    <div class="results" id="results"></div>
+    
+    <div class="footer">
+        <p>Built by <a href="https://ascertain.github.io">Mohammad Kashif Subrati</a></p>
+        <p style="margin-top:4px;">100% Free • No data stored on server • <a href="https://github.com/ascertain">Source Code</a></p>
+    </div>
+
+<script>
+// ============================================================
+// STATE
+// ============================================================
+let direction = { from: 'ar', to: 'en' };
+let isRecording = false;
+let mediaRecorder = null;
+let audioChunks = [];
+let audioStream = null;
+
+// Load config from localStorage
+function getConfig() {
+    return {
+        groqKey: localStorage.getItem('darija_groq_key') || '',
+        hfSpaceUrl: localStorage.getItem('darija_hf_space') || ''
+    };
+}
+
+// ============================================================
+// UI FUNCTIONS
+// ============================================================
+function setMode(mode) {
+    document.getElementById('btnVoice').classList.toggle('active', mode === 'voice');
+    document.getElementById('btnText').classList.toggle('active', mode === 'text');
+    document.getElementById('btnConfig').classList.toggle('active', mode === 'config');
+    document.getElementById('voiceMode').style.display = mode === 'voice' ? 'block' : 'none';
+    document.getElementById('textMode').style.display = mode === 'text' ? 'block' : 'none';
+    document.getElementById('configMode').style.display = mode === 'config' ? 'block' : 'none';
+    
+    if (mode === 'config') {
+        const cfg = getConfig();
+        document.getElementById('cfgGroq').value = cfg.groqKey;
+        document.getElementById('cfgHfSpace').value = cfg.hfSpaceUrl;
+    }
+}
+
+function saveConfig() {
+    const groqKey = document.getElementById('cfgGroq').value.trim();
+    const hfSpace = document.getElementById('cfgHfSpace').value.trim();
+    
+    if (groqKey) localStorage.setItem('darija_groq_key', groqKey);
+    if (hfSpace) localStorage.setItem('darija_hf_space', hfSpace);
+    
+    setStatus('✅ Configuration saved!', 'success');
+    updateBackendBadge();
+    setTimeout(() => setMode('voice'), 1000);
+}
+
+function swapDirection() {
+    [direction.from, direction.to] = [direction.to, direction.from];
+    updateDirectionUI();
+}
+
+function updateDirectionUI() {
+    const names = { 'ar': '🇲🇦 Darija', 'en': '🇬🇧 English', 'hi': '🇮🇳 Hindi' };
+    document.getElementById('srcLang').textContent = names[direction.from];
+    document.getElementById('tgtLang').textContent = names[direction.to];
+    document.getElementById('inputText').placeholder = direction.from === 'ar' ? 'Type Darija text here...' : 'Type English text here...';
+    document.getElementById('inputText').dir = direction.from === 'ar' ? 'rtl' : 'ltr';
+}
+
+function updateBackendBadge() {
+    const cfg = getConfig();
+    const badge = document.getElementById('backendBadge');
+    if (cfg.hfSpaceUrl) {
+        badge.textContent = '🧠 Whisper + Groq';
+        badge.className = 'backend-badge badge-hf';
+    } else if (cfg.groqKey) {
+        badge.textContent = '⚡ Groq API';
+        badge.className = 'backend-badge badge-groq';
+    } else {
+        badge.textContent = '⚠️ No API key set';
+        badge.className = 'backend-badge';
+    }
+}
+
+function setStatus(msg, type) {
+    const el = document.getElementById('status');
+    el.textContent = msg;
+    el.className = 'status' + (type ? ' ' + type : '');
+}
+
+// ============================================================
+// VOICE RECORDING (MediaRecorder → Server or Groq)
+// ============================================================
+async function toggleRecording() {
+    if (isRecording) {
+        stopRecording();
+    } else {
+        startRecording();
+    }
+}
+
+async function startRecording() {
+    const cfg = getConfig();
+    if (!cfg.groqKey && !cfg.hfSpaceUrl) {
+        setStatus('⚠️ Please set up API keys first (tap ⚙️ Setup)', 'error');
+        setMode('config');
+        return;
+    }
+    
+    try {
+        audioStream = await navigator.mediaDevices.getUserMedia({
+            audio: { channelCount: 1, sampleRate: 16000, echoCancellation: true, noiseSuppression: true }
+        });
+    } catch (err) {
+        setStatus('❌ Mic access denied. Allow microphone in browser.', 'error');
+        return;
+    }
+    
+    isRecording = true;
+    audioChunks = [];
+    
+    let mimeType = 'audio/webm;codecs=opus';
+    if (!MediaRecorder.isTypeSupported(mimeType)) mimeType = 'audio/webm';
+    if (!MediaRecorder.isTypeSupported(mimeType)) mimeType = '';
+    
+    mediaRecorder = new MediaRecorder(audioStream, mimeType ? { mimeType } : {});
+    mediaRecorder.ondataavailable = (e) => { if (e.data.size > 0) audioChunks.push(e.data); };
+    mediaRecorder.onstop = () => {
+        if (audioChunks.length > 0) {
+            const blob = new Blob(audioChunks, { type: mediaRecorder.mimeType || 'audio/webm' });
+            audioChunks = [];
+            processAudio(blob);
+        }
+    };
+    
+    document.getElementById('micBtn').classList.add('recording');
+    document.getElementById('micLabel').textContent = '🔴 Recording... Tap to STOP & translate';
+    document.getElementById('heardText').textContent = '';
+    setStatus('🎤 Recording...', 'success');
+    mediaRecorder.start();
+}
+
+function stopRecording() {
+    isRecording = false;
+    if (mediaRecorder && mediaRecorder.state === 'recording') mediaRecorder.stop();
+    if (audioStream) { audioStream.getTracks().forEach(t => t.stop()); audioStream = null; }
+    document.getElementById('micBtn').classList.remove('recording');
+    document.getElementById('micLabel').textContent = '⏳ Processing...';
+}
+
+async function processAudio(audioBlob) {
+    const cfg = getConfig();
+    
+    // If HF Space is configured, use it for Whisper transcription
+    if (cfg.hfSpaceUrl) {
+        setStatus('🧠 Whisper AI transcribing...', 'success');
+        document.getElementById('heardText').textContent = '⏳ Processing audio...';
+        
+        try {
+            const formData = new FormData();
+            formData.append('audio', audioBlob, 'recording.webm');
+            formData.append('language', direction.from === 'ar' ? 'ar' : (direction.from === 'hi' ? 'hi' : 'en'));
+            
+            const resp = await fetch(cfg.hfSpaceUrl + '/transcribe', { method: 'POST', body: formData });
+            const data = await resp.json();
+            
+            if (data.text && data.text.trim()) {
+                document.getElementById('heardText').textContent = '🎯 Heard: ' + data.text;
+                await translateWithGroq(data.text.trim());
+            } else {
+                setStatus('No speech detected. Speak louder/closer.', 'error');
+                document.getElementById('heardText').textContent = '(no speech detected)';
+            }
+        } catch (err) {
+            setStatus('❌ HF Space error: ' + err.message, 'error');
+        }
+    } else if (cfg.groqKey) {
+        // Use Groq's Whisper API directly for transcription
+        setStatus('🧠 Groq Whisper transcribing...', 'success');
+        document.getElementById('heardText').textContent = '⏳ Processing audio...';
+        
+        try {
+            const formData = new FormData();
+            formData.append('file', audioBlob, 'recording.webm');
+            formData.append('model', 'whisper-large-v3');
+            formData.append('language', direction.from === 'ar' ? 'ar' : (direction.from === 'hi' ? 'hi' : 'en'));
+            formData.append('response_format', 'json');
+            
+            const resp = await fetch('https://api.groq.com/openai/v1/audio/transcriptions', {
+                method: 'POST',
+                headers: { 'Authorization': 'Bearer ' + cfg.groqKey },
+                body: formData
+            });
+            
+            const data = await resp.json();
+            
+            if (data.text && data.text.trim()) {
+                document.getElementById('heardText').textContent = '🎯 Heard: ' + data.text;
+                await translateWithGroq(data.text.trim());
+            } else {
+                setStatus('No speech detected.', 'error');
+                document.getElementById('heardText').textContent = '(no speech detected)';
+            }
+        } catch (err) {
+            setStatus('❌ Groq Whisper error: ' + err.message, 'error');
+        }
+    }
+    
+    resetMicLabel();
+}
+
+function resetMicLabel() {
+    setTimeout(() => {
+        document.getElementById('micLabel').textContent = 'Tap to start → speak → tap to stop & translate';
+    }, 2000);
+}
+
+// ============================================================
+// TRANSLATION (Groq API - direct from browser)
+// ============================================================
+function translateText() {
+    const text = document.getElementById('inputText').value.trim();
+    if (!text) return;
+    translateWithGroq(text);
+    document.getElementById('inputText').value = '';
+}
+
+async function translateWithGroq(text) {
+    const cfg = getConfig();
+    
+    if (!cfg.groqKey) {
+        setStatus('⚠️ No Groq API key. Set it in ⚙️ Setup', 'error');
+        return;
+    }
+    
+    setStatus('Translating...', '');
+    
+    const langNames = { 'ar': 'Moroccan Darija (Arabic)', 'en': 'English', 'hi': 'Hindi' };
+    const fromName = langNames[direction.from];
+    const toName = langNames[direction.to];
+    
+    const prompt = `Translate the following from ${fromName} to ${toName}. 
+If it's Moroccan Darija, understand the dialect (mix of Arabic, French, Spanish, Berber).
+Return ONLY the translation, nothing else.
+
+Text: ${text}`;
+    
+    try {
+        const resp = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+            method: 'POST',
+            headers: {
+                'Authorization': 'Bearer ' + cfg.groqKey,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                model: 'llama-3.3-70b-versatile',
+                messages: [
+                    { role: 'system', content: 'You are an expert translator specializing in Moroccan Darija (Moroccan Arabic dialect). You understand the mix of Arabic, French, Spanish, and Berber influences. Translate accurately and naturally. Return ONLY the translation.' },
+                    { role: 'user', content: prompt }
+                ],
+                temperature: 0.3,
+                max_tokens: 256
+            })
+        });
+        
+        const data = await resp.json();
+        
+        if (data.error) {
+            setStatus('❌ API error: ' + (data.error.message || JSON.stringify(data.error)), 'error');
+            return;
+        }
+        
+        const translation = data.choices[0].message.content.trim();
+        addResult(text, translation, '⚡ Groq');
+        speakTranslation(translation, direction.to);
+        setStatus('', '');
+        
+    } catch (err) {
+        setStatus('❌ ' + err.message, 'error');
+    }
+}
+
+// ============================================================
+// TTS (Browser built-in)
+// ============================================================
+function speakTranslation(text, lang) {
+    if ('speechSynthesis' in window) {
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = lang === 'ar' ? 'ar-MA' : (lang === 'hi' ? 'hi-IN' : 'en-US');
+        u.rate = 0.9;
+        speechSynthesis.speak(u);
+    }
+}
+
+// ============================================================
+// RESULTS
+// ============================================================
+function addResult(original, translation, source) {
+    const results = document.getElementById('results');
+    const card = document.createElement('div');
+    card.className = 'result-card';
+    card.innerHTML = `
+        <div class="source">${direction.from === 'ar' ? '🇲🇦' : '🇬🇧'} ${original}</div>
+        <div class="text">${translation}</div>
+        <div class="meta">${source} • ${new Date().toLocaleTimeString()}</div>
+        <button onclick="speakTranslation('${translation.replace(/'/g,"\\'")}', '${direction.to}')" 
+                style="margin-top:6px;padding:4px 10px;border:1px solid #00d4aa;border-radius:8px;background:transparent;color:#00d4aa;cursor:pointer;font-size:0.8rem;">
+            🔊 Replay
+        </button>
+    `;
+    results.insertBefore(card, results.firstChild);
+}
+
+// ============================================================
+// INIT
+// ============================================================
+document.getElementById('inputText').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); translateText(); }
+});
+
+updateBackendBadge();
+
+// Show config if no keys set
+if (!getConfig().groqKey) {
+    setTimeout(() => setMode('config'), 500);
+}
+</script>
+</body>
+</html>
