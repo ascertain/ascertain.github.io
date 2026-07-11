@@ -500,11 +500,25 @@ async function translateWithGroq(text) {
     const fromName = langNames[direction.from];
     const toName = langNames[direction.to];
     
-    const prompt = `Translate the following from ${fromName} to ${toName}. 
+    const prompt = direction.to === 'ar' 
+        ? `Translate the following from ${fromName} to Moroccan Darija.
+Rules:
+- Write in BOTH Arabic script AND romanized Latin (Franco-Arab) on separate lines
+- Use authentic Moroccan Darija vocabulary (NOT Modern Standard Arabic)
+- Common Darija words: makla (food), bezzaf (a lot), 3afak (please), daba (now), ji3an (hungry), labas (fine), chhal (how much), fin (where), 3lach (why), kifash (how), dir/diri (make/do)
+- Keep French loanwords if commonly used in Morocco (e.g., "la cuisine", "normal", "tranquille")
+- Keep it natural, how real Moroccans actually speak
+
+Text: ${text}`
+        : `Translate the following from ${fromName} to ${toName}. 
 If it's Moroccan Darija, understand the dialect (mix of Arabic, French, Spanish, Berber).
-Return ONLY the translation, nothing else.
+Return ONLY the translation.
 
 Text: ${text}`;
+    
+    const systemPrompt = direction.to === 'ar'
+        ? 'You are a native Moroccan Darija speaker and expert translator. You translate INTO authentic Moroccan Darija (NOT Modern Standard Arabic / فصحى). You know the real street dialect spoken in Casablanca, Rabat, Marrakech. Output format: Line 1 = Arabic script, Line 2 = romanized Franco-Arab (using 3=ع, 7=ح, 9=ق, 5=خ, 8=غ, 2=ء). Return ONLY the translation lines, nothing else.'
+        : 'You are an expert translator specializing in Moroccan Darija (Moroccan Arabic dialect). You understand the mix of Arabic, French, Spanish, and Berber influences. Translate accurately and naturally. Return ONLY the translation.';
     
     try {
         const resp = await fetch('https://api.groq.com/openai/v1/chat/completions', {
@@ -516,7 +530,7 @@ Text: ${text}`;
             body: JSON.stringify({
                 model: 'llama-3.3-70b-versatile',
                 messages: [
-                    { role: 'system', content: 'You are an expert translator specializing in Moroccan Darija (Moroccan Arabic dialect). You understand the mix of Arabic, French, Spanish, and Berber influences. Translate accurately and naturally. Return ONLY the translation.' },
+                    { role: 'system', content: systemPrompt },
                     { role: 'user', content: prompt }
                 ],
                 temperature: 0.3,
