@@ -1,27 +1,39 @@
 """
-🧠 Darija Translator Backend - Hugging Face Spaces (Gradio SDK - FREE)
-======================================================================
+🧠 Darija Translator Backend - Hugging Face Spaces (Gradio SDK + ZeroGPU - FREE)
+=================================================================================
 Provides Whisper transcription (Arabic/Darija speech → text)
 with a REST API endpoint for the GitHub Pages frontend.
 
-Deploy: https://huggingface.co/spaces → New Space → Gradio SDK → Upload files
+Deploy: https://huggingface.co/spaces → New Space → Gradio SDK → Zero GPU → Upload files
 """
 
 import os
 import tempfile
 import time
 import json
+import spaces
 import gradio as gr
 from faster_whisper import WhisperModel
 
-# Load Whisper model at startup
-print("Loading Whisper model...", flush=True)
-whisper_model = WhisperModel("base", device="cpu", compute_type="int8")
-print("✅ Whisper ready!", flush=True)
+# Model loaded on-demand inside GPU-decorated function
+whisper_model = None
 
 
+def get_model():
+    global whisper_model
+    if whisper_model is None:
+        import torch
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+        compute = "float16" if device == "cuda" else "int8"
+        print(f"Loading Whisper model on {device}...", flush=True)
+        whisper_model = WhisperModel("base", device=device, compute_type=compute)
+        print("✅ Whisper ready!", flush=True)
+    return whisper_model
+
+
+@spaces.GPU
 def transcribe_audio(audio_path, language="ar"):
-    """Transcribe audio file using faster-whisper."""
+    """Transcribe audio file using faster-whisper with Zero GPU."""
     if audio_path is None:
         return json.dumps({"text": "", "language": language, "error": "No audio"})
 
@@ -29,7 +41,7 @@ def transcribe_audio(audio_path, language="ar"):
         if os.path.getsize(audio_path) < 1000:
             return json.dumps({"text": "", "language": language})
 
-        segments, info = whisper_model.transcribe(
+        segments, info = get_model().transcribe(
             audio_path,
             language=language,
             beam_size=5,
