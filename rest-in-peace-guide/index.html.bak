@@ -1,0 +1,1078 @@
+---
+layout: default
+title: "Rest in Peace — A Guide for Families in Sweden"
+description: "A compassionate step-by-step guide for Indian nationals and families in Sweden on what to do when a loved one passes away. Covers Swedish authorities, Indian Embassy, cremation, repatriation, estate, insurance, and religious rituals."
+keywords:
+  - rest in peace sweden
+  - death in sweden guide
+  - indian embassy stockholm death certificate
+  - cremation sweden india
+  - repatriation mortal remains india
+  - dödsbo sweden
+  - bouppteckning
+  - skatteverket death registration
+  - hindu cremation sweden
+  - muslim burial sweden
+  - sikh funeral sweden
+---
+
+<style>
+  /* Peaceful RIP theme — warm, readable tones on dark background */
+  body {
+    background: linear-gradient(180deg, #1a1520 0%, #1e1a24 30%, #1a1520 100%) !important;
+  }
+  .page-content {
+    position: relative;
+  }
+  .page-content::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background:
+      radial-gradient(ellipse 800px 600px at 50% 0%, rgba(180, 160, 130, 0.06), transparent),
+      radial-gradient(ellipse 400px 400px at 80% 80%, rgba(160, 140, 120, 0.04), transparent);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .wrapper { position: relative; z-index: 1; }
+
+  /* Force all text to be clearly visible */
+  h1, h2, h3, h4, h5, h6 { color: #f0e6d8 !important; }
+  p, li, span, div, td, th, label, figcaption { color: #ddd5c8 !important; }
+  a { color: #c9a96e !important; }
+  a:hover { color: #dfc08a !important; }
+  strong, b { color: #f0e6d8 !important; }
+  em { color: #c4b8a8 !important; }
+
+  .guide-hero {
+    text-align: center;
+    padding: 56px 0 36px;
+    border-bottom: 1px solid rgba(180, 160, 130, 0.25);
+    margin-bottom: 44px;
+  }
+  .guide-hero .candle {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    display: block;
+    animation: flicker 3s ease-in-out infinite;
+  }
+  @keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+  .guide-hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    line-height: 1.3;
+    color: #f0e6d8 !important;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  .guide-hero .peace-line {
+    font-size: 1rem;
+    color: #b4a088 !important;
+    font-style: italic;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+  .guide-hero .subtitle {
+    font-size: 1.05rem;
+    color: #c4b8a8 !important;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.75;
+  }
+  .guide-hero .disclaimer {
+    margin-top: 20px;
+    padding: 14px 20px;
+    background: rgba(180, 140, 60, 0.12);
+    border: 1px solid #b4943c;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #d4b060 !important;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .guide-hero .disclaimer strong { color: #d4b060 !important; }
+
+  .toc {
+    background: #252030;
+    border: 1px solid #3a3344;
+    border-radius: 10px;
+    padding: 24px 28px;
+    margin-bottom: 40px;
+  }
+  .toc h2 { font-size: 1.2rem; margin-bottom: 12px; color: #f0e6d8 !important; }
+  .toc ol { padding-left: 20px; }
+  .toc li { margin-bottom: 6px; color: #ddd5c8 !important; }
+  .toc a { text-decoration: none; font-size: 0.95rem; color: #c9a96e !important; }
+  .toc a:hover { text-decoration: underline; }
+
+  .section {
+    margin-bottom: 48px;
+    scroll-margin-top: 80px;
+  }
+  .section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #3a3344;
+    color: #f0e6d8 !important;
+  }
+  .section h3 {
+    font-size: 1.2rem;
+    margin: 20px 0 10px;
+    color: #e0d4c4 !important;
+  }
+  .section h4 {
+    font-size: 1.05rem;
+    margin: 16px 0 8px;
+    color: #c9a96e !important;
+  }
+  .section p, .section li {
+    font-size: 0.98rem;
+    line-height: 1.8;
+    margin-bottom: 8px;
+  }
+  .section ul, .section ol {
+    padding-left: 24px;
+    margin-bottom: 16px;
+  }
+
+  .alert {
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 16px 0;
+    font-size: 0.95rem;
+  }
+  .alert-red {
+    background: rgba(200, 80, 70, 0.12);
+    border: 1px solid #c85046;
+  }
+  .alert-red strong { color: #e07060 !important; }
+  .alert-green {
+    background: rgba(80, 160, 80, 0.12);
+    border: 1px solid #50a050;
+  }
+  .alert-green strong { color: #70c070 !important; }
+  .alert-yellow {
+    background: rgba(180, 140, 60, 0.12);
+    border: 1px solid #b4943c;
+  }
+  .alert-yellow strong { color: #d4b060 !important; }
+  .alert-blue {
+    background: rgba(160, 140, 100, 0.12);
+    border: 1px solid #a08c64;
+  }
+
+  .priority-box {
+    background: #252030;
+    border: 1px solid #3a3344;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 20px 0;
+  }
+  .priority-box h4 {
+    margin-top: 0;
+    color: #f0e6d8 !important;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.92rem;
+  }
+  th, td {
+    padding: 10px 14px;
+    border: 1px solid #3a3344;
+    text-align: left;
+  }
+  th {
+    background: #2a2434;
+    color: #f0e6d8 !important;
+    font-weight: 600;
+  }
+  td { color: #ddd5c8 !important; }
+
+  .timeline-item {
+    padding: 16px 20px;
+    border-left: 3px solid #c9a96e;
+    margin-bottom: 16px;
+    background: #252030;
+    border-radius: 0 8px 8px 0;
+  }
+  .timeline-item.urgent { border-left-color: #c85046; }
+  .timeline-item.soon { border-left-color: #b4943c; }
+  .timeline-item.week { border-left-color: #c9a96e; }
+  .timeline-item.month { border-left-color: #70c070; }
+  .timeline-item h4 {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+
+  .links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    margin: 16px 0;
+  }
+  .link-card {
+    background: #252030;
+    border: 1px solid #3a3344;
+    border-radius: 8px;
+    padding: 16px;
+    transition: border-color 0.2s;
+  }
+  .link-card:hover { border-color: #c9a96e; }
+  .link-card h4 { margin: 0 0 6px; font-size: 0.95rem; color: #f0e6d8 !important; }
+  .link-card p { font-size: 0.85rem; color: #b0a898 !important; margin: 0 0 8px; }
+  .link-card a { font-size: 0.85rem; color: #c9a96e !important; }
+
+  .ritual-section {
+    background: #252030;
+    border: 1px solid #3a3344;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 16px 0;
+  }
+  .ritual-section h4 { margin-top: 0; }
+
+  .comment-section {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 2px solid #3a3344;
+  }
+  .comment-section h2 { border-bottom: none; }
+
+  .comment-form {
+    background: #252030;
+    border: 1px solid #3a3344;
+    border-radius: 10px;
+    padding: 24px;
+    margin-top: 16px;
+  }
+  .comment-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #f0e6d8 !important;
+    font-size: 0.95rem;
+  }
+  .comment-form input,
+  .comment-form textarea,
+  .comment-form select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #3a3344;
+    border-radius: 6px;
+    background: #1a1520;
+    color: #ddd5c8 !important;
+    font-family: inherit;
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+  }
+  .comment-form textarea { min-height: 120px; resize: vertical; }
+  .comment-form button {
+    padding: 12px 28px;
+    background: #8b7050;
+    color: #f0e6d8;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.95rem;
+  }
+  .comment-form button:hover { background: #a08060; }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: #8b7050;
+    color: #f0e6d8;
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: none;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+
+  @media (max-width: 600px) {
+    .guide-hero h1 { font-size: 1.5rem; }
+    .links-grid { grid-template-columns: 1fr; }
+    table { font-size: 0.82rem; }
+    th, td { padding: 6px 8px; }
+  }
+
+  /* Override site header/footer to match RIP theme */
+  .site-header { background: #1a1520 !important; border-color: #3a3344 !important; }
+  .site-footer { background: #1a1520 !important; border-color: #3a3344 !important; }
+  .site-header a, .site-footer p { color: #b0a898 !important; }
+</style>
+
+<!-- Hero -->
+<div class="guide-hero">
+  <span class="candle">🕯️</span>
+  <h1>Rest in Peace</h1>
+  <p class="peace-line">— A compassionate guide for families in Sweden —</p>
+  <p class="subtitle">
+    A practical step-by-step guide for <strong>Indian nationals and families</strong> living in Sweden.
+    Covers Swedish authorities, Indian Embassy, cremation, repatriation, estate administration, insurance, religious rituals, and more.
+  </p>
+  <div class="disclaimer">
+    <strong>⚠ Disclaimer:</strong> This guide is for general informational purposes only. It is not legal advice. Always verify current requirements directly with the relevant authorities. Fees, rules, and processes may change. Last reviewed: August 2026.
+  </div>
+</div>
+
+<!-- Table of Contents -->
+<div class="toc">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#immediate">What to do immediately</a></li>
+    <li><a href="#registration">Swedish registration of the death</a></li>
+    <li><a href="#funeral">Contact a funeral / cremation company</a></li>
+    <li><a href="#indian-citizen">If the person is an Indian citizen</a></li>
+    <li><a href="#ashes-to-india">Cremation in Sweden &amp; taking ashes to India</a></li>
+    <li><a href="#body-to-india">Sending the body to India (repatriation)</a></li>
+    <li><a href="#body-vs-ashes">Body to India vs cremation in Sweden — comparison</a></li>
+    <li><a href="#bank">Bank account — what to do and what NOT to do</a></li>
+    <li><a href="#insurance">Insurance</a></li>
+    <li><a href="#employer">Employer / HR</a></li>
+    <li><a href="#pension">Pension</a></li>
+    <li><a href="#family">Family, children &amp; support</a></li>
+    <li><a href="#migration">Migrationsverket — immigration status</a></li>
+    <li><a href="#estate">Dödsbo — the estate</a></li>
+    <li><a href="#bouppteckning">Bouppteckning (estate inventory)</a></li>
+    <li><a href="#timeline">Recommended timeline</a></li>
+    <li><a href="#do-not-list">"Do NOT" checklist</a></li>
+    <li><a href="#comparison">India vs Sweden — comparison table</a></li>
+    <li><a href="#rituals">Religious rituals &amp; sacred items</a></li>
+    <li><a href="#links">Important links &amp; contacts</a></li>
+    <li><a href="#comments">Community contributions &amp; comments</a></li>
+  </ol>
+</div>
+
+<!-- 1. Immediate -->
+<div class="section" id="immediate">
+  <h2>1. What To Do Immediately</h2>
+
+  <h3>A. If the person dies at home</h3>
+
+  <h4>If the death was expected (e.g. serious illness)</h4>
+  <ul>
+    <li>Contact the <strong>healthcare provider / home healthcare team</strong> responsible for the person.</li>
+    <li>A doctor must come and formally <strong>confirm the death</strong>.</li>
+    <li>The doctor handles the required death documentation.</li>
+    <li>The body is normally then taken care of by a funeral home.</li>
+  </ul>
+  <p><em>Source: <a href="https://www.1177.se/Stockholm/sa-fungerar-varden/anhorig---narstaende/nar-nagon-har-dott/dodsfall/" target="_blank" rel="noopener">1177 Vårdguiden — När någon har dött</a></em></p>
+
+  <h4>If the death was unexpected or suspicious</h4>
+  <ul>
+    <li>Call <strong>112</strong> (police/ambulance).</li>
+    <li><strong>Do not move or disturb the body</strong> unnecessarily.</li>
+    <li>Police may need to investigate before the body can be released.</li>
+  </ul>
+
+  <h3>B. If the person dies in hospital</h3>
+  <p>The hospital will normally:</p>
+  <ul>
+    <li>Have a doctor confirm the death.</li>
+    <li>Prepare the necessary medical / death documentation.</li>
+    <li>Notify Skatteverket.</li>
+    <li>Help the family say goodbye.</li>
+    <li>Help contact a funeral home, chaplain, or faith representative if requested.</li>
+  </ul>
+  <p><em>Skatteverket registers the death once it receives the <strong>dödsbevis</strong> from the doctor/hospital. Source: <a href="https://www.skatteverket.se/privat/folkbokforing/narenanhorigdor" target="_blank" rel="noopener">Skatteverket</a></em></p>
+</div>
+
+<!-- 2. Registration -->
+<div class="section" id="registration">
+  <h2>2. Swedish Registration of the Death</h2>
+  <p>The doctor/hospital sends the <strong>dödsbevis</strong> (death certificate) to Skatteverket. The family does <strong>not</strong> normally need to do this themselves.</p>
+
+  <h3>Dödsfallsintyg med släktutredning</h3>
+  <p>After Skatteverket registers the death, the family can obtain this important document. It shows:</p>
+  <ul>
+    <li>Date of death</li>
+    <li>Spouse / partner</li>
+    <li>Children</li>
+    <li>Relevant family information</li>
+  </ul>
+  <p>This is commonly required by banks, insurance companies, pension providers, and other authorities.</p>
+  <p><em>Source: <a href="https://www.skatteverket.se/privat/folkbokforing/narenanhorigdor" target="_blank" rel="noopener">Skatteverket — När en anhörig dör</a></em></p>
+</div>
+
+<!-- 3. Funeral -->
+<div class="section" id="funeral">
+  <h2>3. Contact a Funeral / Cremation Company</h2>
+  <p>Contact a <strong>begravningsbyrå</strong> (funeral home) as soon as possible. They can help with:</p>
+  <ul>
+    <li>Transportation of the deceased</li>
+    <li>Viewing / open viewing</li>
+    <li>Funeral ceremony (including Hindu, Muslim, Sikh, Christian, or secular)</li>
+    <li>Cremation or burial</li>
+    <li>Cremation certificate</li>
+    <li>Ashes / urn handling</li>
+    <li>Contact with crematorium</li>
+    <li>All documentation</li>
+  </ul>
+
+  <h3>Cremation rules in Sweden</h3>
+  <ul>
+    <li><strong>Skatteverket must issue an intyg</strong> (certificate) before cremation or burial can take place. The funeral home normally handles this application.</li>
+    <li>Cremation or burial should happen <strong>within 1 month</strong> of death.</li>
+    <li>After cremation, ashes should be buried/interred <strong>within 1 year</strong>.</li>
+    <li>Extensions can be requested from Skatteverket for special circumstances.</li>
+  </ul>
+  <p><em>Source: <a href="https://www.skatteverket.se/privat/folkbokforing/narenanhorigdor/begravning.4.3528414214b3f875805c66.html" target="_blank" rel="noopener">Skatteverket — Begravning</a></em></p>
+</div>
+
+<!-- 4. Indian citizen -->
+<div class="section" id="indian-citizen">
+  <h2>4. If the Person Is an Indian Citizen</h2>
+  <p>There are <strong>two parallel processes</strong>:</p>
+
+  <div class="priority-box">
+    <h4>Swedish process</h4>
+    <p>The death is first registered in Sweden and the Swedish death certificate is obtained. The full Swedish process (funeral, estate, bank, insurance) still applies because the death occurred in Sweden.</p>
+  </div>
+
+  <div class="priority-box">
+    <h4>Indian Embassy process</h4>
+    <p>The death must also be registered with the <strong>Embassy of India, Stockholm</strong>.</p>
+  </div>
+
+  <h3>Documents required by the Indian Embassy</h3>
+  <ol>
+    <li>Completed Miscellaneous / Attestation form</li>
+    <li>Original passport of the deceased</li>
+    <li>Original passport of the applicant</li>
+    <li>Copy of deceased's passport</li>
+    <li>Self-attested copy of applicant's passport</li>
+    <li>Original death certificate from local authorities / Skatteverket + copy</li>
+    <li>Proof of payment of <strong>SEK 224</strong></li>
+    <li>Return envelope if documents are being returned by post</li>
+  </ol>
+  <p>The Embassy currently states <strong>same-day processing</strong> when the application is complete.</p>
+  <p><em>Source: <a href="https://www.indembassysweden.gov.in/page/death-certificate/" target="_blank" rel="noopener">Embassy of India — Death Certificate</a></em></p>
+
+  <div class="alert alert-blue">
+    <strong>Embassy emergency number for death cases:</strong> +46 73 484 4992<br>
+    <strong>Consular contact:</strong> +46 8 684 32100<br>
+    <em>Source: <a href="https://www.indembassysweden.gov.in/page/contact-us/" target="_blank" rel="noopener">Embassy of India — Contact</a></em>
+  </div>
+</div>
+
+<!-- 5. Ashes to India -->
+<div class="section" id="ashes-to-india">
+  <h2>5. Cremation in Sweden &amp; Taking Ashes to India</h2>
+  <p>If the family decides to cremate in Sweden and carry the ashes to India, the process is:</p>
+  <p><strong>Death → Swedish death registration → Funeral home → Skatteverket cremation certificate → Cremation → Cremation certificate → Indian Embassy → Ashes to India</strong></p>
+
+  <h3>Documents required by the Embassy for taking ashes</h3>
+  <ul>
+    <li>Swedish / local <strong>Death Certificate</strong></li>
+    <li><strong>Cremation Certificate</strong></li>
+    <li>Certificate from the undertaker confirming the urn contains the deceased's ashes and is sealed</li>
+    <li>Original passport / OCI of deceased + copy</li>
+    <li>Passport / OCI of person carrying the ashes + copy</li>
+    <li>Embassy payment proof</li>
+  </ul>
+  <p>The Embassy issues a letter to facilitate customs and other authorities for transporting the ashes to India.</p>
+  <p><em>Source: <a href="https://www.indembassysweden.gov.in/page/taking-ashes-of-deceased-persons-to-india/" target="_blank" rel="noopener">Embassy of India — Taking Ashes to India</a></em></p>
+</div>
+
+<!-- 6. Body to India -->
+<div class="section" id="body-to-india">
+  <h2>6. Sending the Body to India (Repatriation)</h2>
+
+  <div class="alert alert-red">
+    <strong>IMPORTANT:</strong> If there is even a possibility that the family wants the body sent to India, tell the hospital/funeral home immediately. <strong>Do not approve cremation</strong> until the family has made a final decision.
+  </div>
+
+  <h3>Steps</h3>
+  <ol>
+    <li>Tell the hospital/funeral home: <em>"The family wants to repatriate the body to India. Please do not proceed with cremation."</em></li>
+    <li>Appoint a <strong>funeral home experienced in international repatriation</strong>.</li>
+    <li>Contact the <strong>Embassy of India, Stockholm</strong>.</li>
+    <li>Contact <strong>all insurance providers and employer/HR</strong> before paying — some policies may cover repatriation.</li>
+    <li>The funeral home coordinates with the airline/cargo company and Indian receiving funeral service.</li>
+  </ol>
+
+  <h3>Documents normally required</h3>
+  <ul>
+    <li>Swedish <strong>death certificate / dödsbevis</strong></li>
+    <li>Deceased person's passport</li>
+    <li>Indian Embassy documentation / approval</li>
+    <li>Medical certificate</li>
+    <li><strong>Smittointyg</strong> — certificate confirming no infectious disease</li>
+    <li><strong>Balsameringsintyg</strong> — embalming certificate</li>
+    <li><strong>Transportintyg</strong> — transport certificate</li>
+    <li><strong>Lödningsintyg</strong> — certificate for the sealed coffin</li>
+    <li>Permission from Swedish authorities (issued by Skatteverket)</li>
+    <li>Airline cargo documentation</li>
+    <li>Documentation required by receiving authorities in India</li>
+  </ul>
+  <p><em>Sources: <a href="https://www.begravningar.se/om-sbf/swedish-funeral-international-assistance-sfia/" target="_blank" rel="noopener">Swedish Funeral Directors Association (SFIA)</a>, <a href="https://www.norden.org/en/info-norden/death-inheritance-and-wills-sweden" target="_blank" rel="noopener">Norden.org</a></em></p>
+
+  <h3>Estimated cost: Sweden → India</h3>
+  <table>
+    <thead>
+      <tr><th>Expense</th><th>Rough planning amount (SEK)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Funeral home / preparation</td><td>10,000–25,000+</td></tr>
+      <tr><td>Embalming &amp; certificates</td><td>5,000–15,000+</td></tr>
+      <tr><td>Special coffin / zinc-lined coffin</td><td>10,000–25,000+</td></tr>
+      <tr><td>Local transportation</td><td>3,000–10,000+</td></tr>
+      <tr><td>Air cargo</td><td>20,000–50,000+</td></tr>
+      <tr><td>Documentation / administration</td><td>2,000–10,000+</td></tr>
+      <tr><td><strong>Possible total</strong></td><td><strong>~50,000–120,000+</strong></td></tr>
+    </tbody>
+  </table>
+  <p><em>These are planning figures, not a quotation. Source: <a href="https://begravningsbolaget.se/begravning/transport/" target="_blank" rel="noopener">Begravningsbolaget</a></em></p>
+
+  <div class="alert alert-yellow">
+    <strong>Check insurance BEFORE paying.</strong> Ask: <em>"Does the deceased have any insurance that covers repatriation of mortal remains to India?"</em> Check employer group life insurance, travel insurance, home insurance, credit-card insurance, private life insurance, pension/occupational insurance, and union insurance.
+  </div>
+</div>
+
+<!-- 7. Comparison -->
+<div class="section" id="body-vs-ashes">
+  <h2>7. Body to India vs Cremation in Sweden — Comparison</h2>
+  <table>
+    <thead>
+      <tr><th>Factor</th><th>Body to India</th><th>Cremate in Sweden + Ashes to India</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Cost</td><td>High (~SEK 50,000–120,000+)</td><td>Considerably lower</td></tr>
+      <tr><td>Paperwork</td><td>Extensive</td><td>Much simpler</td></tr>
+      <tr><td>Embalming</td><td>Usually required</td><td>Not required</td></tr>
+      <tr><td>Special coffin</td><td>Required (zinc-lined)</td><td>Not required</td></tr>
+      <tr><td>Air cargo</td><td>Required (heavy/expensive)</td><td>Much easier</td></tr>
+      <tr><td>Swedish cremation</td><td>No</td><td>Yes</td></tr>
+      <tr><td>Indian Embassy involvement</td><td>Yes</td><td>Yes</td></tr>
+      <tr><td>Complexity</td><td>High</td><td>Much lower</td></tr>
+      <tr><td>Time</td><td>Can take several days+</td><td>Considerably easier</td></tr>
+    </tbody>
+  </table>
+  <p>If the family wants the <strong>final cremation in India</strong>, this must be decided <strong>before</strong> the Swedish cremation is arranged.</p>
+</div>
+
+<!-- 8. Bank -->
+<div class="section" id="bank">
+  <h2>8. Bank Account</h2>
+
+  <div class="alert alert-red">
+    <strong>DO NOT:</strong>
+    <ul style="margin:8px 0 0 20px;">
+      <li>Use the deceased person's debit card.</li>
+      <li>Withdraw money for personal use.</li>
+      <li>Transfer the deceased's money to another person's account.</li>
+      <li>Empty the account.</li>
+    </ul>
+    The money belongs to the <strong>dödsbo (estate)</strong>, not automatically to the spouse.
+  </div>
+
+  <div class="alert alert-green">
+    <strong>DO:</strong> Contact the bank <strong>as soon as possible</strong>. Say: <em>"The account holder has passed away. We need an appointment to understand how the estate can pay urgent bills and how the surviving family can access funds legally."</em>
+  </div>
+
+  <p>The bank can explain: accounts, mortgage, loans, joint accounts, autogiro, funeral payments, estate payments, insurance, what documents the spouse needs, and how the estate account works.</p>
+  <p><em>Source: <a href="https://www.skatteverket.se/privat/folkbokforing/narenanhorigdor" target="_blank" rel="noopener">Skatteverket</a></em></p>
+</div>
+
+<!-- 9. Insurance -->
+<div class="section" id="insurance">
+  <h2>9. Insurance — Contact Immediately</h2>
+  <p>Contact <strong>all of these</strong> during the first few days:</p>
+  <ul>
+    <li>Life insurance</li>
+    <li>Home insurance</li>
+    <li>Accident insurance</li>
+    <li>Employer insurance</li>
+    <li>Pension insurance</li>
+    <li>Union insurance (if applicable)</li>
+    <li>Credit / mortgage insurance</li>
+    <li>Any private insurance in India</li>
+  </ul>
+  <p>Ask for written confirmation of: policy number, beneficiary, amount payable, required documents, and expected processing time.</p>
+</div>
+
+<!-- 10. Employer -->
+<div class="section" id="employer">
+  <h2>10. Employer / HR</h2>
+  <p>If the person was employed, contact HR immediately. Ask them to check:</p>
+  <ul>
+    <li>Group life insurance</li>
+    <li>Occupational pension</li>
+    <li>Survivor's pension</li>
+    <li>Repayment protection (<strong>återbetalningsskydd</strong>)</li>
+    <li>Employer death benefit</li>
+    <li>Collective agreement benefits</li>
+    <li>Salary owed</li>
+    <li>Holiday pay</li>
+    <li>Other employee benefits</li>
+  </ul>
+  <p>Ask HR for a <strong>written breakdown</strong> of all benefits and amounts.</p>
+</div>
+
+<!-- 11. Pension -->
+<div class="section" id="pension">
+  <h2>11. Pension</h2>
+  <p>Check all of the following:</p>
+  <ul>
+    <li>Collectum</li>
+    <li>Occupational pension</li>
+    <li>ITP</li>
+    <li>Pension providers</li>
+    <li>Repayment protection</li>
+    <li>Survivor protection</li>
+    <li>Any pension in India</li>
+  </ul>
+  <div class="alert alert-yellow">
+    <strong>Important question:</strong> <em>"Did the deceased have återbetalningsskydd?"</em> If yes, pension savings may be paid to eligible beneficiaries.
+  </div>
+</div>
+
+<!-- 12. Family -->
+<div class="section" id="family">
+  <h2>12. Family, Children &amp; Support</h2>
+  <p>If there is a child/family in Sweden, inform:</p>
+  <ul>
+    <li>School / preschool</li>
+    <li>Social services (if the family needs support)</li>
+    <li>Försäkringskassan</li>
+    <li>Employer of surviving spouse</li>
+    <li>Healthcare / child support services</li>
+  </ul>
+  <p>Ask what support is available for: childcare, financial support, survivor benefits, housing, psychological/grief support, and practical help.</p>
+  <p><em>Source: <a href="https://www.forsakringskassan.se/" target="_blank" rel="noopener">Försäkringskassan</a></em></p>
+</div>
+
+<!-- 13. Migration -->
+<div class="section" id="migration">
+  <h2>13. Migrationsverket — Immigration Status</h2>
+  <p>If the deceased was an Indian citizen/resident (not a Swedish citizen), check the family's immigration situation:</p>
+  <ul>
+    <li>Surviving spouse's residence permit</li>
+    <li>Child's residence permit</li>
+    <li>Permanent residence status</li>
+    <li>Citizenship application</li>
+    <li>Any pending immigration case</li>
+    <li>Dependency / family connection</li>
+  </ul>
+  <p>Inform <strong>Migrationsverket</strong> where the death affects a pending residence/family case.</p>
+  <p><em>Source: <a href="https://www.migrationsverket.se/" target="_blank" rel="noopener">Migrationsverket</a></em></p>
+</div>
+
+<!-- 14. Estate -->
+<div class="section" id="estate">
+  <h2>14. Dödsbo — The Estate</h2>
+  <p>After death, everything owned and owed becomes part of the <strong>dödsbo</strong> (estate):</p>
+  <ul>
+    <li>Bank accounts, savings, shares</li>
+    <li>Car, apartment/house, personal belongings</li>
+    <li>Insurance payments, pension-related assets</li>
+    <li>Loans, credit cards, mortgage, taxes, bills</li>
+  </ul>
+  <p>The spouse, children, and other eligible heirs may be <strong>dödsbodelägare</strong> (estate beneficiaries).</p>
+  <p>If the deceased has very limited assets (insufficient beyond funeral costs), the family may use a <strong>dödsboanmälan</strong> instead of a full bouppteckning — handled by the <strong>socialnämnden in the municipality</strong>.</p>
+</div>
+
+<!-- 15. Bouppteckning -->
+<div class="section" id="bouppteckning">
+  <h2>15. Bouppteckning (Estate Inventory)</h2>
+  <p>This is one of the most important legal steps. It records assets, debts, spouse, children, and other estate beneficiaries.</p>
+  <ul>
+    <li>Must be prepared within <strong>3 months</strong>.</li>
+    <li>Must be submitted to Skatteverket within <strong>4 months</strong> of death.</li>
+    <li>A registered bouppteckning is the formal proof of who can represent the estate — often needed by banks.</li>
+  </ul>
+  <p><em>Source: <a href="https://www.skatteverket.se/privat/bouppteckning.4.18e1b10334ebe8bc80001217.html" target="_blank" rel="noopener">Skatteverket — Bouppteckning</a></em></p>
+</div>
+
+<!-- 16. Timeline -->
+<div class="section" id="timeline">
+  <h2>16. Recommended Timeline</h2>
+
+  <div class="timeline-item urgent">
+    <h4>🚨 First few hours</h4>
+    <ul>
+      <li>Contact healthcare/doctor (expected death) or 112 (unexpected).</li>
+      <li>Do not move the body unnecessarily.</li>
+      <li>Hospital handles documentation if death occurred there.</li>
+      <li>Ask for time with the deceased / family viewing.</li>
+    </ul>
+  </div>
+
+  <div class="timeline-item urgent">
+    <h4>🟠 First 24 hours</h4>
+    <ul>
+      <li>Contact funeral home.</li>
+      <li>Contact closest family.</li>
+      <li>Contact employer / HR.</li>
+      <li>Contact bank.</li>
+      <li>Contact insurance.</li>
+      <li>Secure home / car / property.</li>
+      <li>Locate passport, ID, insurance, and important documents.</li>
+      <li><strong>If body may go to India — tell funeral home NOW.</strong></li>
+    </ul>
+  </div>
+
+  <div class="timeline-item week">
+    <h4>🟡 First 2–7 days</h4>
+    <ul>
+      <li>Confirm Skatteverket registration.</li>
+      <li>Obtain <strong>dödsfallsintyg med släktutredning</strong>.</li>
+      <li>Funeral/cremation planning.</li>
+      <li>Contact Indian Embassy if Indian citizen.</li>
+      <li>Start insurance claims.</li>
+      <li>Contact pension providers.</li>
+      <li>Contact school/preschool.</li>
+      <li>Contact Migrationsverket if relevant.</li>
+      <li>Discuss financial/social support for surviving spouse and child.</li>
+    </ul>
+  </div>
+
+  <div class="timeline-item month">
+    <h4>🟢 Within 1 month</h4>
+    <ul>
+      <li>Cremation/burial (normally within 1 month).</li>
+      <li>Complete funeral arrangements.</li>
+      <li>Obtain cremation certificate.</li>
+      <li>If ashes going to India, start Embassy/transport documentation.</li>
+    </ul>
+  </div>
+
+  <div class="timeline-item month">
+    <h4>🔵 Within 3–4 months</h4>
+    <ul>
+      <li>Prepare <strong>bouppteckning within 3 months</strong>.</li>
+      <li>Submit to Skatteverket within <strong>4 months</strong>.</li>
+      <li>Continue estate/bank/insurance administration.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 17. Do-not list -->
+<div class="section" id="do-not-list">
+  <h2>17. Important "Do NOT" Checklist</h2>
+
+  <div class="alert alert-red">
+    <strong>Until the bank/estate representative advises otherwise:</strong>
+    <ul style="margin:8px 0 0 20px;">
+      <li>❌ Don't use the deceased person's bank card.</li>
+      <li>❌ Don't withdraw/transfer money to another account.</li>
+      <li>❌ Don't sell major assets privately.</li>
+      <li>❌ Don't distribute inheritance yet.</li>
+      <li>❌ Don't throw away documents.</li>
+      <li>❌ Don't cancel insurance before checking claims.</li>
+    </ul>
+  </div>
+
+  <div class="alert alert-green">
+    <strong>Instead:</strong>
+    <ul style="margin:8px 0 0 20px;">
+      <li>✅ Contact the bank → establish the dödsbo.</li>
+      <li>✅ Identify beneficiaries / debts.</li>
+      <li>✅ Pay legitimate estate expenses.</li>
+      <li>✅ Complete bouppteckning.</li>
+      <li>✅ Then handle inheritance (arvskifte).</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 18. Comparison -->
+<div class="section" id="comparison">
+  <h2>18. India vs Sweden — Comparison</h2>
+  <table>
+    <thead>
+      <tr><th>Issue</th><th>Swedish citizen</th><th>Indian citizen in Sweden</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Doctor confirms death</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Hospital reports death</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Skatteverket registers death</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Swedish death certificate</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Funeral/cremation in Sweden</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Indian Embassy registration</td><td>❌</td><td><strong>✅ Required</strong></td></tr>
+      <tr><td>Indian passport handling</td><td>❌</td><td><strong>✅ Required</strong></td></tr>
+      <tr><td>Taking ashes to India</td><td>If applicable</td><td><strong>Embassy docs required</strong></td></tr>
+      <tr><td>Bank / dödsbo</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Insurance / pension</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Bouppteckning</td><td>Usually</td><td>Usually</td></tr>
+      <tr><td>Migrationsverket</td><td>Usually not</td><td><strong>May be relevant</strong></td></tr>
+      <tr><td>Indian assets/inheritance</td><td>If applicable</td><td><strong>May require India-side work</strong></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 19. Religious Rituals -->
+<div class="section" id="rituals">
+  <h2>19. Religious Rituals &amp; Sacred Items in Sweden</h2>
+  <p>Finding religious ritual items in Sweden can be challenging. Below is guidance for different faiths. <strong>If you have additional information, please share it in the <a href="#comments">comments section</a> below.</strong></p>
+
+  <div class="ritual-section">
+    <h4>🙏 Hindu Rituals</h4>
+    <ul>
+      <li><strong>Ganga Jal (Gangā water):</strong> May be available at Indian grocery stores in Stockholm, Malmö, or Gothenburg. Ask at temples or community organizations. Some families bring it from India and keep a small quantity at home.</li>
+      <li><strong>Tulsi (holy basil):</strong> Can be grown at home or purchased at Indian stores.</li>
+      <li><strong>Ghee, sandalwood, camphor, incense:</strong> Available at Indian grocery stores and some Asian supermarkets.</li>
+      <li><strong>White cloth (kafan/shroud):</strong> Plain white cotton fabric from fabric stores.</li>
+      <li><strong>Hindu priest (pandit):</strong> Contact local Hindu temples or the Indian community network in your city.</li>
+    </ul>
+    <p><strong>Temples in Sweden:</strong></p>
+    <ul>
+      <li>Hindu Mandir Stockholm</li>
+      <li>Hindu Cultural Centre, Gothenburg</li>
+      <li>Contact your local Indian association for temple/priest referrals</li>
+    </ul>
+  </div>
+
+  <div class="ritual-section">
+    <h4>☪️ Muslim Rituals</h4>
+    <ul>
+      <li><strong>Zamzam water:</strong> Available at some Islamic centres, halal stores, or through community members who have performed Hajj/Umrah.</li>
+      <li><strong>Kafan (burial shroud):</strong> White cotton cloth, available at Islamic centres or fabric stores. Some mosques keep kafan in stock.</li>
+      <li><strong>Ghusl (ritual washing):</strong> Many mosques in Sweden have facilities for ghusl. Contact your local mosque.</li>
+      <li><strong>Imam / religious leader:</strong> Contact your local mosque or Islamic cultural centre.</li>
+      <li><strong>Muslim burial:</strong> Several Swedish cemeteries have designated Muslim burial sections. Contact your municipality's <em>kyrkogårdsförvaltning</em> (cemetery administration).</li>
+    </ul>
+    <p><strong>Islamic centres in Sweden:</strong></p>
+    <ul>
+      <li>Stockholms Moské (Stockholm Grand Mosque)</li>
+      <li>Islamic Centre, Malmö</li>
+      <li>Göteborgs Moské</li>
+      <li>Contact <a href="https://www.islamiskaforbundet.se/" target="_blank" rel="noopener">Sveriges Muslimska Råd / Islamiska Förbundet</a> for local mosque referrals</li>
+    </ul>
+  </div>
+
+  <div class="ritual-section">
+    <h4>🙏 Sikh Rituals</h4>
+    <ul>
+      <li><strong>Amrit (holy water):</strong> Available at Gurdwaras.</li>
+      <li><strong>Rumala, Gutka Sahib, and other items:</strong> Ask at the local Gurdwara.</li>
+      <li><strong>Granthi / religious leader:</strong> Contact the local Gurdwara.</li>
+      <li><strong>Cremation:</strong> Sikhs traditionally cremate. Swedish crematoriums can accommodate this.</li>
+    </ul>
+    <p><strong>Gurdwaras in Sweden:</strong></p>
+    <ul>
+      <li>Gurdwara Singh Sabha, Stockholm</li>
+      <li>Gurdwara Malmö</li>
+      <li>Contact the local Sikh community for referrals</li>
+    </ul>
+  </div>
+
+  <div class="ritual-section">
+    <h4>✝️ Christian Rituals</h4>
+    <ul>
+      <li><strong>Holy water, Bible, crucifix:</strong> Available through local churches.</li>
+      <li><strong>Last rites / priest:</strong> Contact your local church (Svenska kyrkan, Catholic church, or other denomination).</li>
+      <li>Hospital chaplains are often available through the hospital.</li>
+    </ul>
+  </div>
+
+  <div class="ritual-section">
+    <h4>🙏 Jain Rituals</h4>
+    <ul>
+      <li><strong>Sacred items:</strong> Contact the Indian community network — Jain communities in Sweden are small but connected.</li>
+      <li><strong>Cremation:</strong> Jains traditionally cremate. Swedish crematoriums can accommodate this.</li>
+    </ul>
+  </div>
+
+  <div class="ritual-section">
+    <h4>☸️ Buddhist Rituals</h4>
+    <ul>
+      <li><strong>Incense, prayer beads, Buddhist texts:</strong> Available at Buddhist centres or Asian stores.</li>
+      <li><strong>Monk / religious leader:</strong> Contact Buddhist centres in Stockholm, Gothenburg, or Malmö.</li>
+    </ul>
+  </div>
+
+  <div class="alert alert-yellow">
+    <strong>Can't find a ritual item?</strong> Contact your local Indian/South Asian community association, temple, mosque, or gurdwara. Many community members keep sacred items at home and are willing to help in times of need. Also check Indian grocery stores and online shops that ship to Sweden.
+  </div>
+</div>
+
+<!-- 20. Links -->
+<div class="section" id="links">
+  <h2>20. Important Links &amp; Contacts</h2>
+
+  <h3>Swedish Authorities</h3>
+  <div class="links-grid">
+    <div class="link-card">
+      <h4>Skatteverket</h4>
+      <p>Death registration, dödsbevis, bouppteckning, cremation certificates</p>
+      <a href="https://www.skatteverket.se/privat/folkbokforing/narenanhorigdor" target="_blank" rel="noopener">skatteverket.se — När en anhörig dör →</a>
+    </div>
+    <div class="link-card">
+      <h4>Skatteverket — Bouppteckning</h4>
+      <p>Estate inventory information and forms</p>
+      <a href="https://www.skatteverket.se/privat/bouppteckning.4.18e1b10334ebe8bc80001217.html" target="_blank" rel="noopener">skatteverket.se — Bouppteckning →</a>
+    </div>
+    <div class="link-card">
+      <h4>Skatteverket — Begravning</h4>
+      <p>Cremation and burial certificates, rules</p>
+      <a href="https://www.skatteverket.se/privat/folkbokforing/narenanhorigdor/begravning.4.3528414214b3f875805c66.html" target="_blank" rel="noopener">skatteverket.se — Begravning →</a>
+    </div>
+    <div class="link-card">
+      <h4>1177 Vårdguiden</h4>
+      <p>Healthcare guidance when someone dies</p>
+      <a href="https://www.1177.se/Stockholm/sa-fungerar-varden/anhorig---narstaende/nar-nagon-har-dott/dodsfall/" target="_blank" rel="noopener">1177.se — Dödsfall →</a>
+    </div>
+    <div class="link-card">
+      <h4>Försäkringskassan</h4>
+      <p>Social insurance, survivor benefits, child support</p>
+      <a href="https://www.forsakringskassan.se/" target="_blank" rel="noopener">forsakringskassan.se →</a>
+    </div>
+    <div class="link-card">
+      <h4>Migrationsverket</h4>
+      <p>Immigration, residence permits, family situations</p>
+      <a href="https://www.migrationsverket.se/" target="_blank" rel="noopener">migrationsverket.se →</a>
+    </div>
+    <div class="link-card">
+      <h4>Efterlevandeguiden</h4>
+      <p>Official Swedish checklist after a death</p>
+      <a href="https://www.efterlevandeguiden.se/checklista-efter-ett-dodsfall.html" target="_blank" rel="noopener">efterlevandeguiden.se →</a>
+    </div>
+  </div>
+
+  <h3>Indian Embassy, Stockholm</h3>
+  <div class="links-grid">
+    <div class="link-card">
+      <h4>Embassy — Death Certificate</h4>
+      <p>Requirements for registering a death</p>
+      <a href="https://www.indembassysweden.gov.in/page/death-certificate/" target="_blank" rel="noopener">indembassysweden.gov.in — Death Certificate →</a>
+    </div>
+    <div class="link-card">
+      <h4>Embassy — Taking Ashes to India</h4>
+      <p>Documentation for transporting ashes</p>
+      <a href="https://www.indembassysweden.gov.in/page/taking-ashes-of-deceased-persons-to-india/" target="_blank" rel="noopener">indembassysweden.gov.in — Ashes →</a>
+    </div>
+    <div class="link-card">
+      <h4>Embassy — Contact</h4>
+      <p>Emergency: +46 73 484 4992 | Consular: +46 8 684 32100</p>
+      <a href="https://www.indembassysweden.gov.in/page/contact-us/" target="_blank" rel="noopener">indembassysweden.gov.in — Contact →</a>
+    </div>
+    <div class="link-card">
+      <h4>Embassy — Main Website</h4>
+      <p>General consular services</p>
+      <a href="https://www.indembassysweden.gov.in/" target="_blank" rel="noopener">indembassysweden.gov.in →</a>
+    </div>
+  </div>
+
+  <h3>Funeral &amp; Cremation</h3>
+  <div class="links-grid">
+    <div class="link-card">
+      <h4>Swedish Funeral Directors (SFIA)</h4>
+      <p>International funeral assistance, repatriation</p>
+      <a href="https://www.begravningar.se/om-sbf/swedish-funeral-international-assistance-sfia/" target="_blank" rel="noopener">begravningar.se — SFIA →</a>
+    </div>
+    <div class="link-card">
+      <h4>Begravningsbolaget</h4>
+      <p>Funeral services including international transport</p>
+      <a href="https://begravningsbolaget.se/" target="_blank" rel="noopener">begravningsbolaget.se →</a>
+    </div>
+  </div>
+
+  <h3>Other Useful Resources</h3>
+  <div class="links-grid">
+    <div class="link-card">
+      <h4>Norden.org — Death in Sweden</h4>
+      <p>Nordic cooperation guidance on death, inheritance, wills</p>
+      <a href="https://www.norden.org/en/info-norden/death-inheritance-and-wills-sweden" target="_blank" rel="noopener">norden.org →</a>
+    </div>
+    <div class="link-card">
+      <h4>GOV.UK — Bereavement in Sweden</h4>
+      <p>British government's guide (useful English-language reference)</p>
+      <a href="https://www.gov.uk/government/publications/when-someone-dies-in-sweden/sweden-bereavement-information" target="_blank" rel="noopener">gov.uk — Sweden bereavement →</a>
+    </div>
+    <div class="link-card">
+      <h4>Collectum</h4>
+      <p>Occupational pension provider (ITP)</p>
+      <a href="https://www.collectum.se/" target="_blank" rel="noopener">collectum.se →</a>
+    </div>
+  </div>
+</div>
+
+<!-- 21. Comments -->
+<div class="section comment-section" id="comments">
+  <h2>Community Contributions &amp; Comments</h2>
+  <p>This guide is a living document. If you have information that could help others — such as where to find ritual items, funeral home recommendations, updated processes, or personal experience — please share it below. Your contribution could help a family during their most difficult time.</p>
+
+  <h4>Ways to contribute:</h4>
+  <ul>
+    <li><strong>Missing information?</strong> Share details about processes, contacts, or resources we haven't covered.</li>
+    <li><strong>Ritual items?</strong> Know where to find Ganga Jal, Zamzam water, or other sacred items in your Swedish city? Please share.</li>
+    <li><strong>Funeral homes?</strong> Had a good experience with an international funeral home? Let others know.</li>
+    <li><strong>Costs?</strong> If you've been through this process, sharing approximate costs helps others plan.</li>
+    <li><strong>Corrections?</strong> If any information is outdated or incorrect, please let us know.</li>
+  </ul>
+
+  <!-- Utterances comment widget (GitHub Issues-based) -->
+  <script src="https://utteranc.es/client.js"
+    repo="ascertain/ascertain.github.io"
+    issue-term="pathname"
+    label="community-comment"
+    theme="github-dark"
+    crossorigin="anonymous"
+    async>
+  </script>
+
+  <noscript>
+    <div class="alert alert-yellow" style="margin-top:20px;">
+      <strong>Comments require JavaScript.</strong> If you cannot see the comment form above, please
+      <a href="https://github.com/ascertain/ascertain.github.io/issues/new?title=Death+Guide+Sweden+Feedback&labels=community-comment" target="_blank" rel="noopener">open a GitHub issue</a>
+      to share your feedback or information.
+    </div>
+  </noscript>
+
+  <div style="margin-top:24px;">
+    <p style="font-size:0.9rem;color:var(--text-muted);">
+      You can also email contributions to <strong>mo.kashif@gmail.com</strong> or
+      <a href="https://github.com/ascertain/ascertain.github.io/issues/new?title=Death+Guide+Sweden+Feedback&labels=community-comment" target="_blank" rel="noopener">open a GitHub issue</a>.
+    </p>
+  </div>
+</div>
+
+<!-- Priority summary -->
+<div class="section">
+  <h2>Quick Reference — Priority Checklist</h2>
+  <div class="priority-box">
+    <ol>
+      <li><strong>Doctor/Hospital →</strong> Death confirmation</li>
+      <li><strong>Skatteverket →</strong> Death registered (handled by doctor/hospital)</li>
+      <li><strong>Funeral company →</strong> Body, viewing &amp; cremation</li>
+      <li><strong>Bank →</strong> Protect account + arrange payment of necessary bills</li>
+      <li><strong>Insurance + employer HR →</strong> Life insurance / pension benefits</li>
+      <li><strong>Indian Embassy →</strong> Register death / passport / consular documentation</li>
+      <li><strong>School + social services →</strong> Child / family support</li>
+      <li><strong>Migrationsverket →</strong> Check family's immigration status if applicable</li>
+      <li><strong>Cremation →</strong> Skatteverket certificate + ceremony</li>
+      <li><strong>Ashes →</strong> Embassy documentation if taking to India</li>
+      <li><strong>Bouppteckning →</strong> Within 3 months / submit within 4 months</li>
+      <li><strong>Inheritance / arvskifte →</strong> After estate administration</li>
+    </ol>
+  </div>
+</div>
+
+<p style="text-align:center;color:#b0a898;font-size:0.85rem;margin-top:40px;padding-bottom:20px;">
+  This guide was created to help Indian families in Sweden navigate an incredibly difficult time.<br>
+  If this helped you, please share it with others who might need it.
+</p>
+
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+  window.addEventListener('scroll', function() {
+    var btn = document.getElementById('backToTop');
+    btn.style.display = window.scrollY > 500 ? 'block' : 'none';
+  });
+</script>
