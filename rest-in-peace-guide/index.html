@@ -1,381 +1,695 @@
----
-layout: default
-title: "Mohammad Kashif Subrati — Ascertain — Automation Specialist"
-description: "Mohammad Kashif Subrati (Ascertain) — Automation Specialist, SDET, and Quality Engineer based in Malmö, Sweden."
-keywords:
-  - ascertain
-  - kashif
-  - subrati
-  - mohammad kashif subrati
-  - kashif subrati
-  - ascertain kashif
-  - ascertain subrati
-  - kashif automation specialist
-  - ascertain automation
-  - ascertain blog
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rest in Peace — A Guide for Families in Sweden</title>
+  <meta name="description" content="A compassionate step-by-step guide for Indian nationals and families in Sweden on what to do when a loved one passes away.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-<style>
-  .hero-home {
-    text-align: center;
-    padding: 60px 0 40px;
-  }
-  .hero-home .avatar {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #1f6feb, #8957e5);
-    color: #fff;
-    font-size: 2.8rem;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 24px;
-    border: 3px solid #484f58;
-    box-shadow: 0 0 30px rgba(31, 111, 235, 0.15);
-  }
-  .hero-home h1 {
-    font-size: 2.6rem;
-    margin-bottom: 8px;
-    color: #f0f6fc;
-  }
-  .hero-home .tagline {
-    font-size: 1.15rem;
-    color: #58a6ff;
-    margin-bottom: 28px;
-    font-weight: 600;
-  }
-  .hero-home .intro {
-    max-width: 700px;
-    margin: 0 auto 20px;
-    font-size: 1.05rem;
-    line-height: 1.85;
-    color: #e6edf3;
-  }
-  .hero-home .intro strong {
-    color: #f0f6fc;
-  }
-  .personal-section {
-    max-width: 700px;
-    margin: 0 auto 32px;
-    background: #161b22;
-    border: 1px solid #30363d;
-    border-radius: 12px;
-    padding: 28px 32px;
-  }
-  .personal-section h3 {
-    color: #f0f6fc;
-    font-size: 1.15rem;
-    margin-bottom: 12px;
-  }
-  .personal-section p {
-    color: #c9d1d9;
-    font-size: 0.98rem;
-    line-height: 1.8;
-    margin-bottom: 12px;
-  }
-  .personal-section p:last-child {
-    margin-bottom: 0;
-  }
-  .personal-section strong {
-    color: #f0f6fc;
-  }
-  .personal-section .place {
-    color: #58a6ff;
-    font-weight: 600;
-  }
-  .home-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    margin: 40px 0;
-  }
-  .home-card {
-    background: #161b22;
-    border: 1px solid #30363d;
-    border-radius: 12px;
-    padding: 28px 24px;
-    text-align: center;
-    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
-  }
-  .home-card:hover {
-    border-color: #58a6ff;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 20px rgba(88, 166, 255, 0.08);
-  }
-  .home-card .icon {
-    font-size: 2rem;
-    margin-bottom: 12px;
-  }
-  .home-card h3 {
-    color: #f0f6fc;
-    margin-bottom: 8px;
-    font-size: 1.1rem;
-  }
-  .home-card p {
-    color: #8b949e;
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-  .expertise-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px;
-    margin: 32px 0;
-  }
-  .expertise-item {
-    background: #161b22;
-    border: 1px solid #30363d;
-    border-radius: 10px;
-    padding: 20px;
-    border-left: 3px solid #1f6feb;
-    transition: border-color 0.2s;
-  }
-  .expertise-item:hover {
-    border-color: #58a6ff;
-  }
-  .expertise-item h4 {
-    color: #58a6ff;
-    margin-bottom: 6px;
-    font-size: 0.95rem;
-  }
-  .expertise-item p {
-    color: #c9d1d9;
-    font-size: 0.85rem;
-    line-height: 1.5;
-  }
-  .home-cta {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 40px 0 20px;
-  }
-  .home-cta a {
-    display: inline-block;
-    padding: 12px 28px;
-    border-radius: 8px;
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: opacity 0.2s, transform 0.2s;
-  }
-  .home-cta a:hover { opacity: 0.85; transform: translateY(-1px); }
-  .btn-primary { background: #1f6feb; color: #fff; }
-  .btn-secondary { background: #21262d; color: #e6edf3; border: 1px solid #30363d; }
-  .btn-accent { background: #238636; color: #fff; }
-  .section-title {
-    font-size: 1.5rem;
-    color: #f0f6fc;
-    margin-bottom: 24px;
-    text-align: center;
-  }
-  .connect-links {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 24px 0;
-  }
-  .connect-links a {
-    color: #58a6ff;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-    padding: 10px 18px;
-    border: 1px solid #30363d;
-    border-radius: 8px;
-    background: #161b22;
-    transition: border-color 0.2s, transform 0.2s;
-  }
-  .connect-links a:hover { border-color: #58a6ff; transform: translateY(-1px); }
-  .divider {
-    border: none;
-    border-top: 1px solid #30363d;
-    margin: 48px auto;
-    max-width: 200px;
-  }
-  .simplerx-banner {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background: linear-gradient(135deg, #161b22 0%, #1c2431 100%);
-    border-top: 2px solid #1f6feb;
-    padding: 14px 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    flex-wrap: wrap;
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
-  }
-  .simplerx-banner .rx-icon {
-    font-size: 1.5rem;
-  }
-  .simplerx-banner .rx-text {
-    color: #e6edf3;
-    font-size: 0.95rem;
-    line-height: 1.4;
-  }
-  .simplerx-banner .rx-text strong {
-    color: #58a6ff;
-  }
-  .simplerx-banner .rx-btn {
-    display: inline-block;
-    padding: 8px 20px;
-    background: #1f6feb;
-    color: #fff;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.9rem;
-    transition: opacity 0.2s, transform 0.2s;
-    white-space: nowrap;
-  }
-  .simplerx-banner .rx-btn:hover {
-    opacity: 0.85;
-    transform: translateY(-1px);
-  }
-  .simplerx-banner .rx-close {
-    background: none;
-    border: none;
-    color: #8b949e;
-    font-size: 1.2rem;
-    cursor: pointer;
-    padding: 4px 8px;
-    line-height: 1;
-    transition: color 0.2s;
-  }
-  .simplerx-banner .rx-close:hover {
-    color: #f0f6fc;
-  }
-  @media (max-width: 600px) {
-    .simplerx-banner {
-      flex-direction: column;
-      text-align: center;
-      gap: 10px;
-      padding: 12px 16px;
+    :root {
+      --cream: #f5f0e8;
+      --text: #3d3529;
+      --text-light: #6b5e4f;
+      --heading: #2c2418;
+      --gold: #8b7040;
+      --gold-light: #c9a96e;
+      --border: #d8d0c2;
+      --card-bg: #ffffff;
+      --section-bg: #faf7f2;
+      --red: #a04040;
+      --red-bg: #fdf2f2;
+      --green: #3d7a3d;
+      --green-bg: #f2faf2;
+      --amber: #8b6b20;
+      --amber-bg: #fdf8ee;
+      --blue-bg: #f0f4fa;
     }
-  }
-</style>
 
-<div class="hero-home">
-  <div class="avatar">MK</div>
-  <h1>Mohammad Kashif</h1>
-  <p class="tagline">Technical Lead · Automation Specialist</p>
+    html { scroll-behavior: smooth; }
 
-  <p class="intro">
-    I'm Kashif — I live in the beautiful city of <strong>Malmö, Sweden</strong> with my wife and kid. 
-    A proud hybrid family — my roots in <strong>India</strong>, my wife from <strong>Morocco</strong>, 
-    and our home in Scandinavia.
-  </p>
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.75;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
 
-  <p class="intro">
-    I lead teams and I build things — that's the short version. The longer one: I'm a Technical Lead 
-    who also happens to be an Automation Specialist. I manage people, budgets, roadmaps, and vendor 
-    relationships — and I also write code, build pipelines, and ship automation frameworks. 
-    <strong>Project management and quality are not separate worlds for me — they're one.</strong> 
-    Whether I'm coaching my team, aligning with stakeholders, or debugging a flaky test, 
-    the goal is always the same: deliver with impact.
-  </p>
-</div>
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background:
+        radial-gradient(ellipse 100% 60% at 50% 0%, rgba(200, 180, 140, 0.15), transparent 70%),
+        radial-gradient(circle 300px at 10% 90%, rgba(180, 160, 130, 0.08), transparent),
+        radial-gradient(circle 300px at 90% 50%, rgba(180, 160, 130, 0.06), transparent);
+      pointer-events: none;
+      z-index: 0;
+    }
 
-<div class="personal-section">
-  <h3>🌍 Beyond the Code</h3>
-  <p>
-    In my free time, I write blogs and contribute to the <strong>tech space</strong> — sharing what I learn 
-    about project management, automation, DevOps, and building teams that ship quality at scale.
-  </p>
-  <p>
-    When I'm not at the keyboard, I'm spending time with my family. We visit 
-    <span class="place">India</span> and <span class="place">Morocco</span> as often as we can. 
-    India — what a beautiful place — it's my birthplace, and every trip back feels like coming home. 
-    And Morocco — the seafood is incredible, and there's nothing better than enjoying it with 
-    my wife in her home country by the sea.
-  </p>
-  <p>
-    A hybrid family, living in a beautiful country, raising our kid with the best of three cultures. 
-    Life is good. ☀️
-  </p>
-</div>
+    .page-wrap { position: relative; z-index: 1; max-width: 820px; margin: 0 auto; padding: 0 24px; }
 
-<hr class="divider">
+    .site-header { text-align: center; padding: 16px 0; border-bottom: 1px solid var(--border); }
+    .site-header a { color: var(--gold); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
 
-<h2 class="section-title">What I Do</h2>
+    .hero { text-align: center; padding: 60px 0 44px; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+    .hero .candle { font-size: 3.5rem; display: block; margin-bottom: 16px; animation: flicker 4s ease-in-out infinite; }
+    @keyframes flicker { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.75; transform: scale(0.98); } }
+    .hero h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 2.6rem; color: var(--heading); margin-bottom: 6px; font-weight: 700; letter-spacing: 1px; }
+    .hero .peace-line { font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; color: var(--gold); font-style: italic; margin-bottom: 24px; }
+    .hero .subtitle { font-size: 1rem; color: var(--text-light); max-width: 600px; margin: 0 auto 24px; line-height: 1.8; }
+    .disclaimer { display: inline-block; padding: 12px 20px; background: var(--amber-bg); border: 1px solid #d4b878; border-radius: 8px; font-size: 0.88rem; color: var(--amber); max-width: 650px; text-align: left; }
 
-<p class="intro" style="text-align: center;">
-  <strong>15+ years</strong> leading teams, managing projects, and building automation — 
-  shipping products used by <strong>300M+ users</strong> at 
-  <strong>IKEA</strong>, <strong>Truecaller</strong>, and <strong>LEGO</strong>.
-</p>
+    .toc { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 28px 32px; margin-bottom: 40px; box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+    .toc h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 1.3rem; color: var(--heading); margin-bottom: 16px; }
+    .toc ol { padding-left: 20px; columns: 2; column-gap: 32px; }
+    .toc li { margin-bottom: 8px; font-size: 0.93rem; break-inside: avoid; }
+    .toc a { color: var(--gold); text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
 
-<div class="expertise-grid">
-  <div class="expertise-item">
-    <h4>📋 Technical Management</h4>
-    <p>Line management, budget ownership, roadmaps, OKRs, vendor collaboration, and team leadership — driving delivery with business impact.</p>
+    .section { margin-bottom: 12px; scroll-margin-top: 20px; }
+
+    .section-toggle { width: 100%; background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 18px 24px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-family: 'Playfair Display', Georgia, serif; font-size: 1.2rem; font-weight: 600; color: var(--heading); transition: background 0.2s, box-shadow 0.2s; box-shadow: 0 1px 3px rgba(0,0,0,0.04); text-align: left; }
+    .section-toggle:hover { background: var(--section-bg); box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    .section-toggle .arrow { font-size: 0.9rem; transition: transform 0.3s; color: var(--gold); }
+    .section-toggle[aria-expanded="true"] .arrow { transform: rotate(180deg); }
+    .section-content { display: none; background: var(--card-bg); border: 1px solid var(--border); border-top: none; border-radius: 0 0 10px 10px; padding: 24px 28px; margin-top: -8px; }
+    .section-content.open { display: block; }
+    .section-toggle[aria-expanded="true"] { border-radius: 10px 10px 0 0; border-bottom-color: transparent; }
+
+    .section-content h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 1.1rem; color: var(--heading); margin: 20px 0 10px; }
+    .section-content h3:first-child { margin-top: 0; }
+    .section-content h4 { font-size: 0.98rem; margin: 16px 0 8px; color: var(--gold); font-weight: 600; }
+    .section-content p { font-size: 0.95rem; line-height: 1.8; margin-bottom: 10px; }
+    .section-content ul, .section-content ol { padding-left: 22px; margin-bottom: 14px; }
+    .section-content li { font-size: 0.95rem; line-height: 1.75; margin-bottom: 6px; }
+    .section-content a { color: var(--gold); }
+    .section-content strong { color: var(--heading); }
+    .section-content em { color: var(--text-light); }
+
+    .alert { padding: 16px 20px; border-radius: 8px; margin: 16px 0; font-size: 0.93rem; }
+    .alert ul { margin-top: 8px; }
+    .alert-red { background: var(--red-bg); border-left: 4px solid var(--red); }
+    .alert-red strong { color: var(--red); }
+    .alert-green { background: var(--green-bg); border-left: 4px solid var(--green); }
+    .alert-green strong { color: var(--green); }
+    .alert-yellow { background: var(--amber-bg); border-left: 4px solid var(--gold-light); }
+    .alert-yellow strong { color: var(--amber); }
+    .alert-blue { background: var(--blue-bg); border-left: 4px solid #5a7daa; }
+    .alert-blue strong { color: #3d5a80; }
+
+    .info-box { background: var(--section-bg); border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin: 16px 0; }
+    .info-box h4 { margin-top: 0; color: var(--heading); }
+
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9rem; }
+    th, td { padding: 10px 14px; border: 1px solid var(--border); text-align: left; }
+    th { background: var(--section-bg); color: var(--heading); font-weight: 600; font-size: 0.88rem; }
+
+    .tl { padding: 14px 18px; margin-bottom: 14px; background: var(--card-bg); border-radius: 0 8px 8px 0; border: 1px solid var(--border); border-left: 4px solid var(--gold-light); }
+    .tl.urgent { border-left-color: var(--red); }
+    .tl.week { border-left-color: var(--gold-light); }
+    .tl.month { border-left-color: var(--green); }
+    .tl h4 { margin: 0 0 8px; font-size: 0.98rem; color: var(--heading); }
+
+    .links-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; margin: 14px 0 20px; }
+    .link-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; transition: border-color 0.2s, box-shadow 0.2s; }
+    .link-card:hover { border-color: var(--gold-light); box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    .link-card h4 { margin: 0 0 4px; font-size: 0.92rem; color: var(--heading); }
+    .link-card p { font-size: 0.82rem; color: var(--text-light); margin: 0 0 6px; }
+    .link-card a { font-size: 0.82rem; color: var(--gold); text-decoration: none; }
+    .link-card a:hover { text-decoration: underline; }
+
+    .ritual-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin: 14px 0; }
+    .ritual-card h4 { margin: 0 0 10px; }
+
+    .priority-box { background: var(--section-bg); border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin: 0 0 30px; }
+    .priority-box ol { padding-left: 22px; }
+
+    .comment-section { margin-top: 48px; padding-top: 36px; border-top: 2px solid var(--border); }
+
+    .site-footer { text-align: center; padding: 32px 0; margin-top: 48px; border-top: 1px solid var(--border); font-size: 0.85rem; color: var(--text-light); }
+
+    .back-top { position: fixed; bottom: 24px; right: 24px; background: var(--gold); color: var(--cream); border: none; border-radius: 50%; width: 44px; height: 44px; font-size: 1.3rem; cursor: pointer; display: none; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.15); }
+    .back-top:hover { background: var(--gold-light); }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.8rem; }
+      .toc ol { columns: 1; }
+      .links-grid { grid-template-columns: 1fr; }
+      table { font-size: 0.82rem; }
+      th, td { padding: 6px 8px; }
+      .section-toggle { font-size: 1.05rem; padding: 14px 18px; }
+      .section-content { padding: 18px 16px; }
+      .page-wrap { padding: 0 16px; }
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <div class="hero">
+    <span class="candle">🕯️</span>
+    <h1>Rest in Peace</h1>
+    <p class="peace-line">— A compassionate guide for families in Sweden —</p>
+    <p class="subtitle">A practical step-by-step guide for <strong>Indian nationals and families</strong> living in Sweden. Covers Swedish authorities, Indian Embassy, cremation, repatriation, estate, insurance, religious rituals, and more.</p>
+    <div class="disclaimer"><strong>⚠ Disclaimer:</strong> This guide is for general informational purposes only. It is not legal advice. Always verify with the relevant authorities. Last reviewed: August 2026.</div>
   </div>
-  <div class="expertise-item">
-    <h4>🤖 Automation & Quality</h4>
-    <p>Playwright, Selenium, Cypress, Appium — building frameworks, testing strategies, and quality gates at scale.</p>
+
+  <div class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#s1">What to do immediately</a></li>
+      <li><a href="#s2">Swedish death registration</a></li>
+      <li><a href="#s3">Funeral / cremation</a></li>
+      <li><a href="#s4">Indian citizen — dual process</a></li>
+      <li><a href="#s5">Ashes to India</a></li>
+      <li><a href="#s6">Body to India (repatriation)</a></li>
+      <li><a href="#s7">Body vs ashes comparison</a></li>
+      <li><a href="#s8">Bank account</a></li>
+      <li><a href="#s9">Insurance</a></li>
+      <li><a href="#s10">Employer / HR</a></li>
+      <li><a href="#s11">Pension</a></li>
+      <li><a href="#s12">Family &amp; children</a></li>
+      <li><a href="#s13">Migrationsverket</a></li>
+      <li><a href="#s14">Dödsbo (estate)</a></li>
+      <li><a href="#s15">Bouppteckning</a></li>
+      <li><a href="#s16">Timeline</a></li>
+      <li><a href="#s17">"Do NOT" checklist</a></li>
+      <li><a href="#s18">India vs Sweden table</a></li>
+      <li><a href="#s19">Religious rituals</a></li>
+      <li><a href="#s20">Links &amp; contacts</a></li>
+      <li><a href="#s21">Community comments</a></li>
+    </ol>
   </div>
-  <div class="expertise-item">
-    <h4>☁️ Cloud, DevOps & CI/CD</h4>
-    <p>GCP, AWS, Docker, Terraform, GitHub Actions, Grafana — infrastructure as code, observability, and automated pipelines from commit to production.</p>
+
+  <div class="priority-box">
+    <h4 style="font-family:'Playfair Display',Georgia,serif;font-size:1.15rem;margin:0 0 12px;">Quick Priority Checklist</h4>
+    <ol>
+      <li><strong>Doctor/Hospital →</strong> Death confirmation</li>
+      <li><strong>Skatteverket →</strong> Death registered (doctor handles)</li>
+      <li><strong>Funeral company →</strong> Body, viewing, cremation</li>
+      <li><strong>Bank →</strong> Protect account, pay necessary bills</li>
+      <li><strong>Insurance + HR →</strong> Life insurance / pension</li>
+      <li><strong>Indian Embassy →</strong> Register death / passport</li>
+      <li><strong>School + social services →</strong> Child/family support</li>
+      <li><strong>Migrationsverket →</strong> Immigration if applicable</li>
+      <li><strong>Cremation →</strong> Skatteverket certificate + ceremony</li>
+      <li><strong>Ashes →</strong> Embassy docs if taking to India</li>
+      <li><strong>Bouppteckning →</strong> 3 months / submit within 4</li>
+      <li><strong>Inheritance →</strong> After estate administration</li>
+    </ol>
   </div>
+
+  <div class="section" id="s1"><button class="section-toggle" aria-expanded="true" onclick="toggle(this)"><span>1. What To Do Immediately</span><span class="arrow">▼</span></button>
+    <div class="section-content open">
+      <h3>A. Death at home</h3>
+      <h4>Expected death (serious illness)</h4>
+      <ul><li>Contact the <strong>healthcare provider / home healthcare team</strong>.</li><li>A doctor must formally <strong>confirm the death</strong>.</li><li>The doctor handles documentation; funeral home takes care of the body.</li></ul>
+      <p><em>Source: <a href="https://www.1177.se/Stockholm/sa-fungerar-varden/anhorig---narstaende/nar-nagon-har-dott/dodsfall/" target="_blank" rel="noopener">1177 Vårdguiden</a></em></p>
+      <h4>Unexpected or suspicious death</h4>
+      <ul><li>Call <strong>112</strong>.</li><li><strong>Do not move or disturb the body.</strong></li><li>Police may investigate before the body is released.</li></ul>
+      <h3>B. Death in hospital</h3>
+      <p>Hospital confirms death, prepares documentation, notifies Skatteverket, helps family say goodbye, contacts funeral home or faith representative.</p>
+      <p><em>Source: <a href="https://www.skatteverket.se/privat/folkbokforing/narenanhorigdor" target="_blank" rel="noopener">Skatteverket</a></em></p>
+    </div>
+  </div>
+
+  <div class="section" id="s2"><button class="section-toggle" onclick="toggle(this)"><span>2. Swedish Death Registration</span><span class="arrow">▼</span></button>
+    <div class="section-content">
+      <p>The medical team usually starts the Swedish registration process automatically.</p>
+      <p>What happens:</p>
+      <ul>
+        <li>Doctor/hospital sends the <strong>dödsbevis</strong> to Skatteverket.</li>
+        <li>Family usually does <strong>not</strong> need to manually file this first notice.</li>
+        <li>After registration, estate-related documents become available.</li>
+      </ul>
+      <h3>Dödsfallsintyg med släktutredning</h3>
+      <p>This document is commonly required for practical next steps.</p>
+      <p>Used by:</p>
+      <ul>
+        <li>Banks</li>
+        <li>Insurance companies</li>
+        <li>Pension providers</li>
+        <li>Other authorities</li>
+      </ul>
+      <p><em>Source: <a href="https://www.skatteverket.se/privat/folkbokforing/narenanhorigdor" target="_blank" rel="noopener">Skatteverket</a></em></p>
+    </div>
+  </div>
+
+  <div class="section" id="s3"><button class="section-toggle" onclick="toggle(this)"><span>3. Funeral / Cremation Company</span><span class="arrow">▼</span></button>
+    <div class="section-content">
+      <p>Contact a <strong>begravningsbyrå</strong> (funeral home) as early as possible.</p>
+      <p>They can help with:</p>
+      <ul>
+        <li>Transportation of the deceased</li>
+        <li>Viewing arrangements</li>
+        <li>Religious or secular ceremony coordination</li>
+        <li>Cremation or burial process</li>
+        <li>Cremation and related certificates</li>
+        <li>Urn/ashes handling and municipality coordination</li>
+        <li>Administrative documents</li>
+      </ul>
+      <h3>Cremation rules</h3>
+      <ul>
+        <li><strong>Skatteverket must issue a certificate</strong> before cremation/burial (funeral home usually handles this).</li>
+        <li>Cremation or burial is normally done within <strong>1 month</strong>.</li>
+        <li>Ashes are usually interred within <strong>1 year</strong>.</li>
+      </ul>
+      <p><em>Source: <a href="https://www.skatteverket.se/privat/folkbokforing/narenanhorigdor/begravning.4.3528414214b3f875805c66.html" target="_blank" rel="noopener">Skatteverket — Begravning</a></em></p>
+    </div>
+  </div>
+
+  <div class="section" id="s4"><button class="section-toggle" onclick="toggle(this)"><span>4. Indian Citizen — Dual Process</span><span class="arrow">▼</span></button>
+    <div class="section-content">
+      <p><strong>Two parallel processes:</strong></p>
+      <div class="info-box"><h4>Swedish process</h4><p>Death registered in Sweden first. Full Swedish process applies.</p></div>
+      <div class="info-box"><h4>Indian Embassy</h4><p>Death must also be registered with the <strong>Embassy of India, Stockholm</strong>.</p></div>
+      <h3>Embassy documents</h3>
+      <ol>
+        <li>Miscellaneous / Attestation form</li>
+        <li>Original passport of deceased + applicant</li>
+        <li>Copies of both passports</li>
+        <li>Original Swedish death certificate + copy</li>
+        <li>Payment proof — <strong>SEK 224</strong></li>
+        <li>Return envelope if applying by post</li>
+      </ol>
+      <p>Useful consular checks:</p>
+      <ul>
+        <li>Ask how deceased passport/OCI should be handled in this case.</li>
+        <li>Ask if additional documents are needed for local circumstances.</li>
+      </ul>
+      <p><strong>Same-day processing</strong> when complete. <em><a href="https://www.indembassysweden.gov.in/page/death-certificate/" target="_blank" rel="noopener">Embassy — Death Certificate →</a></em></p>
+      <div class="alert alert-blue"><strong>Emergency (death):</strong> +46 73 484 4992 · <strong>Consular:</strong> +46 8 684 32100 — <a href="https://www.indembassysweden.gov.in/page/contact-us/" target="_blank" rel="noopener">Contact →</a></div>
+    </div>
+  </div>
+
+  <div class="section" id="s5"><button class="section-toggle" onclick="toggle(this)"><span>5. Ashes to India</span><span class="arrow">▼</span></button>
+    <div class="section-content">
+      <p><strong>Flow:</strong></p>
+      <ul>
+        <li>Death in Sweden</li>
+        <li>Swedish registration completed</li>
+        <li>Funeral home and cremation process</li>
+        <li>Cremation certificate issued</li>
+        <li>Embassy documentation for transport</li>
+        <li>Ashes carried/sent to India</li>
+      </ul>
+      <h3>Embassy documents for ashes</h3>
+      <ul>
+        <li>Death Certificate + Cremation Certificate</li>
+        <li>Undertaker certificate (urn sealed)</li>
+        <li>Passport/OCI of deceased + carrier (originals + copies)</li>
+        <li>Embassy payment proof</li>
+      </ul>
+      <p><em><a href="https://www.indembassysweden.gov.in/page/taking-ashes-of-deceased-persons-to-india/" target="_blank" rel="noopener">Embassy — Taking Ashes to India →</a></em></p>
+    </div>
+  </div>
+
+  <div class="section" id="s6"><button class="section-toggle" onclick="toggle(this)"><span>6. Body to India (Repatriation)</span><span class="arrow">▼</span></button>
+    <div class="section-content">
+      <div class="alert alert-red"><strong>IMPORTANT:</strong> If the body might go to India, tell hospital/funeral home immediately. <strong>Do not approve cremation</strong> until decided.</div>
+      <h3>Steps</h3>
+      <ol>
+        <li>Tell hospital/funeral home you want to repatriate.</li>
+        <li>Appoint a funeral home experienced in <strong>international repatriation</strong>.</li>
+        <li>Contact <strong>Embassy of India</strong>.</li>
+        <li>Contact <strong>all insurance/HR</strong> early — some policies may cover costs.</li>
+      </ol>
+      <h3>Documents</h3>
+      <ul>
+        <li>Death certificate, passport, Embassy docs, medical certificate</li>
+        <li><strong>Smittointyg</strong> (no infection), <strong>Balsameringsintyg</strong> (embalming), <strong>Transportintyg</strong>, <strong>Lödningsintyg</strong> (sealed coffin)</li>
+        <li>Skatteverket permission, airline cargo documents</li>
+      </ul>
+      <h3>Estimated cost</h3>
+      <table><thead><tr><th>Expense</th><th>SEK</th></tr></thead><tbody>
+        <tr><td>Funeral prep</td><td>10,000–25,000+</td></tr>
+        <tr><td>Embalming</td><td>5,000–15,000+</td></tr>
+        <tr><td>Zinc coffin</td><td>10,000–25,000+</td></tr>
+        <tr><td>Local transport</td><td>3,000–10,000+</td></tr>
+        <tr><td>Air cargo</td><td>20,000–50,000+</td></tr>
+        <tr><td>Documentation</td><td>2,000–10,000+</td></tr>
+        <tr><td><strong>Total</strong></td><td><strong>~50,000–120,000+</strong></td></tr>
+      </tbody></table>
+      <div class="alert alert-yellow"><strong>Check insurance BEFORE paying.</strong></div>
+    </div>
+  </div>
+
+  <div class="section" id="s7"><button class="section-toggle" onclick="toggle(this)"><span>7. Body vs Ashes — Comparison</span><span class="arrow">▼</span></button>
+    <div class="section-content">
+      <table><thead><tr><th>Factor</th><th>Body to India</th><th>Cremate + Ashes</th></tr></thead><tbody>
+        <tr><td>Cost</td><td>~SEK 50–120k+</td><td>Much lower</td></tr>
+        <tr><td>Paperwork</td><td>Extensive</td><td>Simpler</td></tr>
+        <tr><td>Embalming</td><td>Required</td><td>No</td></tr>
+        <tr><td>Special coffin</td><td>Zinc-lined</td><td>No</td></tr>
+        <tr><td>Complexity</td><td>High</td><td>Low</td></tr>
+      </tbody></table>
+      <p>Decision tip:</p>
+      <ul>
+        <li>If family wants final cremation in India, decide early and pause Swedish cremation steps.</li>
+        <li>Ask two written quotations: full body repatriation vs cremation + ashes transfer.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section" id="s8"><button class="section-toggle" onclick="toggle(this)"><span>8. Bank Account</span><span class="arrow">▼</span></button>
+    <div class="section-content">
+      <p>The bank step should be handled very carefully because the money belongs to the <strong>dödsbo (estate)</strong>.</p>
+      <div class="alert alert-red">
+        <strong>Do NOT:</strong>
+        <ul>
+          <li>Use the deceased person's debit card.</li>
+          <li>Withdraw money for personal use.</li>
+          <li>Transfer money to another account without legal authority.</li>
+          <li>Empty the account.</li>
+        </ul>
+      </div>
+      <div class="alert alert-green">
+        <strong>Do:</strong>
+        <ul>
+          <li>Contact the bank as soon as possible and book a meeting.</li>
+          <li>Inform them: <em>"The account holder has passed away. Please guide us on legal estate handling and urgent bill payments."</em></li>
+          <li>Ask how funeral and urgent household bills can be paid through estate rules.</li>
+          <li>Ask what documents are required from spouse/family representatives.</li>
+        </ul>
+      </div>
+      <p><em>Source: <a href="https://www.skatteverket.se/privat/folkbokforing/narenanhorigdor" target="_blank" rel="noopener">Skatteverket</a></em></p>
+    </div>
+  </div>
+
+  <div class="section" id="s9"><button class="section-toggle" onclick="toggle(this)"><span>9. Insurance</span><span class="arrow">▼</span></button>
+    <div class="section-content">
+      <p>Insurance should be contacted early, ideally in the first 2-3 days.</p>
+      <p>Contact:</p>
+      <ul>
+        <li>Life insurance</li>
+        <li>Home insurance</li>
+        <li>Accident insurance</li>
+        <li>Employer insurance</li>
+        <li>Pension insurance</li>
+        <li>Union insurance (if applicable)</li>
+        <li>Credit / mortgage insurance</li>
+        <li>Any private insurance in India</li>
+      </ul>
+      <p>Request written confirmation for:</p>
+      <ul>
+        <li>Policy number</li>
+        <li>Beneficiary</li>
+        <li>Amount payable</li>
+        <li>Required documents</li>
+        <li>Expected processing timeline</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section" id="s10"><button class="section-toggle" onclick="toggle(this)"><span>10. Employer / HR</span><span class="arrow">▼</span></button>
+    <div class="section-content">
+      <p>If the person was employed, contact HR immediately and ask for a complete written benefit summary.</p>
+      <p>Ask HR to verify:</p>
+      <ul>
+        <li>Group life insurance</li>
+        <li>Occupational pension and survivor pension</li>
+        <li>Repayment protection (<strong>återbetalningsskydd</strong>)</li>
+        <li>Employer death benefit</li>
+        <li>Collective agreement benefits</li>
+        <li>Salary owed</li>
+        <li>Holiday pay</li>
+        <li>Any additional employee benefits</li>
+      </ul>
+      <p>Ask for written details of each amount, recipient, and expected payout date.</p>
+    </div>
+  </div>
+
+  <div class="section" id="s11"><button class="section-toggle" onclick="toggle(this)"><span>11. Pension</span><span class="arrow">▼</span></button>
+    <div class="section-content">
+      <p>Review all pension channels as early as possible.</p>
+      <p>Check with:</p>
+      <ul>
+        <li>Collectum</li>
+        <li>ITP / occupational pension providers</li>
+        <li>Private pension providers</li>
+        <li>Any pension accounts in India</li>
+      </ul>
+      <p>Verify whether the pension has:</p>
+      <ul>
+        <li>Repayment protection</li>
+        <li>Survivor protection</li>
+        <li>Named beneficiaries</li>
+      </ul>
+      <div class="alert alert-yellow"><strong>Key question:</strong> <em>"Did the deceased have återbetalningsskydd?"</em> If yes, savings may be paid to eligible survivors.</div>
+    </div>
+  </div>
+
+  <div class="section" id="s12"><button class="section-toggle" onclick="toggle(this)"><span>12. Family &amp; Children</span><span class="arrow">▼</span></button>
+    <div class="section-content">
+      <p>If there is a child/family in Sweden, inform:</p>
+      <ul>
+        <li>School / preschool</li>
+        <li>Social services (if the family needs support)</li>
+        <li>Försäkringskassan</li>
+        <li>Employer of surviving spouse</li>
+        <li>Healthcare / child support services</li>
+      </ul>
+      <p>Ask what support is available for:</p>
+      <ul>
+        <li>Childcare</li>
+        <li>Financial support</li>
+        <li>Survivor benefits</li>
+        <li>Housing</li>
+        <li>Psychological / grief support</li>
+        <li>Practical day-to-day help</li>
+      </ul>
+      <p><em>Source: <a href="https://www.forsakringskassan.se/" target="_blank" rel="noopener">Försäkringskassan</a></em></p>
+    </div>
+  </div>
+
+  <div class="section" id="s13"><button class="section-toggle" onclick="toggle(this)"><span>13. Migrationsverket</span><span class="arrow">▼</span></button>
+    <div class="section-content">
+      <p>If the deceased was an Indian citizen, immigration status may need review for the surviving family.</p>
+      <p>Check:</p>
+      <ul>
+        <li>Residence permit of surviving spouse</li>
+        <li>Residence permit of children</li>
+        <li>Permanent residence status</li>
+        <li>Citizenship applications</li>
+        <li>Any pending migration/family reunification case</li>
+      </ul>
+      <p>Inform Migrationsverket where the death affects an ongoing case.</p>
+      <p><em>Source: <a href="https://www.migrationsverket.se/" target="_blank" rel="noopener">Migrationsverket</a></em></p>
+    </div>
+  </div>
+
+  <div class="section" id="s14"><button class="section-toggle" onclick="toggle(this)"><span>14. Dödsbo (Estate)</span><span class="arrow">▼</span></button>
+    <div class="section-content">
+      <p>After death, everything owned and owed becomes part of the <strong>dödsbo</strong> (estate).</p>
+      <p>This can include:</p>
+      <ul>
+        <li>Bank accounts, savings, shares</li>
+        <li>Car, house/apartment, personal belongings</li>
+        <li>Insurance and pension-related payouts</li>
+        <li>Loans, credit cards, mortgage, taxes, and bills</li>
+      </ul>
+      <p>The spouse, children, and other eligible heirs are usually <strong>dödsbodelägare</strong>.</p>
+      <p>If the estate has very limited assets, a <strong>dödsboanmälan</strong> may replace a full bouppteckning, handled by the municipality's socialnämnd.</p>
+    </div>
+  </div>
+
+  <div class="section" id="s15"><button class="section-toggle" onclick="toggle(this)"><span>15. Bouppteckning</span><span class="arrow">▼</span></button>
+    <div class="section-content">
+      <p>Bouppteckning is one of the most important legal steps for the estate.</p>
+      <p>It documents:</p>
+      <ul>
+        <li>Assets</li>
+        <li>Debts</li>
+        <li>Spouse / children / other beneficiaries</li>
+        <li>Who is authorized to represent the estate</li>
+      </ul>
+      <p>Deadlines:</p>
+      <ul>
+        <li>Prepare within <strong>3 months</strong> of death</li>
+        <li>Submit to Skatteverket within <strong>4 months</strong></li>
+      </ul>
+      <p>A registered bouppteckning is formal proof often required by banks and authorities.</p>
+      <p><em>Source: <a href="https://www.skatteverket.se/privat/bouppteckning.4.18e1b10334ebe8bc80001217.html" target="_blank" rel="noopener">Skatteverket — Bouppteckning</a></em></p>
+    </div>
+  </div>
+
+  <div class="section" id="s16"><button class="section-toggle" onclick="toggle(this)"><span>16. Timeline</span><span class="arrow">▼</span></button>
+    <div class="section-content">
+      <div class="tl urgent">
+        <h4>🚨 First hours</h4>
+        <ul>
+          <li>Healthcare/doctor or 112 depending on case.</li>
+          <li>Do not move the body unnecessarily.</li>
+        </ul>
+      </div>
+      <div class="tl urgent">
+        <h4>🟠 First 24 hours</h4>
+        <ul>
+          <li>Contact funeral home, close family, HR, bank, and insurance.</li>
+          <li>Secure home/car and gather ID/passport/documents.</li>
+          <li><strong>Body to India?</strong> Inform funeral home immediately.</li>
+        </ul>
+      </div>
+      <div class="tl week">
+        <h4>🟡 Days 2-7</h4>
+        <ul>
+          <li>Confirm Skatteverket registration and obtain dödsfallsintyg.</li>
+          <li>Plan ceremony and contact Embassy/pension/school/Migrationsverket as relevant.</li>
+        </ul>
+      </div>
+      <div class="tl month">
+        <h4>🟢 Within 1 month</h4>
+        <ul>
+          <li>Complete cremation or burial.</li>
+          <li>Start ashes-transfer documents if applicable.</li>
+        </ul>
+      </div>
+      <div class="tl month">
+        <h4>🔵 Months 3-4</h4>
+        <ul>
+          <li>Bouppteckning prepared (within 3 months) and submitted (within 4 months).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="s17"><button class="section-toggle" onclick="toggle(this)"><span>17. "Do NOT" Checklist</span><span class="arrow">▼</span></button>
+    <div class="section-content">
+      <div class="alert alert-red">
+        <strong>Don't:</strong>
+        <ul>
+          <li>Use the deceased person's card or move money informally.</li>
+          <li>Sell major assets privately.</li>
+          <li>Distribute inheritance before estate process is complete.</li>
+          <li>Throw away legal/financial documents.</li>
+          <li>Cancel insurance before checking claim rights.</li>
+        </ul>
+      </div>
+      <div class="alert alert-green">
+        <strong>Do:</strong>
+        <ul>
+          <li>Bank meeting and legal estate setup.</li>
+          <li>Track debts/claims and preserve documentation.</li>
+          <li>Complete bouppteckning before inheritance distribution.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="s18"><button class="section-toggle" onclick="toggle(this)"><span>18. India vs Sweden</span><span class="arrow">▼</span></button>
+    <div class="section-content">
+      <table><thead><tr><th>Issue</th><th>Swedish</th><th>Indian</th></tr></thead><tbody>
+        <tr><td>Doctor/Skatteverket</td><td>✅</td><td>✅</td></tr>
+        <tr><td>Funeral/cremation</td><td>✅</td><td>✅</td></tr>
+        <tr><td>Embassy registration</td><td>—</td><td><strong>✅</strong></td></tr>
+        <tr><td>Passport handling</td><td>—</td><td><strong>✅</strong></td></tr>
+        <tr><td>Ashes to India</td><td>If applicable</td><td><strong>Embassy docs</strong></td></tr>
+        <tr><td>Migrationsverket</td><td>Usually not</td><td><strong>May apply</strong></td></tr>
+      </tbody></table>
+      <p>Main difference:</p>
+      <ul>
+        <li>The Swedish death and estate process applies in both cases.</li>
+        <li>Indian citizens have an additional Embassy process and passport/consular handling.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section" id="s19"><button class="section-toggle" onclick="toggle(this)"><span>19. Religious Rituals &amp; Sacred Items</span><span class="arrow">▼</span></button>
+    <div class="section-content">
+      <p>Finding ritual items in Sweden can be hard. <strong>Share your knowledge in <a href="#s21">comments</a>.</strong></p>
+      <div class="ritual-card"><h4>🙏 Hindu</h4><ul>
+        <li><strong>Ganga Jal:</strong> Indian grocery stores (Stockholm, Malmö, Gothenburg), temples, families from India.</li>
+        <li><strong>Tulsi, ghee, sandalwood, camphor, incense:</strong> Indian/Asian stores.</li>
+        <li><strong>Pandit:</strong> Hindu Mandir Stockholm, Hindu Cultural Centre Gothenburg.</li>
+      </ul></div>
+      <div class="ritual-card"><h4>☪️ Muslim</h4><ul>
+        <li><strong>Zamzam water:</strong> Islamic centres, halal stores, Hajj/Umrah returnees.</li>
+        <li><strong>Kafan:</strong> Islamic centres, fabric stores. Some mosques stock it.</li>
+        <li><strong>Ghusl:</strong> Many mosques have facilities.</li>
+        <li><strong>Muslim burial sections:</strong> Ask municipality's kyrkogårdsförvaltning.</li>
+        <li><strong>Mosques:</strong> Stockholms Moské, Islamic Centre Malmö, Göteborgs Moské.</li>
+      </ul></div>
+      <div class="ritual-card"><h4>🙏 Sikh</h4><ul>
+        <li><strong>Amrit:</strong> Gurdwaras. <strong>Granthi:</strong> Gurdwara Singh Sabha Stockholm, Gurdwara Malmö.</li>
+      </ul></div>
+      <div class="ritual-card"><h4>✝️ Christian · 🙏 Jain · ☸️ Buddhist</h4><ul>
+        <li><strong>Christian:</strong> Local church or hospital chaplain.</li>
+        <li><strong>Jain/Buddhist:</strong> Indian community; Buddhist centres; Asian stores for items.</li>
+      </ul></div>
+      <div class="alert alert-yellow"><strong>Can't find it?</strong> Contact your local community association, temple, mosque, or gurdwara. Many keep sacred items at home.</div>
+      <p>Practical tip:</p>
+      <ul>
+        <li>Call local community leaders first; they often know the fastest support path.</li>
+        <li>Ask funeral homes if they already work with faith-specific coordinators.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section" id="s20"><button class="section-toggle" onclick="toggle(this)"><span>20. Links &amp; Contacts</span><span class="arrow">▼</span></button>
+    <div class="section-content">
+      <p>Use this section as a quick directory while coordinating paperwork and services.</p>
+      <h3>Swedish Authorities</h3>
+      <div class="links-grid">
+        <div class="link-card"><h4>Skatteverket</h4><p>Death registration</p><a href="https://www.skatteverket.se/privat/folkbokforing/narenanhorigdor" target="_blank" rel="noopener">skatteverket.se →</a></div>
+        <div class="link-card"><h4>Bouppteckning</h4><p>Estate inventory</p><a href="https://www.skatteverket.se/privat/bouppteckning.4.18e1b10334ebe8bc80001217.html" target="_blank" rel="noopener">skatteverket.se →</a></div>
+        <div class="link-card"><h4>Begravning</h4><p>Cremation / burial</p><a href="https://www.skatteverket.se/privat/folkbokforing/narenanhorigdor/begravning.4.3528414214b3f875805c66.html" target="_blank" rel="noopener">skatteverket.se →</a></div>
+        <div class="link-card"><h4>1177 Vårdguiden</h4><p>Healthcare guidance</p><a href="https://www.1177.se/Stockholm/sa-fungerar-varden/anhorig---narstaende/nar-nagon-har-dott/dodsfall/" target="_blank" rel="noopener">1177.se →</a></div>
+        <div class="link-card"><h4>Försäkringskassan</h4><p>Survivor benefits</p><a href="https://www.forsakringskassan.se/" target="_blank" rel="noopener">forsakringskassan.se →</a></div>
+        <div class="link-card"><h4>Migrationsverket</h4><p>Immigration</p><a href="https://www.migrationsverket.se/" target="_blank" rel="noopener">migrationsverket.se →</a></div>
+        <div class="link-card"><h4>Efterlevandeguiden</h4><p>Official checklist</p><a href="https://www.efterlevandeguiden.se/checklista-efter-ett-dodsfall.html" target="_blank" rel="noopener">efterlevandeguiden.se →</a></div>
+      </div>
+      <h3>Indian Embassy</h3>
+      <div class="links-grid">
+        <div class="link-card"><h4>Death Certificate</h4><p>Registration</p><a href="https://www.indembassysweden.gov.in/page/death-certificate/" target="_blank" rel="noopener">indembassysweden.gov.in →</a></div>
+        <div class="link-card"><h4>Ashes to India</h4><p>Transport docs</p><a href="https://www.indembassysweden.gov.in/page/taking-ashes-of-deceased-persons-to-india/" target="_blank" rel="noopener">indembassysweden.gov.in →</a></div>
+        <div class="link-card"><h4>Embassy Contact</h4><p>Emergency: +46 73 484 4992</p><a href="https://www.indembassysweden.gov.in/page/contact-us/" target="_blank" rel="noopener">indembassysweden.gov.in →</a></div>
+      </div>
+      <h3>Other</h3>
+      <div class="links-grid">
+        <div class="link-card"><h4>SFIA</h4><p>Intl. repatriation</p><a href="https://www.begravningar.se/om-sbf/swedish-funeral-international-assistance-sfia/" target="_blank" rel="noopener">begravningar.se →</a></div>
+        <div class="link-card"><h4>Norden.org</h4><p>Death &amp; inheritance</p><a href="https://www.norden.org/en/info-norden/death-inheritance-and-wills-sweden" target="_blank" rel="noopener">norden.org →</a></div>
+        <div class="link-card"><h4>GOV.UK</h4><p>Bereavement (English)</p><a href="https://www.gov.uk/government/publications/when-someone-dies-in-sweden/sweden-bereavement-information" target="_blank" rel="noopener">gov.uk →</a></div>
+        <div class="link-card"><h4>Collectum</h4><p>Pension (ITP)</p><a href="https://www.collectum.se/" target="_blank" rel="noopener">collectum.se →</a></div>
+      </div>
+      <p>Tip: keep one family member responsible for link tracking and one for document collection to avoid duplicates.</p>
+    </div>
+  </div>
+
+  <div class="section comment-section" id="s21"><button class="section-toggle" aria-expanded="true" onclick="toggle(this)"><span>21. Community Comments</span><span class="arrow">▼</span></button>
+    <div class="section-content open">
+      <p>Have information that could help others? Please share below.</p>
+      <p>Useful contributions include:</p>
+      <ul>
+        <li>Where to find ritual items in Swedish cities</li>
+        <li>Trusted funeral/repatriation providers</li>
+        <li>Updated authority steps or forms</li>
+        <li>Cost ranges and practical planning tips</li>
+      </ul>
+      <script src="https://utteranc.es/client.js" repo="ascertain/ascertain.github.io" issue-term="pathname" label="community-comment" theme="github-light" crossorigin="anonymous" async></script>
+      <noscript><div class="alert alert-yellow"><a href="https://github.com/ascertain/ascertain.github.io/issues/new?title=RIP+Guide+Feedback&labels=community-comment" target="_blank" rel="noopener">Open a GitHub issue</a> to share feedback.</div></noscript>
+      <p style="font-size:0.88rem;color:#6b5e4f;margin-top:16px;">You can also <a href="https://github.com/ascertain/ascertain.github.io/issues/new?title=RIP+Guide+Feedback&labels=community-comment" target="_blank" rel="noopener">open a GitHub issue</a> to share feedback.</p>
+    </div>
+  </div>
+
+  <div class="site-footer">
+    <p>Created to help Indian families in Sweden during their most difficult time.</p>
+    <p style="margin-top:8px;">If this helped, please share it with others.</p>
+    <p style="margin-top:12px;font-size:0.82rem;">🕊️ Om Shanti · إنا لله وإنا إليه راجعون · ਵਾਹਿਗੁਰੂ</p>
+  </div>
+
 </div>
 
-<hr class="divider">
-
-<h2 class="section-title">Explore</h2>
-
-<div class="home-cards">
-  <a href="{{ '/kashif-blog/' | relative_url }}" class="home-card" style="text-decoration:none;">
-    <div class="icon">📝</div>
-    <h3>Blog</h3>
-    <p>Engineering insights on testing, automation, AI workflows, and quality strategy.</p>
-  </a>
-  <a href="{{ '/kashif-resume/' | relative_url }}" class="home-card" style="text-decoration:none;">
-    <div class="icon">📄</div>
-    <h3>Resume</h3>
-    <p>Full professional experience, skills, certifications, and career highlights.</p>
-  </a>
-  <a href="https://github.com/ascertain" target="_blank" class="home-card" style="text-decoration:none;">
-    <div class="icon">💻</div>
-    <h3>GitHub</h3>
-    <p>Open-source projects, automation frameworks, and engineering tools.</p>
-  </a>
-  <a href="{{ '/rest-in-peace-guide/' | relative_url }}" class="home-card" style="text-decoration:none;">
-    <div class="icon">🕊️</div>
-    <h3>Rest in Peace — Sweden Guide</h3>
-    <p>Compassionate step-by-step guide for Indian families: authorities, embassy, cremation, estate &amp; rituals.</p>
-  </a>
-</div>
-
-<div class="home-cta">
-  <a href="{{ '/kashif-blog/' | relative_url }}" class="btn-primary">Read the Blog</a>
-  <a href="{{ '/kashif-resume/' | relative_url }}" class="btn-secondary">View Resume</a>
-  <a href="https://www.linkedin.com/in/md-kashif/" target="_blank" class="btn-accent">Connect on LinkedIn</a>
-</div>
-
-<hr class="divider">
-
-<h2 class="section-title">Connect</h2>
-
-<div class="connect-links">
-  <a href="https://github.com/ascertain" target="_blank">🐙 GitHub</a>
-  <a href="https://www.linkedin.com/in/md-kashif/" target="_blank">💼 LinkedIn</a>
-  <a href="mailto:mo.kashif@gmail.com">✉️ Email</a>
-</div>
-
-<!-- Sticky SimpleRx Banner -->
-<div class="simplerx-banner" id="simplerx-banner">
-  <span class="rx-icon">💊</span>
-  <span class="rx-text">
-    We just launched <strong>SimpleRx</strong> — an app that simplifies medical reports. Try it out and share your feedback!
-  </span>
-  <a href="https://play.google.com/store/apps/details?id=app.simplerx.mobile&hl=en" target="_blank" class="rx-btn">Try SimpleRx on Google Play</a>
-  <button class="rx-close" onclick="document.getElementById('simplerx-banner').style.display='none'" aria-label="Close">✕</button>
-</div>
+<button class="back-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>
+function toggle(b){var c=b.nextElementSibling,o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',!o);o?c.classList.remove('open'):c.classList.add('open');}
+window.addEventListener('scroll',function(){document.getElementById('backToTop').style.display=window.scrollY>400?'block':'none';});
+</script>
+</body>
+</html>
