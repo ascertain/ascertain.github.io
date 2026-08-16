@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "c:\Users\MOKAS10\vcs\ascertain.github.io\fwtally\refresh_notes_only.py", line 7, in <module>
+    import fitz
+  File "C:\Users\MOKAS10\AppData\Roaming\Python\Python313\site-packages\fitz\__init__.py", line 2, in <module>
+    from pymupdf import *
+  File "C:\Users\MOKAS10\AppData\Roaming\Python\Python313\site-packages\pymupdf\__init__.py", line 395, in <module>
+    from . import mupdf
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1155, in get_code
+  File "<frozen importlib._bootstrap_external>", line 784, in _compile_bytecode
+KeyboardInterrupt

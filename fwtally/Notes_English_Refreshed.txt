@@ -1,0 +1,557 @@
+UPCISS 
+TALLY NOTES 
+TALLY -ERP9 
+Free Online Computer Classes on 
+YouTube Channel UPCISS 
+www.youtube.com/upciss
+
+1 | P a g e 
+ 
+Tally. ERP 9 
+Tally is a financial accounting software package. It is a complete business accounting 
+and inventory management software that provides various facilities like Government 
+supported formats, multilingual operations, processing for small and medium 
+businesses in India. Tally products are transforming businesses across industry in over 
+100 Countries. Latest version is Tally. ERP 9. 
+ 
+Account 
+ 
+ 
+ 
+Profit, Loss, Purchases, Sales, Ram, Mohan, Bank, Cash, Computer, 
+Machinery, Furniture, Assets, Deposit, Interest, Discount, Wages Etc. 
+ 
+Classification Of Account 
+1-Personal Account 
+2-Real Account 
+3-Nominal Account 
+ 
+1-Personal Account:- 
+ og [kkrs tks fdfl O;fDr ;k laLFkk ds uke ls cuk, tkrs gS] os Personal 
+Account ¼O;fDrxr [kkrs½ dgykrs gSA tSls& Mohit, Rahul, Bank, Abc Company, Capital, Drawing 
+etc. 
+ 
+2-Real Account:- 
+ og [kkrs tks fdfl oLrq ;k lEifRr vkfn ls lEcfU/kr gksrs gSa Real 
+Account ¼okLrfod [kkrs½ dgykrs gSaA tSls& Cash, Computer, Machinery, Furniture, Assets etc. 
+ 
+3-Nominal Account:- 
+ og [kkrs tks ykHk&gkfu] vk;&O;;] vkSj Ø;&foØ; ls lEcfU/kr gksrs gSa 
+Nominal Account ¼ukeek= ds [kkrs½ dgykrs gSaA tSls& Interest, Discount, Wages, Purchases, 
+Sales, Profit & Loss etc. 
+Rules of Accounting 
+Personal Account 
+1-Who is receiver 
+¼ ikus okyk ½ 
+Debit 
+2-Who is given 
+ 
+¼ nsus okyk ½ 
+Credit 
+Real Account 
+3-What come in 
+ 
+¼ vkus okyk ½ 
+Debit 
+4-What goes it 
+ 
+¼ tkus okyk ½ 
+Credit 
+Nominal Account 
+5-Loss & Expenses 
+¼ gkfu] [kPkkZ ½ 
+Debit 
+6-Profit & Income 
+¼ ykHk] vk; ½ 
+Credit
+
+2 | P a g e 
+ 
+TALLY GROUP 
+ PRIMARY GROUP 
+1- 
+Capital Account 
+2- 
+Loans Liabilities 
+3- 
+Current Liabilities 
+4- 
+Fixed Assets 
+5- 
+Investment 
+6- 
+Current Assets 
+7- 
+Miscellaneous Expenses (Assets) 
+8- 
+Suspense Account 
+9- 
+Branch Division 
+10- 
+Sales Account 
+11- 
+Purchase Account 
+12- 
+Direct Income 
+13- 
+Direct Expenses 
+14- 
+Indirect Income 
+15- 
+Indirect Expenses 
+ 
+ 
+ SECONDRY GROUP 
+16- 
+Reserve & Surplus 
+ 
+ 
+(Capital Account) 
+17- 
+Bank Over Draft 
+ 
+ 
+(Loans Liabilities) 
+18- 
+Secured Loans 
+ 
+ 
+ 
+(Loans Liabilities) 
+19- 
+Unsecured Loans 
+ 
+ 
+ 
+(Loans Liabilities) 
+20- 
+Duties & Tax 
+ 
+ 
+ 
+ 
+(Current Liabilities) 
+21- 
+Provision 
+ 
+ 
+ 
+ 
+(Current Liabilities) 
+22- 
+Sundry Creditors 
+ 
+ 
+ 
+(Current Liabilities) 
+23- 
+Sundry Debtors 
+ 
+ 
+ 
+(Current Assets) 
+24- 
+Deposit Assets 
+ 
+ 
+ 
+(Current Assets) 
+25- 
+Loans & Advance Assets 
+ 
+ 
+(Current Assets) 
+26- 
+Cash in Hand 
+ 
+ 
+ 
+ 
+(Current Assets) 
+27- 
+Stock in Hand 
+ 
+ 
+ 
+ 
+(Current Assets) 
+28- 
+Bank Account 
+ 
+(Current Assets)
+
+3 | P a g e 
+ 
+ 
+1- Capital Account:- 
+ lHkh izdkj ds iw¡th [kkrs ¼ tc O;kikj vkjEHk djrs gS ½ 
+Capital Account ds vUrxZr [kksys tkrs gSA tSls& jke us 10000 ls O;kikj vkjEHkA (Ram 
+is a Capital A/c) 
+ 
+2- Loans Liabilities:- 
+ O;kikj }kjk fy, x, _.k O;kikj dk nkf;Ro gSA bl izdkj 
+ds [kkrs Loans Liabilities ds vUrxZr cuk, tkrs gSA tSls& jke us vius edku dks 
+fxjoh j[k dj 10000 dk jkgqy ls yksu fy;kA 
+(Rahul is a Loans Liabilities) 
+ 
+3- Current Liabilities:- 
+ Pkkyw nkf;Ro ds [kkrs Current Liabilities ds vUrxZr [kksys 
+tkrs gSA tSls&vfxze fy;k gqvk _.k] fofo/k ysunkjA 
+jke us jkgqy ls 5000 dk Computer m/kkj [kjhnk A 
+(Rahul is a Current Liabilities (Sundry Creditors )) 
+ 
+4- Fixed Assets:- 
+ lHkh izdkj dh LFkk;h lEifRr;ksa ds [kkrsa Fixed Assets ds vUrxZr 
+cuk, tkrs gSA tSls&Hkou] e'khujh] IykV vkfnA jke us 10000 dk lsy Qksu [kjhnkA 
+(Cell Phone is a Fixed Assets) 
+ 
+5- Investment Account:- 
+ fdlh Hkh izdkj ds fofu;ksx fd, x, [kkrs Investment 
+Account ds vUrxZr cuk, tkrs gSA tSls&ykHkka'k [kkrs] fofu;ksx [kkrs] va'k [kkrs vkfnA 
+ 
+6- Current Assets:- 
+ lHkh izdkj dh pkyw lEifRr;ksa ds [kkrs Current Assets ds 
+vUrxZr [kksys tkrs gSA tSls&jksdM+ [kkrk] cSad [kkrk] nsunkj [kkrk] vfxze [kkrk 
+vkfnA
+
+4 | P a g e 
+ 
+7- Miscellaneous Exp. Assets:- 
+ ;g dbZ izdkj ds [kpsZ gksrs gS] tks izkjEHk esa 
+vfrfjDr O;; ds #i esa fd, tkrs gSA 
+ 
+8- Suspense Account:- 
+ tc cSysUl lhV dk ;ksx cjkcj u vk jgk gks rc ml 
+le; vUrj dh /kujkf"k Suspence Account esa Mky nsrs gSaA 
+9- Branch Division:- 
+ Main company ds }kjk cuk;s x, vius czkap ds [kkrs Branch 
+Division ds vUrxZr vkrs gSA 
+ 
+10- Sales Account:- 
+ lHkh izdkj ds foØ; eky ds [kkrs Sales Account ds vUrxZr 
+cuk, tkrs gS] pkgs og m/kkj gks ;k uxnA 
+ 
+11- Purchase Account:- 
+ lHkh izdkj ds Ø; fd, x, eky ds [kkrs Purchase 
+Account ds vUrxZr cuk, tkrs gS] pkgs og m/kkj gks ;k uxnA 
+ 
+12- Direct Income:- 
+ lHkh izdkj ds izR;{k vk; tks O;kikj ls vkrh gS] og Direct 
+Income esa n'kkZ;h tkrh gSA 
+ 
+13- Direct Expenses:- 
+ O;kikj esa tks izR;{k #i ls O;; fd, x, gS] muds [kkrs 
+Direct Expenses ds vUrxZr vkrs gSA 
+ 
+14- Indirect Income:- 
+ lHkh izdkj ds vizR;{k vk;ksa ds [kkrsa Indirect Income ds 
+vUrxZr cuk, tkrs gS] tSls&izkIr fdjk;k] izkIr NwV] izkIr deh'ku vkfnA 
+ 
+15- Indirect Expenses:- 
+ lHkh izdkj ds vizR;{k O;;ksa ds [kkrs ds Indirect Expenses 
+vUrxZr cuk, tkrs gS] tSls& deh'ku [kkrk] O;; [kkrk] fdjk;k [kkrk] vkfnA
+
+5 | P a g e 
+ 
+16- Reserve & Surplus:- 
+ ykHk ls cuk, tkus okys dks'k ds [kkrs Reserve & Surplus 
+esa cuk, tkrs gS] tSls& iwath dks'k] iwath 'kks/ku dks'k vkfnA 
+ 
+17- Bank Over Draft:- 
+ tc cSad tek ls vf/kd jkf'k nsus yxs rks mldx Bank Over 
+Draft dgrs gSA ¼tc cSad ls yksu ysrs gSa½ 
+ 
+18- Secured Loans:- 
+ lHkh izdkj ds lqjf{kr _.k ds [kkrs Secured Loans ds vUrxZr 
+cuk, tkrs gSA 
+ 
+19- Unsecured Loans:- 
+ lHkh izdkj ds vlqjf{kr _.k ftudk dksbZ dkuwuh izk#i 
+u gks mudk [kkrk Unsecured Loans ds vUrxZr cuk, tkrs gSA 
+ 
+20- Duties & Tax:- 
+ lHkh izdkj ds djksa ds [kkrs Duties & Tax ds vUrxZr cuk, tkrs 
+gSA 
+21- Provision:- 
+ lHkh izdkj ds fd, x, izko/kku ds [kkrs Provision ds vUrxZr cuk, 
+tkrs gS] tSls& osru ds fy, izko/kku] fdjk, ds fy, izko/kkuA 
+ 
+22- Sundry Creditors:- 
+ Hkfo"; esa ftudks iSlk nsuk gksrk gS os ysunkj gksrs gS] 
+muds [kkrs Sundry Creditors ds vUrxZr cuk, tkrs gSA 
+ 
+22- Sundry Debtors:- 
+ Hkfo"; esa ftuls iSlk ysuk gksrk gS os gekjs nsunkj gksrs gS] 
+muds [kkrs Sundry Debtors ds vUrxZr cuk, tkrs gSA 
+ 
+24- Deposit Assets:- 
+ fdlh oLrq ds fy, Security ds #i esa iSlk tek djuk Deposit 
+Assets dgykrk gS] tSls& nqdku ds fy, 2,0000 only fd,A
+
+6 | P a g e 
+ 
+25- Loans & Advance Assets :- 
+ lHkh izdkj dh vfxze nh gq;h /kujkf"k Loans & Advance 
+Assets ds vUrxZr vkrh gSA 
+ 
+26- Cash in hand:- 
+ ;g xzqi Cash ds fy, bLrsky gksrk gSA 
+27- Stock on hand:- 
+ 
+ 
+ 
+ 
+;g xzqi Stock ds fy, gksrk gSA 
+28- Bank Account:- 
+ lHkh izdkj ds Banks ds [kkrs Bank Account esa [kksys tkrs gS] 
+tSls& ICICI Bank, State Bank, HDFC Bank. 
+ 
+Types of Voucher 
+1- 
+Contra Voucher 
+ 
+ 
+F4 
+2- 
+Payment Voucher 
+ 
+ 
+F5 
+3- 
+Receipt Voucher 
+ 
+ 
+F6 
+4- 
+Journal Voucher 
+ 
+ 
+F7 
+5- 
+Sales Voucher 
+ 
+ 
+F8 
+6- 
+Purchase Voucher 
+ 
+ 
+F9 
+7- 
+Credit score Voucher 
+ 
+Alt+F8 
+8- 
+Debit note Voucher 
+ 
+Alt+F9 
+9- 
+Reserve & Surplus 
+ 
+F10 
+10- 
+Voucher Memorandum 
+ 
+Alt+F10
+
+7 | P a g e 
+ 
+1- Cons Voucher:- 
+ tks [kkrs Cash ;k Bank ls lEcfU/kr gksrs gS tc cSad 
+esa #i;s tek djsa ;k fudkys rks mldh izfof’V dks Contra Voucher ij djrs gS] 
+tSls&50,000 cSad esa only fd,A 
+ 
+2-Payment Voucher:- 
+ tc fdlh O;fDr dks Cash that ;k Check ds #i that 
+Hkqxrku fd;k tkrk gS] rks mldh izfof’V Payment Voucher esa djrs gS] tSls& jke dks 
+50,000 dk Hkqxrku fd;kA 
+ 
+3- Receipt Voucher:- 
+ tc fdlh ds }kjk /ku deh'ku NwV vkfn] izkIr djrs 
+gS] rks mldh izfof’V Receipt Voucher ij djrs gS] tSls&jke dks 5000 dh uxn 
+income gq;hA 
+ 
+4- Journal Voucher:- 
+ tc ckr m/kkj dh vkrh gS] pkgs og m/kkj fn;k x;k 
+gks ;k fy;k x;k gks rFkk izko/kku vkfn fd izfof’V Journal Voucher ij djrs gS] tSls& 
+jkgqy us jke ls 50,000 dk QuhZpj m/kkj [kjhnkA 
+ 
+5- Sales Voucher:- 
+ lHkh izdkj ds LVkd dk uxn o m/kkj foØ; dk ys[kk Sales 
+Voucher ij fd;k tkrk gS] tSls&';ke us 10,000 dh Light csphA 
+ 
+6- Purchase Voucher:- 
+ lHkh izdkj ds m/kkj o uxn Ø; dh izfof’V Purchase 
+Voucher ij dh tkrh gS] tSls& jke us jkgqy ls 50,000 dk eki m/kkj [kjhnkA 
+ 
+7- Credit Score Voucher:- 
+ tc fcdk gqvk eky okil vkrk gS rks mldh 
+izfof’V Credit Note Voucher ij djrs gS] tSls&jke ls 2,000 dk equi okil vk;kA 
+(Sales Return)
+
+8 | P a g e 
+ 
+8- Debit Note Voucher:- 
+ lHkh izdkj dh Ø; okilh ¼[kjhns gq;s eky dh 
+okilh½ dh izfof’V Debit Note Voucher ij dh tkrh gS] tSls& jke us jkgqy dks 2,000 
+dk eky okil fd;kA (Purchases Return) 
+ 
+9- Memorandum Voucher:- 
+ tks izfof’V;kn j[kus ds fy, gksrh gS] rks mldh 
+izfof’V Memorandum Voucher ij djrs gSA 
+ 
+10- Reserve & Surplus:- 
+ lHkh izdkj ds ykHk ls cuk, tkus okys dks'k ds [kkrks dh 
+izfof’V Reserve & Surplus esa dh tkrh gSA 
+ 
+ (Terminology of Accounting) 
+ O;kikj (Trade) 
+ykHk dekus ds mns'; ls fd;k x;k oLrqvksa dk Ø;] foØ; O;kikj dgykrk gSA 
+ is'kk (Profession) 
+vk; vftZr djus ds fy, fd;k x;k dksbZ Hkh dk;Z;k lk/ku ftlds fy, iwoZ 
+izf'k{k.k dh vko';drk gksrh gS]is'kk dgykrk gSA 
+ O;olk; (Business) 
+,slk dksbZ oS/kkfud dk;Z tks vk; ;k ykHk izkIr djus ds mns'; ls fd;k x;k gks 
+O;olk; dgykrk gSA O;kikj o is'kk Hkh blh ds vUrjxr vkrs gSA 
+ 
+ 
+ ekfyd (Owner) 
+og O;fDr;k O;fDr;ksa dk lewg tks O;kikj esa vko';d iw¡th yxkrs gSa O;kikj dk 
+lapkyu djrs gSa ] O;kikj dh tksf[ke lgu djrs gSa ] rFkk ykHk o gkfu ds 
+vf/kdkjh gksrs gSa os O;kikj ds ekfyd dgykrs gSaA
+
+9 | P a g e 
+ 
+;fn fdlh O;kikj dk ekfyd ,d O;fDr gS rks og Proprietor dgykrk gSA ;fn 
+2;k 2 ls vf/kd O;fDr gSa rks og Partner dgykrs gSaA vkSj ;fn cgqr ls yksx 
+feydj laxfBr #i ls dk;Z djrs gSa rks Shear Holder dgykrs gSaA 
+ iw¡th (Capital) 
+O;kikj dk ekfyd tks #i;k ]eky ;k lEeifRr O;kikj esa yxkrk gS mls iw¡th 
+dgrs gSa A O;kikj esa ykHk gksus ij iw¡th c<+rh gS vkSj gkfu gksus ij iw¡th ?kVrh 
+gSA 
+ vkgj.k (Drawings) 
+O;kikj dk ekfyd vius futh [kpZ ds fy;s le;&le; ij O;kikj ls tks :i;k 
+;k eky fudkyrk gS og mldk vkgj.k dgykrk gSA 
+ eky (Goods) 
+eky ml oLrq dks dgrs gSa ftldk Ø;&foØ; ;k O;kikj fd;k tkrk gS] eky ds 
+vUrjxr oLrqvksa ds fuekZ.k gsrq izkIr dPph lkexzh] v/kZ fufeZr lkexzh] ;k rS;kj 
+oLrq;sa gks ldrh gSA 
+ Ø; (Purchase) 
+foØ; ds mns'; ls O;kikj esa [kjhnk x;k eky Ø; ;k [kjhnh dgk tkrk gSA 
+O;kikj esa eky m/kkj ;k uxn [kjhnk tk ldrk gSA 
+ foØ; (Sales) 
+tks eky cspk tkrk gS mls foØ; dgrs gsa 
+ Ø; okilh (Purchase Return) 
+tc [kjhns gq;s eky ls dqN eky fofHkUu dkj.kksa ls okil dj fn;k tkrk gS rks 
+mls Ø; okilh dgrs gSaA 
+ foØ; okilh (Sales Return) 
+tc csps gq;s eky dk dqN Hkkx fofHkUu dkj.kksa ls O;kikjh ykSVk nsrk gS rks bl 
+izdkj dh okilh dks foØ; okilh dgrs gSaA 
+ jgfr;k (Stock) 
+fdlh Hkh O;olk; esa orZeku esa gekjs ikl fdlh Hkh ek=k esa tks eky miyC/k gS 
+Stock dgkykrk gSA lky ds vUr esa tks eky fcuk fcds jg tkrk gS og gekjk 
+Closing Stock dgykrk gS ] vkSj vxys lky ds igys fnu ogh eky Opening 
+Stock dgykrk gsa 
+ nkf;Ro (Liabilities) 
+os lc _.k tks O;kikj dks vU; O;fDr;ksa vFkok vius ekfyd ds izfr pqdkus gksrs 
+gS] nkf;Ro dgykrs gSaA;s nkf;Ro nks izdkj ds gksrs gSaA 
+1&LFkk;h nkf;Ro (Long Term/Fixed Liabilities) 
+;s oks nkf;Ro gSa tks ,d lky ls T;knk le; ds ckn;k O;kikj lekfIr ij 
+pqdkuh gksrh gS] Fixed Liabilities dgykrh gSA 
+2&pkyw nkf;Ro (Short Term/Current Liabilities)
+
+10 | P a g e 
+ 
+;s ox nkf;Ro gSa tks ,d lky ]6 eghus ;k mlls Hkh de le; esa pqdkuh gksrh gSa 
+] Current Liabilities dgykrh gSA 
+ lEifRr (Assets) 
+O;kikj esa leLr oLrq;sa tks O;kikj lapkyu esa lgk;d gksrh gSa lEifRr 
+dgykrh gSaA ;s nks izdkj dh gksrh gSa& 
+1&vpy@LFkk;h lEifRr& (Fixed Assets) 
+os oLrq;sa tks O;kikj dx pycus ds fy;s LFkk;h :i ls [kjhnh tkrh gSa vkSj ftUgsa 
+cspus ds fy;s ugh [kjhnk tkrk gS] os lHkh lEifRr;k¡ LFkk;h lEifRr;k¡ dgykrh 
+gSA 
+2&py@vLFkk;h lEifRr& (Current Assets) 
+;s os lEifRr;k¡ gSa tks LFkk;h :i ls O;kikj esa ugha jgrh gSaA Cash, Bank esa tek 
+/ku] Stoke o Debaters rFkk os lHkh lEifRr;k¡ tks vklkuh o 'kh?kzrk ls uxnh esa ifjofrZr 
+dh tk lds vLFkk;h lEifRr dgykrh gSA 
+ O;; (Expenses) 
+ek dks mRiknu o mls cspus esa tks [kpsZ gksrs gSa] os Expenses dgykrs gSaA ;s 
+eq[;r% nks izdkj dh gksrh gSa& 
+1&izR;{k O;;& (Direct Expenses) 
+;s os [kpsZ gksrs gSa ftUgs O;kikjh ek [kjhnrs oDr djrk gS] ;k eky ds mRiknu 
+esa djrk gSA mRiknu dh n'kk esa dPps ek dh [kjhn ls ysdj mls foØ; ;ksX; 
+fLFkfr rd ykus esa tks [kpsZ gksrs gSa ox Direct Exp. dgykrs gSaA 
+2&vizR;{k O;;& (Indirect Expenses) 
+Indirect Exp. os Exp. gksrs gSa ftudk lEcU/k oLrq ds Ø; ;k mlds fuekZ.k ls 
+u gksdj cfYd dk;kZy; ls lEcfU/kr fd;s x;s O;; ls gksrk gS] ,sls Exp. dk 
+izHkko foØ; fd;s tkus okys eky ds ykxr ij fcYdqy ugh gksrk] ;s O;kikj ds 
+ykHk dks ?kVk nsrs gSaA 
+ jktLo (Revenue) 
+Goods o Services dks Market esa Sale juice ij mlls tks izkfIr gksrh gS] and 
+Revenue dgykrh gSA 
+ vk; (Income) 
+Goods or Services dks Market esa Sale juice ij mlls tks Revenue gksrh gS mls 
+ge Income dgrs gSaA ;g nks izdkj dh gksrh gS 
+1&izR;{k vk;& (Direct Income) 
+Direct Income oks Income gS tks gesa eq[; O;olk; ls feyrh gSA 
+2&vizR;{k vk;& (Indirect Income) 
+Indirect Income oks Income gS tks gesa eq[; O;olk; ls ugh feyrh cfYd 
+Discount, Interest ls feyrh gS] Indirect Income gksrh gSA
+
+11 | P a g e 
+ 
+ cV~Vk NwV (Discount) 
+O;kikjh }kjk vius xzkgdxa dks nh tkus okyh fj;k;r] NwV ;k Discount dgykrh 
+gSA ;g nks izdkj dh gksrh gS& 
+1&O;kikfjd cV~Vk& (Trade Discount) 
+O;kikjh ek csprs le; xzkgd dks ek ds ewY; esa dqN deha ;k fcy dh jkf'k 
+esa tks deha djrk gS og O;kikfjd NwV dgykrh gSA ;g NwV ek ds foØ; ewY; 
+that ls dqN fuf'pr izfr'kr ds :i that nh tkrh gS] bl NwV dks fcy that gh of dj 
+fn;k tkrk gS] mls Trade Discount dgk tkrk gSA 
+2&uxn cV~Vk& (Cash Discount) 
+O;kikjh pyu ds vuqlkj izR;sd xzkgd dks ,d fuf'pr wof/k esa Hkqxrku jus 
+dh lqfo/kk iznku dh tkrh gS] vxj xzkgd fuf'pr vof/k ds igys gh Hkqxrku dj 
+ns rks mls dqN NwV nh tkrh gS] ftls Cash Discount dgk tkrk gSA 
+;g Discount dh izfr'kr ds :i esa fn;k tkrk gSaA 
+ Mwcr _.k (Bad Debts) 
+O;kikjh dks m/kkj csps x;s eky dh iwjh jde Debaters (nsunkj½ ls izkIr gks tk;s 
+;s vko';d ugh gS] vr% bl m/kkj dh jde esa ls tks olwy ugh gks ikrh gS mls 
+O;kikjh dk Mwcr _.k dgrs gSA 
+ ysu&nsu (Transaction) 
+O;kikj esa ek lEcU/kh Ø; foØ; vkSj oLrqvxa dk ikjLifjd vknku&iznku gksrk 
+gS] ,sls lHkh ysu&nsu eqnzk esa gksrs gSaA ;g eqnzk }kjk ekis tkrs gSa eqnzk dk Hkqxrku 
+rqjUr ;k Hkfo"; esa gks ldrk gSA O;kikjh }kjk fd;s tkus okys lHkh vknku&iznku] 
+ysu&nsu dgykrs gSaA tc lkSns dk rqjUr Hkqxrku fd;k tkrk gS rc og uxn 
+ysu&nsu (Cash Transaction) dgykrk gSaA 
+tc Hkqxrku Hkfo"; esa fd;k tkrk gS rks mls m/kkj ysu&nsu ;kuh (Credit 
+Transaction) dgrs gSA
+
+12 | P a g e
+
+13 | P a g e 
+ 
+Inventory Control 
+Inventory dk vFkZ gS oLrqvksa dh lwphA ,d laxBu esa oLrq,¡ tSls- Row Material, Finished Product, 
+Consumable vkfn dks Stock esa j[kk tkrk gS] ftlls tc Hkh vko”;drk iM+s] rks ;s Item Self esa 
+myC/k gxa wkSj bu Items dh vuqiyC/krk dh otg ls Business izHkkfor u gksA ,d Business rc rd 
+ykHkdkjh ugh gks ldrk gS] tc rd fd blesa oLrqvxa ds vkus vkSj tkus dk foLr`r fglkc&fdrkc u j[kk 
+tk,A 
+,d vPNs Inventory Control System ds eq[; mn~ns”; gSa& 
+1. Inventory ij fd, x, fuos”k dks U;wure j[kuk] ftlls m/kkj u ysuk iM+s vkSj C;kt ls gksus okys 
+uqdlku dks cpk;k tk ldsA 
+2. ;g lqfuf”pr djuk dh Store esa tc] tgk¡ tSlh t:jr iM+s rks Item miyC/k jgsaA 
+3. vf/kd Stoke j[kus] oLrqvxa ds lM+us vFkok iqjkuh gks tkus dh otg ls gksus okys uqdlku dks de 
+fd;k tkukA 
+4. Production dh ykxr ,oa midj.kksa dh ns[kHkky ij vkus okys [kpZ dks Maintain juice ,oa de 
+juice ds fy, lalk/kuksa dks mRd`’B cukukA 
+5. Costing, oa Accounting dkj.kksa ls lgh Recordings dks Maintain djukA 
+blfy, ;g t:jh gS fd lHkh laxBuks esa ,d vPNk Inventory Control System gksuk pkfg, vkSj bl 
+y{; dks izkIr jus esa Computer vkidh dkQh enn djrs gSaA 
+ 
+Financial System 
+Financial System ox System gksrs gSa tks fofHkUu laxBuks ;k O;fDr;ksa dx iSlksa dk ysunsu jus 
+esa gh Deal djrs gSaA bUgs Financial Accounting rFkk Management Accounting nks Hkkxksa 
+esa ck¡Vk tk ldrk gSA Financial Accounting, Financial Statement tSls& Balance Sheet, 
+Profit / Loss Account vkfn rS;kj djrh gS] tcfd Management Accounting Finance 
+dh Time ls lwpuk nsrk gS ftlls Manager viuk dk;Z dq”kyrk ls dj ldsA

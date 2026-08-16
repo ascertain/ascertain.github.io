@@ -1,0 +1,60 @@
+
+
+===== PAGE 2 (native) =====
+
+1 | P a g e 
+ 
+Tally. ERP 9 
+Tally is a financial accounting software package. It is a complete business accounting 
+and inventory management software that provides various facilities like Government 
+supported formats, multilingual operations, processing for small and medium 
+businesses in India. Tally products are transforming businesses across industry in over 
+100 Countries. Latest version is Tally. ERP 9. 
+ 
+Account 
+ 
+ 
+ 
+Profit, Loss, Purchases, Sales, Ram, Mohan, Bank, Cash, Computer, 
+Machinery, Furniture, Assets, Deposit, Interest, Discount, Wages Etc. 
+ 
+Classification Of Account 
+1-Personal Account 
+2-Real Account 
+3-Nominal Account 
+ 
+1-Personal Account:- 
+ Those accounts that are created in the name of a person or an institution are called Personal Accounts (individual accounts), such as: Mohit, Rahul, Bank, Abc Company, Capital, Drawing 
+etc. 
+ 
+2-Real Account:- 
+ Those accounts related to assets, property, or things are called Real Accounts, such as: Cash, Computer, Machinery, Furniture, Assets etc. 
+ 
+3-Nominal Account:- 
+ Those accounts related to profit-loss, income-expense, and purchase-sales are called Nominal Accounts, such as: Interest, Discount, Wages, Purchases, 
+Sales, Profit & Loss etc. 
+Rules of Accounting 
+Personal Account 
+1-Who is receiver 
+(the receiver) 
+Debit 
+2-Who is given 
+ 
+(the giver) 
+Credit 
+Real Account 
+3-What come in 
+ 
+(what comes in) 
+Debit 
+4-What goes it 
+ 
+(what goes out) 
+Credit 
+Nominal Account 
+5-Loss & Expenses 
+(loss and expenses) 
+Debit 
+6-Profit & Income 
+(profit and income) 
+Credit

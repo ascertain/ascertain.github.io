@@ -1,0 +1,6 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+Processing page 1
+Processing page 2
+Processing page 3
+Created review text: C:\Users\MOKAS10\vcs\ascertain.github.io\fwtally\Notes_review_pages_1to3.txt
+Created review meta: C:\Users\MOKAS10\vcs\ascertain.github.io\fwtally\Notes_review_pages_1to3.json

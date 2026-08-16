@@ -1,0 +1,140 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+Using CPU. Note: This module is much faster with a GPU.
+C:\Users\MOKAS10\AppData\Roaming\Python\Python313\site-packages\torch\ao\nn\quantized\dynamic\modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+Processing: Tally Syllabus.pdf
+  - Reading page 1/2
+  - Reading page 2/2
+  - Translating chunk 1/1
+Processing: Tally Notes.pdf
+  - Reading page 1/14
+C:\Users\MOKAS10\AppData\Roaming\Python\Python313\site-packages\torch\utils\data\dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+  - Reading page 2/14
+  - Reading page 3/14
+  - Reading page 4/14
+  - Reading page 5/14
+  - Reading page 6/14
+  - Reading page 7/14
+  - Reading page 8/14
+  - Reading page 9/14
+  - Reading page 10/14
+  - Reading page 11/14
+  - Reading page 12/14
+  - Reading page 13/14
+  - Reading page 14/14
+  - Translating chunk 1/5
+  - Translating chunk 2/5
+  - Translating chunk 3/5
+  - Translating chunk 4/5
+  - Translating chunk 5/5
+Processing: Tally Workbook Case Study - 1.pdf
+  - Reading page 1/7
+  - Reading page 2/7
+  - Reading page 3/7
+  - Reading page 4/7
+  - Reading page 5/7
+  - Reading page 6/7
+  - Reading page 7/7
+  - Translating chunk 1/4
+  - Translating chunk 2/4
+  - Translating chunk 3/4
+  - Translating chunk 4/4
+Processing: Tally Workbook Case Study - 2.pdf
+  - Reading page 1/15
+  - Reading page 2/15
+  - Reading page 3/15
+  - Reading page 4/15
+  - Reading page 5/15
+  - Reading page 6/15
+  - Reading page 7/15
+  - Reading page 8/15
+  - Reading page 9/15
+  - Reading page 10/15
+  - Reading page 11/15
+  - Reading page 12/15
+  - Reading page 13/15
+  - Reading page 14/15
+  - Reading page 15/15
+  - Translating chunk 1/6
+  - Translating chunk 2/6
+  - Translating chunk 3/6
+  - Translating chunk 4/6
+  - Translating chunk 5/6
+  - Translating chunk 6/6
+Processing: Tally Workbook Case Study - 3.pdf
+  - Reading page 1/14
+  - Reading page 2/14
+  - Reading page 3/14
+  - Reading page 4/14
+  - Reading page 5/14
+  - Reading page 6/14
+  - Reading page 7/14
+  - Reading page 8/14
+  - Reading page 9/14
+  - Reading page 10/14
+  - Reading page 11/14
+  - Reading page 12/14
+  - Reading page 13/14
+  - Reading page 14/14
+  - Translating chunk 1/6
+  - Translating chunk 2/6
+  - Translating chunk 3/6
+  - Translating chunk 4/6
+  - Translating chunk 5/6
+  - Translating chunk 6/6
+Processing: Tally Workbook Case Study - 4.pdf
+  - Reading page 1/1
+  - Translating chunk 1/1
+Processing: Tally Workbook Case Study - 5.pdf
+  - Reading page 1/128
+  - Reading page 2/128
+  - Reading page 3/128
+  - Reading page 4/128
+  - Reading page 5/128
+  - Reading page 6/128
+  - Reading page 7/128
+  - Reading page 8/128
+  - Reading page 9/128
+  - Reading page 10/128
+  - Reading page 11/128
+  - Reading page 12/128
+  - Reading page 13/128
+  - Reading page 14/128
+  - Reading page 15/128
+  - Reading page 16/128
+  - Reading page 17/128
+  - Reading page 18/128
+  - Reading page 19/128
+  - Reading page 20/128
+  - Reading page 21/128
+  - Reading page 22/128
+  - Reading page 23/128
+  - Reading page 24/128
+  - Reading page 25/128
+  - Reading page 26/128
+  - Reading page 27/128
+  - Reading page 28/128
+  - Reading page 29/128
+  - Reading page 30/128
+  - Reading page 31/128
+  - Reading page 32/128
+  - Reading page 33/128
+  - Reading page 34/128
+  - Reading page 35/128
+  - Reading page 36/128
+  - Reading page 37/128
+  - Reading page 38/128
+  - Reading page 39/128
+  - Reading page 40/128
+  - Reading page 41/128
+  - Reading page 42/128
+  - Reading page 43/128
+  - Reading page 44/128
+  - Reading page 45/128
+  - Reading page 46/128
+  - Reading page 47/128
+  - Reading page 48/128
+  - Reading page 49/128
+  - Reading page 50/128
+  - Reading page 51/128

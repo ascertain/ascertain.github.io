@@ -1,0 +1,4002 @@
+
+
+===== Syllabus =====
+
+Our Website: www.upcissyoutube.com 
+ 
+ Basic Fundamentals 
+ What is Tally 
+ What is accounts 
+ Classification of accounts 
+ Terminology of accounting 
+ Golden Rules of accounting 
+ General Entry 
+ Pre-Define Tally Group 
+ Types of voucher 
+ Overview of Tally. ERP 9 
+ Download and Install 
+ Create Company 
+ Configurations 
+ Basic introduction of Features 
+ Voucher Transaction Entry 
+ View Reports 
+ Accounting (Case Study-1) 
+ Financial year from 1-Apr-2016 to 31-Mar-2017 
+ Debit, Credit – By, To 
+ Voucher 
+ Create Ledger (Under Group) 
+ Create Group 
+ Service organization General Entry 12 Months 
+ Day Book ,Trail Balance 
+ Profit & Loss accounting, Balance Sheet 
+ Closing & Opening Balance 
+ Exercise With Solution 
+ 
+ 
+Tally. ERP 9 
+Full Tutorial 
+Series - Hindi
+
+Our Website: www.upcissyoutube.com 
+ 
+ Accounts with Inventory (Case Study-2) 
+ Financial year from 1-Apr-2016 to 31-Mar-2017 
+ Create - Stock Item, Stock Group, Unit of measure 
+ Trading organization General Entry 12 Months 
+ Purchase, Sales, Invoice 
+ Provision entry, Depreciation entry 
+ Adjustment entry, Closing entry 
+ Inventory Reports, Stock Summary 
+ Export & Printing 
+ Closing & Opening Balance 
+ Exercise With Solution 
+ Inventory Management with GST (Case Study-3) 
+ Financial year from 1-Apr-2017 to 31-Mar-2018 
+ Taxation System GST 
+ SGST, CGST, IGST 
+ Create - Godowns 
+ Create - Stock Item, Stock Group, Unit of measure 
+ Create - Cost Category, Cost Centre 
+ Trading organization General Entry 12 Months 
+ Discounts, Interest 
+ Purchase returns, Sales Returns 
+ Credit Note, Debit Note – Voucher 
+ Inventory Reports, Stock Summary, Tax Report 
+ Closing & Opening Balance 
+ Exercise With Solution 
+ Advance Level 
+ Service Organization With GST 
+ Manufacturing with GST 
+ Payroll Management 
+ Under Processing…………………………
+
+
+===== Notes =====
+
+UPCISS 
+TALLY NOTES 
+TALLY -ERP9 
+Free Online Computer Classes on 
+YouTube Channel UPCISS 
+www.youtube.com/upciss
+
+1 | P a g e 
+ 
+Tally. ERP 9 
+Tally is a financial accounting software package. It is a complete business accounting 
+and inventory management software that provides various facilities like Government 
+supported formats, multilingual operations, processing for small and medium 
+businesses in India. Tally products are transforming businesses across industry in over 
+100 Countries. Latest version is Tally. ERP 9. 
+ 
+Account 
+ 
+ 
+ 
+Profit, Loss, Purchases, Sales, Ram, Mohan, Bank, Cash, Computer, 
+Machinery, Furniture, Assets, Deposit, Interest, Discount, Wages Etc. 
+ 
+Classification Of Account 
+1-Personal Account 
+2-Real Account 
+3-Nominal Account 
+ 
+1-Personal Account:- 
+ og [kkrs tks fdfl O;fDr ;k laLFkk ds uke ls cuk, tkrs gS] os Personal 
+Account ¼O;fDrxr [kkrs½ dgykrs gSA tSls& Mohit, Rahul, Bank, Abc Company, Capital, Drawing 
+etc. 
+ 
+2-Real Account:- 
+ og [kkrs tks fdfl oLrq ;k lEifRr vkfn ls lEcfU/kr gksrs gSa Real 
+Account ¼okLrfod [kkrs½ dgykrs gSaA tSls& Cash, Computer, Machinery, Furniture, Assets etc. 
+ 
+3-Nominal Account:- 
+ og [kkrs tks ykHk&gkfu] vk;&O;;] vkSj Ø;&foØ; ls lEcfU/kr gksrs gSa 
+Nominal Account ¼ukeek= ds [kkrs½ dgykrs gSaA tSls& Interest, Discount, Wages, Purchases, 
+Sales, Profit & Loss etc. 
+Rules of Accounting 
+Personal Account 
+1-Who is receiver 
+¼ ikus okyk ½ 
+Debit 
+2-Who is given 
+ 
+¼ nsus okyk ½ 
+Credit 
+Real Account 
+3-What come in 
+ 
+¼ vkus okyk ½ 
+Debit 
+4-What goes it 
+ 
+¼ tkus okyk ½ 
+Credit 
+Nominal Account 
+5-Loss & Expenses 
+¼ gkfu] [kPkkZ ½ 
+Debit 
+6-Profit & Income 
+¼ ykHk] vk; ½ 
+Credit
+
+2 | P a g e 
+ 
+TALLY GROUP 
+ PRIMARY GROUP 
+1- 
+Capital Account 
+2- 
+Loans Liabilities 
+3- 
+Current Liabilities 
+4- 
+Fixed Assets 
+5- 
+Investment 
+6- 
+Current Assets 
+7- 
+Miscellaneous Expenses (Assets) 
+8- 
+Suspense Account 
+9- 
+Branch Division 
+10- 
+Sales Account 
+11- 
+Purchase Account 
+12- 
+Direct Income 
+13- 
+Direct Expenses 
+14- 
+Indirect Income 
+15- 
+Indirect Expenses 
+ 
+ 
+ SECONDRY GROUP 
+16- 
+Reserve & Surplus 
+ 
+ 
+(Capital Account) 
+17- 
+Bank Over Draft 
+ 
+ 
+(Loans Liabilities) 
+18- 
+Secured Loans 
+ 
+ 
+ 
+(Loans Liabilities) 
+19- 
+Unsecured Loans 
+ 
+ 
+ 
+(Loans Liabilities) 
+20- 
+Duties & Tax 
+ 
+ 
+ 
+ 
+(Current Liabilities) 
+21- 
+Provision 
+ 
+ 
+ 
+ 
+(Current Liabilities) 
+22- 
+Sundry Creditors 
+ 
+ 
+ 
+(Current Liabilities) 
+23- 
+Sundry Debtors 
+ 
+ 
+ 
+(Current Assets) 
+24- 
+Deposit Assets 
+ 
+ 
+ 
+(Current Assets) 
+25- 
+Loans & Advance Assets 
+ 
+ 
+(Current Assets) 
+26- 
+Cash in Hand 
+ 
+ 
+ 
+ 
+(Current Assets) 
+27- 
+Stock in Hand 
+ 
+ 
+ 
+ 
+(Current Assets) 
+28- 
+Bank Account 
+ 
+(Current Assets)
+
+3 | P a g e 
+ 
+ 
+1- Capital Account:- 
+ lHkh izdkj ds iw¡th [kkrs ¼ tc O;kikj vkjEHk djrs gS ½ 
+Capital Account ds vUrxZr [kksys tkrs gSA tSls& jke us 10000 ls O;kikj vkjEHkA (Ram 
+is a Capital A/c) 
+ 
+2- Loans Liabilities:- 
+ O;kikj }kjk fy, x, _.k O;kikj dk nkf;Ro gSA bl izdkj 
+ds [kkrs Loans Liabilities ds vUrxZr cuk, tkrs gSA tSls& jke us vius edku dks 
+fxjoh j[k dj 10000 dk jkgqy ls yksu fy;kA 
+(Rahul is a Loans Liabilities) 
+ 
+3- Current Liabilities:- 
+ Pkkyw nkf;Ro ds [kkrs Current Liabilities ds vUrxZr [kksys 
+tkrs gSA tSls&vfxze fy;k gqvk _.k] fofo/k ysunkjA 
+jke us jkgqy ls 5000 dk Computer m/kkj [kjhnk A 
+(Rahul is a Current Liabilities (Sundry Creditors )) 
+ 
+4- Fixed Assets:- 
+ lHkh izdkj dh LFkk;h lEifRr;ksa ds [kkrsa Fixed Assets ds vUrxZr 
+cuk, tkrs gSA tSls&Hkou] e'khujh] IykV vkfnA jke us 10000 dk lsy Qksu [kjhnkA 
+(Cell Phone is a Fixed Assets) 
+ 
+5- Investment Account:- 
+ fdlh Hkh izdkj ds fofu;ksx fd, x, [kkrs Investment 
+Account ds vUrxZr cuk, tkrs gSA tSls&ykHkka'k [kkrs] fofu;ksx [kkrs] va'k [kkrs vkfnA 
+ 
+6- Current Assets:- 
+ lHkh izdkj dh pkyw lEifRr;ksa ds [kkrs Current Assets ds 
+vUrxZr [kksys tkrs gSA tSls&jksdM+ [kkrk] cSad [kkrk] nsunkj [kkrk] vfxze [kkrk 
+vkfnA
+
+4 | P a g e 
+ 
+7- Miscellaneous Exp. Assets:- 
+ ;g dbZ izdkj ds [kpsZ gksrs gS] tks izkjEHk esa 
+vfrfjDr O;; ds #i esa fd, tkrs gSA 
+ 
+8- Suspense Account:- 
+ tc cSysUl lhV dk ;ksx cjkcj u vk jgk gks rc ml 
+le; vUrj dh /kujkf"k Suspence Account esa Mky nsrs gSaA 
+9- Branch Division:- 
+ Main company ds }kjk cuk;s x, vius czkap ds [kkrs Branch 
+Division ds vUrxZr vkrs gSA 
+ 
+10- Sales Account:- 
+ lHkh izdkj ds foØ; eky ds [kkrs Sales Account ds vUrxZr 
+cuk, tkrs gS] pkgs og m/kkj gks ;k uxnA 
+ 
+11- Purchase Account:- 
+ lHkh izdkj ds Ø; fd, x, eky ds [kkrs Purchase 
+Account ds vUrxZr cuk, tkrs gS] pkgs og m/kkj gks ;k uxnA 
+ 
+12- Direct Income:- 
+ lHkh izdkj ds izR;{k vk; tks O;kikj ls vkrh gS] og Direct 
+Income esa n'kkZ;h tkrh gSA 
+ 
+13- Direct Expenses:- 
+ O;kikj esa tks izR;{k #i ls O;; fd, x, gS] muds [kkrs 
+Direct Expenses ds vUrxZr vkrs gSA 
+ 
+14- Indirect Income:- 
+ lHkh izdkj ds vizR;{k vk;ksa ds [kkrsa Indirect Income ds 
+vUrxZr cuk, tkrs gS] tSls&izkIr fdjk;k] izkIr NwV] izkIr deh'ku vkfnA 
+ 
+15- Indirect Expenses:- 
+ lHkh izdkj ds vizR;{k O;;ksa ds [kkrs ds Indirect Expenses 
+vUrxZr cuk, tkrs gS] tSls& deh'ku [kkrk] O;; [kkrk] fdjk;k [kkrk] vkfnA
+
+5 | P a g e 
+ 
+16- Reserve & Surplus:- 
+ ykHk ls cuk, tkus okys dks'k ds [kkrs Reserve & Surplus 
+esa cuk, tkrs gS] tSls& iwath dks'k] iwath 'kks/ku dks'k vkfnA 
+ 
+17- Bank Over Draft:- 
+ tc cSad tek ls vf/kd jkf'k nsus yxs rks mldx Bank Over 
+Draft dgrs gSA ¼tc cSad ls yksu ysrs gSa½ 
+ 
+18- Secured Loans:- 
+ lHkh izdkj ds lqjf{kr _.k ds [kkrs Secured Loans ds vUrxZr 
+cuk, tkrs gSA 
+ 
+19- Unsecured Loans:- 
+ lHkh izdkj ds vlqjf{kr _.k ftudk dksbZ dkuwuh izk#i 
+u gks mudk [kkrk Unsecured Loans ds vUrxZr cuk, tkrs gSA 
+ 
+20- Duties & Tax:- 
+ lHkh izdkj ds djksa ds [kkrs Duties & Tax ds vUrxZr cuk, tkrs 
+gSA 
+21- Provision:- 
+ lHkh izdkj ds fd, x, izko/kku ds [kkrs Provision ds vUrxZr cuk, 
+tkrs gS] tSls& osru ds fy, izko/kku] fdjk, ds fy, izko/kkuA 
+ 
+22- Sundry Creditors:- 
+ Hkfo"; esa ftudks iSlk nsuk gksrk gS os ysunkj gksrs gS] 
+muds [kkrs Sundry Creditors ds vUrxZr cuk, tkrs gSA 
+ 
+22- Sundry Debtors:- 
+ Hkfo"; esa ftuls iSlk ysuk gksrk gS os gekjs nsunkj gksrs gS] 
+muds [kkrs Sundry Debtors ds vUrxZr cuk, tkrs gSA 
+ 
+24- Deposit Assets:- 
+ fdlh oLrq ds fy, Security ds #i esa iSlk tek djuk Deposit 
+Assets dgykrk gS] tSls& nqdku ds fy, 2,0000 only fd,A
+
+6 | P a g e 
+ 
+25- Loans & Advance Assets :- 
+ lHkh izdkj dh vfxze nh gq;h /kujkf"k Loans & Advance 
+Assets ds vUrxZr vkrh gSA 
+ 
+26- Cash in hand:- 
+ ;g xzqi Cash ds fy, bLrsky gksrk gSA 
+27- Stock on hand:- 
+ 
+ 
+ 
+ 
+;g xzqi Stock ds fy, gksrk gSA 
+28- Bank Account:- 
+ lHkh izdkj ds Banks ds [kkrs Bank Account esa [kksys tkrs gS] 
+tSls& ICICI Bank, State Bank, HDFC Bank. 
+ 
+Types of Voucher 
+1- 
+Contra Voucher 
+ 
+ 
+F4 
+2- 
+Payment Voucher 
+ 
+ 
+F5 
+3- 
+Receipt Voucher 
+ 
+ 
+F6 
+4- 
+Journal Voucher 
+ 
+ 
+F7 
+5- 
+Sales Voucher 
+ 
+ 
+F8 
+6- 
+Purchase Voucher 
+ 
+ 
+F9 
+7- 
+Credit score Voucher 
+ 
+Alt+F8 
+8- 
+Debit note Voucher 
+ 
+Alt+F9 
+9- 
+Reserve & Surplus 
+ 
+F10 
+10- 
+Voucher Memorandum 
+ 
+Alt+F10
+
+7 | P a g e 
+ 
+1- Cons Voucher:- 
+ tks [kkrs Cash ;k Bank ls lEcfU/kr gksrs gS tc cSad 
+esa #i;s tek djsa ;k fudkys rks mldh izfof’V dks Contra Voucher ij djrs gS] 
+tSls&50,000 cSad esa only fd,A 
+ 
+2-Payment Voucher:- 
+ tc fdlh O;fDr dks Cash that ;k Check ds #i that 
+Hkqxrku fd;k tkrk gS] rks mldh izfof’V Payment Voucher esa djrs gS] tSls& jke dks 
+50,000 dk Hkqxrku fd;kA 
+ 
+3- Receipt Voucher:- 
+ tc fdlh ds }kjk /ku deh'ku NwV vkfn] izkIr djrs 
+gS] rks mldh izfof’V Receipt Voucher ij djrs gS] tSls&jke dks 5000 dh uxn 
+income gq;hA 
+ 
+4- Journal Voucher:- 
+ tc ckr m/kkj dh vkrh gS] pkgs og m/kkj fn;k x;k 
+gks ;k fy;k x;k gks rFkk izko/kku vkfn fd izfof’V Journal Voucher ij djrs gS] tSls& 
+jkgqy us jke ls 50,000 dk QuhZpj m/kkj [kjhnkA 
+ 
+5- Sales Voucher:- 
+ lHkh izdkj ds LVkd dk uxn o m/kkj foØ; dk ys[kk Sales 
+Voucher ij fd;k tkrk gS] tSls&';ke us 10,000 dh Light csphA 
+ 
+6- Purchase Voucher:- 
+ lHkh izdkj ds m/kkj o uxn Ø; dh izfof’V Purchase 
+Voucher ij dh tkrh gS] tSls& jke us jkgqy ls 50,000 dk eki m/kkj [kjhnkA 
+ 
+7- Credit Score Voucher:- 
+ tc fcdk gqvk eky okil vkrk gS rks mldh 
+izfof’V Credit Note Voucher ij djrs gS] tSls&jke ls 2,000 dk equi okil vk;kA 
+(Sales Return)
+
+8 | P a g e 
+ 
+8- Debit Note Voucher:- 
+ lHkh izdkj dh Ø; okilh ¼[kjhns gq;s eky dh 
+okilh½ dh izfof’V Debit Note Voucher ij dh tkrh gS] tSls& jke us jkgqy dks 2,000 
+dk eky okil fd;kA (Purchases Return) 
+ 
+9- Memorandum Voucher:- 
+ tks izfof’V;kn j[kus ds fy, gksrh gS] rks mldh 
+izfof’V Memorandum Voucher ij djrs gSA 
+ 
+10- Reserve & Surplus:- 
+ lHkh izdkj ds ykHk ls cuk, tkus okys dks'k ds [kkrks dh 
+izfof’V Reserve & Surplus esa dh tkrh gSA 
+ 
+ (Terminology of Accounting) 
+ O;kikj (Trade) 
+ykHk dekus ds mns'; ls fd;k x;k oLrqvksa dk Ø;] foØ; O;kikj dgykrk gSA 
+ is'kk (Profession) 
+vk; vftZr djus ds fy, fd;k x;k dksbZ Hkh dk;Z;k lk/ku ftlds fy, iwoZ 
+izf'k{k.k dh vko';drk gksrh gS]is'kk dgykrk gSA 
+ O;olk; (Business) 
+,slk dksbZ oS/kkfud dk;Z tks vk; ;k ykHk izkIr djus ds mns'; ls fd;k x;k gks 
+O;olk; dgykrk gSA O;kikj o is'kk Hkh blh ds vUrjxr vkrs gSA 
+ 
+ 
+ ekfyd (Owner) 
+og O;fDr;k O;fDr;ksa dk lewg tks O;kikj esa vko';d iw¡th yxkrs gSa O;kikj dk 
+lapkyu djrs gSa ] O;kikj dh tksf[ke lgu djrs gSa ] rFkk ykHk o gkfu ds 
+vf/kdkjh gksrs gSa os O;kikj ds ekfyd dgykrs gSaA
+
+9 | P a g e 
+ 
+;fn fdlh O;kikj dk ekfyd ,d O;fDr gS rks og Proprietor dgykrk gSA ;fn 
+2;k 2 ls vf/kd O;fDr gSa rks og Partner dgykrs gSaA vkSj ;fn cgqr ls yksx 
+feydj laxfBr #i ls dk;Z djrs gSa rks Shear Holder dgykrs gSaA 
+ iw¡th (Capital) 
+O;kikj dk ekfyd tks #i;k ]eky ;k lEeifRr O;kikj esa yxkrk gS mls iw¡th 
+dgrs gSa A O;kikj esa ykHk gksus ij iw¡th c<+rh gS vkSj gkfu gksus ij iw¡th ?kVrh 
+gSA 
+ vkgj.k (Drawings) 
+O;kikj dk ekfyd vius futh [kpZ ds fy;s le;&le; ij O;kikj ls tks :i;k 
+;k eky fudkyrk gS og mldk vkgj.k dgykrk gSA 
+ eky (Goods) 
+eky ml oLrq dks dgrs gSa ftldk Ø;&foØ; ;k O;kikj fd;k tkrk gS] eky ds 
+vUrjxr oLrqvksa ds fuekZ.k gsrq izkIr dPph lkexzh] v/kZ fufeZr lkexzh] ;k rS;kj 
+oLrq;sa gks ldrh gSA 
+ Ø; (Purchase) 
+foØ; ds mns'; ls O;kikj esa [kjhnk x;k eky Ø; ;k [kjhnh dgk tkrk gSA 
+O;kikj esa eky m/kkj ;k uxn [kjhnk tk ldrk gSA 
+ foØ; (Sales) 
+tks eky cspk tkrk gS mls foØ; dgrs gsa 
+ Ø; okilh (Purchase Return) 
+tc [kjhns gq;s eky ls dqN eky fofHkUu dkj.kksa ls okil dj fn;k tkrk gS rks 
+mls Ø; okilh dgrs gSaA 
+ foØ; okilh (Sales Return) 
+tc csps gq;s eky dk dqN Hkkx fofHkUu dkj.kksa ls O;kikjh ykSVk nsrk gS rks bl 
+izdkj dh okilh dks foØ; okilh dgrs gSaA 
+ jgfr;k (Stock) 
+fdlh Hkh O;olk; esa orZeku esa gekjs ikl fdlh Hkh ek=k esa tks eky miyC/k gS 
+Stock dgkykrk gSA lky ds vUr esa tks eky fcuk fcds jg tkrk gS og gekjk 
+Closing Stock dgykrk gS ] vkSj vxys lky ds igys fnu ogh eky Opening 
+Stock dgykrk gsa 
+ nkf;Ro (Liabilities) 
+os lc _.k tks O;kikj dks vU; O;fDr;ksa vFkok vius ekfyd ds izfr pqdkus gksrs 
+gS] nkf;Ro dgykrs gSaA;s nkf;Ro nks izdkj ds gksrs gSaA 
+1&LFkk;h nkf;Ro (Long Term/Fixed Liabilities) 
+;s oks nkf;Ro gSa tks ,d lky ls T;knk le; ds ckn;k O;kikj lekfIr ij 
+pqdkuh gksrh gS] Fixed Liabilities dgykrh gSA 
+2&pkyw nkf;Ro (Short Term/Current Liabilities)
+
+10 | P a g e 
+ 
+;s ox nkf;Ro gSa tks ,d lky ]6 eghus ;k mlls Hkh de le; esa pqdkuh gksrh gSa 
+] Current Liabilities dgykrh gSA 
+ lEifRr (Assets) 
+O;kikj esa leLr oLrq;sa tks O;kikj lapkyu esa lgk;d gksrh gSa lEifRr 
+dgykrh gSaA ;s nks izdkj dh gksrh gSa& 
+1&vpy@LFkk;h lEifRr& (Fixed Assets) 
+os oLrq;sa tks O;kikj dx pycus ds fy;s LFkk;h :i ls [kjhnh tkrh gSa vkSj ftUgsa 
+cspus ds fy;s ugh [kjhnk tkrk gS] os lHkh lEifRr;k¡ LFkk;h lEifRr;k¡ dgykrh 
+gSA 
+2&py@vLFkk;h lEifRr& (Current Assets) 
+;s os lEifRr;k¡ gSa tks LFkk;h :i ls O;kikj esa ugha jgrh gSaA Cash, Bank esa tek 
+/ku] Stoke o Debaters rFkk os lHkh lEifRr;k¡ tks vklkuh o 'kh?kzrk ls uxnh esa ifjofrZr 
+dh tk lds vLFkk;h lEifRr dgykrh gSA 
+ O;; (Expenses) 
+ek dks mRiknu o mls cspus esa tks [kpsZ gksrs gSa] os Expenses dgykrs gSaA ;s 
+eq[;r% nks izdkj dh gksrh gSa& 
+1&izR;{k O;;& (Direct Expenses) 
+;s os [kpsZ gksrs gSa ftUgs O;kikjh ek [kjhnrs oDr djrk gS] ;k eky ds mRiknu 
+esa djrk gSA mRiknu dh n'kk esa dPps ek dh [kjhn ls ysdj mls foØ; ;ksX; 
+fLFkfr rd ykus esa tks [kpsZ gksrs gSa ox Direct Exp. dgykrs gSaA 
+2&vizR;{k O;;& (Indirect Expenses) 
+Indirect Exp. os Exp. gksrs gSa ftudk lEcU/k oLrq ds Ø; ;k mlds fuekZ.k ls 
+u gksdj cfYd dk;kZy; ls lEcfU/kr fd;s x;s O;; ls gksrk gS] ,sls Exp. dk 
+izHkko foØ; fd;s tkus okys eky ds ykxr ij fcYdqy ugh gksrk] ;s O;kikj ds 
+ykHk dks ?kVk nsrs gSaA 
+ jktLo (Revenue) 
+Goods o Services dks Market esa Sale juice ij mlls tks izkfIr gksrh gS] and 
+Revenue dgykrh gSA 
+ vk; (Income) 
+Goods or Services dks Market esa Sale juice ij mlls tks Revenue gksrh gS mls 
+ge Income dgrs gSaA ;g nks izdkj dh gksrh gS 
+1&izR;{k vk;& (Direct Income) 
+Direct Income oks Income gS tks gesa eq[; O;olk; ls feyrh gSA 
+2&vizR;{k vk;& (Indirect Income) 
+Indirect Income oks Income gS tks gesa eq[; O;olk; ls ugh feyrh cfYd 
+Discount, Interest ls feyrh gS] Indirect Income gksrh gSA
+
+11 | P a g e 
+ 
+ cV~Vk NwV (Discount) 
+O;kikjh }kjk vius xzkgdxa dks nh tkus okyh fj;k;r] NwV ;k Discount dgykrh 
+gSA ;g nks izdkj dh gksrh gS& 
+1&O;kikfjd cV~Vk& (Trade Discount) 
+O;kikjh ek csprs le; xzkgd dks ek ds ewY; esa dqN deha ;k fcy dh jkf'k 
+esa tks deha djrk gS og O;kikfjd NwV dgykrh gSA ;g NwV ek ds foØ; ewY; 
+that ls dqN fuf'pr izfr'kr ds :i that nh tkrh gS] bl NwV dks fcy that gh of dj 
+fn;k tkrk gS] mls Trade Discount dgk tkrk gSA 
+2&uxn cV~Vk& (Cash Discount) 
+O;kikjh pyu ds vuqlkj izR;sd xzkgd dks ,d fuf'pr wof/k esa Hkqxrku jus 
+dh lqfo/kk iznku dh tkrh gS] vxj xzkgd fuf'pr vof/k ds igys gh Hkqxrku dj 
+ns rks mls dqN NwV nh tkrh gS] ftls Cash Discount dgk tkrk gSA 
+;g Discount dh izfr'kr ds :i esa fn;k tkrk gSaA 
+ Mwcr _.k (Bad Debts) 
+O;kikjh dks m/kkj csps x;s eky dh iwjh jde Debaters (nsunkj½ ls izkIr gks tk;s 
+;s vko';d ugh gS] vr% bl m/kkj dh jde esa ls tks olwy ugh gks ikrh gS mls 
+O;kikjh dk Mwcr _.k dgrs gSA 
+ ysu&nsu (Transaction) 
+O;kikj esa ek lEcU/kh Ø; foØ; vkSj oLrqvxa dk ikjLifjd vknku&iznku gksrk 
+gS] ,sls lHkh ysu&nsu eqnzk esa gksrs gSaA ;g eqnzk }kjk ekis tkrs gSa eqnzk dk Hkqxrku 
+rqjUr ;k Hkfo"; esa gks ldrk gSA O;kikjh }kjk fd;s tkus okys lHkh vknku&iznku] 
+ysu&nsu dgykrs gSaA tc lkSns dk rqjUr Hkqxrku fd;k tkrk gS rc og uxn 
+ysu&nsu (Cash Transaction) dgykrk gSaA 
+tc Hkqxrku Hkfo"; esa fd;k tkrk gS rks mls m/kkj ysu&nsu ;kuh (Credit 
+Transaction) dgrs gSA
+
+12 | P a g e
+
+13 | P a g e 
+ 
+Inventory Control 
+Inventory dk vFkZ gS oLrqvksa dh lwphA ,d laxBu esa oLrq,¡ tSls- Row Material, Finished Product, 
+Consumable vkfn dks Stock esa j[kk tkrk gS] ftlls tc Hkh vko”;drk iM+s] rks ;s Item Self esa 
+myC/k gxa wkSj bu Items dh vuqiyC/krk dh otg ls Business izHkkfor u gksA ,d Business rc rd 
+ykHkdkjh ugh gks ldrk gS] tc rd fd blesa oLrqvxa ds vkus vkSj tkus dk foLr`r fglkc&fdrkc u j[kk 
+tk,A 
+,d vPNs Inventory Control System ds eq[; mn~ns”; gSa& 
+1. Inventory ij fd, x, fuos”k dks U;wure j[kuk] ftlls m/kkj u ysuk iM+s vkSj C;kt ls gksus okys 
+uqdlku dks cpk;k tk ldsA 
+2. ;g lqfuf”pr djuk dh Store esa tc] tgk¡ tSlh t:jr iM+s rks Item miyC/k jgsaA 
+3. vf/kd Stoke j[kus] oLrqvxa ds lM+us vFkok iqjkuh gks tkus dh otg ls gksus okys uqdlku dks de 
+fd;k tkukA 
+4. Production dh ykxr ,oa midj.kksa dh ns[kHkky ij vkus okys [kpZ dks Maintain juice ,oa de 
+juice ds fy, lalk/kuksa dks mRd`’B cukukA 
+5. Costing, oa Accounting dkj.kksa ls lgh Recordings dks Maintain djukA 
+blfy, ;g t:jh gS fd lHkh laxBuks esa ,d vPNk Inventory Control System gksuk pkfg, vkSj bl 
+y{; dks izkIr jus esa Computer vkidh dkQh enn djrs gSaA 
+ 
+Financial System 
+Financial System ox System gksrs gSa tks fofHkUu laxBuks ;k O;fDr;ksa dx iSlksa dk ysunsu jus 
+esa gh Deal djrs gSaA bUgs Financial Accounting rFkk Management Accounting nks Hkkxksa 
+esa ck¡Vk tk ldrk gSA Financial Accounting, Financial Statement tSls& Balance Sheet, 
+Profit / Loss Account vkfn rS;kj djrh gS] tcfd Management Accounting Finance 
+dh Time ls lwpuk nsrk gS ftlls Manager viuk dk;Z dq”kyrk ls dj ldsA
+
+
+===== Tally Workbook Case Study - 1 =====
+
+[Unclear text on page 1]
+
+[Unclear text on page 2]
+
+[Unclear text on page 3]
+
+[Unclear text on page 4]
+
+[Unclear text on page 5]
+
+[Unclear text on page 6]
+
+[Unclear text on page 7]
+
+
+===== Tally Workbook Case Study - 2 =====
+
+[Unclear text on page 1]
+
+[Unclear text on page 2]
+
+[Unclear text on page 3]
+
+[Unclear text on page 4]
+
+[Unclear text on page 5]
+
+[Unclear text on page 6]
+
+[Unclear text on page 7]
+
+[Unclear text on page 8]
+
+[Unclear text on page 9]
+
+[Unclear text on page 10]
+
+[Unclear text on page 11]
+
+[Unclear text on page 12]
+
+[Unclear text on page 13]
+
+[Unclear text on page 14]
+
+[Unclear text on page 15]
+
+
+===== Tally Workbook Case Study - 3 =====
+
+[Unclear text on page 1]
+
+[Unclear text on page 2]
+
+[Unclear text on page 3]
+
+[Unclear text on page 4]
+
+[Unclear text on page 5]
+
+[Unclear text on page 6]
+
+[Unclear text on page 7]
+
+[Unclear text on page 8]
+
+[Unclear text on page 9]
+
+[Unclear text on page 10]
+
+[Unclear text on page 11]
+
+[Unclear text on page 12]
+
+[Unclear text on page 13]
+
+[Unclear text on page 14]
+
+
+===== Tally Workbook Case Study - 4 =====
+
+1. 
+1-4-2020 Mr. Rahul Choudhary started a business With cash Rs. 10, 00,000. 
+2. 1-4-2020 
+Mr. Rahul Choudhary deposited cash Rs. 8, 00,000 in to HDFC Bank. 
+3. 
+1-5-2020 
+Mr. Rahul Choudhary raised an invoice for Agarwal Movers & Packers, 
+New Delhi of Rs. 70,800 (include service of Rs. 60,000 and GST of Rs. 
+10,800 For providing Event Management Services. 
+4. 
+1-5-2020 
+Mr. Rahul Choudhary raised an invoice on Mohan Trading Company 
+Rohtak (Haryana) of Rs. 47,200 (include service charge of Rs. 40,000, 
+and GST of Rs.7200) for providing Event Management Services. 
+5. 
+2-5-2020 
+Mr. Rahul Choudhary raised an invoice on Planet Technologies, New 
+Delhi (Unregistered) of Rs. 88,500 (include services charge of 
+Rs.75,000 and GST of Rs.13,500) for providing Event Management 
+Services. 
+The interest is applicable at 12% per annum after the due date of invoice 
+6. 
+2-7-2020 
+Mr. Rahul Choudhary received a cheque Rs 90,275 from Planet 
+Technology Delhi with interest and full settlement of account.
+
+
+===== Tally Workbook Case Study - 5 =====
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+www.youtube.com\upciss
+
+
+===== Tally Workbook Case Study - 6 =====
+
+[Unclear text on page 1]
+
+[Unclear text on page 2]
+
+[Unclear text on page 3]
+
+[Unclear text on page 4]
+
+[Unclear text on page 5]
+
+[Unclear text on page 6]
+
+[Unclear text on page 7]
+
+[Unclear text on page 8]
+
+[Unclear text on page 9]
+
+[Unclear text on page 10]
+
+[Unclear text on page 11]
+
+[Unclear text on page 12]
+
+[Unclear text on page 13]
+
+[Unclear text on page 14]
+
+[Unclear text on page 15]
+
+[Unclear text on page 16]
+
+[Unclear text on page 17]
+
+[Unclear text on page 18]
+
+[Unclear text on page 19]
+
+[Unclear text on page 20]
+
+[Unclear text on page 21]
+
+[Unclear text on page 22]
+
+[Unclear text on page 23]
+
+[Unclear text on page 24]
+
+[Unclear text on page 25]
+
+[Unclear text on page 26]
+
+[Unclear text on page 27]
+
+[Unclear text on page 28]
+
+[Unclear text on page 29]
+
+[Unclear text on page 30]
+
+[Unclear text on page 31]
+
+[Unclear text on page 32]
+
+[Unclear text on page 33]
+
+[Unclear text on page 34]
+
+[Unclear text on page 35]
+
+[Unclear text on page 36]
+
+[Unclear text on page 37]
+
+[Unclear text on page 38]
+
+[Unclear text on page 39]
+
+[Unclear text on page 40]
+
+[Unclear text on page 41]
+
+[Unclear text on page 42]
+
+[Unclear text on page 43]
+
+[Unclear text on page 44]
+
+[Unclear text on page 45]
+
+[Unclear text on page 46]
+
+[Unclear text on page 47]
+
+[Unclear text on page 48]
+
+[Unclear text on page 49]
+
+[Unclear text on page 50]
+
+[Unclear text on page 51]
+
+[Unclear text on page 52]
+
+[Unclear text on page 53]
+
+[Unclear text on page 54]
+
+[Unclear text on page 55]
+
+[Unclear text on page 56]
+
+[Unclear text on page 57]
+
+[Unclear text on page 58]
+
+[Unclear text on page 59]
+
+[Unclear text on page 60]
+
+[Unclear text on page 61]
+
+[Unclear text on page 62]
+
+[Unclear text on page 63]
+
+[Unclear text on page 64]
+
+[Unclear text on page 65]
+
+[Unclear text on page 66]
+
+[Unclear text on page 67]
+
+[Unclear text on page 68]
+
+[Unclear text on page 69]
+
+[Unclear text on page 70]
+
+[Unclear text on page 71]
+
+[Unclear text on page 72]
+
+[Unclear text on page 73]
+
+[Unclear text on page 74]
+
+
+===== Tally.ERP 9 Keyboard Shortcuts =====
+
+UPCISS YouTube Channel 
+ 
+H idden Keys – Across TallyPrime 
+Action 
+Shortcut Key 
+Equivalent in Tally.ERP 9 
+To go back to the previous screen by closing the currently 
+open screen 
+ 
+ 
+To remove inputs that is provided/selected for a field 
+Esc 
+Esc 
+To open Company Features screen 
+F11 
+F11 
+To move to the first/last menu in a section 
+Ctrl+Up/Down 
+Ctrl+Up/Down 
+To move to the left-most/right-most drop-down top menu 
+Ctrl+Left/Right 
+None 
+To move from any line to the first line in a list 
+Home & PgUp 
+Home & PgUp 
+To from any point in a field to the beginning of the text in 
+that field 
+Home 
+Home 
+To move from any line to the last line in a list 
+End & PgDn 
+End & PgDn 
+To move from any point in a field to the end of the text in 
+that field 
+End 
+End 
+To move one line up in a list 
+Up arrow 
+Up arrow 
+To move to the previous field 
+ 
+ 
+To move one line down in a list 
+ 
+ 
+To move to the next field 
+Down arrow 
+Down arrow 
+To move: 
+ 
+One position left in a text field
+
+UPCISS YouTube Channel 
+To the previous column on the left 
+To the previous menu on the left 
+Left arrow 
+Left arrow 
+To move: 
+ 
+One position right in a text field 
+ 
+ 
+To the next column on the right 
+To the next menu on the right 
+Right arrow 
+Right arrow 
+To rewrite data 
+Ctrl+Alt+R 
+Ctrl+Alt+R 
+To quit the application 
+Alt+F4 
+None 
+To view the build information 
+Ctrl+Alt+B 
+Ctrl+Alt+B 
+To view TDL/Add-on details 
+Ctrl+Alt+T 
+Ctrl+Alt+T 
+To navigate to the next artifact in the context 
+ 
+ 
+To increment the Report date or next report in a sequence of 
+reports displayed 
++ 
++ 
+To navigate to the previous artifact in the context 
+ 
+ 
+To decrement Report date or previous report in a sequence 
+of reports displayed 
+– 
+– 
+To accept or save a screen 
+Ctrl+A 
+Ctrl+A 
+To expand or collapse a group in a table 
+Alt+Enter 
+Alt+Enter 
+To move to the last field or last line 
+Ctrl+End 
+Ctrl+End 
+To move to the first field or first line 
+Ctrl+Home 
+Ctrl+Home 
+To open or hide calculator panel 
+Ctrl+N 
+Ctrl+N (to Open) 
+Ctrl+M (to Hide) 
+ 
+ 
+ 
+To exit a screen or the application 
+Ctrl+Q 
+Ctrl+Q
+
+UPCISS YouTube Channel 
+Hidden Keys – Reports 
+Actions 
+Shortcut Key 
+Equivalent in Tally.ERP 9 
+To insert a voucher in a report 
+Alt+I 
+Alt+I 
+To create an entry in the report, by duplicating a voucher 
+Alt+2 
+Alt+2 
+To drill down from a line in a report 
+Enter 
+Enter 
+To delete an entry from a report 
+Alt+D 
+Alt+D 
+To add a voucher in a report 
+Alt+A 
+Alt+A 
+To cancel a voucher from a report 
+Alt+X 
+Alt+X 
+To remove an entry from a report 
+Ctrl+R 
+Alt+R 
+To hide or show the details in a table 
+Alt+T 
+Alt+T 
+To display all hidden line entries, if they were removed 
+Alt+U 
+Ctrl+U 
+To display the last hidden line (If multiple lines 
+ 
+ 
+were hidden, pressing this shortcut repeatedly will restore the 
+last hidden line first and follow the sequence) 
+Ctrl+U 
+Alt+U 
+To expand or collapse information in a report 
+Shift+Enter 
+Shift+Enter 
+To alter a master during voucher entry or from drill-down of a 
+report 
+Ctrl+Enter 
+Ctrl+Enter 
+To select/deselect a line in a report 
+Space bar 
+Space bar 
+To select or deselect a line in a report 
+Shift+Spacebar 
+Shift+Spacebar
+
+UPCISS YouTube Channel 
+ 
+ 
+ 
+To perform linear selection/deselection multiple lines in a 
+report 
+Shift+Up/Down 
+None 
+To select or deselect all lines in a report 
+Ctrl+Spacebar 
+Ctrl+Spacebar 
+To select or deselect lines till the end 
+Ctrl+Shift+End 
+Ctrl+Shift+End 
+To select or deselect lines till the top 
+Ctrl+Shift+Home 
+Ctrl+Shift+Home 
+To invert selection of line items in a report 
+Ctrl+Alt+I 
+Ctrl+Alt+I 
+Hidden Keys – Vouchers 
+Action 
+Shortcut Key 
+Equivalent in Tally.ERP 9 
+Only Vouchers 
+ 
+ 
+To retrieve Narration from the previous ledger 
+Alt+R 
+Alt+R 
+To open the calculator panel from Amount field 
+Alt+C 
+Alt+C 
+To delete a voucher/transaction 
+Alt+D 
+Alt+D 
+To cancel a voucher 
+Alt+X 
+Alt+X 
+To open a manufacturing journal from the Quantity field of a 
+journal voucher 
+Alt+V 
+Alt+V 
+To remove item/ledger line in a voucher 
+Ctrl+D 
+Ctrl+D 
+To retrieve the Narration from the previous voucher, for the 
+same voucher type. 
+Ctrl+R 
+Ctrl+R 
+Masters & Vouchers 
+ 
+ 
+To go to the next input field 
+Tab 
+Tab 
+To go to the previous input field 
+Shift+Tab 
+Shift+Tab
+
+UPCISS YouTube Channel 
+To remove the value typed 
+Backspace 
+Backspace 
+To create a master, on the fly 
+Alt+C 
+Alt+C 
+To open the calculator panel 
+Alt+C 
+Alt+C 
+To insert the base currency symbol in an input field. 
+Alt+4 
+Ctrl+4 
+Ctrl+4 
+To open the previously saved master or voucher 
+To scroll up in reports 
+Page Up 
+Page Up 
+To open the next master or voucher 
+To scroll down in reports 
+Page Down 
+Page Down 
+To copy text from an input field 
+Ctrl+C 
+Ctrl+Alt+C 
+Ctrl+Alt+C 
+To paste input copied from a text field. 
+Ctrl+V 
+Ctrl+Alt+V 
+Ctrl+Alt+V 
+Other Keyboard Shortcuts 
+Action 
+Shortcut Key 
+Location in 
+TallyPrime 
+Equivalent in Tally.ERP 
+9 
+Across TallyPrime 
+ 
+ 
+ 
+To primarily open a report, and 
+ 
+ 
+ 
+create masters and vouchers in the flow 
+of work. 
+Alt+G 
+Top menu 
+None 
+To switch to a different report, and 
+ 
+ 
+ 
+create masters and vouchers in the flow 
+of work. 
+Ctrl+G 
+Top menu 
+None
+
+UPCISS YouTube Channel 
+To open Company top menu 
+Alt+K 
+Top menu 
+None 
+To switch to another company from the 
+list of open companies 
+F3 
+Right button 
+F3 
+ 
+ 
+ 
+ 
+To select and open another 
+ 
+ 
+ 
+company located in the same folder or other 
+data paths 
+Alt+F3 
+Right button 
+Alt+F3 
+To shut the currently loaded companies 
+Ctrl+F3 
+Right button 
+Alt+F1 
+To open TallyHelp topic based on 
+ 
+ 
+ 
+the context of the screen that is open 
+Ctrl+F1 
+Top menu 
+Alt+H 
+To open the list of configurations applicable 
+for the report/view 
+F12 
+Right button 
+F12 
+To open the company menu with 
+ 
+ 
+ 
+the list of actions related to managing your 
+company 
+Alt+K 
+Top menu 
+None 
+To open the list of actions 
+ 
+ 
+ 
+applicable to managing the company data 
+Alt+Y 
+Top menu 
+None 
+To open the list of actions 
+ 
+ 
+ 
+applicable to sharing or exchanging your 
+company data 
+Alt+Z 
+Top menu 
+None 
+To open the import menu for 
+ 
+ 
+ 
+importing masters, transaction, and bank 
+statements 
+Alt+O 
+Top menu 
+None
+
+UPCISS YouTube Channel 
+To open the e-mail menu for sending 
+transactions or reports 
+Alt+M 
+Top menu 
+None 
+To open the print menu for printing 
+transactions or reports. 
+Alt+P 
+Top menu 
+None 
+To open the export menu for 
+ 
+ 
+ 
+exporting masters, transactions, or reports 
+Alt+E 
+Top menu 
+None 
+To open the Help menu 
+F1 
+Top menu 
+None 
+To open TallyHelp topic based on 
+ 
+ 
+ 
+the context of the screen that is open 
+Ctrl+F1 
+Top menu 
+Alt+H 
+To select the display language that is 
+applicable across all screens 
+Ctrl+K 
+Top menu 
+Alt+G 
+To select the data entry language that is 
+applicable to all screens 
+Ctrl+W 
+Top menu 
+Alt+K 
+Reports 
+To view the report in detailed or condensed 
+format 
+Alt+F1 
+Alt+F5 
+Right button 
+Alt+F1 
+To open the GST Portal 
+Alt+V 
+Right button 
+Ctrl+O 
+To add a new column 
+Alt+C 
+Right button 
+Alt+C 
+To alter a column 
+Alt+A 
+Right button 
+Alt+A 
+To delete a column 
+Alt+D 
+Right button 
+Alt+D 
+To auto repeat columns 
+Alt+N 
+Right button 
+Alt+N 
+To filter data in a report, with a selected 
+range of conditions 
+Alt+F12 
+Right button 
+Alt+F12
+
+UPCISS YouTube Channel 
+To calculate balances using 
+ 
+ 
+ 
+vouchers that satisfy the selected conditions Ctrl+F12 
+Right button 
+Ctrl+F12 
+To views values in different ways in a report Ctrl+B 
+Right button 
+None 
+To change view – display report details in 
+different views 
+To navigate to Voucher View from 
+Summary reports 
+Ctrl+H 
+Right button 
+F7/F8/F9 
+Alt+T 
+To navigate to post-dated cheque related 
+transactions report 
+ 
+ 
+ 
+To view the exceptions related to a report 
+Ctrl+J 
+Right button 
+None 
+Vouchers 
+ 
+ 
+ 
+To open Contra voucher 
+F4 
+Accounting 
+Vouchers 
+F4 
+To open Payment voucher 
+F5 
+Accounting 
+Vouchers 
+F5 
+To open Receipt voucher 
+F6 
+Accounting 
+Vouchers 
+F6 
+To open Journal voucher 
+F7 
+Accounting 
+Vouchers 
+F7 
+To open Stock Journal voucher 
+Alt+F7 
+Inventory 
+Vouchers 
+Alt+F7 
+To open Physical Stock 
+Ctrl+F7 
+Inventory 
+Vouchers 
+Alt+F10 
+To open Sales voucher 
+F8 
+Accounting 
+Vouchers 
+F8
+
+UPCISS YouTube Channel 
+To open Delivery Note 
+Alt+F8 
+Inventory 
+Vouchers 
+Alt+F8 
+To open Sales Order 
+Ctrl+F8 
+Order Vouchers 
+None 
+To open Purchase voucher 
+F9 
+Accounting 
+Vouchers 
+F9 
+To open Receipt Note 
+Alt+F9 
+Inventory 
+Vouchers 
+Alt+F9 
+To open Purchase Order 
+Ctrl+F9 
+Order Vouchers 
+None 
+To open Credit Note 
+Alt+F6 
+Accounting 
+Vouchers 
+Ctrl+F8 
+ 
+ 
+ 
+ 
+To open Debit Note 
+Alt+F5 
+Accounting 
+Vouchers 
+Ctrl+F9 
+To open Payroll voucher 
+Ctrl+F4 
+Payroll Vouchers 
+None 
+To open Rejection In voucher 
+Ctrl+F6 
+Inventory 
+Vouchers 
+Ctrl+F6 
+To open Rejection Out voucher 
+Ctrl+F5 
+Inventory 
+Vouchers 
+Alt+F6 
+To view list of all vouchers 
+F10 
+Vouchers 
+None 
+To mark a voucher as Post-Dated 
+Ctrl+T 
+Right button 
+Ctrl+T 
+To autofill details 
+Ctrl+F 
+Right button 
+Ctrl+A 
+To change mode – open vouchers in 
+different modes 
+Ctrl+H 
+Right button 
+Ctrl+V (As Voucher mode) 
+Alt+I (As Invoice mode) 
+To open the Stock Query report for the 
+selected stock item 
+Alt+S 
+Right button 
+Alt+S 
+To mark a voucher as Optional 
+Ctrl+L 
+Right button 
+Ctrl+L
+
+UPCISS YouTube Channel 
+Masters & Vouchers 
+ 
+ 
+To add more details to a master or voucher 
+for the current instance 
+Ctrl+I 
+Right button 
+None 
+Vouchers & Reports 
+ 
+ 
+To export the current voucher or report 
+Ctrl+E 
+Top menu 
+Alt+E 
+To e-mail the current voucher or report 
+Ctrl+M 
+Top menu 
+Alt+M 
+To print the current voucher or report 
+Ctrl+P 
+Top menu 
+Alt+P 
+ 
+ 
+ 
+ 
+To define stat adjustments 
+Alt+J 
+Right button 
+Alt+J 
+Masters, Vouchers, & Reports 
+ 
+ 
+To change the date of voucher entry or 
+period for reports 
+F2 
+Right button 
+F2 
+To change the date of voucher entry or 
+period for reports 
+Alt+F2 
+Right button 
+Alt+F2 
+Data-Related 
+ 
+ 
+To synchronise data 
+Alt+Z 
+Top menu 
+None
+
+
+===== Configuration =====
+
+WORK BOOK 1
+Initial Company Setup and Configuration
+Create Company: Go to Gateway of Tally > Create Company and select 'Shyam Verma & Co.' Create a company by name. Enter 01-04-2016 in Financial Year.
+F11: Features: If you want to track depreciation on fixed assets or purchases on credit, turn on Accounting Features. (Normal settings are sufficient for initial entries).
+Transaction 1: 1-4-2016 – Started Business
+Description:Mr. Shyam Verma started a business with cash ₹ 8,00,000.
+Ledger Creation:
+Shyam Verma Capital A/c (Under Group: Capital Account)
+Voucher Type: Receipt Voucher (F6)
+Entry in tally:
+Credit (Cr): Shyam Verma Capital A/c — ₹ 8,00,000
+Debit (Dr): Cash A/c — ₹ 8,00,000
+Transaction 2: 2-4-2016 – Bank account opened
+Description:Mr. Verma opened a bank account in SBI by depositing cash ₹ 5,00,000.
+Ledger Creation:
+SBI Bank A/c (Under Group: Bank Accounts)
+Voucher Type: Contra Voucher (F4) (for transactions between bank and cash)
+Entry in tally:
+Credit (Cr): Cash A/c — ₹ 5,00,000
+Debit (Dr): SBI Bank A/c — ₹ 5,00,000
+Transaction 3: 3-4-2016 – Purchased stationery (cash)
+Description:Mr. Verma purchased stationery in cash ₹ 2,000.
+Ledger Creation:
+Stationery Expenses A/c (Under Group: Indirect Expenses)
+Voucher Type: Payment Voucher (F5)
+Entry in tally:
+Debit (Dr): Stationery Expenses A/c — ₹ 2,000
+Credit (Cr): Cash A/c — ₹ 2,000
+Transaction 4: 5-4-2016 – Purchased furniture on credit
+Description: Purchased assets from Raj Furniture House on credit.
+Office Table: ₹ 6,00,000 | Office Chair: ₹ 1,200 | Waiting Chair: ₹ 7,000 (Total: ₹ 14,200) Note: The price of the table in the image should be ₹ 6,000, which is mistakenly printed as ₹ 6,00,000, you can assume it to be ₹ 6,000.
+Ledger Creation:
+Furniture & Fixtures A/c (Under Group: Fixed Assets)
+Raj Furniture House (Under Group: Sundry Creditors)
+Voucher Type: Journal Voucher (F7) (borrowed to purchase property)
+Entry in tally:
+Debit (Dr): Furniture & Fixtures A/c — ₹ 14,200
+Credit (Cr): Raj Furniture House — ₹ 14,200
+Transaction 5: 8-4-2016 – Purchased Computer (Cash)
+Details: Purchased a computer in cash ₹ 22,500.
+Ledger: Computer A/c (Under Group: Fixed Assets)
+Voucher Type: Payment Voucher (F5)
+Entry in tally:
+Debit (Dr): Computer A/c — ₹ 22,500
+Credit (Cr): Cash A/c — ₹ 22,500
+Transaction 6: 10-4-2016 – Purchased Fixed Assets by Cheque
+Details: Issued a check for Mobile Phone (₹ 5,000) and AC (₹ 24,000). Total = ₹ 29,000.
+Ledgers:
+Mobile Phone A/c (Under Group: Fixed Assets)
+Air Conditioner (AC) A/c (Under Group: Fixed Assets)
+Voucher Type: Payment Voucher (F5)
+Entry in tally:
+Debit (Dr): Mobile Phone A/c — ₹ 5,000
+Debit (Dr): Air Conditioner A/c — ₹ 24,000
+Credit (Cr): SBI Bank A/c — ₹ 29,000
+Transaction 7: 15-4-2016 – Office Space and Security Deposit
+Details: Hired office space for ₹ 3,00,000 per month (April 1st) and paid ₹ 50,000 by check as security deposits. Note: Here only the payment of security amount of ₹50,000 will be entered as the rent is payable at the end of the month.
+Ledger: Security Deposit for Office A/c (Under Group: Loans & Advances (Asset) or Current Assets)
+Voucher Type: Payment Voucher (F5)
+Entry in tally:
+Debit (Dr): Security Deposit for Office A/c — ₹ 50,000
+Credit (Cr): SBI Bank A/c — ₹ 50,000
+Transaction 8: 16-4-2016 – Mobile Security Deposit (Cash)
+Description: Subscribed for a post paid mobile phone from Reliance Telecom by paying cash ₹ 1,500 as security.
+Ledger: Security Deposit (Reliance Telecom) A/c (Under Group: Loans & Advances (Asset))
+Voucher Type: Payment Voucher (F5)
+Entry in tally:
+Debit (Dr): Security Deposit (Reliance Telecom) A/c — ₹ 1,500
+Credit (Cr): Cash A/c — ₹ 1,500
+Transaction 9: 18-4-2016 – Appointment of Staff (No Entry)
+Description: Appointed Ms. Ritu Sharma (Manager - ₹ 9,000) and Pramod Aggrawal (Assistant Manager - ₹ 6,500).
+Entry in Tally: No Accounting Entry. (There is no financial entry for mere appointment or hiring unless salary is paid or due).
+Transaction 10: 20-4-2016 – Purchased stationery on credit.
+Details: Purchased stationery worth ₹ 2,500 from Mohan Paper House on credit.
+Ledger: Mohan Paper House (Under Group: Sundry Creditors)
+(Stationery ledger is already made)
+Voucher Type: Journal Voucher (F7)
+Entry in tally:
+Debit (Dr): Stationery Expenses A/c — ₹ 2,500
+Credit (Cr): Mohan Paper House — ₹ 2,500
+Transaction 11: 21-4-2016 – Advance cash received
+Details: Signed a contract of ₹ 90,000 and received cash in advance of ₹ 30,000. Note: Only under contract
+
+There will be no entry for signing, only the advance received of ₹ 30,000 will be entered.
+Ledger: Advance from Gold Star A/c (Under Group: Current Liabilities)
+Voucher Type: Receipt Voucher (F6)
+Entry in tally:
+Credit (Cr): Advance from Gold Star A/c — ₹ 30,000
+Debit (Dr): Cash A/c — ₹ 30,000
+Transaction 12: 23-4-2016 – Cash deposited in bank
+Details: Deposited cash of ₹ 50,000 into bank.
+Voucher Type: Contra Voucher (F4)
+Entry in tally:
+Credit (Cr): Cash A/c — ₹ 50,000
+Debit (Dr): SBI Bank A/c — ₹ 50,000
+Transaction 13: 25-4-2016 – Office Expenses (Cash)
+Details: Paid cash ₹ 1,200 towards office expenses.
+Ledger: Office Expenses A/c (Under Group: Indirect Expenses)
+Voucher Type: Payment Voucher (F5)
+Entry in tally:
+Debit (Dr): Office Expenses A/c — ₹ 1,200
+Credit (Cr): Cash A/c — ₹ 1,200
+Transaction 14: 26-4-2016 – Bill for stationery printing received
+Details: Received a bill of ₹ 4,500 from Sukun Offset Printers for printing office stationery. (This is a bill of credit).
+Ledger: Sukun Offset Printers (Under Group: Sundry Creditors)
+Voucher Type: Journal Voucher (F7)
+Entry in tally:
+Debit (Dr): Stationery Expenses A/c — ₹ 4,500
+Credit (Cr): Sukun Offset Printers — ₹ 4,500
+Transaction 15: 28-4-2016 – Cash withdrawn for personal use
+Description:Mr. Verma withdrew cash ₹ 4,500 for personal use.
+Ledger: Drawings A/c (Under Group: Capital Account)
+Voucher Type: Payment Voucher (F5)
+Entry in tally:
+Debit (Dr): Drawings A/c — ₹ 4,500
+Credit (Cr): Cash A/c — ₹ 4,500
+Transaction 16 (01-05-2016) - Payment Entry
+Problem: Mr. Verma paid cash ₹4,500 to Sukun Offset Printers.
+Voucher Type: Payment Voucher (F5)
+Ledgers Needed:
+Sukun Offset Printers A/c (Under Sundry Creditors)
+Cash A/c (already made)
+Voucher Entry Steps:
+Gateway of Tally > Vouchers > Press F5 (Payment).
+Enter date 01-05-2016 by pressing F2.
+By (Debit): Sukun Offset Printers A/c — 4,500
+To (Credit): Cash A/c — 4,500
+Save the voucher (Ctrl + A).
+Transaction 17 (03-05-2016) - Payment Entry
+Problem: Mr. Verma paid cash ₹2,500 to Mohan Paper House.
+Voucher Type: Payment Voucher (F5)
+Ledgers Needed:
+Mohan Paper House A/c (Under Sundry Creditors)
+Cash Account
+Voucher Entry Steps:
+Stay on the F5 (Payment) screen.
+Change the date to 03-05-2016 by pressing F2.
+By (Debit): Mohan Paper House A/c — 2,500
+To (Credit): Cash A/c — 2,500
+Save the voucher.
+Transaction 18 (05-05-2016) - Payment Entry (Bank)
+Problem: Mr. Verma issued a check of ₹3,000 towards rent of April Month.
+Voucher Type: Payment Voucher (F5)
+Ledgers Needed:
+Rent A/c (Under Indirect Expenses)
+Bank A/c (Under Bank Accounts - like State Bank of India)
+Voucher Entry Steps:
+Press F5 (Payment).
+Change date to 05-05-2016 by pressing F2.
+By (Debit): Rent A/c — 3,000
+To (Credit): Bank A/c — 3,000
+Save the voucher by filling in the checking/bank details.
+Transaction 19 (06-05-2016) - Payment Entry (Bank)
+Problem: Issued a check of ₹1,500 for electricity charges.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Electricity Charges A/c (Under Indirect Expenses), Bank A/c (Under Bank Accounts)
+Steps:
+Press F5. Date from F2 06-05-2016.
+By (Debit): Electricity Charges A/c — 1,500
+To (Credit): Bank A/c — 1,500
+Save.
+Transaction 20 (10-05-2016) - Payment Entry (Bank)
+Problem: Issued a check of ₹12,700 for salary for the month of April.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Salary A/c (Under Indirect Expenses), Bank A/c
+Steps:
+Press F5. Date from F2 10-05-2016.
+By (Debit): Salary A/c — 12,700
+To (Credit): Bank A/c — 12,700
+Save.
+Transaction 21 (11-05-2016) - Payment Entry
+Problem: Gave ₹200 cash for Miscellaneous Expenses.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Miscellaneous Expenses A/c (Under Indirect Expenses), Cash A/c
+Steps:
+Press F5. Date from F2 11-05-2016.
+By (Debit): Miscellaneous Expenses A/c — 200
+To (Credit): Cash A/c — 200
+Save.
+Transaction 22 (13-05-2016) - Payment Entry
+Problem: Gave ₹1,100 cash for mobile expenses for the month of April.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Mobile Expenses A/c (Under Indirect Expenses), Cash A/c
+Steps:
+Press F5. Date from F2 13-05-2016.
+By (Debit): Mobile Expenses A/c — 1,100
+To (Credit): Cash A/c — 1,100
+Save.
+Transaction 23 (14-05-2016) - Receipt Entry (Advance)
+Problem: Received a check of ₹30,000 as advance from Gold Star Services.
+Special Configuration: Keep Maintain balances bill-by-bill as Yes in Party Ledger for advanced tracking.
+Voucher Type: Receipt Voucher (F6)
+Ledgers: Gold Star Services A/c (Under Sundry Debtors), Bank A/c
+Steps:
+Press F6. F2 to date 14-05-
+
+Do 2016.
+To (Credit): Gold Star Services — 30,000
+Bill-wise Details Screen: Here select Advance in Method of Adjustment.
+By (Debit): Bank A/c — 30,000
+Save.
+Transaction 24 (15-05-2016) - Payment Entry
+Problem: Gave ₹450 cash for conveyance expenses.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Conveyance Expenses A/c (Under Indirect Expenses), Cash A/c
+Steps:
+Press F5. Date from F2 15-05-2016.
+By (Debit): Conveyance Expenses A/c — 450
+To (Credit): Cash A/c — 450
+Save.
+Transaction 25 (18-05-2016) - Credit Sales Entry (Services)
+Problem: Loaned consulting services worth ₹15,000 to Sun Info System.
+Voucher Type: Sales Voucher (F8) — in Accounting Invoice mode (select by pressing Ctrl + H).
+Ledgers: Sun Info System A/c (Under Sundry Debtors), Consulting Revenue A/c (Under Direct/Indirect Income)
+Steps:
+Press F8 and set it to Accounting Invoice mode. Date from F2 18-05-2016.
+Party A/c Name: Sun Info System
+Particulars: Select Consulting Revenue A/c and enter amount 15,000.
+Save.
+Transaction 26 (20-05-2016) - Cash Sales Entry (Services)
+Problem: Received ₹25,000 cash in exchange for consulting services.
+Voucher Type: Sales Voucher (F8) — in Accounting Invoice mode.
+Ledgers: Cash A/c, Consulting Revenue A/c
+Steps:
+Press F8. Date from F2 20-05-2016.
+Party A/c Name: Cash
+Particulars: Consulting Revenue A/c — 25,000
+Save.
+Transaction 27 (25-05-2016) - Journal/Sales & Receipt Entry (Adjustment)
+Problem: Provided service worth ₹90,000 to Gold Star Services. After adjusting the old advance of ₹60,000, the remaining ₹30,000 was received in cash. (Note: In the question the old advance is Rs 60,000, which has to be adjusted).
+Voucher Type: Sales Voucher (F8) — in Accounting Invoice mode.
+Ledgers: Gold Star Services A/c, Consulting Revenue A/c, Cash A/c
+Entry Steps:
+Press F8. F2 to date 25-05-2016.
+Party A/c Name: Gold Star Services
+Particulars: Consulting Revenue A/c — Enter 90,000 and save the entry.
+Bill-wise Screen: Here adjust ₹60,000 Against Ref (which was the old advance) and keep the remaining ₹30,000 in New Ref.
+Receipt Entry (F6): Now press F6 to get the remaining ₹30,000 cash. To (Cr): Gold Star Services 30,000 (Select Against Ref) and By (Dr): Cash A/c 30,000 and save.
+Transaction 28 (28-05-2016) - Payment/Drawing Entry
+Problem: Withdrawal of ₹ 5,000 from the bank for personal use.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Drawings A/c (Under Capital Account), Bank A/c
+Steps:
+Press F5. Date from F2 28-05-2016.
+By (Debit): Drawings A/c — 5,000
+To (Credit): Bank A/c — 5,000
+Save.
+If you want to proceed, let me know:
+Do you now need the configuration of June month entries (29 to 41)?
+Do you need to understand the special no-voucher entry condition of the Traveling Agreement (Entry 29)?
+June month's entries 2941 So tell the entry configuration
+Tally configuration and entry steps for transaction numbers 29 to 41 for the month of June 2016 are given in detail below:
+Transaction 29 (01-06-2016) - No Entry (Agreement Only)
+Problem: Signed an agreement for traveling with Jayshri Travels.
+Rule: There is no financial entry in Tally or Accounting merely for signing the agreement, as no money or service has yet been transacted. There will be no entry for this.
+Transaction 30 (03-06-2016) - Payment Entry (Bank)
+Problem: Issued a check of ₹3,000 for rent for the month of May.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Rent A/c (Under Indirect Expenses), Bank A/c (Under Bank Accounts)
+Steps:
+Press F5. F2 to date 03-06-2016.
+By (Debit): Rent A/c — 3,000
+To (Credit): Bank A/c — 3,000
+Save.
+Transaction 31 (06-06-2016) - Receipt Entry
+Problem: Received a check for ₹10,000 from Sun Info System.
+Voucher Type: Receipt Voucher (F6)
+Ledgers: Sun Info System A/c (Under Sundry Debtors), Bank A/c
+Steps:
+Press F6. F2 to date 06-06-2016.
+To (Credit): Sun Info System — 10,000 (Adjust the old bill by choosing Against Ref here).
+By (Debit): Bank A/c — 10,000
+Save.
+Transaction 32 (07-06-2016) - Payment Entry (Bank)
+Problem: Issued a check of ₹15,500 for salary for the month of May.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Salary A/c (Under Indirect Expenses), Bank A/c
+Steps:
+Press F5. F2 to date 07-06-2016.
+By (Debit): Salary A/c — 15,500
+To (Credit): Bank A/c — 15,500
+Save.
+Transaction 33 (10-06-2016) - Purchase/Journal Entry (Service Purchase)
+Problem: Received an invoice for ₹6,000 from Jayshri Travels.
+Voucher Type: Journal Voucher (F7) or Purchase Voucher (F9 - As Voucher)
+Ledgers: Traveling Expenses A/c (Under Indirect
+
+Expenses), Jayshri Travels A/c (Under Sundry Creditors)
+Steps:
+Press F7 (Journal). Date from F2 10-06-2016.
+By (Debit): Traveling Expenses A/c — 6,000
+To (Credit): Jayshri Travels A/c — 6,000 (Select New Ref)
+Save.
+Transaction 34 (14-06-2016) - Cash Sales Entry (Services)
+Problem: Raised a cash invoice for ₹50,000 for consulting services.
+Voucher Type: Sales Voucher (F8) — in Accounting Invoice mode (Ctrl + H).
+Ledgers: Cash A/c, Consulting Revenue A/c (Under Direct/Indirect Income)
+Steps:
+Press F8 and set it to Accounting Invoice mode. Date from F2 14-06-2016.
+Party A/c Name: Cash
+Particulars: Select Consulting Revenue A/c and enter amount 50,000.
+Save.
+Transaction 35 (15-06-2016) - Payment Entry
+Problem: Electricity bill for the month of May was ₹1,500 in cash.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Electricity Charges A/c (Under Indirect Expenses), Cash A/c
+Steps:
+Press F5. Date from F2 15-06-2016.
+By (Debit): Electricity Charges A/c — 1,500
+To (Credit): Cash A/c — 1,500
+Save.
+Transaction 36 (18-06-2016) - Payment Entry (Advance Salary)
+Problem: Gave ₹5,000 advance salary cash to Ritu Sharma, which will be adjusted in two equal installments.
+Configuration Ledger: Advance Salary to Ritu Sharma A/c (Under Loans & Advances (Asset))
+Voucher Type: Payment Voucher (F5)
+Steps:
+Press F5. Date from F2 18-06-2016.
+By (Debit): Advance Salary to Ritu Sharma A/c — 5,000
+To (Credit): Cash A/c — 5,000
+Save. (When the salary is given in future, it will be adjusted by deducting ₹2,500-₹2,500).
+Transaction 37 (20-06-2016) - Contra Entry
+Problem: Deposited ₹50,000 cash in State Bank of India.
+Voucher Type: Contra Voucher (F4)
+Ledgers: Bank A/c / State Bank of India A/c, Cash A/c
+Steps:
+Press F4 (Contra). Date from F2 20-06-2016.
+To (Credit): Cash A/c — 50,000
+By (Debit): State Bank of India A/c — 50,000
+Save.
+Transaction 38 (24-06-2016) - Payment Entry (Bank)
+Problem: Issued a check of ₹1,050 for mobile expense.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Mobile Expenses A/c (Under Indirect Expenses), Bank A/c
+Steps:
+Press F5. F2 to date 24-06-2016.
+By (Debit): Mobile Expenses A/c — 1,050
+To (Credit): Bank A/c — 1,050
+Save.
+Transaction 39 (25-06-2016) - Payment Entry
+Problem: Gave ₹450 cash for conveyance expenses.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Conveyance Expenses A/c, Cash A/c
+Steps:
+Press F5. F2 to date 25-06-2016.
+By (Debit): Conveyance Expenses A/c — 450
+To (Credit): Cash A/c — 450
+Save.
+Transaction 40 (28-06-2016) - Payment Entry
+Problem: Gave ₹950 cash for office expenses.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Office Expenses A/c (Under Indirect Expenses), Cash A/c
+Steps:
+Press F5. Date from F2 28-06-2016.
+By (Debit): Office Expenses A/c — 950
+To (Credit): Cash A/c — 950
+Save.
+Transaction 41 (30-06-2016) - Payment/Drawing Entry
+Problem: Withdrawal of ₹5,000 cash for personal use.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Drawings A/c (Under Capital Account), Cash A/c
+Steps:
+Press F5. F2 to date 30-06-2016.
+By (Debit): Drawings A/c — 5,000
+To (Credit): Cash A/c — 5,000
+Save.
+Now all the entries for the month of June have been completed.
+If you'd like to see more of this, let me know:
+Do you have the next page (July month) of this workbook?
+Do you need to learn how to check Ledger Outstanding Report after these two months of entries?
+JULY 2016 ENTRIES (42 to 52)
+Transaction 42 (03-07-2016) - Payment Entry (Salary + Advance Adjust)
+Details: Gave a check of ₹13,000 of June salary and adjusted the advance installment of ₹2,500 to Ritu Sharma. (i.e. total salary booked will be ₹15,500).
+Voucher: Payment Voucher (F5)
+Steps:
+By (Dr): Salary A/c — 15,500
+To (Cr): Advance Salary to Ritu Sharma A/c — 2,500 (Ledger with previous entry 36)
+To (Cr): Bank A/c — 13,000
+Transaction 43 (08-07-2016) - Payment Entry
+Voucher: Payment (F5) ➡️ By (Dr): Electricity Expenses A/c 1,250 | To (Cr): Cash A/c 1,250
+Transaction 44 (09-07-2016) - Credit Sales (Services)
+Voucher: Sales (F8) — Accounting Invoice Mode (Ctrl + H)
+Steps: Party Name: Ganesh Solutions (Under Sundry Debtors) | Particulars: Consulting Revenue A/c — 80,000
+Transaction 45 (12-07-2016) - Prepaid Expenses Entry (Bank)
+Details: Subscribed to the magazine for 2 years (July 2016 to June 2018). This is a prepaid expense.
+Voucher: Payment (F5)
+Steps: By (Dr): Prepaid Magazine Subscription A/c (Under Current Assets) — 1,800 | To (Cr): Bank A/c — 1,800
+Transaction 46 (15-07-2016) & 47 (16-07-2016) - Payments (Bank)
+Entry 46: Payment (F5) ➡️ By (Dr):
+
+Mobile Expenses A/c 1,150 | To (Cr): Bank A/c 1,150
+Entry 47: Payment (F5) ➡️ By (Dr): Office Rent A/c 3,000 | To (Cr): Bank A/c 3,000
+Transaction 48 (18-07-2016) - Receipt Entry
+Voucher: Receipt (F6) ➡️ To (Cr): Ganesh Solutions 40,000 (Select Against Ref) | By (Dr): Bank A/c 40,000
+Transaction 49, 50, 51, 52 - Miscellaneous Entries
+Entry 49 (23-07): Payment (F5) ➡️ By (Dr): Office Expenses A/c 950 | To (Cr): Cash A/c 950
+Entry 50 (25-07): Payment (F5) ➡️ By (Dr): Conveyance Expenses A/c 500 | To (Cr): Cash A/c 500
+Entry 51 (28-07): Payment (F5) ➡️ By (Dr): Drawings A/c 5,000 | To (Cr): Bank A/c 5,000
+Entry 52 (30-07): Payment (F5) ➡️ By (Dr): Internal Audit Charges A/c (Under Indirect Expenses) 5,000 | To (Cr): Bank A/c 5,000 (Note: 2017 is written in the question due to printing mistake, keep it as 2016).
+📅 AUGUST 2016 ENTRIES (53 to 66)
+Transaction 53 (01-08-2016) & 54 (02-08-2016)
+Entry 53 (Cash Sales): Sales (F8 - Accounting Invoice) ➡️ Party: Cash (Buyer Name: Mega InfoTech) | Particulars: Consulting Revenue A/c — 10,000
+Entry 54 (Receipt): Receipt (F6) ➡️ To (Cr): Sun Info System 5,000 | By (Dr): Cash A/c 5,000
+Transaction 55 (03-08-2016) - Prepaid Asset Entry
+Details: Assets insured for 2 years.
+Voucher: Payment (F5) ➡️ By (Dr): Prepaid Insurance A/c (Under Current Assets) 12,000 | To (Cr): Bank A/c 12,000
+Transaction 56 (05-08-2016) & 57 (08-08-2016)
+Entry 56: Payment (F5) ➡️ By (Dr): Office Expenses A/c 600 | To (Cr): Cash A/c 600
+Entry 57: Receipt (F6) ➡️ To (Cr): Consulting Revenue A/c 45,000 | By (Dr): Cash A/c 45,000
+Transaction 58 (10-08-2016) - Payment (Salary Advance Adjustment)
+Description: Paid July salary and adjusted second and last advance installment of Ritu Sharma.
+Voucher: Payment (F5)
+Steps: By (Dr): Salary A/c 15,500 | To (Cr): Advance Salary to Ritu Sharma A/c 2,500 | To (Cr): Bank A/c 13,000 (Now their advance account is closed)
+Transaction 59, 60, 61, 62 - Regular Payments & Contra
+Entry 59 (11-08): Payment (F5) ➡️ By (Dr): Rent A/c 3,000 | To (Cr): Bank A/c 3,000
+Entry 60 (12-08): Payment (F5) ➡️ By (Dr): Electricity Charges A/c 1,250 | To (Cr): Cash A/c 1,250
+Entry 61 (15-08): Payment (F5) ➡️ By (Dr): Mobile Expenses A/c 2,100 | To (Cr): Bank A/c 2,100
+Entry 62 (18-08 - Deposit): Contra (F4) ➡️ To (Cr): Cash A/c 1,75,000 | By (Dr): Bank A/c 1,75,000
+Transaction 63 (22-08-2016) - Credit Sales (Services)
+Voucher: Sales (F8 - Accounting Invoice)
+Steps: Party Name: Entertain Media House (Under Sundry Debtors) | Particulars: Consulting Revenue A/c — 75,000
+Transaction 64, 65, 66 - End of Month Entries
+Entry 64 (23-08): Payment (F5) ➡️ By (Dr): Conveyance Expenses A/c 650 | To (Cr): Cash A/c 650
+Entry 65 (26-08): Receipt (F6) ➡️ To (Cr): Ganesh Solutions 40,000 (Against Ref) | By (Dr): Bank A/c 40,000
+Entry 66 (30-08): Payment (F5) ➡️ By (Dr): Drawings A/c 3,000 | To (Cr): Cash A/c 3,000
+If you would like to check these entries, please let us know:
+Do you want to check the outstanding balance of Ganesh Solutions?
+Do you have the page next to this (September month)?
+Transaction 67 (01-09-2016) - Contra Entry
+Voucher: Contra (F4) ➡️ To (Cr): Cash A/c 50,000 | By (Dr): Bank A/c 50,000
+Transaction 68 (02-09-2016) - Receipt Entry (Mixed Mode)
+Details: Entertain Media House received a final settlement of ₹73,000. ₹33,000 cash and a check of ₹40,000 were found in it. (Note: In the previous sales entry 63, their bill was ₹ 75,000, i.e. ₹ 2,000 discount has been allowed).
+Voucher: Receipt Voucher (F6)
+Steps:
+To (Cr): Entertain Media House — 75,000 (Against Ref Select)
+By (Dr): Cash A/c — 33,000
+By (Dr): Bank A/c — 40,000
+By (Dr): Discount Allowed A/c (Under Indirect Expenses) — 2,000
+Transaction 69 (04-09-2016) - Credit Sales (Services)
+Voucher: Sales (F8 - Accounting Invoice Mode)
+Steps: Party Name: Blue Star Company (Under Sundry Debtors) | Particulars: Consulting Revenue A/c — 55,000
+Transaction 70, 71, 72, 73, 74 - Expenses & Payments
+Entry 70 (05-09): Payment (F5) ➡️ By (Dr): Repair & Maintenance A/c (Under Indirect Expenses) 2,500 | To (Cr): Cash A/c 2,500
+Entry 71 (07-09): Payment (F5) ➡️ By (Dr): Salary A/c 15,500 | To (Cr): Bank A/c 15,500
+Entry 72 (09-09): Payment (F5) ➡️ By (Dr): Electricity Charges A/c 1,150 | To (Cr): Cash A/c 1,150
+Entry 73 (11-09): Payment (F5) ➡️ By (Dr): Rent A/c 3,000 | To (Cr): Bank A/c 3,000
+Entry 74 (14-09): Payment (F5) ➡️ By (Dr): Conveyance Expenses A/c 750 | To (Cr): Cash A/c 750
+Transaction 75 (16-09-2016) - Journal/Purchase Entry
+Details: Received traveling bill of ₹5,000 from Jayshri Travels.
+
+Voucher: Journal Voucher (F7) ➡️ By (Dr): Travelling Expenses A/c 5,000 | To (Cr): Jayshri Travels A/c 5,000 (New Ref चुनें)
+Transaction 76, 77, 78, 79 - End of Month Entries
+एंट्री 76 (19-09): Payment (F5) ➡️ By (Dr): Office Expenses A/c 950 | To (Cr): Cash A/c 950
+एंट्री 77 (21-09): Receipt (F6) ➡️ To (Cr): Consulting Revenue A/c 65,000 | By (Dr): Bank A/c 65,000
+एंट्री 78 (24-09 - Vendor Payment): Payment (F5) ➡️ By (Dr): Jayshri Travels A/c 11,000 (Against Ref पुराना बिल चुकाएं) | To (Cr): Cash A/c 11,000
+एंट्री 79 (28-09): Payment (F5) ➡️ By (Dr): Mobile Expenses A/c 1,250 | To (Cr): Cash A/c 1,250
+📅 OCTOBER 2016 ENTRIES (80 to 92)
+Transaction 80 (01-10-2016) - Contra Entry
+Voucher: Contra (F4) ➡️ To (Cr): Cash A/c 25,000 | By (Dr): Bank A/c 25,000
+Transaction 81 (02-10-2016) - Receipt Entry
+Voucher: Receipt (F6) ➡️ To (Cr): Blue Star Company 11,000 (Against Ref) | By (Dr): Bank A/c 11,000
+Transaction 82, 83, 84, 85, 86 - Regular Payments & Income
+एंट्री 82 (05-10): Payment (F5) ➡️ By (Dr): Salary A/c 15,500 | To (Cr): Bank A/c 15,500
+एंट्री 83 (08-10): Receipt (F6) ➡️ To (Cr): Consulting Revenue A/c 65,000 | By (Dr): Bank A/c 65,000
+एंट्री 84 (10-10): Payment (F5) ➡️ By (Dr): Rent A/c 3,000 | To (Cr): Bank A/c 3,000
+एंट्री 85 (11-10): Payment (F5) ➡️ By (Dr): Internal Audit Charges A/c 5,000 | To (Cr): Bank A/c 5,000
+एंट्री 86 (12-10): Payment (F5) ➡️ By (Dr): Office Expenses A/c 950 | To (Cr): Cash A/c 950
+Transaction 87 (15-10-2016) - Stationery Purchase
+Voucher: Payment (F5) ➡️ By (Dr): Stationery Expenses A/c (Under Indirect Expenses) 2,100 | To (Cr): Cash A/c 2,100
+Transaction 88, 89, 90, 91, 92 - End of Month Entries
+एंट्री 88 (18-10): Payment (F5) ➡️ By (Dr): Mobile Expenses A/c 1,600 | To (Cr): Cash A/c 1,600
+एंट्री 89 (19-10): Receipt (F6) ➡️ To (Cr): Consulting Revenue A/c 50,000 | By (Dr): Cash A/c 50,000
+एंट्री 90 (20-10): Payment (F5) ➡️ By (Dr): Electricity Charges A/c 1,100 | To (Cr): Cash A/c 1,100
+एंट्री 91 (24-10 - Deposit): Contra (F4) ➡️ To (Cr): Cash A/c 1,25,000 | By (Dr): Bank A/c 1,25,000
+एंट्री 92 (26-10): Payment (F5) ➡️ By (Dr): Conveyance Expenses A/c 850 | To (Cr): Cash A/c 850
+अगर आपके पास इसके आगे का पेज है, तो उसे भेज सकते हैं।
+यदि आप चाहें, तो मैं आपको:
+OCTOBER 2016 REMAINING ENTRIES (93 to 94)
+Transaction 93 (27-10-2016) - Payment (Full Settlement)
+विवरण: Raj Furniture house को पूर्ण निपटान (Full Settlement) में ₹14,000 कैश दिए।
+Voucher:
+Payment Voucher (F5)
+Steps:
+By (Dr): Raj Furniture house A/c (Under Sundry Creditors) — पूरा पुराना बैलेंस डालें।
+To (Cr): Cash A/c — 14,000
+नोट: यदि पुराना बैलेंस ₹14,000 से ज़्यादा था, तो बचा अंतर Discount Received A/c (Indirect Income) में क्रेडिट (To) होगा।
+Transaction 94 (28-10-2016) - Receipt Entry (Advance)
+विवरण: Star Consultancy के साथ कॉन्ट्रैक्ट साइन किया और ₹20,000 एडवांस चेक मिला।
+Voucher: Receipt Voucher (F6)
+Steps:
+To (Cr): Star Consultancy A/c (Under Sundry Debtors) — 20,000
+Bill-wise Screen: यहाँ Method of Adjustment में Advance चुनें।
+By (Dr): Bank A/c — 20,000
+📅 NOVEMBER 2016 ENTRIES (95 to 107)
+Transaction 95 (02-11-2016) & 96 (03-11-2016)
+एंट्री 95: Receipt (F6) ➡️ To (Cr): Blue Star Company 11,000 (Against Ref) | By (Dr): Bank A/c 11,000
+एंट्री 96 (Withdrawal): Contra (F4) ➡️ To (Cr): Bank A/c 15,000 | By (Dr): Cash A/c 15,000
+Transaction 97 (05-11-2016) - Journal/Purchase Entry
+Voucher: Journal Voucher (F7) ➡️ By (Dr): Travelling Expenses A/c 5,200 | To (Cr): Jayshri Travels A/c 5,200 (New Ref)
+Transaction 98, 99, 100 - Expense Payments
+एंट्री 98 (07-11): Payment (F5) ➡️ By (Dr): Salary A/c 15,500 | To (Cr): Bank A/c 15,500 (नोट: प्रश्न में प्रिंटिंग मिस्टेक से October 2017 लिखा है, इसे October 2016 ही समझें).
+एंट्री 99 (08-11): Payment (F5) ➡️ By (Dr): Rent A/c 3,000 | To (Cr): Bank A/c 3,000
+एंट्री 100 (11-11): Payment (F5) ➡️ By (Dr): Office Expenses A/c 950 | To (Cr): Cash A/c 950
+Transaction 101 (12-11-2016) - Receipt Entry (Revenue)
+Voucher: Receipt (F6) ➡️ To (Cr): Consulting Revenue A/c 45,000 | By (Dr): Bank A/c 45,000 (नोट: यहाँ चेक Kailash Software से तुरंत रेवेन्यू के लिए मिला है, इसलिए सीधे इनकम लेजर क्रेडिट होगा).
+Transaction 102 (15-11-2016) - Credit Sales (Advance Adjust)
+विवरण: Star Consultancy को ₹55,000 का बिल जारी किया और पुराना ₹20,000 का एडवांस एडजस्ट किया।
+Voucher: Sales (F8 - Accounting Invoice)
+Steps:
+Party Name: Star Consultancy | Particulars: Consulting Revenue A/c — 55,000
+Bill-wise Screen: यहाँ ₹20,000 को Against Ref (पुराना एडवांस) चुनें और बचे हुए ₹35,000 को New Ref में डालें।
+Transaction 10
+
+3 (18-11-2016) - Journal Entry (Cheque Dishonored)
+Details: A check of ₹45,000 received from Kailash Software has bounced. (Will reverse the income and make them debtors).
+Configuration Ledger: Kailash Software Solutions A/c (Under Sundry Debtors)
+Voucher: Journal Voucher (F7)
+Steps: By (Dr): Kailash Software Solutions A/c — 45,000 | To (Cr): Bank A/c — 45,000
+Transaction 104, 105, 106, 107 - Month End Entries
+Entry 104 (21-11): Payment (F5) ➡️ By (Dr): Mobile Expenses A/c 1,750 | To (Cr): Cash A/c 1,750
+Entry 105 (23-11): Payment (F5) ➡️ By (Dr): Electricity Charges A/c 950 | To (Cr): Cash A/c 950
+Entry 106 (25-11): Receipt (F6) ➡️ To (Cr): Kailash Software Solutions A/c 25,000 (Against Ref) | By (Dr): Cash A/c 25,000
+Entry 107 (27-11 - Compound Entry): Payment (F5) ➡️ By (Dr): Conveyance Expenses A/c 650 | By (Dr): Stationery Expenses A/c 950 | To (Cr): Cash A/c 1,600
+📅 DECEMBER 2016 ENTRIES (108 to 113)
+Transaction 108 (02-12-2016) - Receipt Entry
+Voucher: Receipt (F6) ➡️ To (Cr): Blue Star Company 11,000 (Against Ref) | By (Dr): Bank A/c 11,000
+Transaction 109 (05-12-2016) - Journal Entry (Bank Charges + Bounce Recoverable)
+Details: Bank statement revealed ₹550 check bounce charge and ₹330 check book charge. Check bounce charge is to be recovered from Kailash Software.
+Voucher: Journal Voucher (F7)
+Steps:
+By (Dr): Kailash Software Solutions A/c — 550 (to be collected from them, hence debit)
+By (Dr): Bank Charges A/c (Under Indirect Expenses) — 330 (Cheque book charge is our expense)
+To (Cr): Bank A/c — 880 (total deducted from bank)
+Transaction 110, 111, 112, 113 - December Payments & Bill
+Entry 110 (08-12): Receipt (F6) ➡️ To (Cr): Star Consultancy 15,000 (Against Ref) | By (Dr): Bank A/c 15,000
+Entry 111 (10-12): Payment (F5) ➡️ By (Dr): Rent A/c 3,000 | To (Cr): Bank A/c 3,000
+Entry 112 (12-12): Payment (F5) ➡️ By (Dr): Salary A/c 15,500 | To (Cr): Bank A/c 15,500
+Entry 113 (15-12): Journal (F7) ➡️ By (Dr): Traveling Expenses A/c 5,800 | To (Cr): Jayshri Travels A/c 5,800 (New Ref)
+Transaction 114, 115, 116, 117
+Entry 114 (16-12):
+Payment (F5) ➡️ By (Dr): Mobile Expenses A/c 1,100 | To (Cr): Cash A/c 1,100
+Entry 115 (18-12): Receipt (F6) ➡️ To (Cr): Consulting Revenue A/c 65,000 | By (Dr): Bank A/c 65,000
+Entry 116 (20-12): Payment (F5) ➡️ By (Dr): Office Expenses A/c 550 | To (Cr): Cash A/c 550
+Entry 117 (22-12): Payment (F5) ➡️ By (Dr): Electricity Charges A/c 750 | To (Cr): Cash A/c 750
+Transaction 118 (27-12-2016) - Credit Sales (Services)
+Voucher: Sales Voucher (F8) — in Accounting Invoice mode.
+Steps: Party Name: Joy Infocom (Under Sundry Debtors) | Particulars: Consulting Revenue A/c — 54,000
+Transaction 119 (30-12-2016) - Receipt Entry (Insolvent/Bad Debts)
+Description: Kailash Software went bankrupt. His total dues were ₹20,550 (₹45,000 old + ₹550 bounce charge - ₹25,000 which was received). He gave just 50 paise for 1 rupee (ie 50% got and 50% lost).
+Configuration Ledger: Bad Debts A/c (Under Indirect Expenses)
+Voucher: Receipt Voucher (F6)
+Steps:
+To (Cr): Kailash Software Solutions A/c — 20,550 (Against Ref)
+By (Dr): Cash A/c — 10,275 (50% of cash received)
+By (Dr): Bad Debts A/c — 10,275 (50% of what is lost)
+📅 JANUARY 2017 ENTRIES (120 to 131)
+Transaction 120 (02-01-2017) & 121 (03-01-2017)
+Entry 120: Payment (F5) ➡️ By (Dr): Repair & Maintenance A/c 4,500 | To (Cr): Cash A/c 4,500
+Entry 121: Receipt (F6) ➡️ To (Cr): Blue Star Company 11,000 (Against Ref) | By (Dr): Bank A/c 11,000
+Transaction 122 (05-01-2017) & 123 (07-01-2017)
+Entry 122: Payment (F5) ➡️ By (Dr): Rent A/c 3,000 | To (Cr): Bank A/c 3,000
+Entry 123: Receipt (F6) ➡️ To (Cr): Joy Infocom 34,000 (Against Ref) | By (Dr): Bank A/c 34,000
+Transaction 124, 125, 126, 127, 128 - Payments
+Entry 124 (10-01): Payment (F5) ➡️ By (Dr): Conveyance Expenses A/c 800 | To (Cr): Cash A/c 800
+Entry 125 (13-01): Payment (F5) ➡️ By (Dr): Salary A/c 11,800 | To (Cr): Bank A/c 11,800
+Entry 126 (15-01): Payment (F5) ➡️ By (Dr): Mobile Expenses A/c 1,520 | To (Cr): Bank A/c 1,520
+Entry 127 (18-01): Payment (F5) ➡️ By (Dr): Office Expenses A/c 775 | To (Cr): Cash A/c 775
+Entry 128 (21-01): Payment (F5) ➡️ By (Dr): Internal Audit Charges A/c 5,000 | To (Cr): Bank A/c 5,000
+Transaction 129, 130, 131 - Revenue & Personal Use
+Entry 129 (23-01): Receipt (F6) ➡️ To (Cr): Consulting Revenue A/c 50,000 | By (Dr): Bank A/c 50,000
+Entry 130 (26-01): Payment (F5) ➡️ By (Dr): Electricity Charges A/c 950 | To (Cr): Cash A/c 950 (Note: December 2017 is written due to printing mistake, consider it as December 2016).
+ant
+
+Re 131 (30-01): Payment (F5) ➡️ By (Dr): Drawings A/c 8,000 | To (Cr): Cash A/c 8,000
+📅 FEBRUARY 2017 ENTRIES (132 to 134)
+Transaction 132 (01-02-2017) - Journal Entry (Service Purchase)
+Voucher: Journal Voucher (F7)
+Steps: By (Dr): Traveling Expenses A/c 5,200 | To (Cr): Jayshri Travels A/c 5,200 (New Ref)
+Transaction 133 (03-02-2017) - Investment Entry (Bank)
+Description: Bought Reliance shares, it is an investment (asset) for the company.
+Configuration Ledger: Investment in Reliance Shares A/c (Under Investments)
+Voucher: Payment Voucher (F5)
+Steps: By (Dr): Investment in Reliance Shares A/c — 55,000 | To (Cr): Bank A/c — 55,000
+Transaction 134 (05-02-2017) - Rent Payment
+Voucher: Payment (F5) ➡️ By (Dr): Rent A/c 3,000 | To (Cr): Bank A/c 3,000
+If you have remaining transactions from February or the next page from March,
+FEBRUARY 2017 ENTRIES (135 to 143)
+Transaction 135 (08-02-2017) - Receipt Entry (Full Settlement)
+Voucher: Receipt Voucher (F6)
+Steps:
+To (Cr): Blue Star Company — 11,000 (Adjust old bill)
+By (Dr): Bank A/c — 10,000 (the amount of check received)
+By (Dr): Discount Allowed A/c (Indirect Expenses) — 1,000 (Difference left)
+Transaction 136 (10-02-2017) - Salary Payment
+Voucher: Payment (F5) ➡️ By (Dr): Salary A/c 15,500 | To (Cr): Bank A/c 15,500
+Transaction 137 (13-02-2017) - Vendor Payment (Full Settlement)
+Voucher: Payment Voucher (F5)
+Steps:
+By (Dr): Jayshri Travels A/c — 16,200 (Total outstanding bills 5,200 + 5,200 + 5,800)
+To (Cr): Bank A/c — 16,000 (the amount of check given)
+To (Cr): Discount Received A/c (Indirect Income) — 200 (Discount Received)
+Transaction 138, 139, 140, 141, 142 - Cash Payments
+Entry 138 (18-02): Payment (F5) ➡️ By (Dr): Electricity Charges A/c 1,100 | To (Cr): Cash A/c 1,100
+Entry 139 (19-02): Payment (F5) ➡️ By (Dr): Office Expenses A/c 650 | To (Cr): Cash A/c 650
+Entry 140 (22-02): Payment (F5) ➡️ By (Dr): Drawings A/c 5,000 | To (Cr): Cash A/c 5,000
+Entry 141 (26-02): Payment (F5) ➡️ By (Dr): Mobile Expenses A/c 1,100 | To (Cr): Cash A/c 1,100
+Entry 142 (28-02): Payment (F5) ➡️ By (Dr): Conveyance Expenses A/c 900 | To (Cr): Cash A/c 900
+Transaction 143 (28-02-2017) - Bank Loan Receipt
+Configuration Ledger: HDFC Bank Loan A/c (Under Loans (Liability) or Secured Loans)
+Voucher: Receipt Voucher (F6) ➡️ To (Cr): HDFC Bank Loan A/c 75,000 | By (Dr): State Bank of India A/c 75,000
+📅 MARCH 2017 ENTRIES (144 to 155)
+Transaction 144 (02-03-2017) - Fixed Asset Purchase (Journal)
+Description: Bought a water cooler from Kent House Keeping. Its total value including installation charges will be Rs 7,400 + Rs 600 = Rs 8,000 added to the asset account.
+Configuration Ledger: Water Cooler A/c (Under Fixed Assets), Kent House Keeping A/c (Under Sundry Creditors)
+Voucher: Journal Voucher (F7) ➡️ By (Dr): Water Cooler A/c 8,000 | To (Cr): Kent House Keeping A/c 8,000 (New Ref)
+Transaction 145 (04-03-2017) & 146 (06-03-2017)
+Entry 145: Receipt (F6) ➡️ To (Cr): Joy Infocom 20,000 (Against Ref) | By (Dr): Bank A/c 20,000
+Entry 146: Payment (F5) ➡️ By (Dr): Salary A/c 15,500 | To (Cr): Bank A/c 15,500
+Transaction 147 (07-03-2017) - Personal Withdrawal from Bank
+Voucher: Payment (F5) ➡️ By (Dr): Drawings A/c 4,500 | To (Cr): Bank A/c 4,500
+Transaction 148, 149, 150, 151 - Cash Payments
+Entry 148 (08-03): Payment (F5) ➡️ By (Dr): Rent A/c 3,000 | To (Cr): Cash A/c 3,000
+Entry 149 (12-03): Payment (F5) ➡️ By (Dr): Electricity Charges A/c 1,100 | To (Cr): Cash A/c 1,100
+Entry 150 (15-03): Payment (F5) ➡️ By (Dr): Office Maintenance Charges A/c (Under Indirect Expenses) 750 | To (Cr): Cash A/c 750
+Entry 151 (18-03): Payment (F5) ➡️ By (Dr): Conveyance Expenses A/c 650 | To (Cr): Cash A/c 650
+Transaction 152 (24-03-2017) - Cash Sales (Services)
+Voucher: Sales Voucher (F8) — in Accounting Invoice mode.
+Steps: Party Name: Cash (Buyer Name: Zee Telefilm Ltd) | Particulars: Consulting Revenue A/c — 45,000
+Transaction 153, 154, 155 - Year End Entries
+Entry 153 (26-03): Payment (F5) ➡️ By (Dr): Mobile Expenses A/c 1,280 | To (Cr): Cash A/c 1,280
+Entry 154 (29-03 - Vendor Payment): Payment (F5) ➡️ By (Dr): Kent House Keeping A/c 8,000 (Against Ref) | To (Cr): Cash A/c 8,000
+Entry 155 (31-03): Receipt (F6) ➡️ To (Cr): Star Consultancy 20,000 (Against Ref) | By (Dr): Bank A/c 20,000
+All regular transactions for the month of March are completed with this page. This is usually followed by closing adjustment entries for Provisions and Depreciation.
+If you want I can:
+I can tell you the method of calculating depreciation on water cooler and its journal entry.
+The final trial balance of this entire project
+
+I can teach you the steps to see.
+WORK BOOK 2
+Initial Company Setup
+Create Company: Go to Gateway of Tally > Create Company.
+Name: Mohan Lal Sharma & Co.
+Enter Financial Year: 01-04-2016.
+APRIL 2016 - Transaction Entries
+1. 1-4-2016 – Started business
+Ledger: Mohan Lal Sharma Capital A/c (Under: Capital Account)
+Voucher: Receipt (F6)
+Entry: Cr Capital A/c ₹8,00,000 | Dr Cash A/c ₹8,00,000
+2. 2-4-2016 – Opened bank account
+Ledger: Standard Chartered Bank A/c (Under: Bank Accounts)
+Voucher: Contra (F4)
+Entry: Cr Cash A/c ₹5,00,000 | Dr Standard Chartered Bank A/c ₹5,00,000
+3. 3-4-2016 – Purchased stationery in cash
+Ledger: Stationery Expenses A/c (Under: Indirect Expenses)
+Voucher: Payment (F5)
+Entry: Dr Stationery Expenses A/c ₹2,00,000 | Cr Cash A/c ₹2,00,000
+4. 5-4-2016 – Bought furniture on credit.
+Ledgers: Furniture A/c (Under: Fixed Assets), Raj Furniture House (Under: Sundry Creditors)
+Total amount: ₹6,000 + ₹1,200 + ₹7,000 = ₹14,200
+Voucher: Journal (F7)
+Entry: Dr Furniture A/c ₹14,200 | Cr Raj Furniture House ₹14,200
+5. 8-4-2016 – Bought computer with cash
+Ledger: Computer A/c (Under: Fixed Assets)
+Voucher: Payment (F5)
+Entry: Dr Computer A/c ₹22,500 | Cr Cash A/c ₹22,500
+6. 10-4-2016 – Purchased fixed assets by cheque.
+Ledgers: Mobile Phone A/c (Under: Fixed Assets), AC A/c (Under: Fixed Assets)
+Voucher: Payment (F5)
+Entry:
+Dr Mobile Phone A/c ₹5,00,000
+Dr AC A/c ₹24,00,000
+Cr Standard Chartered Bank A/c ₹29,00,000
+7. 15-4-2016 – Office Security Deposit (By Cheque)
+Ledger: Rahul Goyal (Security Deposit) A/c (Under: Loans & Advances (Asset))
+Voucher: Payment (F5)
+Entry: Dr Rahul Goyal (Security Deposit) A/c ₹50,000 | Cr Standard Chartered Bank A/c ₹50,000
+8. 16-4-2016 – Mobile Security Deposit (Cash)
+Ledger: Reliance Telecom (Security Deposit) A/c (Under: Loans & Advances (Asset))
+Voucher: Payment (F5)
+Entry: Dr Reliance Telecom (Security Deposit) A/c ₹1,500 | Cr Cash A/c ₹1,500
+9. 18-4-2016 – Appointment of Computer Operator
+Entry: No Accounting Entry (There is no financial entry just for hiring).
+10. 20-4-2016 – Purchased stationery on credit.
+Ledger: Mohan Paper House (Under: Sundry Creditors)
+Voucher: Journal (F7)
+Entry: Dr Stationery Expenses A/c ₹2,500 | Cr Mohan Paper House ₹2,500
+11. 23-4-2016 – Deposited cash in the bank
+Voucher: Contra (F4)
+Entry: Cr Cash A/c ₹50,000 | Dr Standard Chartered Bank A/c ₹50,000
+12. 25-4-2016 – Office Expenses (Cash)
+Ledger: Office Expenses A/c (Under: Indirect Expenses)
+Voucher: Payment (F5)
+Entry: Dr Office Expenses A/c ₹1,200 | Cr Cash A/c ₹1,200
+13. 28-4-2016 – Withdrawal of cash for personal use
+Ledger: Drawings A/c (Under: Capital Account)
+Voucher: Payment (F5)
+Entry: Dr Drawings A/c ₹4,500 | Cr Cash A/c ₹4,500
+MAY 2016 - Transaction Entries
+14. 2-5-2016 – Printing bill received
+Ledger: Sangam Printers (Under: Sundry Creditors)
+Voucher: Journal (F7)
+Entry: Dr Stationery Expenses A/c ₹4,500 | Cr Sangam Printers ₹4,500
+15. 5-5-2016 – Cash payment to Mohan Paper House
+Voucher: Payment (F5)
+Entry: Dr Mohan Paper House ₹2,500 | Cr Cash A/c ₹2,500
+16. 8-5-2016 – Rent for the month of April paid by cheque.
+Ledger: Rent Expenses A/c (Under: Indirect Expenses)
+Voucher: Payment (F5)
+Entry: Dr Rent Expenses A/c ₹3,000 | Cr Standard Chartered Bank A/c ₹3,000
+17. 10-5-2016 – Cash payment to Sangam Printers
+Voucher: Payment (F5)
+Entry: Dr Sangam Printers ₹4,500 | Cr Cash A/c ₹4,500
+18. 12-5-2016 – Cash payment of electricity expenses
+Ledger: Electricity Expenses A/c (Under: Indirect Expenses)
+Voucher: Payment (F5)
+Entry: Dr Electricity Expenses A/c ₹1,500 | Cr Cash A/c ₹1,500
+19. 15-5-2016 – Salary for the month of April given through cheque.
+Ledger: Salary Expenses A/c (Under: Indirect Expenses)
+Voucher: Payment (F5)
+Entry: Dr Salary Expenses A/c ₹2,600 | Cr Standard Chartered Bank A/c ₹2,600
+MAY 2016 - Remaining Transactions
+20. 21-5-2016 – Miscellaneous Expenses (Cash)
+Ledger: Miscellaneous Expenses A/c (Under: Indirect Expenses)
+Voucher: Payment (F5)
+Entry: Dr Miscellaneous Expenses A/c ₹200 | Cr Cash A/c ₹200
+21. 27-5-2016 – Mobile Bill (Cash)
+Ledger: Mobile Expenses A/c (Under: Indirect Expenses)
+Voucher: Payment (F5)
+Entry: Dr Mobile Expenses A/c ₹1,100 | Cr Cash A/c ₹1,100
+22. 30-5-2016 – Conveyance Expenses (Cash)
+Ledger: Conveyance Expenses A/c (Under: Indirect Expenses)
+Voucher: Payment (F5)
+Entry: Dr Conveyance Expenses A/c ₹450 | Cr Cash A/c ₹450
+June 2016 - Transaction Entries
+23. 3-6-2016 – Rent for the month of May paid by cheque.
+Voucher: Payment (F5)
+Entry: Dr Rent Expenses A/c ₹3,000 | Cr Standard Chartered Bank A/c ₹3,000
+24. 10-6-2016 – Purchased goods on credit from Akshay Trading Company.
+Ledgers and Stock Creation:
+Purchase Ledger: Purchase
+
+[Translation failed for one chunk. Original text retained below]
+e A/c (Under: Purchase Accounts)
+Supplier Ledger: Akshay Trading Company (Under: Sundry Creditors)
+Units of Measure: Pcs या Nos (बनाएं)
+Stock Items: तालिका में दिए गए सभी 12 आइटम्स (जैसे Fair & Lovely 25gm, Clinic Plus 100ml आदि) को क्रिएट करें।
+वाउचर: Purchase Voucher (F9) (As Invoice Mode)
+टैली में एंट्री: Akshay Trading Company सेलेक्ट करें, फिर सभी आइटम्स को उनकी दी गई Qty (मात्रा) और Rate (दर) के साथ दर्ज करें। (कुल बिल राशि: ₹41,925)
+25. 12-6-2016 – मई महीने की सैलरी चेक से दी
+वाउचर: Payment (F5)
+एंट्री: Dr Salary Expenses A/c ₹6,500 | Cr Standard Chartered Bank A/c ₹6,500
+26. 15-6-2016 – मई महीने का बिजली बिल (नकद)
+वाउचर: Payment (F5)
+एंट्री: Dr Electricity Expenses A/c ₹1,500 | Cr Cash A/c ₹1,500
+27. 18-6-2016 – अजय ट्रेडर्स से उधार माल खरीदा
+लेजर्स और स्टॉक क्रिएशन:
+Supplier Ledger: Ajay Traders (Under: Sundry Creditors)
+Stock Items: तालिका में दिए गए सभी 6 नए आइटम्स (जैसे Boro Plus 25gm, Olay Cream 20gm आदि) को क्रिएट करें।
+वाउचर: Purchase Voucher (F9) (As Invoice Mode)
+टैली में एंट्री
+: Ajay Traders सेलेक्ट करें और सभी आइटम्स की मात्रा तथा दर भरें। (कुल बिल राशि: ₹13,600)
+28. 21-6-2016 – जयश्री ट्रैवल्स से ट्रैवलिंग बिल प्राप्त हुआ
+लेजर: Traveling Expenses A/c (Under: Indirect Expenses), Jayshri Travels (Under: Sundry Creditors)
+वाउचर: Journal (F7)
+एंट्री: Dr Traveling Expenses A/c ₹6,000 | Cr Jayshri Travels ₹6,000
+29. 30-6-2016 – विभिन्न खर्चों का नकद भुगतान
+वाउचर: Payment (F5) (यहाँ Single Entry Mode या Multi-Debit का उपयोग कर सकते हैं)
+एंट्री:
+Dr Mobile Expenses A/c — ₹1,050
+Dr Conveyance Expenses A/c — ₹450
+Dr Office Expenses A/c — ₹950
+Cr Cash A/c — ₹2,450 (कुल योग)
+क्या आप इस पूरे असाइनमेंट का फाइनल Stock Summary या Closing Stock Value चेक करना चाहते हैं?
+JULY 2016 - ट्रांजैक्शन एंट्रीज
+30. 2-7-2016 – जून महीने का किराया चेक से दिया
+वाउचर: Payment (F5)
+एंट्री: Dr Rent Expenses A/c — ₹3,000 | Cr Standard Chartered Bank A/c — ₹3,000
+31. 4-7-2016 – जून महीने का बिजली बिल (नकद)
+वाउचर: Payment (F5)
+एंट्री: Dr Electricity Expenses A/c — ₹1,250 | Cr Cash A/c — ₹1,250
+32. 7-7-2016 – राज जनरल स्टोर को उधार माल बेचा
+लेजर्स:
+Sales Ledger: Sales A/c (Under: Sales Accounts)
+Customer Ledger: Raj General Store (Under: Sundry Debtors)
+वाउचर: Sales Voucher (F8) (Item Invoice Mode)
+टैली में एंट्री: Party Name में Raj General Store चुनें। तालिका में दिए गए सभी 9 आइटम्स को उनकी मात्रा (Qty) और नई रेट के साथ दर्ज करें। (कुल बिल राशि: ₹13,480)
+33. 10-7-2016 – मोबाइल बिल का नकद भुगतान
+वाउचर: Payment (F5)
+एंट्री: Dr Mobile Expenses A/c — ₹1,150 | Cr Cash A/c — ₹1,150
+34. 14-7-2016 – राज जनरल स्टोर को नकद माल बेचा
+वाउचर: Sales Voucher (F8) (Item Invoice Mode)
+टैली में एंट्री: Party Name में Cash चुनें। इसके बाद तालिका में दिए गए सभी 6 आइटम्स को उनकी मात्रा और रेट के साथ दर्ज करें। (कुल बिल राशि: ₹6,200)
+35. 17-7-2016 – मई महीने की सैलरी चेक से दी
+वाउचर: Payment (F5)
+एंट्री: Dr Salary Expenses A/c — ₹6,500 | Cr Standard Chartered Bank A/c — ₹6,500
+36. 21-7-2016 – मैगजीन सब्सक्रिप्शन के लिए एडवांस पेमेंट (चेक द्वारा)
+लेजर: Prepaid Expenses A/c या Subscription A/c (Under: Current Assets या Indirect Expenses)
+नोट: चूंकि यह 1 साल (July 2016 to June 2016/2017) के लिए है, इसे Prepaid मानना बेहतर है।
+वाउचर: Payment (F5)
+एंट्री: Dr Prepaid Expenses A/c — ₹1,800 | Cr Standard Chartered Bank A/c — ₹1,800
+37. 23-7-2016 – ऑफिस खर्च (नकद)
+वाउचर: Payment (F5)
+एंट्री: Dr Office Expenses A/c — ₹950 | Cr Cash A/c — ₹950
+38. 27-7-2016 – निजी उपयोग के लिए नकद निकाला
+वाउचर: Payment (F5)
+एंट्री: Dr Drawings A/c — ₹9,000 | Cr Cash A/c — ₹9,000
+39. 30-7-2016 – कन्वेंस खर्च (नकद)
+वाउचर: Payment (F5)
+एंट्री: Dr Conveyance Expenses A/c — ₹500 | Cr Cash A/c — ₹500
+इन सभी एंट्रीज को करने के बाद, क्या आप टैली में अपनी Net Profit/Loss या Balance Sheet चेक करना चाहते हैं?
+AUGUST 2016 - ट्रांजैक्शन एंट्रीज
+40. 3-8-2016 – बैंक में नकद जमा किया
+वाउचर: Contra (F4)
+एंट्री: Cr Cash A/c — ₹1,00,000 | Dr Standard Chartered Bank A/c — ₹1,00,000
+41. 5-8-2016 – जुलाई महीने का किराया चेक से दिया
+वाउचर: Payment (F5)
+एंट्री: Dr Rent Expenses A/c — ₹3,000 | Cr Standard Chartered Bank A/c — ₹3,000
+42. 10-8-2016 – जुलाई महीने की सैलरी चेक से दी
+वाउचर: Payment (F5)
+एंट्री: Dr Salary Expenses A/c — ₹6,500 | Cr Standard Chartered Bank A/c — ₹6,500
+43. 13-8-2016 – ऑफिस खर्च (नकद)
+वाउचर: Payment (F5)
+एंट्री: Dr Office Expenses A/c — ₹600 | Cr Cash A/c — ₹600
+44. 17-8-2016 – मनोज ट्रेडर्स से नकद माल खरीदा
+स्टॉक क्रिएशन: तालिका में दिए गए सभी नए शैम्पू आइटम्स (जैसे Ayur Amla 100ml, Pantene 200ml आदि) को क्रिएट करें।
+वाउचर: Purchase Voucher (F9) (Item Invoice Mode)
+टैली में एंट्र
+
+[Translation failed for one chunk. Original text retained below]
+ी: Party Name में Cash चुनें। इसके बाद सभी आइटम्स को उनकी मात्रा (Qty) और रेट के साथ दर्ज करें। (कुल बिल राशि: ₹38,200)
+45. 18-8-2016 – एसेट्स का इंश्योरेंस प्रीमियम चुकाया (नकद)
+लेजर: Prepaid Insurance A/c (Under: Current Assets)
+नोट: चूंकि यह 2 साल (August 2016 to July 2018) के लिए एडवांस है, इसे Prepaid Assets में डाला जाएगा।
+वाउचर: Payment (F5)
+एंट्री: Dr Prepaid Insurance A/c — ₹12,000 | Cr Cash A/c — ₹12,000
+46. 22-8-2016 – बिजली खर्च (नकद)
+वाउचर: Payment (F5)
+एंट्री: Dr Electricity Expenses A/c — ₹1,250 | Cr Cash A/c — ₹1,250
+47. 30-8-2016 – श्री राम ट्रेडर्स को उधार माल बेचा
+लेजर: Shree Ram Traders (Under: Sundry Debtors)
+वाउचर: Sales Voucher (F8) (Item Invoice Mode)
+टैली में एंट्री: Party Name में Shree Ram Traders चुनें। सभी 5 आइटम्स को उनकी बिक्री मात्रा और रेट के साथ दर्ज करें। (कुल बिल राशि: ₹15,500)
+SEPTEMBER 2016 - ट्रांजैक्शन एंट्रीज
+48. 3-9-2016 – अजय ट्रेडर्स को चेक द्वारा पुराना भुगतान किया
+वाउचर: Payment (F5)
+एंट्री: Dr Ajay Traders — ₹13,600 | Cr Standard Chartered Bank A/c — ₹13,600
+49. 7-9-2016 – अगस्त महीने की सैलरी चेक से दी
+नोट: बुक में 'August 2017' मिसप्रिंट है, यह 'August 2016' की सैलरी है।
+वाउचर: Payment (F5)
+एंट्री: Dr Salary Expenses A/c — ₹6,500 | Cr Standard Chartered Bank A/c — ₹6,500
+50. 11-9-2016 – अगस्त महीने का किराया चेक से दिया
+वाउचर: Payment (F5)
+एंट्री: Dr Rent Expenses A/c — ₹3,000 | Cr Standard Chartered Bank A/c — ₹3,000
+51. 14-9-2016 – राज जनरल स्टोर से चेक प्राप्त हुआ
+वाउचर: Receipt Voucher (F6)
+एंट्री: Cr Raj General Store — ₹13,480 | Dr Standard Chartered Bank A/c — ₹13,480
+क्या आपके पास इस असाइनमेंट के आगे के ट्रांजैक्शन्स या फाइनल रिपोर्ट्स (जैसे बैलेंस शीट) से जुड़ा कोई सवाल है?
+SEPTEMBER 2016 - बचे हुए ट्रांजैक्शन
+52. 17-9-2016 – अजय ट्रेडर्स से उधार माल खरीदा
+स्टॉक क्रिएशन: तालिका में दिए गए सभी नए सोप और शेविंग क्रीम आइटम्स (जैसे Lux Beauty Soap 75gm, Dove 150gm, Old Spice Shaving Cream आदि) को टैली में क्रिएट करें।
+वाउचर: Purchase Voucher (F9) (Item Invoice Mode)
+टैली में एंट्री: Party Name में Ajay Traders चुनें। सभी 7 आइटम्स को उनकी मात्रा (Qty) और रेट के साथ दर्ज करें। (कुल बिल राशि: ₹22,600)
+53. 20-9-2016 – श्री राम ट्रेडर्स को नकद माल बेचा
+वाउचर: Sales Voucher (F8) (Item Invoice Mode)
+टैली में एंट्री: Party Name में Cash चुनें (भले ही विवरण में श्री राम ट्रेडर्स लिखा हो, यह नकद बिक्री है)। तालिका में दिए गए सभी 5 आइटम्स को उनकी मात्रा और रेट के साथ दर्ज करें। (कुल बिल राशि: ₹8,150)
+54. 23-9-2016 – बिजली खर्च का नकद भुगतान
+वाउचर: Payment (F5)
+एंट्री: Dr Electricity Expenses A/c — ₹1,150 | Cr Cash A/c — ₹1,150
+55. 25-9-2016 – अगस्त महीने का ऑफिस खर्च (नकद)
+वाउचर: Payment (F5)
+एंट्री: Dr Office Expenses A/c — ₹950 | Cr Cash A/c — ₹950
+56. 27-9-2016 – जयश्री ट्रैवल्स को नकद भुगतान किया
+वाउचर: Payment (F5)
+एंट्री: Dr Jayshri Travels — ₹6,000 | Cr Cash A/c — ₹6,000
+57. 30-9-2016 – मोबाइल और कन्वेंस खर्च का नकद भुगतान
+वाउचर: Payment (F5)
+एंट्री:
+Dr Mobile Expenses A/c — ₹1,250
+Dr Conveyance Expenses A/c — ₹1,400
+Cr Cash A/c — ₹2,650 (कुल योग)
+OCTOBER 2016 - ट्रांजैक्शन एंट्रीज
+58. 3-10-2016 – सितंबर महीने की सैलरी का नकद भुगतान
+वाउचर: Payment (F5)
+एंट्री: Dr Salary Expenses A/c — ₹5,400 | Cr Cash A/c — ₹5,400
+59. 5-10-2016 – अक्षय ट्रेडिंग कंपनी को ऑनलाइन फंड ट्रांसफर (पूर्ण भुगतान)
+महत्वपूर्ण नोट: 10-06-2016 का पुराना बिल ₹41,925 का था, लेकिन यहाँ केवल ₹40,000 देकर खाता हमेशा के लिए बंद (Full Settlement) किया जा रहा है। इसका मतलब ₹1,925 का हमें डिस्काउंट मिला है।
+लेजर: Discount Received A/c (Under: Indirect Incomes)
+वाउचर: Payment (F5) (Double Entry Mode रखें)
+टैली में एंट्री:
+Dr Akshay Trading Company — ₹41,925 (Bill-wise details में पुराने बिल को अगेंस्ट सेलेक्ट करें)
+Cr Standard Chartered Bank A/c — ₹40,000 (इलेक्ट्रॉनिक ट्रांसफर के लिए बैंक)
+Cr Discount Received A/c — ₹1,925
+60. 8-10-2016 – सितंबर महीने का किराया (नकद)
+वाउचर: Payment (F5)
+एंट्री: Dr Rent Expenses A/c — ₹3,000 | Cr Cash A/c — ₹3,000
+61. 10-10-2016 – ऑफिस खर्च (नकद)
+वाउचर: Payment (F5)
+एंट्री: Dr Office Expenses A/c — ₹950 | Cr Cash A/c — ₹950
+क्या आपके पास इस प्रैक्टिकल वर्कबुक के आगे के पन्ने या फाइनल रिपोर्ट (जैसे प्रॉफिट एंड लॉस अकाउंट) का कोई डेटा है जिसे आप मैच करना चाहते हैं?
+OCTOBER 2016 - ट्रांजैक्शन एंट्रीज
+62. 13-10-2016 – अक्षय ट्रेडिंग कंपनी से उधार माल खरीदा
+स्टॉक क्रिएशन: तालिका में दिए गए सभी नए ऑइल, पाउडर और टैल्क आइटम्स (जैसे Bajaj Almond Drops 100ml, Keo Karpin Oil, Himani Navratna आदि) को टैली में क्रिएट करें।
+वाउचर: Purchase Voucher (F9) (Item Invoice Mode)
+टैली में एंट्री: Party Name में Akshay Trading Company चुनें। सभी 7 आइटम्स को उनकी मात्रा (Qty) और रेट के साथ दर्ज कर
+
+[Translation failed for one chunk. Original text retained below]
+ें। (कुल बिल राशि: ₹22,100)
+63. 17-10-2016 – आस्था जनरल स्टोर को उधार माल बेचा
+लेजर: Astha General Store (Under: Sundry Debtors)
+वाउचर: Sales Voucher (F8) (Item Invoice Mode)
+टैली में एंट्री: Party Name में Astha General Store चुनें। तालिका में दिए गए चारों ऑइल आइटम्स को उनकी बिक्री मात्रा और रेट के साथ दर्ज करें। (कुल बिल राशि: ₹10,100)
+64. 20-10-2016 – पूजा ट्रेडिंग कंपनी से उधार माल खरीदा
+लेजर और स्टॉक क्रिएशन:
+Supplier Ledger: Pooja Trading Company (Under: Sundry Creditors)
+Stock Items: तालिका में दिए गए सभी नए डियोड्रेंट स्प्रे और टूथपेस्ट आइटम्स (जैसे Axe Body Spray 100ml, Park Avenue Spray, Sensodyne cool gel आदि) को टैली में क्रिएट करें।
+वाउचर: Purchase Voucher (F9) (Item Invoice Mode)
+टैली में एंट्री: Party Name में Pooja Trading Company चुनें। सभी 10 आइटम्स को उनकी मात्रा और रेट के साथ सावधानीपूर्वक दर्ज करें। (कुल बिल राशि: ₹1,02,500)
+65. 22-10-2016 – बिजली खर्च का नकद भुगतान
+वाउचर: Payment (F5)
+एंट्री: Dr Electricity Expenses A/c — ₹1,100 | Cr Cash A/c — ₹1,100
+66. 24-10-2016 – कन्वेंस खर्च का नकद भुगतान
+वाउचर: Payment (F5)
+एंट्री: Dr Conveyance Expenses A/c — ₹850 | Cr Cash A/c — ₹850
+. नकद बिक्री (Cash Sales) — जैसे प्रश्न 67
+यह कैश सेल्स की एंट्री है, इसके लिए F8 (Sales Voucher) खोलें।
+Voucher Type: F8 (Sales) दबाएं और As Invoice मोड चुनें।
+Party A/c Name: Cash चुनें।
+Sales Ledger: Sales A/c का लेजर बनाएं।
+Name of Item: आइटम्स के नाम (जैसे Axe Body Spray 100ml) बनाएं (Alt+C से)।
+Qty / Rate: इमेज के अनुसार मात्रा (60) और दर (175) भरें। Amount खुद ब खुद आ जाएगा।
+2. चेक द्वारा भुगतान (Payment by Cheque) — जैसे प्रश्न 68, 70
+इसके लिए F5 (Payment Voucher) का उपयोग करें।
+Account (Credit): अपने बैंक का नाम (जैसे SBI या PNB Bank A/c)।
+Particulars (Debit): Raj Furniture House (Alt+C से Sundry Creditors के तहत बनाएं)।
+Amount: ₹14,200 भरें।
+Note (प्रश्न 70 के लिए): अजय ट्रेडर्स वाले मामले में यदि फुल सेटलमेंट है, तो डिस्काउंट लेजर (Discount Received A/c) बनाकर बची हुई राशि उसमें डालें।
+3. बैंक द्वारा प्राप्त राशि (Receipt via NEFT/Cheque) — जैसे प्रश्न 69, 71
+इसके लिए F6 (Receipt Voucher) का उपयोग करें।
+Account (Debit): आपका Bank A/c।
+Particulars (Credit): Shree Ram Traders या Astha General Store।
+Amount: प्राप्त हुई राशि दर्ज करें।
+4. बैंक में नकद जमा (Cash Deposited into Bank) — जैसे प्रश्न 72
+बैंक और कैश के बीच के लेन-देन के लिए F4 (Contra Voucher) का उपयोग करें।
+Account (Debit): Bank A/c (जिसमें पैसा आ रहा है)।
+Particulars (Credit): Cash (जो पैसा जा रहा है)।
+Amount: ₹50,000।
+5. उधार बिक्री (Credit Sales) — जैसे प्रश्न 74
+इसके लिए F8 (Sales Voucher) खोलें।
+Party A/c Name: Gurukripa General Store (इसे Sundry Debtors के तहत बनाएं)।
+Sales Ledger: Sales A/c।
+Items: तालिका में दिए गए सभी आइटम्स (Colgate, Dabur आदि), उनकी Qty और Rate दर्ज करें। कुल टोटल ₹24,370 आना चाहिए।
+6. खर्चों का भुगतान (Expenses Payment) — जैसे प्रश्न 73, 75, 77
+इसके लिए F5 (Payment Voucher) का उपयोग करें।
+Account (Credit): Cash (क्योंकि नकद भुगतान है)।
+Particulars (Debit): खर्चे का लेजर जैसे Rent A/c, Salary A/c, या Office Expenses A/c (इन सबको Indirect Expenses के तहत बनाएं)।
+आगे बढ़ने के लिए, यदि आप किसी विशेष प्रश्न (जैसे No. 70 या 71) की डेबिट/क्रेडिट एंट्री विस्तार से देखना चाहते हैं, तो कृपया मुझे बताएं।
+जरूरी कॉन्फ़िगरेशन (Configuration Settings)
+स्टॉक आइटम और इनवॉइस सही से बनाने के लिए गेटवे ऑफ टैली (Gateway of Tally) पर रहकर ये सेटिंग्स जांच लें:
+F11 (Features) दबाएं:
+Enable Bill-wise details को Yes रखें (प्रश्न 81 के बिल एडजस्टमेंट के लिए)।
+Maintain Inventory और Integrate Accounts with Inventory दोनों को Yes करें।
+F12 (Configuration) दबाएं (Sales Voucher के अंदर):
+Provide Buyer details को Yes रखें ताकि कैश सेल में भी पार्टी का नाम डाल सकें।
+📝 वाउचर एंट्री करने की स्टेप-बाय-स्टेप गाइड
+1. उधार बिक्री (Credit Sales) — प्रश्न 78 और 82
+जब माल उधार बेचा जाता है, तो पार्टी के नाम से एंट्री होती है।
+वाउचर प्रकार: F8 (Sales) दबाएं और मोड Item Invoice रखें।
+तारीख (F2): 18-11-2016 (प्रश्न 78) / 08-12-2016 (प्रश्न 82) दर्ज करें।
+Party A/c Name:
+प्रश्न 78 के लिए: Shree Ram Traders (Under: Sundry Debtors)
+प्रश्न 82 के लिए: Gurukripa General Store (Under: Sundry Debtors)
+Sales Ledger: Sales A/c (Under: Sales Accounts) चुनें।
+Name of Item: सूची में दिए गए सभी आइटम्स को Alt + C दबाकर बनाएं (Under: Primary, Units: Nos या Pcs)।
+Qty और Rate: इमेज के अनुसार सही मात्रा और रेट भरें।
+टोटल चेक करें: प्रश्न 78 का कुल टोटल ₹17,500 और प्रश्न 82 का कुल टोटल ₹7,750 आना चाहिए।
+2. नकद बिक्री (Cash Sales) — प्रश्न 79 और 80
+जब माल नकद बेचा जाता है, तो कैश अकाउंट डेबिट होता है।
+वाउचर प्रकार: F8 (Sales) दबाएं (Item Invoice मोड)।
+Party A/c Name: यहाँ Cash चुनें।
+Buyer 
+
+Details (Delivery screen): If you want to show the customer's name on the bill, you can type Royal Gift Center (Question 79) or Raj General Store (Question 80) in the 'Buyer' column.
+Sales Ledger: Select Sales A/c.
+Items, Qty, Rate: Fill as per the table.
+Check Total: Total total for question 79 should be ₹13,180 and total for question 80 should be ₹13,600.
+3. Cash Received – Question 81
+When old borrowed cash is received from a customer.
+Voucher Type: Press F6 (Receipt).
+Account (if Single Entry mode): Select Cash (as cash is available).
+Particulars: Select Gurukripa General Store.
+Amount: Fill 24,000.
+Bill-wise Details: As soon as you enter the amount, a box will open, adjust their old pending bill by selecting Against Ref (Against Reference).
+4. Rent Paid – Question 83
+To pay the month's rent.
+Voucher Type: Press F5 (Payment).
+Select Account: Cash (because cash is going).
+Particulars: Select Rent A/c (If ledger is not created, create it under Indirect Expenses by pressing Alt + C).
+Amount: Enter 3,000.
+Required Configuration
+Go to F11 (Features) and keep Enable Purchase Order/Invoicing and Maintain Inventory as Yes.
+You can choose Double Entry Mode or Single Entry Mode as per your convenience (the examples given below are based on Double Entry Mode (Dr/Cr)).
+📝 Voucher Entry and Ledger Details (Step-by-Step)
+1. Cash Expenses – Questions 84, 85, 86
+Use F5: Payment Voucher for all expenses.
+Question 84 (12-12-2016): Payment of salary
+Debit (Dr): Salary A/c — ₹6,500 (Ledger Group: Indirect Expenses)
+Credit (Cr): Cash A/c — ₹6,500
+Question 85 (15-12-2016): Compound Entry of two expenses together
+Debit (Dr): Office Expenses A/c — ₹550 (Ledger Group: Indirect Expenses)
+Debit (Dr): Conveyance Expenses A/c — ₹350 (Ledger Group: Indirect Expenses)
+Credit (Cr): Cash A/c — ₹900
+Question 86 (18-12-2016): Payment of electricity bill
+Debit (Dr): Electricity Charges A/c — ₹1,650 (Ledger Group: Indirect Expenses)
+Credit (Cr): Cash A/c — ₹1,650
+2. Payment by Check – Question 88
+Voucher Type: F5: Payment
+Debit (Dr): Akshay Trading Company — ₹22,000 (Ledger Group: Sundry Creditors)
+Credit (Cr): Bank A/c — ₹22,000 (Select your bank ledger)
+3. Sales by credit and check – Questions 87, 89
+F8 for Sales: Open Sales Voucher and use As Invoice mode.
+Question 87 (20-12-2016) - Credit Sales:
+Party A/c Name: Shree Ram Traders (Ledger Group: Sundry Debtors)
+Sales Ledger: Sales A/c
+Items: Enter all the Deodorants items, Qty and Rate as per the table. The total bill will be ₹34,150.
+Question 89 (26-12-2016) – Sale by Cheque:
+Party A/c Name: Bank A/c (Since check received and directly deposited in bank)
+Buyer Details Screen: Here type the name of the customer Khushi Gift Centre.
+Items: Enter Shaving Cream, Gel, Shampoo etc. The total bill will be ₹17,310.
+4. Cash Receipt – Questions 90, 91
+On receipt of money use F6: Receipt Voucher.
+Question 90 (27-12-2016):
+Credit (Cr): Gurukripa General Store — ₹7,700
+Debit (Dr): Cash A/c — ₹7,700
+Question 91 (31-12-2016):
+Credit (Cr): Shree Ram Traders — ₹19,200
+Debit (Dr): Cash A/c — ₹19,200
+5. Purchase Entry – Question 92
+F9: Open Purchase Voucher (As Invoice mode) for the first entry of January 2017.
+Date(F2): 02-01-2017
+Party A/c Name: Akshay Trading Company (Under: Sundry Creditors)
+Purchase Ledger: Purchase A/c (Ledger Group: Purchase Accounts)
+Name of Item: Select all 10 items (Zatak, Axe, Dove etc.) given in the list. Fill their correct quantity (Qty) and purchase rate (Rate).
+Total Verification: After adding all the items the total of the invoice should come to ₹1,08,950.
+Transaction 93 (05-01-2017)
+Problem:Mr. Sharma paid cash of ₹3,000 towards rent for December.
+Voucher Type: Payment Voucher (F5)
+Ledgers Needed:
+Rent A/c (Under Indirect Expenses)
+Cash A/c (Pre-defined under Cash-in-hand)
+Voucher Entry Steps:
+Go to Gateway of Tally > Vouchers > Press F5 (Payment).
+Press F2 and change the date to 05-01-2017.
+By (Debit): Rent A/c — 3,000
+To (Credit): Cash A/c — 3,000
+Save the voucher (Ctrl + A).
+Transaction 94 (08-01-2017)
+Problem:Mr. Sharma paid cash of ₹6,000 for salary for December.
+Voucher Type: Payment Voucher (F5)
+Ledgers Needed:
+Salary A/c (Under Indirect Expenses)
+Cash Account
+Voucher Entry Steps:
+In the Voucher screen, press F5 (Payment).
+Press F2 and change the date to 08-01-2017.
+By (Debit): Salary A/c — 6,000
+To (Credit): Cash A/c — 6,000
+Save the voucher.
+Transaction 95 (11-01-2017)
+Problem: Cash sales of item inventory to Shree Ram Traders total ₹27,900.
+Prerequisite Configuration: Press
+
+F11 (Features) > Set Maintain Inventory to Yes.
+Voucher Type: Sales Voucher (F8) in Item Invoice mode.
+Ledgers & Items Needed:
+Sales A/c (Under Sales Accounts)
+Stock Items (Created under Units of Measure: Nos/Pcs):
+Zatak Deodorant Spray 100ml
+Axe Body Spray 100ml
+EVA Zing Deo Spray 100ml
+Dove Deodorant Spray 100ml
+Voucher Entry Steps:
+Press F8 (Sales). Press Ctrl + H and select Item Invoice.
+Press F2 and change the date to 11-01-2017.
+Party A/c Name: Select Cash.
+Configuration Tip: In the dispatch/buyer details popup, type Shree Ram Traders as the Buyer Name.
+Sales Ledger: Select Sales A/c.
+Name of Item table: Enter each item with its quantity and rate:
+Zatak Deo: 40 Qty @ 160 = 6,400
+Axe Body Spray: 40 Qty @ 175 = 7,000
+EVA Zing Deo: 50 Qty @ 130 = 6,500
+Dove Deodorant: 50 Qty @ 160 = 8,000
+Total will automatically calculate to 27,900. Save the voucher.
+बची हुई सभी एंट्रीज़ (96 से 100) की Tally कॉन्फ़िगरेशन और एंट्री स्टेप्स नीचे दिए गए हैं:
+Transaction 96 (14-01-2017) - Purchase Entry
+समस्या: Ajay Traders से चेक द्वारा माल खरीदा और कुल भुगतान ₹36,400 किया।
+Voucher Type: Purchase Voucher (F9) — Item Invoice मोड में।
+Ledgers Needed:
+Purchase A/c (Under Purchase Accounts)
+Bank A/c (Under Bank Accounts - जिससे चेक दिया गया)
+Stock Items (यदि पहले से नहीं बने हैं, तो Alt + C से बनाएं):
+Ayur Amla Shampoo 100ml, Ayur Amla Shampoo 200ml, Ayur Coconut Shampoo 100ml, Clinic Plus Shampoo 100ml, Clinic Plus Shampoo 200ml, Head & Shoulders Shampoo 100ml, Dove Beauty Soap 75gm, Dove Beauty Soap 150gm.
+Voucher Entry Steps:
+Gateway of Tally > Vouchers > F9 (Purchase) दबाएं।
+Ctrl + H दबाकर Item Invoice मोड चुनें।
+F2 दबाकर डेट 14-01-2017 डालें।
+Supplier Invoice No: में कोई भी नंबर (जैसे 01) डाल सकते हैं।
+Party A/c Name: में अपने Bank A/c को चुनें (क्योंकि भुगतान तुरंत चेक से हुआ है)। सप्लायर डिटेल्स में Name की जगह Ajay Traders लिख दें।
+Purchase Ledger: में Purchase A/c चुनें।
+Name of Item: में इमेज के अनुसार सभी 8 आइटम्स, उनकी Quantity (100 प्रत्येक) और Rate भरें।
+टोटल अपने आप 36,400 आ जाएगा। वाउचर को सेव (Ctrl + A) करें।
+Transaction 97 (18-01-2017) - Payment Entry
+समस्या: ऑफिस के खर्चों (Office Expenses) के लिए ₹400 कैश दिए।
+Voucher Type: Payment Voucher (F5)
+Ledgers Needed:
+Office Expenses A/c (Under Indirect Expenses)
+Cash A/c
+Voucher Entry Steps:
+F5 (Payment) दबाएं।
+F2 दबाकर डेट 18-01-2017 करें।
+By (Debit): Office Expenses A/c — 400
+To (Credit): Cash A/c — 400
+वाउचर सेव करें।
+Transaction 98 (21-01-2017) - Payment Entry (Bank)
+समस्या: Pooja Trading Company के अकाउंट में इलेक्ट्रॉनिकली (Net Banking/NEFT) ₹1,02,500 ट्रांसफर किए।
+Voucher Type: Payment Voucher (F5)
+Ledgers Needed:
+Pooja Trading Company A/c (Under Sundry Creditors)
+Bank A/c (Under Bank Accounts)
+Voucher Entry Steps:
+F5 (Payment) दबाएं।
+F2 दबाकर डेट 21-01-2017 करें।
+By (Debit): Pooja Trading Company A/c — 1,02,500
+To (Credit): Bank A/c — 1,02,500
+Bank Allocation Screen: यहाँ Transaction Type में e-Fund Transfer चुनें।
+वाउचर सेव करें।
+Transaction 99 (25-01-2017) - Payment Entry
+समस्या: दिसंबर महीने का बिजली का बिल (Electricity Charges) ₹550 कैश दिया।
+Voucher Type: Payment Voucher (F5)
+Ledgers Needed:
+Electricity Charges A/c (Under Indirect Expenses)
+Cash A/c
+Voucher Entry Steps:
+F5 (Payment) दबाएं।
+F2 दबाकर डेट 25-01-2017 करें।
+By (Debit): Electricity Charges A/c — 550
+To (Credit): Cash A/c — 550
+वाउचर सेव करें।
+Transaction 100 (28-01-2017) - Credit Sales Entry
+समस्या: Khushi Gift Centre को उधार (Credit) पर माल बेचा।
+Voucher Type: Sales Voucher (F8) — Item Invoice मोड में।
+Ledgers Needed:
+Khushi Gift Centre A/c (Under Sundry Debtors)
+Sales A/c (Under Sales Accounts)
+Stock Items (यह आइटम्स पहले से बने हुए हैं):
+Adidas Deodorant Spray 100ml, Ayur Amla Shampoo 100ml, Ayur Amla Shampoo 200ml, Ayur Coconut Shampoo 100ml, Clinic Plus Shampoo 100ml, Clinic Plus Shampoo 200ml.
+Voucher Entry Steps:
+F8 (Sales) दबाएं और Ctrl + H से Item Invoice चुनें।
+F2 दबाकर डेट 28-01-2017 करें।
+Party A/c Name: में Khushi Gift Centre को चुनें (उधार एंट्री है, इसलिए पार्टी का नाम आएगा)।
+Sales Ledger: में Sales A/c चुनें।
+Name of Item: नीचे दी गई लिस्ट के अनुसार भरें:
+Adidas Deo: 50 Qty @ 150 = 7,500
+Ayur Amla 100ml: 50 Qty @ 35 = 1,750
+Ayur Amla 200ml: 50 Qty @ 65 = 3,250
+Ayur Coconut 100ml: 50 Qty @ 40 = 2,000
+Clinic Plus 100ml: 50 Qty @ 47 = 2,350
+Clinic Plus 200ml: 50 Qty @ 85 = 4,250
+टोटल ऑटोमैटिकली 21,100 आ जाएगा (इमेज में दी गई आइटम्स का कुल जोड़)।
+वाउचर को सेव करें।
+Transaction 101 (29-01-2017) - Payment Entry
+समस्या: मोबाइल फोन के खर्चों (Mobile Phone Expenses) के लिए ₹1,750 कैश दिए।
+Vouc
+
+her Type: Payment Voucher (F5)
+Ledgers: Mobile Phone Expenses A/c (Under Indirect Expenses), Cash A/c
+Steps:
+Press F5 (Payment). F2 to date 29-01-2017.
+By (Debit): Mobile Phone Expenses A/c — 1,750
+To (Credit): Cash A/c — 1,750
+Save.
+Transaction 102 (31-01-2017) - Receipt Entry
+Problem: Received a check for ₹34,150 from Shree Ram Traders.
+Voucher Type: Receipt Voucher (F6)
+Ledgers: Shree Ram Traders A/c (Under Sundry Debtors), Bank A/c (Under Bank Accounts)
+Steps:
+Press F6 (Receipt). F2 to date 31-01-2017.
+To (Credit): Shree Ram Traders — 34,150 (Adjust the old bill by choosing Against Ref here).
+By (Debit): Bank A/c — 34,150
+Save.
+Transaction 103 (03-02-2017) - Credit Sales Entry
+Problem: Sold goods on credit to Astha General Store.
+Voucher Type: Sales Voucher (F8) — in Item Invoice mode (Ctrl + H).
+Ledgers: Astha General Store A/c (Under Sundry Debtors), Sales A/c
+Stock Items: Create new items (like Gillette Shave Gel, Denim Deo, Old Spice) with Alt + C.
+Steps:
+Press F8 (Sales). F2 to date 03-02-2017.
+Party A/c Name: Astha General Store
+Sales Ledger: Sales A/c
+Items List: After seeing the image, fill all the 6 items, their Qty (50 each) and Rate. The total will come to 21,650. Save.
+Transaction 104 (05-02-2017) - Payment Entry (Bank)
+Problem: Rent for the month of January was paid by check for ₹3,000.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Rent A/c (Under Indirect Expenses), Bank A/c
+Steps:
+Press F5 (Payment). F2 to date 05-02-2017.
+By (Debit): Rent A/c — 3,000
+To (Credit): Bank A/c — 3,000
+Save.
+Transaction 105 (10-02-2017) - Payment Entry
+Problem: Salary for the month of January was given in cash of ₹ 5,500.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Salary A/c (Under Indirect Expenses), Cash A/c
+Steps:
+Press F5. F2 to date 10-02-2017.
+By (Debit): Salary A/c — 5,500
+To (Credit): Cash A/c — 5,500
+Save.
+Transaction 106 (12-02-2017) - Credit Sales Entry
+Problem: Sold goods on credit to Shree Ram Traders.
+Voucher Type: Sales Voucher (F8) — in Item Invoice mode.
+Ledgers: Shree Ram Traders A/c, Sales A/c
+Stock Items: Create new item Park Avenue Spray 100ml with Alt + C.
+Steps:
+Press F8. F2 to date 12-02-2017.
+Party A/c Name: Shree Ram Traders
+Sales Ledger: Sales A/c
+Items List: Fill the Qty and Rate of the seven items as per the list given in the image. The total will come to 34,650. Save.
+Transaction 107 (15-02-2017) - Receipt Entry (Full Settlement)
+Problem: Received a check for ₹21,000 in full settlement from Khushi Gift Centre.
+Special Configuration: Khushi Gift Center's old balance (in entry number 100) was ₹21,100. We have received ₹21,000, i.e. a discount of ₹100 has been given.
+Voucher Type: Receipt Voucher (F6)
+Ledgers: Khushi Gift Center A/c
+, Bank A/c, Discount Allowed A/c (Under Indirect Expenses)
+Steps:
+Press F6. Date from F2 15-02-2017.
+To (Credit): Khushi Gift Center — 21,100 (Enter the entire old amount here so that their account becomes blue).
+By (Debit): Bank A/c — 21,000 (the amount of check received).
+By (Debit): Discount Allowed A/c — 100 (The remaining difference will go towards discount).
+Save.
+Transaction 108 (18-02-2017) - Payment Entry (Bank)
+Problem: Issued a check of ₹5,000 to Jayshri Travels.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Jayshri Travels A/c (Under Sundry Creditors), Bank A/c
+Steps:
+Press F5. F2 to date 18-02-2017.
+By (Debit): Jayshri Travels A/c — 5,000
+To (Credit): Bank A/c — 5,000
+Save.
+Transaction 109 (21-02-2017) - Payment Entry
+Problem: Gave ₹600 cash for office expenses.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Office Expenses A/c, Cash A/c
+Steps:
+Press F5. F2 to date 21-02-2017.
+By (Debit): Office Expenses A/c — 600
+To (Credit): Cash A/c — 600
+Save.
+Transaction 110 (24-02-2017) - Payment Entry
+Problem: Gave ₹ 500 cash for mobile phone bill.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Mobile Phone Expenses A/c (use old ledger), Cash A/c
+Steps:
+Press F5. F2 to date 24-02-2017.
+By (Debit): Mobile Phone Expenses A/c — 500
+To (Credit): Cash A/c — 500
+Save.
+Transaction 111 (28-02-2017) - Cash Sales Entry
+Problem: Sold goods to Mohit Packers in cash.
+Voucher Type: Sales Voucher (F8) — in Item Invoice mode.
+Ledgers: Cash A/c, Sales A/c
+Steps:
+Press F8. F2 to date 28-02-2017.
+Select Party A/c Name: Cash.
+Tip: On the Buyer Details screen that comes after this, type Mohit Packers in Name.
+Sales Ledger: Sales A/c
+Items List: Fill the Qty (50 each) and Rate of all 7 items by seeing the image. The total will come to Rs 17,900. Save.
+Transaction 112 (28-02-2017) - Receipt Entry
+Problem: Astha General
+
+Received a check for ₹21,650 from the store.
+Voucher Type: Receipt Voucher (F6)
+Ledgers: Astha General Store A/c, Bank A/c
+Steps:
+Press F6. F2 to date 28-02-2017.
+To (Credit): Astha General Store — 21,650 (Adjust bill of entry 103 by choosing Against Ref here).
+By (Debit): Bank A/c — 21,650
+Save.
+Transaction 113 (02-03-2017) - Contra Entry
+Problem: Deposited ₹1,00000 cash in the bank.
+Voucher Type: Contra Voucher (F4) — (for transactions between bank and cash).
+Ledgers: Bank A/c, Cash A/c
+Steps:
+Press F4 (Contra). F2 to date 02-03-2017.
+To (Credit): Cash A/c — 1,00,000
+By (Debit): Bank A/c — 1,00,000
+Save.
+Transaction 114 (05-03-2017) - Payment Entry (Bank)
+Problem: Issued a salary check of ₹ 4,000 for the month of February.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Salary A/c, Bank A/c
+Steps:
+Press F5. F2 to date 05-03-2017.
+By (Debit): Salary A/c — 4,000
+To (Credit): Bank A/c — 4,000
+Save.
+Transaction 115 (08-03-2017) - Payment Entry (Bank)
+Problem: Issued a check for rent of ₹3,000 for the month of February.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Rent A/c, Bank A/c
+Steps:
+Press F5. Date from F2 08-03-2017.
+By (Debit): Rent A/c — 3,000
+To (Credit): Bank A/c — 3,000
+Save.
+Transaction 116 (10-03-2017) - Payment Entry
+Problem: Electricity bill for the month of February was paid for ₹700 in cash.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Electricity Charges A/c, Cash A/c
+Steps:
+Press F5. Date from F2 10-03-2017.
+By (Debit): Electricity Charges A/c — 700
+To (Credit): Cash A/c — 700
+Save.
+Transaction 117 (12-03-2017) - Credit Sales Entry
+Problem: Sold goods on credit to Gurukripa General Store.
+Voucher Type: Sales Voucher (F8) — in Item Invoice mode.
+Ledgers: Gurukripa General Store A/c (Under Sundry Debtors), Sales A/c
+Stock Items: Create new items (like Hair & Care Oil, Navratna Oil, Johnsons Baby Powder/Soap) with Alt + C.
+Steps:
+Press F8. Date from F2 12-03-2017.
+Party A/c Name: Gurukripa General Store
+Sales Ledger: Sales A/c
+Items List: Fill the Qty and Rate of the seven items as per the list given in the image. The total will come to Rs 13,000. Save.
+Transaction 118 (15-03-2017) - Payment Entry
+Problem: Gave ₹550 cash for Office Maintenance Charges.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Office Maintenance Charges A/c (Under Indirect Expenses), Cash A/c
+Steps:
+Press F5. Date from F2 15-03-2017.
+By (Debit): Office Maintenance Charges A/c — 550
+To (Credit): Cash A/c — 550
+Save.
+Transaction 119 (17-03-2017) - Cash Sales Entry
+Problem: Sold goods to Mohit Traders in cash.
+Voucher Type: Sales Voucher (F8) — in Item Invoice mode.
+Ledgers: Cash A/c, Sales A/c
+Stock Items: Create new items (like Set Wet Shaving Cream, Pantene Pro-V Shampoo) with Alt + C.
+Steps:
+Press F8 (Sales) and select Item Invoice with Ctrl + H.
+Date from F2 17-03-2017.
+Select Party A/c Name: Cash. After this, fill Mohit Traders in the name on the Buyer screen.
+Sales Ledger: Sales A/c
+Items List: Fill Qty and Rate of all 7 items after seeing the image. The total will come to 32,050. Save.
+Transaction 120 (18-03-2017) - Payment Entry
+Problem: Gave ₹200 cash for mobile expenses.
+Voucher Type: Payment Voucher (F5)
+Ledgers: Mobile Phone Expenses A/c (old ledger), Cash A/c
+Steps:
+Press F5. Date from F2 18-03-2017.
+By (Debit): Mobile Phone Expenses A/c — 200
+To (Credit): Cash A/c — 200
+Save.
+Transaction 121 (20-03-2017) - Receipt Entry
+Problem: Received a check for ₹34,650 in full settlement from Shree Ram Traders. (Note: Their loan balance in entry number 106 was also ₹ 34,650, so there is no discount here).
+Voucher Type: Receipt Voucher (F6)
+Ledgers: Shree Ram Traders A/c, Bank A/c
+Steps:
+Press F6. Date from F2 20-03-2017.
+To (Credit): Shree Ram Traders — 34,650 (Adjust the old bill by choosing Against Ref here).
+By (Debit): Bank A/c — 34,650
+Save.
+Transaction 122 (22-03-2017) - Credit Sales Entry
+Problem: Sold goods to Khushi Gift Center on credit.
+Voucher Type: Sales Voucher (F8) — in Item Invoice mode.
+Ledgers: Khushi Gift Center A/c, Sales A/c
+Stock Items: Create new items (like Nyle Shampoo, Colgate, Sensodyne, Lifebuoy Talc) with Alt + C.
+Steps:
+Press F8. Date from F2 22-03-2017.
+Party A/c Name: Khushi Gift Center
+Sales Ledger: Sales A/c
+Items List: Fill Qty and Rate of all 5 items as per image. The total will come to Rs 10,700. Save.
+Transaction 123 (25-03-2017) - Bank Sales Entry
+Problem: Sold goods to Astha General Store. Payment was received by check and deposited in the bank.
+Voucher Type: Sales Voucher (F8) — in Item Invoice mode.
+Ledgers: Bank A/c (because the check is immediately deposited in the bank), Sales A/c
+Stock Item
+
+s: Create new item Keo Karpin Hair Oil with Alt + C.
+Steps:
+Press F8. F2 to date 25-03-2017.
+Party A/c Name: Select Bank A/c here (when the check is received immediately, select Bank Ledger). Write Astha General Store name in buyer details.
+Sales Ledger: Sales A/c
+Items List: Fill Qty and Rate of all 5 items as per the list. The total will come to Rs 15,900. Save.
+PART 1: GENERAL PRACTICAL EXERCISE (124 to 127)
+Transaction 124 (27-03-2017) - Receipt Entry
+Problem: Received ₹10,700 cash from Khushi Gift Centre.
+Voucher Type: Receipt Voucher (F6)
+Ledgers: Khushi Gift Center A/c, Cash A/c
+Steps:
+Press F6. F2 to date 27-03-2017.
+To (Credit): Khushi Gift Center — 10,700 (Adjust old sales entry by choosing Against Ref).
+By (Debit): Cash A/c — 10,700
+Save.
+Transaction 125 (28-03-2017) - Payment Entry (Full Settlement)
+Problem: Issued a check of ₹1,08,500 to Akshay Trading Company in full settlement.
+Note: If the old balance was more than ₹1,08,500, the remaining difference will be credited to Discount Received A/c (Under Indirect Incomes). Here we are entering the payment directly:
+Voucher Type: Payment Voucher (F5)
+Ledgers: Akshay Trading Company A/c, Bank A/c
+Steps:
+Press F5. F2 to date 28-03-2017.
+By (Debit): Akshay Trading Company A/c — 1,08,500
+To (Credit): Bank A/c — 1,08,500
+Save.
+Transaction 126 (30-03-2017) - Contra Entry
+Problem: Deposited ₹50,000 cash in the bank.
+Voucher Type: Contra Voucher (F4)
+Ledgers: Bank A/c, Cash A/c
+Steps:
+Press F4. F2 to date 30-03-2017.
+To (Credit): Cash A/c — 50,000
+By (Debit): Bank A/c — 50,000
+Save.
+Transaction 127 (31-03-2017) - Receipt Entry
+Problem: Received a check of ₹13,000 from Gurukripa General Store and deposited it in the bank.
+Voucher Type: Receipt Voucher (F6)
+Ledgers: Gurukripa General Store A/c, Bank A/c
+Steps:
+Press F6. F2 to date 31-03-2017.
+To (Credit): Gurukripa General Store — 13,000 (Select Against Ref).
+By (Debit): Bank A/c — 13,000
+Save.
+PART 2: PROVISION ENTRIES (Date: 31-03-2017)
+Provision entries are made to book expenses for the month of March which will be paid later. All these will be entered in Journal Voucher (F7) and the date will be 31-03-2017.
+Configuration Ledgers (if not created then create with Alt + C):
+Expenses Ledgers: (Under Indirect Expenses) - Salary, Office Rent, Electricity Bill, Mobile Phone Bill, Conveyance Expenses, Office Expenses.
+Provision/Outstanding Ledgers: (Under Current Liabilities) - Salary Payable or Outstanding Expenses A/c.
+Journal Entry Steps (for all 1 to 6):
+Gateway of Tally > Vouchers > Press F7 (Journal).
+Change the date to 31-03-2017 by pressing F2.
+You can also make a Compound Journal Entry of all these expenses:
+By (Dr): Salary A/c — 5,000
+By (Dr): Office Rent A/c — 3,000
+By (Dr): Electricity Bill A/c — 900
+By (Dr): Mobile Phone Bill A/c — 500
+By (Dr): Conveyance Expenses A/c — 400
+By (Dr): Office Expenses A/c — 350
+To (Cr): Outstanding Expenses A/c (or Provisions) — 10,150 (Grand Total)
+Save the voucher.
+PART 3: DEPRECIATION ENTRIES (Date: 31-03-2017)
+Journal Voucher (F7) is also used to charge depreciation on fixed assets at the end of the year.
+Configuration Ledgers:
+Depreciation A/c (Under Indirect Expenses)
+Fixed Assets Ledgers: (Under Fixed Assets) - Furniture & Fixture, Computer, Cell Phone, AC.
+Journal Entry Steps:
+Press F7 (Journal). Please ensure the date is 31-03-2017.
+Use the amounts in the last column "Depreciation For 2016-17" in the image:
+By (Dr): Depreciation A/c — 11,795 (Total Depreciation Total)
+To (Cr): Furniture & Fixture — 1,405
+To (Cr): Computer — 5,515
+To (Cr): Cell Phone — 975
+To (Cr): AC — 3,900
+PART 1: ADJUSTMENT ENTRIES FOR PREPAID EXPENSES
+Prepaid Expenses (advance payments) are the portion which pertains to the next financial year. Its entry will be in Journal Voucher (F7) on 31-03-2017, the last day of the financial year.
+Configuration Ledgers (if not created then create with Alt + C):
+Prepaid Expenses A/c: (Under Current Assets) — You can create Prepaid Journal Subscription and Prepaid Insurance separately.
+Expenses Ledgers: (Under Indirect Expenses) — Journal Subscription A/c and Insurance A/c (These will be already created at the time of payment).
+Entry 1: Journal Subscription Adjustment
+Amount: As per Prepaid Amount (d) column, ₹1,125 is to be transferred to prepaid asset.
+Steps:
+Gateway of Tally > Vouchers > Press F7 (Journal).
+Make sure the date is 31-03-2017 by pressing F2.
+By (Dr): Prepaid Journal Subscription A/c — 1,125
+To (Cr): Journal Subscription A/c — 1,125
+Save.
+Entry 2: Insurance Adjustment
+Amount: Transferring ₹8,000 to prepaid asset as per Prepaid Amount (d) column
+
+Is.
+Steps:
+F7 (Journal) Stay on the screen.
+By (Dr): Prepaid Insurance A/c — 8,000
+To (Cr): Insurance A/c — 8,000
+Save.
+PART 2: OTHER ADJUSTMENT ENTRIES (Date: 31-03-2017)
+Entry 1: Closing Stock of Stationery Consumables
+Problem: The closing stock of stationery on 31st March 2017 is ₹5,000.
+Configuration Ledger: Stock of Stationery A/c (Under Current Assets).
+Voucher Type: Journal Voucher (F7)
+Steps:
+Press F7 (Journal). Keep date 31-03-2017.
+By (Dr): Stock of Stationery A/c — 5,000
+To (Cr): Stationery Expenses A/c — 5,000
+Save.
+Entry 2: Transfer Drawing/Withdrawals to Capital Account
+Problem: Transferring Withdrawals/Drawings balance of ₹13,500 to Capital Account.
+Configuration Ledgers: Mohan Lal Sharma's Capital A/c (Under Capital Account), Withdrawals/Drawings A/c (Under Capital Account).
+Voucher Type: Journal Voucher (F7)
+Steps:
+Press F7 (Journal). Keep date 31-03-2017.
+By (Dr): Mohan Lal Sharma's Capital A/c — 13,500
+To (Cr): Withdrawals / Drawings A/c — 13,500
+Save.
+PART 3: CLOSING ENTRY (Date: 31-03-2017)
+Problem: Transferring the net balance of Profit and Loss Account to the Capital Account of Mohan Lal Sharma.
+To make this entry, first of all you have to see the amount of your net profit or loss.
+Method to check the amount: Go to the main menu (Gateway of Tally) > Open Profit & Loss A/c and note the amount of Net Profit or Net Loss at the bottom.
+If Net Profit is:
+Voucher Type: Journal Voucher (F7)
+Steps:
+Press F7 (Journal). Keep date 31-03-2017.
+By (Dr): Profit & Loss A/c — [Enter your net profit amount here]
+To (Cr): Mohan Lal Sharma's Capital A/c — [Same amount will come here]
+Save.
+If there is a net loss:
+Steps:
+In F7 (Journal) save By (Dr): Mohan Lal Sharma's Capital A/c and To (Cr): Profit & Loss A/c.
+WORKBOOK 3
+Required Tally Configurations (F11/F12 Settings)
+Cost Centres: F11 (Features) > F1 (Accounting Features) > Maintain Cost Centers = Yes.
+Godown Management: F11 > F2 (Inventory Features) > Maintain Multiple Godowns = Yes
+.
+GST Taxation: F11 > F3 (Statutory & Taxation) > Enable GST = Yes, Set/alter GST details = Yes (Enter GSTIN of Rajasthan here).
+Discount Column: F11 > F2 > Separate Discount Column in Invoices = Yes (for entry 48).
+📅 April 2017
+Entry 1 (01-04-2017): Started business.
+Voucher: Receipt (F6)
+Entry: Dr. Cash A/c (₹18,00,000) Cr. Capital A/c (₹18,00,000)
+Entry 2 (05-04-2017): Deposited cash in the bank.
+Voucher: Contra (F4)
+Entry: Dr. HDFC Bank A/c (₹16,00,000) Cr. Cash A/c (₹16,00,000)
+Entry 3 (07-04-2017): Purchased fixed assets in cash.
+Voucher: Payment (F5)
+Entry: Dr. Furniture A/c (₹25,000), Dr. Electrical Fittings A/c (₹12,000) | Cr. Cash A/c (₹37,000)
+Entry 4 (08-04-2017): Advance of office rent given by security cheque.
+Voucher: Payment (F5)
+Entry: Dr. Rent Security Deposit A/c (₹25,000) Cr. HDFC Bank A/c (₹25,000)
+Entry 5 (10-04-2017): Purchased mobile and computer with cash.
+Voucher: Payment (F5)
+Entry: Dr. Cell Phone A/c (₹5,000), Dr. Computer A/c (₹25,000) Cr. Cash A/c (₹30,000)
+Entry 6 (15-04-2017): Employees appointed.
+Configuration: No Voucher Entry (This is only an agreement, no financial transaction took place).
+Entry 7 (20-04-2017): Purchased stationery with cash.
+Voucher: Payment (F5)
+Entry: Dr. Stationary A/c (₹1,500) | Cr. Cash A/c (₹1,500)
+Entry 8 (30-04-2017): Funds transferred from main cash to petty cash.
+Voucher: Contra (F4)
+Entry: Dr. Petty Cash A/c (₹10,000) Cr. Cash A/c (₹10,000)
+📅 May 2017
+Entry 9 (01-05-2017): Petty cashier deposited the expenses of April.
+Voucher: Payment (F5) (Rules: Select Petty Cash in the Account field)
+Entry: Dr. Telephone Exp. (₹500), Dr. Electricity Exp. (₹1,200), Dr. Conveyance Exp. (₹450), Dr. Office Exp. (₹850) Cr. Petty Cash A/c (₹3,000)
+Entry 10 (07-05-2017): Salary for the month of April given in cash.
+Voucher: Payment (F5)
+Config: While creating Salary Ledger, keep 'Cost Centers are applicable' as Yes.
+Entry: Dr. Salary A/c (₹6,700) Cr. Cash A/c (₹6,700)
+Cost Center Allocation: Mamta (₹2,500), Rajesh (₹1,500), Manoj (₹1,500), Mahendra (₹1,200)
+Entry 11 (10-05-2017): Gave the security of the warehouse through cheque.
+Voucher: Payment (F5)
+Entry: Dr. Godown Security Deposit A/c (₹30,000) Cr. HDFC Bank A/c (₹30,000)
+Entry 12 (18-05-2017): Office and godown rent paid for April through cheque.
+Voucher: Payment (F5)
+Config: Enable Cost Centers in Rent Ledger.
+Entry: Dr. Rent A/c (₹3,000) Cr. HDFC Bank A/c (₹3,000) (Enter the ratio of Office and Godown in Cost Center here)
+Entry 13 (25-05-2017): Stationery from Digital Printers
+
+Got the bill (borrowed).
+Voucher: Journal (F7)
+Entry: Dr. Printing & Stationery A/c (₹2,000) | Cr. Digital Printers A/c (₹2,000)
+Entry 14 (31-05-2017): Withdrawal of cash for personal use.
+Voucher: Payment (F5)
+Entry: Dr. Drawings A/c (₹4,000) Cr. Cash A/c (₹4,000)
+📅 June 2017
+Entry 15 (05-06-2017): Petty cash expenses of May.
+Voucher: Payment (F5) (Account: Petty Cash)
+Entry: Dr. Telephone (₹600), Electricity (₹1,100), Conveyance (₹400), Office Exp (₹700) | Cr. Petty Cash A/c (₹2,800)
+Entry 16 (10-06-2017): May salary given in cash.
+Voucher: Payment (F5)
+Entry: Dr. Salary A/c (₹13,500) Cr. Cash A/c (₹13,500) (Cost Centres: Mamta 5k, Rajesh 3k, Manoj 3k, Mahendra 2.5k)
+Entry 17 (12-06-2017): Rent for the month of May was paid by cheque.
+Voucher: Payment (F5) | Entry: Dr. Rent A/c (₹5,000) Cr. HDFC Bank A/c (₹5,000) (allocate Cost Centres)
+Entry 18 (18-06-2017): Purchased stationery with cash.
+Voucher: Payment (F5) | Entry: Dr. Stationary A/c (₹800) | Cr. Cash A/c (₹800)
+Entry 19 (21-06-2017): Transfer from cash to petty cash.
+Voucher: Contra (F4) | Entry: Dr. Petty Cash A/c (₹8,000) Cr. Cash A/c (₹8,000)
+Entry 20 (26-06-2017): Check issued to digital printers.
+Voucher: Payment (F5) | Entry: Dr. Digital Printers A/c (₹2,000) | Cr. HDFC Bank A/c (₹2,000)
+Entry 21 (30-06-2017): Withdrawal of cash for personal use.
+Voucher: Payment (F5) | Entry: Dr. Drawings A/c (₹5,000) Cr. Cash A/c (₹5,000)
+📅 July 2017
+Entry 22 (02-07-2017): Purchased goods on credit from Nishi Trading Company (Ajmer) (Intra-State: CGST + SGST @ 14% each).
+Voucher: Purchase (F9) — Item Invoice Mode
+Config: Set HSN Code and 28% GST Rate while creating Stock Items (AC, Ceiling Fan, etc.). Godown Select "Jaipur Godown".
+Entry:
+Dr. Purchase A/c: ₹3,74,000
+Dr. Central GST (CGST) A/c: ₹52,360
+Dr. State GST (SGST) A/c: ₹52,360
+Cr. Nishi Trading Company: ₹4,78,720
+Entry 23 (05-07-2017): June rent paid through cheque.
+Voucher: Payment (F5) | Entry: Dr. Rent A/c (₹5,000) Cr. HDFC Bank A/c (₹5,000)
+Entry 24 (10-07-2017): Petty cash expenses of June.
+Voucher: Payment (F5) | Entry: Dr. Expenses (Total ₹3,250) Cr. Petty Cash A/c (₹3,250)
+Entry 25 (15-07-2017): Gave June salary in cash.
+Voucher: Payment (F5) | Entry: Dr. Salary A/c (₹13,500) Cr. Cash A/c (₹13,500) (Cost Center Allocation like Entry 16)
+Entry 26 (21-07-2017): Purchased goods on credit from Geeta Enterprises (Jodhpur) (CGST + SGST @ 9% each).
+Voucher: Purchase (F9)
+Config: Set 18% GST on Items, enter their PAN and GSTIN while creating party ledger.
+Entry: Dr. Purchase A/c (₹2,56,000), Dr. CGST (₹23,040), Dr. SGST (₹23,040) Cr. Geeta Enterprises (₹3,02,080)
+📅 August 2017
+Entry 27 (02-08-2017): Sold goods on credit to Shyam Trading Company (Jaipur) (GST @ 28%).
+Voucher: Sales (F8) — Item Invoice Mode
+Entry: Dr. Shyam Trading Company (₹1,35,680) | Cr. Sales A/c (₹1,06,000), Cr. CGST @ 14% (₹14,840), Cr. SGST @ 14% (₹14,840)
+Entry 28 (05-08-2017): July salary given in cash.
+Voucher: Payment (F5) | Entry: Same as Entry 25 (₹13,500).
+Entry 29 (10-08-2017): Sold goods on credit to Arvind Traders (Jaipur) (GST @ 18%).
+Voucher: Sales (F8)
+Entry: Dr. Arvind Traders (₹1,03,250) | Cr. Sales A/c (₹87,500), Cr. CGST @ 9% (₹7,875), Cr. SGST @ 9% (₹7,875)
+Entry 30 (15-08-2017): Petty cash expenses for July.
+Voucher: Payment (F5) | Entry: Dr. Expenses (Total ₹3,000) Cr. Petty Cash A/c (₹3,000)
+Entry 31 (18-08-2017): July rent paid through cheque.
+Voucher: Payment (F5) | Entry: Dr. Rent A/c (₹5,000) Cr. HDFC Bank A/c (₹5,000)
+Entry 32 (20-08-2017): Cash payment of stationery.
+Voucher: Payment (F5) | Entry: Dr. Stationery Expenses (₹850) | Cr. Cash A/c (₹850)
+Entry 33 (22-08-2017): Purchased goods on credit from Excel Electronics (Jaipur) (Multiple GST Rates: 5%, 12%, 28%).
+Voucher: Purchase (F9)
+Config: Tally will automatically calculate item wise tax if 'Purchase A/c' common is kept in the ledger.
+Entry: Dr. Purchase A/c (₹1,78,750), Dr. CGST (₹20,560.50), Dr. SGST (₹20,560.50) Cr. Excel Electronics (₹219,871)
+Entry 34 (25-08-2017): Check given to Geeta Enterprises in full settlement.
+Voucher: Payment (F5) | Entry: Dr. Geeta Enterprises (₹3,02,080) | Cr. HDFC Bank A/c (₹3,02,080)
+Entry 35 (28-08-2017): Received check from Arvind Traders in full settlement.
+Voucher: Receipt (F6) | Entry: Dr. HDFC Bank A/c (₹1,03,250) Cr. Arvind Traders (₹1,03,250)
+Entry 36 (30-08-2017): Received check from Shyam Trading Company in full settlement.
+Voucher: Receipt (F6) | Entry: Dr. HDFC Bank A/c (₹1,35,600) Cr. Shyam Trading Company (₹1,35,600) (₹80 discount will be auto-calculated if discount ledger is created)
+Entry 37 (31-08-2017): Pay by cash
+
+Transfer to T-Cash.
+Voucher: Contra (F4) | Entry: Dr. Petty Cash A/c (₹5,000) Cr. Cash A/c (₹5,000)
+📅 September 2017
+Entry 38 (03-09-2017): Purchased goods on credit from Shivam Electronics (New Delhi) (Inter-State sale: IGST applicable).
+Voucher: Purchase (F9)
+Config: Select Party State 'Delhi'. Select Godown "Jodhpur Godown" to store the item.
+Entry: Dr. Purchase A/c (₹6,90,500), Dr. Integrated GST (IGST) A/c (₹1,33,840) | Cr. Shivam Electronics (₹8,24,340)
+Entry 39 (08-09-2017): Petty cash expenses for August.
+Voucher: Payment (F5) | Entry: Dr. Expenses (Total ₹3,100) Cr. Petty Cash A/c (₹3,100)
+Entry 40 (10-09-2017): August rent paid through cheque.
+Voucher: Payment (F5) | Entry: Dr. Rent A/c (₹5,000) Cr. HDFC Bank A/c (₹5,000)
+Entry 41 (13-09-2017): August salary given in cash.
+Voucher: Payment (F5) | Entry: Same as Entry 25 (₹13,500).
+Entry 42 (16-09-2017): Sold goods on credit to Satish Electronics, Rohtak (Consumer) (Inter-State: IGST applicable).
+Voucher: Sales (F8)
+Config: Keep Party Registration Type as 'Consumer' and Select State as 'Haryana'.
+Entry: Dr. Satish Electronics (₹3,10,700) | Cr. Sales A/c (₹2,58,500), Cr. IGST A/c (₹52,200)
+Entry 43 (18-09-2017): Withdrawal of cash for personal use.
+Voucher: Payment (F5) | Entry: Dr. Drawings A/c (₹5,000) Cr. Cash A/c (₹5,000)
+Entry 44 (21-09-2017): Sold goods to Shyam Trading Company (Jaipur) (CGST + SGST).
+Voucher: Sales (F8)
+Entry: Dr. Shyam Trading Company (₹2,25,200) | Cr. Sales A/c (₹1,82,500), Cr. CGST A/c, Cr. SGST A/c (Tax amounts will be auto-calculated as per item rates)
+Entry 45 (24-09-2017): Received full settlement check from Satish Electronics.
+Voucher: Receipt (F6) | Entry: Dr. HDFC Bank A/c (₹3,10,700) Cr. Satish Electronics (₹3,10,700)
+Entry 46 (27-09-2017): Cash payment of stationery.
+Voucher: Payment (F5) | Entry: Dr. Stationery Exp. (₹900) Cr. Cash A/c (₹900)
+Entry 47 (30-09-2017): Full settlement check given to Nishi Trading Company.
+Voucher: Payment (F5) | Entry: Dr. Nishi Trading Company (₹4,78,700) | Cr. HDFC Bank A/c (₹4,78,700) (₹20 discount received)
+📅 October 2017
+Entry 48 (03-10-2017): Sold goods on credit to Digi World, Bharatpur (Unregistered) at 10% trade discount.
+Voucher: Sales (F8)
+Config: After entering the item quantity and rate in the invoice, type '10' in the 'Disc %' column. Due to local sale, CGST+SGST will be charged.
+Entry: Dr. Digi World (₹5,92,218) | Cr. Sales A/c (₹4,76,400), Cr. CGST A/c, Cr. SGST Account
+Entry 49 (08-10-2017): September rent paid through cheque.
+Voucher: Payment (F5) | Entry: Dr. Rent A/c (₹5,000) Cr. HDFC Bank A/c (₹5,000)
+Entry 50 (10-10-2017): Petty cash expenses for September.
+Voucher: Payment (F5) | Entry: Dr. Expenses (Total ₹2,500) Cr. Petty Cash A/c (₹2,500)
+Entry 51 (15-10-2017): September salary given in cash.
+Voucher: Payment (F5) | Entry: Same as Entry 25 (₹13,500).
+Entry 52 (18-10-2017): Sold goods on credit to Mohan Electrolux, Bhopal (Unregistered) (Inter-State: IGST will be levied).
+Voucher: Sales (F8)
+Config: Set State 'Madhya Pradesh' and Registration Type 'Unregistered'.
+Entry: Dr. Mohan Electrolux (₹6,46,245) | Cr. Sales A/c (₹5,45,500), Cr. IGST A/c (₹1,00,745)
+Entry 53 (24-10-2017): Check received from Digi World.
+Voucher: Receipt (F6) | Entry: Dr. HDFC Bank A/c (₹5,92,218) Cr. Digi World (₹5,92,218)
+Entry 54 (27-10-2017): Check received from Shyam Trading Company.
+Voucher: Receipt (F6) | Entry: Dr. HDFC Bank A/c (₹2,24,700) Cr. Shyam Trading Company (₹2,24,700)
+Entry 55 (31-10-2017): Full settlement check given to Excel Electronics Jaipur.
+Voucher: Payment (F5) | Entry: Dr. Excel Electronics (₹3,19,870) | Cr. HDFC Bank A/c (₹3,19,870) (₹1 discount)
+📅 November 2017
+Entry 56 (03-11-2017): October salary paid in cash (salary amounts have changed).
+Voucher: Payment (F5)
+Entry: Dr. Salary A/c (₹11,500) Cr. Cash A/c (₹11,500)
+New Cost Centers Allocation: Mamta (₹4,000), Rajesh (₹3,000), Manoj (₹2,500), Mahendra (₹2,000)
+Entry 57 (08-11-2017): Petty cash expenses accumulated for the month of October.
+Voucher: Payment (F5) | Entry: Dr. Expenses (Total ₹3,150) Cr. Petty Cash A/c (₹3,150)
+Entry 58 (10-11-2017): Purchased goods on credit from Parker Power, Jaipur (Intra-State: CGST + SGST will be charged).
+Voucher: Purchase (F9)
+Entry: Dr. Purchase A/c (₹1,98,000), Dr. CGST A/c, Dr. SGST A/c | Cr. Parkar Power (₹2,47,390)
+To make GST entry in Tally, you have to first activate the GST features and then create ledger and stock items. Here is the complete step-by-step configuration and entry process as per the image:
+1. GST Configuration in Tally (F11 Features)
+First of all there is GST in the company
+
+[Translation failed for one chunk. Original text retained below]
+लू करें:
+F11 दबाएं (Features खोलें)।
+Enable Goods and Services Tax (GST) को Yes करें।
+अपनी कंपनी की GST डिटेल्स (State, Registration Type, GSTIN) भरें।
+डिटेल्स को सेव करने के लिए Ctrl + A दबाएं।
+2. आवश्यक लेजर बनाएं (Ledger Creation)
+Gateway of Tally > Create > Ledger में जाकर ये लेजर बनाएं:
+CGST / SGST / IGST: इन्हें Duties & Taxes ग्रुप के अंदर रखें और Type of Duty में GST चुनें।
+Sales / Purchase Accounts: इन्हें क्रमशः Sales और Purchase Accounts ग्रुप में रखें।
+Party Ledger (जैसे- Pooja Electronics - प्रश्न 62): इसे Sundry Debtors में रखें। इसका State, PAN और GSTIN (07ASDPL7485D1ZU) सही-सही भरें।
+3. स्टॉक आइटम और GST रेट सेट करना (Stock Item Creation)
+Gateway of Tally > Create > Stock Item में जाएं (जैसे- Atta Chakki, LED TV):
+Under: प्राइमरी या अपनी कैटेगरी चुनें।
+Units: Nos या Pcs चुनें।
+GST Applicable: इसे Applicable रखें।
+Set/Alter GST Details: इसे Yes करें।
+Taxability: यहाँ Taxable चुनें।
+Integrated Tax: आइटम का सही टैक्स रेट डालें (जैसे Atta Chakki के लिए 5%, LED TV के लिए 18%)।
+4. वाउचर एंट्री (Voucher Entry Examples)
+उदाहरण 1: सेल्स एंट्री (प्रश्न 62 के अनुसार - Pooja Electronics)
+Gateway of Tally > Vouchers > F8 (Sales) दबाएं।
+Party A/c Name: Pooja Electronics चुनें।
+Sales Ledger: Sales A/c चुनें।
+Name of Item: एक-एक करके सभी आइटम (Atta Chakki, LED TV आदि) चुनें, उनकी मात्रा (Qty) और रेट (Rate) डालें।
+Packing Charges: आइटम के बाद Packing Charges का लेजर चुनकर ₹2000 जोड़ें।
+Tax Selection: चूंकि पार्टी दिल्ली (New Delhi) की है, इसलिए नीचे CGST और SGST लेजर चुनें। टैली टैक्स की गणना आटोमेटिक कर लेगा।
+Ctrl + A दबाकर वाउचर सेव करें।
+उदाहरण 2: परचेज एंट्री (प्रश्न 63 के अनुसार - Nishi Trading Company)
+Vouchers > F9 (Purchase) दबाएं।
+Party A/c Name: Nishi Trading Company चुनें।
+Purchase Ledger: Purchase A/c चुनें।
+Discount Column: यदि डिस्काउंट कॉलम चालू नहीं है, तो F11 दबाकर Use Discount column in invoices को Yes करें।
+Items: आइटम चुनकर Qty, Rate और Disc % (10%) दर्ज करें।
+Tax Selection: अंत में CGST और SGST लगाएं।
+. Petty Cash Transfer (पैसे पेटी कैश में ट्रांसफर किए) - प्रश्न 64
+यह कंपनी का आंतरिक कैश ट्रांसफर है, इसमें GST का कोई संबंध नहीं है।
+Voucher Entry (F4 - Contra):
+Debit: Petty Cash A/c (₹6,000)
+Credit: Cash A/c (₹6,000)
+यदि आपको इनमें से किसी विशिष्ट बिल (जैसे Trade Discount या Packing Charges) का लेजर बनाते समय स्क्रीनशॉट या डिटेल स्टेप्स चाहिए, तो बताएं।
+।
+Purchase Return / Debit Note (निशि ट्रेडिंग कंपनी को माल वापस किया) - प्रश्न 67
+खरीदा हुआ माल डिस्काउंट और टैक्स के साथ वापस करने के लिए Debit Note (Alt + F5) वाउचर का उपयोग करें।
+Configuration:
+वाउचर स्क्रीन पर रहते हुए F11 (Features) दबाएं और Use Discount column in invoices को Yes रखें ताकि डिस्काउंट का कॉलम दिखे।
+Purchase Return का लेजर Purchase Accounts के तहत बनाएं और GST को Applicable रखें।
+Voucher Entry:
+Party Name: Nishi Trading Company, Ajmer
+Items & Discount: LPG Stove, Table Fan आदि आइटम चुनें, उनकी मात्रा (Qty), दर (Rate) डालें और Disc. % कॉलम में 10% लिखें।
+Tax: आइटम्स के नीचे CGST और SGST (चूंकि अजमेर और जयपुर दोनों राजस्थान में हैं) लेजर लगाएं। टैली इमेज के अनुसार (जैसे ₹2,974, ₹2,764 मूल्य) टैक्स ऑटो-कैलकुलेट कर लेगा।
+2. Bank Sales / Cash Sales (पार्कर पावर, जयपुर को बिक्री) - प्रश्न 72
+यह माल नगद (चेक द्वारा) बेचा गया है और पैसा सीधे HDFC बैंक में जमा हुआ है। इसकी एंट्री Sales Voucher (F8) में होगी।
+Configuration:
+इसके लिए आपको किसी नए लेजर कॉन्फ़िगरेशन की जरूरत नहीं है, बस स्टॉक आइटम में GST रेट्स पहले से सेट होने चाहिए।
+Voucher Entry:
+Party Account Name: यहाँ HDFC Bank चुनें (क्योंकि भुगतान सीधे बैंक में जमा हुआ है)।
+Party Details Screen: बैंक चुनने के बाद एक सप्लीमेंट्री स्क्रीन खुलेगी, वहां Buyer (Bill to) में Parkar Power, Jaipur का नाम और उनका GSTIN डालें ताकि बिल उनके नाम पर बने और GST रिटर्न (GSTR-1) सही जाए।
+Items: Atta Chakki, LED Lights, LED TV आदि सभी 8 आइटम्स को उनकी Qty और Rate के साथ दर्ज करें।
+Tax: सभी आइटम्स के नीचे CGST और SGST** लेजर लगाएं।
+3. Rent Payment (ऑफिस और गोदाम का किराया) - प्रश्न 66
+Voucher Entry (F5 - Payment या F7 - Journal):
+Debit: Rent Expense A/c (₹5,000)
+Debit: CGST और SGST (यदि मकान मालिक ने GST बिल दिया है)
+Credit: HDFC Bank A/c
+4. अन्य सामान्य ट्रांजैक्शन (बिना GST वाले)
+प्रश्न 65 (Petty Cash Expenses - F5 Payment): Debit करें सभी खर्चों को (Telephone ₹600, Electricity ₹1,125, Conveyance ₹425, Office Exp ₹950) और Credit करें Petty Cash A/c को।
+प्रश्न 68 (Cash Withdrawal - F4 Contra): Debit Cash A/c (₹50,000) / Credit HDFC Bank A/c.
+प्रश्न 69 (Salary Payment - F5 Payment): Debit Salary A/c (₹13,500) / Credit Cash A/c.
+प्रश्न 70, 71, 73, 74 (Receipt/Payment): इन्हें बैंक के माध्यम से F5 (Paym
+
+[Translation failed for one chunk. Original text retained below]
+ent) और F6 (Receipt) वाउचर में संबंधित पार्टी का नाम चुनकर एडजस्ट करें।
+GST Tax, Interest, and Penalty Payment (प्रश्न 75 और 76)
+जब आप सरकार को GST टैक्स, ब्याज (Interest) और लेट फीस/पेनल्टी चुकाते हैं, तो इसकी एंट्री Payment Voucher (F5) में Stat Payment मोड के जरिए होती है।
+आवश्यक लेजर्स (Ledgers Configuration):
+Interest on GST A/c: इसे Indirect Expenses के तहत बनाएं।
+Penalty/Late Fee on GST A/c: इसे भी Indirect Expenses के तहत बनाएं।
+Voucher Entry (F5 - Payment):
+वाउचर स्क्रीन पर रहते हुए कीबोर्ड से Ctrl + F (Autofill या Stat Payment) दबाएं।
+Tax Type: GST चुनें। Period: 01-Dec-2017 to 31-Dec-2017 डालें। Payment Type: Regular चुनें।
+Debit (टैक्स अमाउंट): अपने CGST, SGST या IGST लेजर को डेबिट करें (कुल टैक्स राशि जैसे प्रश्न 75 में ₹31,000 और प्रश्न 76 में ₹42,500)।
+Debit (ब्याज): Interest on GST लेजर को डेबिट करें (जैसे ₹890 या ₹1,145)।
+Debit (पेनल्टी और लेट फीस): Penalty/Late Fee लेजर को डेबिट करें (₹4,500 + ₹1,500 = ₹6,000)।
+Credit: अपना Bank Account (जिससे पेमेंट किया है) चुनें।
+2. Consumer Sales with 5% Discount (सुगम ट्रेडिंग कंपनी को बिक्री) - प्रश्न 79
+यहाँ सुगम ट्रेडिंग कंपनी एक Consumer (उपभोक्ता) है, इसलिए बिल बनाते समय उनका रजिस्ट्रेशन टाइप सही चुनना जरूरी है।
+Configuration:
+F11 Features: गेटवे ऑफ टैली पर F11 दबाकर Use Discount column in invoices को Yes रखें।
+Party Ledger: Sugam Trading Company का लेजर Sundry Debtors के तहत बनाते समय Registration Type में Consumer चुनें।
+Voucher Entry (F8 - Sales):
+Party Name: Sugam Trading Company चुनें।
+Items: Atta Chakki, LED Lights आदि दर्ज करें।
+Discount: हर आइटम के सामने Disc. % कॉलम में 5% लिखें। टैली डिस्काउंट घटाकर बची हुई राशि (Amount) पर टैक्स लगाएगा।
+Tax: चूंकि दोनों जयपुर में हैं, इसलिए अंत में CGST और SGST लेजर लगाएं।
+3. Cash Sales to Consumer (साई डिजिटल वर्ल्ड को नगद बिक्री) - प्रश्न 81
+यह नगद (Cash) बिक्री है, जिसकी डिलीवरी जोधपुर गोदाम से हुई है।
+Configuration:
+New Stock Items: Electrical Irons और Refrigerator को Stock Item में बनाएं और दोनों में GST Rate 28% सेट करें।
+Voucher Entry (F8 - Sales):
+Party Account Name: यहाँ Cash चुनें।
+Party Details Screen: इसके बाद आने वाली स्क्रीन पर Buyer में Sai Digital World, Jaipur लिखें और Registration Type में Consumer चुनें।
+Godown Selection: आइटम चुनते समय गोडाउन वाले कॉलम में Jodhpur Godown सिलेक्ट करें।
+Tax: आइटम की Qty और Rate भरने के बाद नीचे CGST और SGST लेजर लगाएं (28% टैक्स आधा-आधा यानी 14%-14% में बंट जाएगा)।
+4. अन्य सामान्य ट्रांजैक्शन (बिना GST वाले)
+प्रश्न 77 (Petty Cash Expenses): F5 (Payment) वाउचर में सभी खर्चों (Telephone ₹500, Electricity ₹1000 आदि) को Debit करें और Petty Cash A/c को Credit करें।
+प्रश्न 78 (Rent Payment): F5 (Payment) वाउचर में Rent A/c Debit (₹5,000) और Bank A/c Credit करें।
+प्रश्न 80 (Salary Payment): F5 (Payment) में कुल सैलरी Salary Expenses को Debit (₹5,800) करें और Cash A/c को Credit करें। (कर्मचारियों के व्यक्तिगत नाम केवल नरेशन या पेरोल के लिए हैं)।
+. एंट्री नंबर 82 (23-1-2018): Unregistered Dealer से क्रेडिट पर खरीदी (RCM लागू)
+यह एंट्री Purchase Voucher (F9) में होगी क्योंकि सामान उधार पर खरीदा गया है और विक्रेता Unregistered (URD) है, इसलिए इस पर Reverse Charge Mechanism (RCM) लागू होगा।
+Tally Configuration (F11 और F12 सेटिंग्स):
+F11 (Features) > F3 (Statutory & Taxation) में जाएँ:
+Enable Goods and Services Tax (GST): Yes करें।
+Set/alter GST details: Yes करें और अपनी कंपनी का GSTIN डालें।
+Enable tax liability on reverse charge: Yes करें (यह URD पर टैक्स लायबिलिटी के लिए जरूरी है)।
+Godown चालू करने के लिए: F11 > F2 (Inventory Features) में जाकर Maintain multiple Godowns को Yes करें।
+Voucher Entry (F9: Purchase - Item Invoice Mode):
+Date: 23-01-2018
+Supplier Invoice No.: बिल नंबर डालें।
+Party A/c Name: Pinkcity Electronics Jodhpur (लेजर बनाते समय Group: Sundry Creditors रखें और Registration Type: Unregistered चुनें)।
+Purchase Ledger: Purchase A/c (URD) (GST Applicable: Applicable, Set/alter GST details: Yes करके Taxability: From Unregistered Dealer और Reverse Charge: Yes करें)।
+Items Details (Godown: Jodhpur Godown चुनें):
+AC: 10 Qty @ 24,000 = 2,40,000
+Ceiling Fan: 25 Qty @ 800 = 20,000
+Table Fan: 20 Qty @ 1,200 = 24,000
+Battery: 10 Qty @ 9,000 = 90,000
+Total Bill Amount: ₹3,74,000 (इस बिल में टैक्स नहीं जुड़ेगा, क्योंकि टैक्स आपको खुद जमा करना है)।
+2. एंट्री नंबर 83 (25-1-2018): RCM के तहत टैक्स लायबिलिटी बुक करना
+URD से खरीदने के बाद उसकी टैक्स लायबिलिटी बढ़ाने के लिए Journal Voucher (F7) का उपयोग किया जाता है।
+Voucher Entry (F7: Journal - Stat Adjustment):
+F7: Journal में जाएँ और राइट साइड पैनल से Stat Adjustment (Alt + J) पर क्लिक करें।
+Type of Duty: GST चुनें।
+Natur
+
+Select e of Adjustment: Increase of Tax Liability & Input Tax Credit.
+Additional Details: Select Purchase From Unregistered Dealer.
+Journal Entry:
+Debit (Dr): Tax on Reverse Charge / Tax Paid on RCM (An Expense or Current Asset Ledger)
+Credit (Cr): CGST (Output/RCM)
+Credit (Cr): SGST (Output/RCM)
+(Note: This entry will be calculated as per the GST rate of the goods (e.g. 18% or 28%) on the total value of ₹ 3,74,000.)
+3. Entry No. 84 (28-1-2018): Receipt of check in full settlement from Sugam Trading Company
+This entry will be made in Receipt Voucher (F6).
+Tally Configuration:
+Go to F12 (Configure) and keep Show Final Balances of Bill or Use Bill-wise details as Yes so that the old bill can be adjusted.
+Voucher Entry (F6: Receipt):
+Account (Debit): HDFC Bank / Bank A/c (cheque will be deposited in the bank) — ₹2,93,541
+Debit (Dr): Discount Allowed A/c (If this amount is less than the original bill amount, debit the difference to Discount)
+Particulars (Credit): Sugam Trading Company (Settle the old bill dated 15-1-2018 by selecting 'Against Ref' against its bill).
+If you want to see Tally entries and ledger details of remaining entries (Q85 to Q93) like Cash Transfer, Personal Use (Drawings), GST Sale (with Discount), and Expense Payments, let me know.
+Tell me the remaining entries from v85 to 93 in Delhi.
+Here are the voucher entries in Tally for all the remaining entries (85 to 93) in the image and their required settings are given below:
+4. Entry No. 85 (30-1-2018): Cash transfer against bill to Pinkcity Electronics
+This entry will be in Payment Voucher (F5) because we are paying in cash.
+Voucher Type: Payment (F5)
+Mode: Double Entry (Dr/Cr) or Single Entry (Cash in Account)
+Debit (Dr): Pinkcity Electronics, Jodhpur — ₹3,74,000
+Note: For bill adjustment choose Against Reference (Agst Ref) and select the bill dated 23-1-2018.
+Credit (Cr): Cash A/c — ₹3,74,000
+5. Entry No. 86 (31-1-2018): Cash withdrawn from bank for personal use
+When the owner withdraws money for his personal use, it is called 'Drawings'. This will be done in Payment Voucher (F5).
+Voucher Type: Payment (F5)
+Debit (Dr): Drawings A/c (Group: Capital Account) — ₹10,000
+Credit (Cr): HDFC Bank A/c — ₹10,000
+FEBRUARY 2018
+6. Entry No. 87 (2-2-2018): Cash Sale to Casco Electronics at 10% Trade Discount (with GST)
+This entry will be in Item Invoice Mode in Sales Voucher (F8). Here after deducting 10% discount, GST will be applicable and the goods will be sent from Jaipur Godown.
+Tally Configuration (F12 Settings):
+Go to F8 (Sales) and press F12: Configure.
+Set the "Use Discount column in invoices" option to Yes (this will create a separate column for Discount % in the item table).
+Voucher Entry:
+Party A/c Name: Cash A/c (As sold in cash, but enter Casco Electronics, Jaipur in Buyer details).
+Sales Ledger: Sales A/c (GST Applicable, Local Sale)
+Items Details (Select Godown: Jaipur Godown):
+Battery: 4 Qty | Rate: Rs 10,500 | Disc %: 10% | Amount: ₹37,800
+Electric Kettle: 4 Qty | Rate: Rs 1,700 | Disc %: 10% | Amount: ₹6,120
+Inverter: 1 Qty | Rate: 5,500 | Disc %: 10% | Amount: ₹4,950
+LPG Stove: 3 Qty | Rate: Rs 1,800 | Disc %: 10% | Amount: ₹4,860
+Tax Ledgers (Apply under Goods):
+CGST (Calculated)
+SGST (Calculated)
+(Note: There is a slight error in calculation of discount in the Total Value column of the image, Tally Automatic will deduct the correct 10% discount and apply GST on it.)
+7. Entry No. 88 (5-2-2018): Claiming ITC on the bill of Pinkcity Electronics
+We will use Journal Voucher (F7) to take Input Tax Credit (ITC) of the RCM tax which we booked in entry number 83.
+Voucher Type: Journal (F7) > Stat Adjustment (Alt + J)
+Nature of Adjustment: Increase of Input Tax Credit
+Additional Details: Purchase From Unregistered Dealer
+Debit (Dr): CGST (Input)
+Debit (Dr): SGST (Input)
+Credit (Cr): Tax on Reverse Charge / RCM Liability A/c
+8. Entry No. 89 (8-2-2018): GST tax paid for January 2017
+This is a government tax payment, so it will be done through Stat Payment in Payment Voucher (F5).
+Voucher Type: Payment (F5) > Stat Payment (Alt + S)
+Tax Type: GST | Payment Type: Regular
+Debit (Dr): GST Payable A/c (or Debit CGST/SGST Output Ledgers) — ₹61,036
+Credit (Cr): Bank A/c (or Cash) — ₹61,036
+9. Entry No. 90 (10-2-2018): Check issued for rent for the month of January
+The expenses have been paid by cheque.
+Voucher Type: Payment (F5)
+Debit (Dr): Rent Expenses A/c (Group: Indirect Expenses) — ₹5,000
+Credit (Cr): Bank A/c (HDFC Bank) — ₹5,000
+10. Entry No. 91 (12-2-2018): Cash payment of mobile expenses
+Voucher Type: Payment (F5)
+Debit (Dr): Mobile Expenses A/c (Group: Indirect Expenses) — ₹300
+credit
+
+(Cr): Cash A/c — ₹300
+11. Entry No. 92 (13-2-2018): Cash deposited in bank (Contra Entry)
+When there is a transaction between cash and bank, Contra Voucher (F4) is used.
+Voucher Type: Contra (F4)
+Credit (Cr): Cash A/c — ₹1,50,000 (going from cash business)
+Debit (Dr): Bank A/c (HDFC Bank) — ₹1,50,000 (Money is coming into the bank)
+12. Entry No. 93 (15-2-2018): Cash payment of salary for the month of January
+Voucher Type: Payment (F5)
+Debit (Dr): Salary Expenses A/c (Group: Indirect Expenses) — ₹13,500
+Credit (Cr): Cash A/c — ₹13,500
+1. Entry No. 94 (18-2-2018): Credit Sale to Shyam Trading at 10% discount and 28% GST
+This is a credit sale which will be recorded in Item Invoice Mode in Sales Voucher (F8).
+Tally Configuration:
+F11 (Features) > F3 (Taxation): Keep Enable GST as Yes.
+F8 (Sales) > F12 (Configure): Set "Use Discount column in invoices" to Yes to show a separate discount column.
+Voucher Entry:
+Voucher Type: Sales (F8)
+Party A/c Name: Shyam Trading Company, Jaipur (Group: Sundry Debtors, State: Rajasthan)
+Sales Ledger: Sales A/c (GST Applicable: Yes)
+Items Details (Select Godown: Jodhpur Godown):
+AC: 10 Qty | Rate: 33,000 | Disc: 10% | Amount: ₹2,97,000
+Battery: 10 Qty | Rate: 11,000 | Disc: 10% | Amount: ₹99,000
+Ceiling Fan: 15 Qty | Rate: Rs 1,300 | Disc: 10% | Amount: ₹17,550
+Table Fan: 10 Qty | Rate: Rs 1,600 | Disc: 10% | Amount: ₹14,400
+Tax Ledgers (put under items):
+CGST @ 14% (It will automatically calculate ₹60,053)
+SGST @ 14% (It will automatically calculate ₹60,053)
+Total Bill Value: ₹5,48,056
+2. Entry No. 95 (21-2-2018): Receipt of advance check from Star Home Appliance
+This is the entry of advance payment which will be done in Receipt Voucher (F6).
+Tally Configuration (F12 Settings):
+In F6 Voucher press F12: Configure and set "Allow Advance Receipt and Unadjusted GST details" to Yes.
+Voucher Entry:
+Voucher Type: Receipt (F6)
+Account (Debit): Bank A/c (HDFC Bank) — ₹48,640
+Particulars (Credit): Star Home Appliance, Jaipur — ₹48,640
+Note: As soon as you enter the amount, Bill-wise details screen will appear, select Advance there. While preparing party ledger, their PAN and GST No. (08AVPPV8808M1ZU) and select Composition in Registration Type.
+3. Entry No. 96 (25-2-2018): Purchasing goods with different GST rates on credit from Geeta Enterprises
+This is a credit purchase which will be recorded in Item Invoice Mode in Purchase Voucher (F9).
+Tally Configuration:
+To process different GST rates (5%, 12%, 18%) correctly, set the correct GST % (e.g. 5%, 12% or 18%) of the stock items (e.g. Atta Chakki, Solar Water heater etc.) while creating them.
+Voucher Entry:
+Voucher Type: Purchase (F9)
+Party A/c Name: Geeta Enterprises, Jodhpur (Group: Sundry Creditors)
+Purchase Ledger: Purchase A/c
+Items Details (Select Godown: Jaipur Godown):
+Add all 9 items in the list with their given Qty and Rate (Total Assessed Value: ₹6,94,000).
+Tax Ledgers (Apply below after completing the list of items):
+CGST (Tally will automatically calculate the tax correctly by including all the items)
+SGST (Tally will automatically calculate)
+Total Bill Value: ₹8,05,570
+4. Entry No. 97 (28-2-2018): Cash payment of electricity bill
+This is a normal expense which will be recorded in the Payment Voucher (F5).
+Voucher Type: Payment (F5)
+Debit (Dr): Electricity Expenses A/c (Group: Indirect Expenses) — ₹800
+Credit (Cr): Cash A/c — ₹800
+MARCH 2018
+5. Entry No. 98 (1-3-2018): Sales Return by Shyam Trading Company
+Credit Note Voucher (Alt + F6) is used when returning sold goods.
+Tally Configuration:
+F11 (Features) > Inventory Features / F2: Set "Use Debit and Credit Notes" to Yes and "Record Credit Notes in Invoice Mode" to Yes.
+Voucher Entry:
+Voucher Type: Credit Note (Alt + F6 / Ctrl + F8 as per version)
+Party A/c Name: Shyam Trading Company, Jaipur
+Sales Ledger: Sales Return A/c or Sales A/c
+Items Details (Select Godown: Jaipur Godown):
+AC: 1 Qty | Rate: 33,000 | Disc: 10% | Amount: ₹29,700
+Battery: 2 Qty | Rate: 11,000 | Disc: 10% | Amount: ₹19,800
+Ceiling Fan: 2 Qty | Rate: Rs 1,300 | Disc: 10% | Amount: ₹2,340
+Tax Ledgers (Append below):
+CGST @ 14% (will be automatically calculated)
+SGST @ 14% (will be automatically calculated)
+Total Credit Note Value: ₹66,356
+Note: In the Bill Adjustment window, select the old sales bill (entry 94) by choosing Against Reference.
+1. Entry No. 99 (5-3-2018): Check issued for rent for the month of February.
+This is a payment for a general expense which will be recorded in the Payment Voucher (F5).
+Voucher Entry:
+Voucher Type: Payment (F5)
+Date: 05-03-2018
+Debit (Dr): Rent Expenses A/c (Group: Indirect Expenses
+
+[Translation failed for one chunk. Original text retained below]
+es) — ₹5,000
+Credit (Cr): Bank A/c (HDFC Bank) — ₹5,000
+2. एंट्री नंबर 100 (8-3-2018): Geeta Enterprises को सामान वापस करना (Purchase Return)
+खरीदा हुआ सामान वापस करने पर Debit Note Voucher (Ctrl + F9 या Alt + F5) का उपयोग किया जाता है। यहाँ सामान Jaipur Godown से वापस भेजा जा रहा है।
+Tally Configuration (F11 & F12 सेटिंग्स):
+F11 (Features) > Inventory Features में जाएँ।
+"Use Debit and Credit Notes" और "Record Debit Notes in Invoice Mode" को Yes करें।
+Voucher Entry (Debit Note - Item Invoice Mode):
+Date: 08-03-2018
+Party A/c Name: Geeta Enterprises, Jodhpur
+Purchase Ledger: Purchase Return A/c या Purchase A/c
+Items Details (Godown: Jaipur Godown चुनें):
+Atta Chakki: 2 Qty | Rate: 5,500 | Amount: ₹11,000
+LED Lights: 5 Qty | Rate: 150 | Amount: ₹750
+LED Lumps: 5 Qty | Rate: 650 | Amount: ₹3,250
+LPG Stoves: 2 Qty | Rate: 1,400 | Amount: ₹2,800
+Tax Ledgers (नीचे लगाएँ):
+CGST (टैली आइटम्स के GST % के हिसाब से ऑटोमैटिक सही कैलकुलेट कर लेगा)
+SGST (ऑटोमैटिक कैलकुलेट होगा)
+Bill Adjustment: Against Reference चुनकर पुराना परचेज बिल (25-2-2018 वाला) सिलेक्ट करें।
+3. एंट्री नंबर 101 (10-3-2018): Mannu Electronics को 10 प्रिंटर के लिए एडवांस चेक देना
+यह सप्लायर को एडवांस पेमेंट करने की एंट्री है, जिसे Payment Voucher (F5) में रिकॉर्ड करेंगे।
+Tally Configuration (F12 Settings):
+F5 वाउचर में F12: Configure दबाएँ।
+"Allow Advance Payment and Unadjusted GST details" को Yes करें।
+Voucher Entry:
+Date: 10-03-2018
+Particulars (Debit): Mannu Electronics (लेजर बनाते समय Group: Sundry Creditors रखें, Registration Type: Composition चुनें, और उनका PAN व GST No. 08AXDPV7488L1ZU डालें) — ₹65,000
+Bill-wise details Screen: यहाँ Advance टाइप सिलेक्ट करें।
+Account (Credit): Bank A/c (HDFC Bank) — ₹65,000
+यदि आप इस पेज की बाकी बची हुई एंट्रीज (102 से 106) जैसे Full Settlement (पूर्ण भुगतान), और Composition Dealer से परचेज की एंट्री भी टैली में देखना चाहते हैं, तो मुझे बताएं।
+Baaghi entries bhi batao
+यहाँ इमेज की बाकी बची हुई सभी एंट्रीज (102 से 106) की Tally (टैली) में वाउचर एंट्री और उनकी आवश्यक सेटिंग्स नीचे दी गई हैं:
+4. एंट्री नंबर 102 (12-3-2018): मोबाइल फोन खर्च का नकद भुगतान
+यह एक सामान्य ऑफिस खर्च है जिसे Payment Voucher (F5) में रिकॉर्ड करेंगे।
+Voucher Type: Payment (F5)
+Debit (Dr): Mobile Expenses A/c (Group: Indirect Expenses) — ₹500
+Credit (Cr): Cash A/c — ₹500
+5. एंट्री नंबर 103 (15-3-2018): फरवरी महीने की सैलरी का नकद भुगतान
+Voucher Type: Payment (F5)
+Debit (Dr): Salary Expenses A/c (Group: Indirect Expenses) — ₹13,500
+Credit (Cr): Cash A/c — ₹13,500
+6. एंट्री नंबर 104 (18-3-2018): Geeta Enterprises को पुराने बिलों के पूर्ण भुगतान (Full Settlement) में चेक जारी करना
+यहाँ हम पुराना परचेज बिल (25-2-2018) और परचेज रिटर्न (8-3-2018) का हिसाब चुकता कर रहे हैं।
+Tally Configuration (F12 Settings):
+F5 वाउचर में F12: Configure दबाकर "Use Bill-wise details" को Yes रखें ताकि दोनों पुराने बिलों को एडजस्ट किया जा सके।
+Voucher Entry:
+Voucher Type: Payment (F5)
+Debit (Dr): Geeta Enterprises, Jodhpur — ₹6,33,500
+बिल एडजस्टमेंट विंडो में: Against Reference चुनकर पहले पुराना परचेज बिल (25-2-2018) सिलेक्ट करें और फिर डेबिट नोट (8-3-2018) को एडजस्ट करें।
+Credit (Cr): Bank A/c (HDFC Bank) — ₹6,33,500
+7. एंट्री नंबर 105 (21-3-2018): Shyam Trading Company से पुराने बिलों के पूर्ण भुगतान (Full Settlement) में चेक प्राप्त होना
+यहाँ ग्राहक से बिक्री बिल (18-2-2018) और सेल्स रिटर्न (1-3-2018) का हिसाब चुकता करके नेट अमाउंट प्राप्त हो रहा है।
+Voucher Type: Receipt (F6)
+Account (Debit): Bank A/c (HDFC Bank) — ₹4,81,400
+Particulars (Credit): Shyam Trading Company, Jaipur — ₹4,81,400
+बिल एडजस्टमेंट विंडो में: Against Reference चुनकर पुराना सेल्स बिल (18-2-2018) और क्रेडिट नोट (1-3-2018) दोनों को सिलेक्ट करके एडजस्ट करें।
+8. एंट्री नंबर 106 (23-3-2018): Jaipur Electronics (Composition Dealer) से क्रेडिट पर सामान खरीदना
+जब हम किसी Composition Dealer से सामान खरीदते हैं, तो वह बिल पर GST चार्ज नहीं कर सकता और न ही हमें उसपर कोई ITC (Input Tax Credit) मिलता है। इसलिए कुल बिल वैल्यू पर ही एंट्री होगी और टैक्स लेजर नहीं लगाए जाएँगे। सामान Jaipur Godown में रखा जाएगा।
+Tally Configuration (Party Ledger Settings):
+Jaipur Electronics का लेजर बनाते समय Group: Sundry Creditors रखें।
+Registration Type: यहाँ Composition चुनें।
+PAN/IT No. & GSTIN: उनका PAN ARSPS1414M और GST No. 08ARSPS1414M1ZU दर्ज करें।
+Voucher Entry (F9: Purchase - Item Invoice Mode):
+Voucher Type: Purchase (F9)
+Party A/c Name: Jaipur Electronics, Jaipur
+Purchase Ledger: Purchase A/c (Composition) या सामान्य Purchase A/c
+Items Details (Godown: Jaipur Godown चुनें):
+AC: 10 Qty | Rate: 23,000 | Amount: ₹2,30,000
+Was
+
+hanging Machine: 10 Qty | Rate: 7,000 | Amount: ₹70,000
+Refrigerators: 10 Qty | Rate: 11,000 | Amount: ₹1,10,000
+Electric irons: 20 Qty | Rate: 500 | Amount: ₹10,000
+Microwave: 20 Qty | Rate: 6,000 | Amount: ₹1,20,000
+Electric kettle: 20 Qty | Rate: 1,100 | Amount: ₹22,000
+Total Bill Value: ₹162,004 (Note: The total in the table in the image should be ₹5,62,000, but ₹1,62,004 is printed there. Tally Automatic will pick the correct total as ₹5,62,000.)
+Note: CGST/SGST ledgers are not to be posted under this bill.
+1. Entry No. 107 (25-3-2018): Issuance of sale bill against advance to Star Home Appliance
+This entry will be in Item Invoice Mode in Sales Voucher (F8). Here the advance received on 21-02-2018 will be adjusted.
+Tally Configuration:
+In F8 (Sales) Voucher press F12: Configure and set "Use Bill-wise details" to Yes to adjust the advance bill.
+Voucher Entry:
+Voucher Type: Sales (F8)
+Party A/c Name: Star Home Appliance, Jaipur
+Sales Ledger: Sales A/c
+Item Details (Select Godown: Jaipur Godown):
+Microwave: 4 Qty | Rate: 9,500 | Amount: ₹38,000
+Tax Ledgers:
+CGST @ 14% — ₹5,320
+SGST @ 14% — ₹5,320
+Total Bill Value: ₹48,640
+Bill Adjustment Screen: Here select the old advance bill (dated 21-02-2018 of ₹ 48,640) by choosing Against Reference.
+2. Entry No. 108 (26-3-2018): Reversing/adjusting tax liability on advance receipt
+When sales bill (entry 107) is deducted against advance, Journal Voucher (F7) is used to reduce (reverse) the initial tax liability booked on advance.
+Voucher Entry (F7: Journal - Stat Adjustment):
+F7: Go to Journal and click on Stat Adjustment (Alt + J).
+Type of Duty: GST | Select Nature of Adjustment: Decrease of Tax Liability.
+Select Additional Details: Sales Against Advance Receipt.
+Journal Entry:
+Debit (Dr): CGST (Output) / Tax Liability Ledger
+Debit (Dr): SGST (Output) / Tax Liability Ledger
+Credit (Cr): Tax on Advance Receipt A/c
+3. Entry No. 109 (28-3-2018): Tax Exempted (Tax Free) Sale in Cash to Metro Electronics (Consumer)
+This is a tax free sale which will be recorded in the Sales Voucher (F8). The goods will go from Jaipur Godown.
+Tally Configuration (Sales Ledger Settings):
+Choose a separate Exempt Sales A/c ledger for this entry or set the Nature of Transaction to Sales Exempt in the ledger settings so that it appears at the right place in GSTR-1 without tax.
+Voucher Entry:
+Voucher Type: Sales (F8)
+Party A/c Name: Cash A/c (Enter Metro Electronics in Buyer Details)
+Sales Ledger: Sales Exempt A/c
+Items Details (Select Godown: Jaipur Godown):
+Atta Chakki: 3 Qty | Rate: 7,000 | Amount: ₹21,000
+LED Lights: 5 Qty | Rate: 300 | Amount: ₹1,500
+LED Lumps: 5 Qty | Rate: 900 | Amount: ₹4,500
+LPG Stoves: 3 Qty | Rate: Rs 1,800 | Amount: ₹5,400
+Total Amount: ₹32,400 (No CGST/SGST will be levied in this bill).
+4. Entry No. 110 (30-3-2018): Purchase against advance from Mannu Electronics (Composition Dealer)
+This entry will be in Item Invoice Mode in Purchase Voucher (F9). Since the supplier is a Composition Dealer, no GST will be charged on the bill. The goods will be stored in Jodhpur Godown.
+Voucher Entry:
+Voucher Type: Purchase (F9)
+Party A/c Name: Mannu Electronics, Jaipur (Registration Type: Composition)
+Purchase Ledger: Purchase A/c
+Item Details (Select Godown: Jodhpur Godown):
+Printers: 10 Qty | Rate: 6,500 | Amount: ₹65,000
+Total Value: ₹65,000 (Note: In the table of the image, ₹48,640 and GST Rate 18% is printed by mistake in the Total Value column, being a composition bill, no separate tax will be levied on it and the total amount will be ₹65,000).
+Bill Adjustment Screen: Adjust the advance given on 10-03-2018 by selecting Against Reference.
+5. Entry No. 111 (31-3-2018): Payment of GST tax along with interest, penalty and late fees
+This entry will be made in Payment Voucher (F5) to pay government tax.
+Tally Configuration (Ledgers Required):
+Interest on GST A/c (Group: Indirect Expenses)
+Penalty on GST A/c (Group: Indirect Expenses)
+Late Fee on GST A/c (Group: Indirect Expenses)
+Voucher Entry (F5: Payment - Stat Payment):
+Press Alt + S (Stat Payment).
+Tax Type: GST | Select Payment Type: Regular.
+Payment Entry:
+Debit (Dr): GST Payable / GST Output Ledgers — ₹74,190 (Basic Tax Amount)
+Debit(Dr):
+Interest on GST A/c — ₹965
+Debit (Dr): Penalty on GST A/c — ₹3,000
+Debit (Dr): Late Fee on GST A/c — ₹1,500
+Credit (Cr): Bank A/c / Cash — ₹79,655
+WORK BOOK 5
+
+
+===== TDS =====
+
+[Translation failed for one chunk. Original text retained below]
+Tally Prime में Section 194C (Contractor) और Section 194J (Professional Fees) की एंट्री करने के लिए नीचे दो आसान उदाहरण दिए गए हैं।
+उदाहरण 1: Section 194C (Contractor Entry)
+मान लेते हैं: आपने 'ABC Advertisers' (एक Partnership Firm) से ₹50,000 का विज्ञापन (Advertising) करवाया। फर्म होने के नाते इन पर 2% TDS कटेगा। [1]
+स्टेप A: Ledger (खाता) सेटअप
+Advertising Expense Ledger: इसे Indirect Expenses ग्रुप में बनाएं। Is TDS Applicable को Applicable करें और Nature of Payment में 194C (Contractor) चुनें।
+ABC Advertisers Ledger: इसे Sundry Creditors में बनाएं। Is TDS Deductible को Yes करें। Deductee Type में Partnership Firm चुनें। पार्टी का PAN Number जरूर डालें।
+TDS on Contractor Ledger: इसे Duties & Taxes में बनाएं। Type of Duty में TDS चुनें और Nature of Payment में 194C सिलेक्ट करें।
+स्टेप B: Journal Voucher Entry (F7)
+Gateway of Tally > Vouchers > F7 (Journal) दबाएं।
+By (Debit): Advertising Expense — डालें ₹50,000
+To (Credit): ABC Advertisers — जैसे ही एंटर करेंगे, Tally ऑटोमैटिकली 2% (₹1,000) काटकर यहाँ ₹49,000 लिख देगा।
+To (Credit): अगली लाइन में TDS on Contractor चुनें — यहाँ अपने आप ₹1,000 आ जाएगा।
+एंट्री को Save (Accept) कर लें। [1]
+उदाहरण 2: Section 194J (Professional Fees Entry)
+मान लेते हैं: आपने अपने CA 'Ramesh Kumar' (Individual) से टैक्स कंसल्टेंसी ली, जिनका बिल ₹60,000 है। प्रोफेशनल फीस होने के नाते इन पर 10% TDS कटेगा।
+स्टेप A: Ledger (खाता) सेटअप
+Legal & Professional Fees Ledger: इसे Indirect Expenses ग्रुप में बनाएं। Is TDS Applicable को Applicable करें और Nature of Payment में 194J (Professional Fees) चुनें.
+Ramesh Kumar (CA) Ledger: इसे Sundry Creditors में बनाएं। Is TDS Deductible को Yes करें। Deductee Type में Individual - Resident चुनें. पार्टी का PAN Number जरूर दर्ज करें.
+TDS on Professional Fees Ledger: इसे Duties & Taxes में बनाएं। Type of Duty में TDS चुनें और Nature of Payment में 194J सिलेक्ट करें। [1]
+स्टेप B: Journal Voucher Entry (F7)
+Gateway of Tally > Vouchers > F7 (Journal) दबाएं।
+By (Debit): Legal & Professional Fees — डालें ₹60,000
+To (Credit): Ramesh Kumar — एंटर करते ही Tally ऑटोमैटिकली 10% (₹6,000) काटकर यहाँ ₹54,000 लिख देगा。
+To (Credit): अगली लाइन में TDS on Professional Fees चुनें — यहाँ अपने आप ₹6,000 आ जाएगा.
+एंट्री को Save (Accept) कर लें। [1]
+टीडीएस पेमेंट की एंट्री (TDS Payment to Government)
+महीने के आखिर में सरकार को टैक्स जमा करने के लिए:
+F5 (Payment) वाउचर में जाएं।
+कीबोर्ड से Ctrl + F (Autofill) दबाएं।
+Type of Transaction में Stat Payment चुनें, Tax Type में TDS चुनें।
+अपनी तारीख और Section (194C या 194J) चुनकर बैंक अकाउंट से पेमेंट की एंट्री पास कर लें।
+क्या आपको इन दोनों एंट्रीज में TDS Nature of Payment बनाने में कोई दिक्कत आ रही है, या आप TDS की रिपोर्ट (Form 26Q)
+देखना चाहते हैं? मुझे बताएं।
+AI responses may include mistakes. For financial advice, consult a professional. Learn more
+Assessment Year 2026-27 (यानी Financial Year 2025-26) के लिए इनकम टैक्स विभाग द्वारा निर्धारित मुख्य टीडीएस (TDS) सेक्शन्स, उनकी लिमिट (Threshold Limits) और टैक्स दरों की पूरी लिस्ट नीचे दी गई है:
+महत्वपूर्ण नियम और बदलाव:
+PAN कार्ड न होने पर: यदि सामने वाली पार्टी (Deductee) अपना PAN कार्ड नहीं देती है, तो ऊपर दी गई दरों के बजाय सीधे 20% की उच्च दर से TDS काटा जाएगा. [1, 2]
+नया सेक्शन 194T: पार्टनरशिप फर्म द्वारा अपने पार्टनर्स को दिए जाने वाले रेम्यूनरेशन, सैलरी या बोनस पर ₹20,000 से ऊपर होने पर 10% TDS काटना अनिवार्य किया गया है.
+यदि आप Tally Prime में इनमें से किसी विशेष सेक्शन की Exemption / Threshold limit सेट करना चाहते हैं, तो मुझे बताएं ताकि मैं उसका कॉन्फ़िगरेशन समझा सकूं।
+AI responses may include mistakes. For financial advice, consult a professional. Learn more
+Tally Prime में Section 194C के लिए Threshold Limit (₹30,000 Single Bill / ₹1,00,000 Annual) सेट करने का कॉन्फ़िगरेशन बहुत आसान है। एक बार इसे सेट करने के बाद, Tally लिमिट पार होते ही ऑटोमैटिकली टैक्स काटना शुरू कर देता है।
+नीचे इसके लिए स्टेप-बाय-स्टेप कॉन्फ़िगरेशन गाइड दी गई है:
+स्टेप 1: TDS Nature of Payment स्क्रीन पर जाएं
+Gateway of Tally पर रहें।
+Create (या पहले से बना है तो Alter) पर जाएं।
+TDS Nature of Payments को चुनें और एंटर दबाएं।
+स्टेप 2: Advanced Configuration चालू करें (F12)
+अक्सर स्क्रीन पर Single Bill और Annual Aggregate Limit दोनों का विकल्प नहीं दिखता। इसे इनेबल करने के लिए:
+Nature of Payment की स्क्रीन पर रहते हुए कीबोर्ड से F12 (Configure) दबाएं।
+"Allow Single Bill Conditions" विकल्प को Yes करें।
+"Allow Advanced TDS Entries" (यदि उपलब्ध हो) को भी Yes करें।
+Ctrl + A दबाकर इस कॉन्फ़िगरेशन को सेव करें।
+स्टेप 3: 194C की लिमिट्स दर्ज करें
+अब आपकी स्क्रीन पर सभी विकल्प दिखाई देंगे। यहाँ इस तरह जानकारी भ
+
+Ren:
+Name: Payment to Contractors (Sec 194C)
+Section: 194C
+Payment Code: 94C
+Rate for Individuals/HUF: 1%
+Rate for Other Deductees: 2%
+Is Single Bill Condition Applicable?: Set it to Yes.
+Threshold Amount (Per Bill): Write 30,000 here.
+Aggregate Amount (Annual Limit): Write 1,00,000 here.
+Save (Accept) this screen by pressing Ctrl + A.
+How does it work? (Live Example)
+When you make entries in F7 (Journal) or F9 (Purchase) voucher:
+If you raise a single party bill of ₹25,000, Tally will not deduct TDS (as it is less than ₹30,000).
+If you raise the next bill of the same party for ₹40,000, Tally will immediately deduct TDS on it.
+If you make small bills of ₹20,000–₹20,000 throughout the year, Tally will automatically calculate TDS on both the previous and new amounts as soon as the total goes above ₹1,00,000.
+Would you like to check how the setup of 20% higher rate for parties without PAN Card is configured in this ledger?

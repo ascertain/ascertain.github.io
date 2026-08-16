@@ -1,0 +1,1713 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tally_Book_BY_PARNAMI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#f4efe6;
+  --paper:#fffdf8;
+  --ink:#1f1a14;
+  --muted:#6e5f4e;
+  --accent:#0d7a66;
+  --line:#dfd1be;
+}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 0 0,#fff8ec,transparent 35%),var(--bg);color:var(--ink);font:400 17px/1.72 Merriweather,serif;}
+.shell{max-width:1200px;margin:22px auto;padding:0 16px;display:grid;grid-template-columns:320px 1fr;gap:18px}
+.toc{position:sticky;top:16px;background:#fff9ee;border:1px solid var(--line);border-radius:16px;padding:18px;max-height:calc(100vh - 32px);overflow:auto}
+.toc h1{font:900 1.45rem/1.2 Merriweather,serif;margin:0 0 6px}
+.toc p{margin:0 0 14px;color:var(--muted);font:600 .82rem/1.35 Manrope,sans-serif;letter-spacing:.06em;text-transform:uppercase}
+.toc ul{list-style:none;padding:0;margin:0}
+.toc li+li{margin-top:7px}
+.toc a{display:block;text-decoration:none;color:var(--ink);padding:8px 10px;border-radius:10px;border:1px solid transparent}
+.toc a:hover{background:#fff;border-color:var(--line)}
+.toc a span{color:var(--accent);font:700 .88rem Manrope,sans-serif;margin-right:8px}
+.book{background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.cover{padding:46px 50px;background:linear-gradient(135deg,#e9f5f1,#fff7ea);border-bottom:1px solid var(--line)}
+.badge{display:inline-block;background:#d9efe9;color:#0c6a58;border:1px solid #b9ddd4;padding:6px 10px;border-radius:999px;font:700 .74rem Manrope,sans-serif;letter-spacing:.06em;text-transform:uppercase}
+.cover h1{margin:14px 0 8px;font:900 clamp(2rem,4vw,3rem)/1.07 Merriweather,serif}
+.cover p{margin:0;color:var(--muted)}
+.meta{margin-top:14px;font:600 .85rem Manrope,sans-serif;color:#5d5348}
+.chart{margin-top:18px;padding:14px;background:#fff;border:1px solid var(--line);border-radius:12px}
+.chart h3{margin:0 0 10px;font:700 .96rem Manrope,sans-serif}
+.bar{display:flex;align-items:center;gap:10px;margin:7px 0}
+.bar label{width:160px;font:600 .82rem Manrope,sans-serif;color:#51463a}
+.bar .track{flex:1;height:12px;background:#efe5d4;border-radius:999px;overflow:hidden}
+.bar .fill{height:100%;background:linear-gradient(90deg,#0d7a66,#3bb097)}
+.chapter{padding:30px 50px;border-top:1px solid var(--line)}
+.chapter-meta{font:700 .72rem Manrope,sans-serif;letter-spacing:.08em;color:#0f6f5d;text-transform:uppercase}
+.chapter h2{margin:.35rem 0 1rem;font:800 1.7rem/1.2 Merriweather,serif}
+.chapter h3{margin:1.1rem 0 .45rem;font:700 1.04rem/1.35 Manrope,sans-serif}
+.chapter p{margin:.3rem 0 .75rem}
+.chapter ul{margin:.3rem 0 1rem 1.1rem}
+.chapter li{margin:.25rem 0}
+.callout{border-left:4px solid var(--accent);padding:10px 12px;background:#eef8f5;border-radius:8px;margin:12px 0}
+.visual-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:12px 0 0}
+.visual-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.visual-card h3{margin:0 0 .55rem;font:700 .97rem/1.3 Manrope,sans-serif}
+.mock-screen{background:#111827;color:#e5f0ff;border-radius:10px;padding:10px;overflow:auto}
+.screen-title{font:700 .8rem/1.2 Manrope,sans-serif;color:#8fd3ff;margin-bottom:8px}
+.mock-screen pre{margin:0;white-space:pre-wrap;font:500 .82rem/1.45 "Consolas","Courier New",monospace}
+svg{width:100%;height:auto;background:#f8fbfa;border:1px solid #d8e7e2;border-radius:10px;padding:8px}
+.node{fill:#ffffff;stroke:#8ac6b8;stroke-width:1.5}
+.arrow{stroke:#2c7a6a;stroke-width:2}
+.line-a{fill:none;stroke:#0f766e;stroke-width:3}
+.line-b{fill:none;stroke:#9a5b2d;stroke-width:3}
+.axis{stroke:#8a7b68;stroke-width:1.2}
+.step-list{margin:.3rem 0 0 1.1rem}
+.step-list li{margin:.3rem 0}
+.mini-bars > div{display:grid;grid-template-columns:150px 1fr;gap:10px;align-items:center;margin:8px 0}
+.mini-bars label{font:600 .84rem Manrope,sans-serif;color:#544839}
+.mini-bars span{display:block;height:12px;background:linear-gradient(90deg,#0d7a66,#63c3ab);border-radius:99px;width:var(--w)}
+.check-table{width:100%;border-collapse:collapse;font-size:.9rem}
+.check-table th,.check-table td{border:1px solid var(--line);padding:8px;vertical-align:top;text-align:left}
+.check-table th{background:#f4ece0;font-family:Manrope,sans-serif;font-weight:700}
+.link-list{margin:.35rem 0 0 1rem}
+.link-list li{margin:.4rem 0}
+.link-list a{color:#0b6f5b;text-decoration:underline;text-underline-offset:2px}
+.link-list a:hover{color:#084e40}
+.sources{padding:24px 50px;border-top:1px solid var(--line);background:#fcf7ee}
+.sources h2{margin:0 0 8px;font:800 1.2rem Merriweather,serif}
+.sources ul{margin:0 0 0 1rem}
+@media (max-width:980px){.shell{grid-template-columns:1fr}.toc{position:relative;top:0;max-height:none}}
+@media (max-width:900px){.visual-grid{grid-template-columns:1fr}}
+@media (max-width:640px){.cover,.chapter,.sources{padding:22px 18px}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <aside class="toc">
+    <h1>Tally Practice Book</h1>
+    <p>Internet Edition</p>
+    <ul><li><a href="#chapter-1"><span>01</span> Syllabus</a></li><li><a href="#chapter-2"><span>02</span> Notes</a></li><li><a href="#chapter-3"><span>03</span> Tally Workbook Case Study - 1</a></li><li><a href="#chapter-4"><span>04</span> Tally Workbook Case Study - 2</a></li><li><a href="#chapter-5"><span>05</span> Tally Workbook Case Study - 3</a></li><li><a href="#chapter-6"><span>06</span> Tally Workbook Case Study - 4</a></li><li><a href="#chapter-7"><span>07</span> Tally Workbook Case Study - 5</a></li><li><a href="#chapter-8"><span>08</span> Tally Workbook Case Study - 6</a></li><li><a href="#chapter-9"><span>09</span> Tally.ERP  9 Keyboard Shortcuts</a></li><li><a href="#chapter-10"><span>10</span> Configuration</a></li></ul>
+  </aside>
+
+  <main class="book">
+    <section class="cover">
+    <span class="badge">Tally_Book_BY_PARNAMI</span>
+    <h1>Tally_Book_BY_PARNAMI</h1>
+      <p>This book is generated from internet-sourced Tally learning context and rewritten for students to read, practice, and execute directly in Tally.</p>
+    <div class="meta">Generated by Rasid and Mukul Sir</div>
+    <div class="meta">Generated on: 2026-08-16 11:05</div>
+
+      <div class="chart">
+                <h3>Learning Focus Distribution</h3>
+                <div class="bar"><label>Accounting Fundamentals - 90%</label><div class="track"><div class="fill" style="width:90%"></div></div></div>
+                <div class="bar"><label>Tally.ERP 9 Setup &amp; Features - 85%</label><div class="track"><div class="fill" style="width:85%"></div></div></div>
+                <div class="bar"><label>Inventory + GST Practice - 82%</label><div class="track"><div class="fill" style="width:82%"></div></div></div>
+                <div class="bar"><label>Case Study Execution - 88%</label><div class="track"><div class="fill" style="width:88%"></div></div></div>
+      </div>
+    </section>
+
+    <section id="chapter-1" class="chapter">
+<div class="chapter-meta">Chapter 1</div>
+<h2>Syllabus</h2>
+<p>Workbook Syllabus (Tally.ERP 9 Foundation to Advance)</p>
+<p>Part A - Basics</p>
+<ul>
+<li>1. What is Tally.</li>
+<li>2. What is Accounts.</li>
+<li>3. Classification of Accounts.</li>
+<li>4. Terminology of Accounting.</li>
+<li>5. Golden Rules of Accounting.</li>
+<li>6. General Entry.</li>
+<li>7. Pre-Defined Tally Groups.</li>
+<li>8. Types of Voucher.</li>
+</ul>
+<p>Part B - Overview of Tally.ERP 9</p>
+<ul>
+<li>1. Download and Install.</li>
+<li>2. Create Company.</li>
+<li>3. Configurations.</li>
+<li>4. Basic Introduction of Features.</li>
+<li>5. Voucher Transaction Entry.</li>
+<li>6. View Reports.</li>
+</ul>
+<p>Part C - Accounting (Case Study 1)</p>
+<ul>
+<li>1. Financial Year: 1-Apr-2016 to 31-Mar-2017.</li>
+<li>2. Debit, Credit, By and To concept.</li>
+<li>3. Voucher usage.</li>
+<li>4. Create Ledger (Under Group).</li>
+<li>5. Create Group.</li>
+<li>6. Service organization general entries for 12 months.</li>
+<li>7. Day Book and Trial Balance.</li>
+<li>8. Profit and Loss Account and Balance Sheet.</li>
+<li>9. Closing and Opening Balance.</li>
+<li>10. Exercise with Solution.</li>
+</ul>
+<p>Part D - Accounts with Inventory (Case Study 2)</p>
+<ul>
+<li>1. Financial Year: 1-Apr-2016 to 31-Mar-2017.</li>
+<li>2. Create Stock Item, Stock Group, Unit of Measure.</li>
+<li>3. Trading organization general entries for 12 months.</li>
+<li>4. Purchase, Sales, and Invoice.</li>
+<li>5. Provision Entry and Depreciation Entry.</li>
+<li>6. Adjustment Entry and Closing Entry.</li>
+<li>7. Inventory Reports and Stock Summary.</li>
+<li>8. Export and Printing.</li>
+<li>9. Closing and Opening Balance.</li>
+<li>10. Exercise with Solution.</li>
+</ul>
+<p>Part E - Inventory Management with GST (Case Study 3)</p>
+<ul>
+<li>1. Financial Year: 1-Apr-2017 to 31-Mar-2018.</li>
+<li>2. Taxation system GST.</li>
+<li>3. SGST, CGST, IGST.</li>
+<li>4. Create Godowns.</li>
+<li>5. Create Stock Item, Stock Group, Unit of Measure.</li>
+<li>6. Create Cost Category and Cost Centre.</li>
+<li>7. Trading organization general entries for 12 months.</li>
+<li>8. Discounts and Interest.</li>
+<li>9. Purchase Returns and Sales Returns.</li>
+<li>10. Credit Note and Debit Note Voucher.</li>
+<li>11. Inventory Reports, Stock Summary, and Tax Report.</li>
+<li>12. Closing and Opening Balance.</li>
+<li>13. Exercise with Solution.</li>
+</ul>
+<p>Part F - Advance Level</p>
+<ul>
+<li>1. Service Organization with GST.</li>
+<li>2. Manufacturing with GST.</li>
+<li>3. Payroll Management.</li>
+</ul>
+<h3 id="ch1-tally-erp-9-full-tutorial-reference">Tally.ERP 9 Full Tutorial Reference:</h3>
+<p>Website: www.upcissyoutube.com</p>
+
+<div class="visual-grid">
+    <div class="visual-card">
+        <h3>Tally Screen: First Day Orientation</h3>
+        <div class="mock-screen">
+            <div class="screen-title">Gateway of Tally - Student Orientation</div>
+            <pre>
+Top area:
+    Active Company | Current Date | Current Period
+
+Main zones:
+    Masters         -> Create Ledger / Item / Group
+    Transactions    -> Vouchers (daily entries)
+    Reports         -> Day Book, Trial Balance, P&amp;L
+
+Bottom buttons:
+    F2 Date | F3 Company | Alt+G Go To | Ctrl+A Save
+
+Rule:
+    Create masters first, then post vouchers, then verify reports.
+            </pre>
+        </div>
+    </div>
+    <div class="visual-card">
+        <h3>How Students Should Use Tally Daily</h3>
+        <ol class="step-list">
+            <li>Open company and verify date (F2).</li>
+            <li>Create or review required ledgers/items.</li>
+            <li>Enter vouchers in sequence by date.</li>
+            <li>Check Day Book for correctness.</li>
+            <li>Check Trial Balance for matched totals.</li>
+            <li>Backup data at the end of session.</li>
+        </ol>
+    </div>
+</div>
+<div class="visual-card" style="margin-top:14px;">
+    <h3>Syllabus Hyperlinks (Jump to Respective Pages)</h3>
+    <ul class="link-list">
+        <li><a href="#ch2-what-is-tally">What is Tally</a></li>
+        <li><a href="#ch2-what-is-accounts">What is Accounts</a></li>
+        <li><a href="#ch2-classification-of-accounts">Classification of Accounts</a></li>
+        <li><a href="#ch2-terminology-of-accounting">Terminology of Accounting</a></li>
+        <li><a href="#ch2-golden-rules-of-accounting">Golden Rules of Accounting</a></li>
+        <li><a href="#ch2-general-entry">General Entry</a></li>
+        <li><a href="#ch2-pre-define-tally-group">Pre-Define Tally Group</a></li>
+        <li><a href="#ch2-types-of-voucher">Types of Voucher</a></li>
+        <li><a href="#ch10-overview-of-tally-erp-9">Overview of Tally.ERP 9</a></li>
+        <li><a href="#ch10-download-and-install">Download and Install</a></li>
+        <li><a href="#ch10-create-company">Create Company</a></li>
+        <li><a href="#ch10-configurations">Configurations</a></li>
+        <li><a href="#ch10-basic-introduction-of-features">Basic Introduction of Features</a></li>
+        <li><a href="#ch10-voucher-transaction-entry">Voucher Transaction Entry</a></li>
+        <li><a href="#ch10-view-reports">View Reports</a></li>
+        <li><a href="#ch3-accounting-case-study-1">Accounting (Case Study-1)</a></li>
+        <li><a href="#ch3-financial-year-from-1-apr-2016-to-31-mar-2017">Financial Year from 1-Apr-2016 to 31-Mar-2017</a></li>
+        <li><a href="#ch3-debit-credit-by-to">Debit, Credit - By, To</a></li>
+        <li><a href="#ch3-create-ledger-under-group">Create Ledger (Under Group)</a></li>
+        <li><a href="#ch3-create-group">Create Group</a></li>
+        <li><a href="#ch3-service-organization-general-entry-12-months">Service Organization General Entry 12 Months</a></li>
+        <li><a href="#ch3-day-book-trail-balance">Day Book, Trail Balance</a></li>
+        <li><a href="#ch3-profit-loss-accounting-balance-sheet">Profit and Loss Accounting, Balance Sheet</a></li>
+        <li><a href="#ch3-closing-opening-balance">Closing and Opening Balance</a></li>
+        <li><a href="#ch3-exercise-with-solution">Exercise With Solution</a></li>
+        <li><a href="#ch4-accounts-with-inventory-case-study-2">Accounts with Inventory (Case Study-2)</a></li>
+        <li><a href="#ch4-financial-year-from-1-apr-2016-to-31-mar-2017">Financial year from 1-Apr-2016 to 31-Mar-2017</a></li>
+        <li><a href="#ch4-create-stock-item-stock-group-unit-of-measure">Create - Stock Item, Stock Group, Unit of measure</a></li>
+        <li><a href="#ch4-trading-organization-general-entry-12-months">Trading organization General Entry 12 Months</a></li>
+        <li><a href="#ch4-purchase-sales-invoice">Purchase, Sales, Invoice</a></li>
+        <li><a href="#ch4-provision-entry-depreciation-entry">Provision entry, Depreciation entry</a></li>
+        <li><a href="#ch4-adjustment-entry-closing-entry">Adjustment entry, Closing entry</a></li>
+        <li><a href="#ch4-inventory-reports-stock-summary">Inventory Reports, Stock Summary</a></li>
+        <li><a href="#ch4-export-printing">Export & Printing</a></li>
+        <li><a href="#ch4-closing-opening-balance">Closing & Opening Balance</a></li>
+        <li><a href="#ch4-exercise-with-solution">Exercise With Solution</a></li>
+        <li><a href="#ch5-inventory-management-with-gst-case-study-3">Inventory Management with GST (Case Study-3)</a></li>
+        <li><a href="#ch5-financial-year-from-1-apr-2017-to-31-mar-2018">Financial year from 1-Apr-2017 to 31-Mar-2018</a></li>
+        <li><a href="#ch5-taxation-system-gst">Taxation System GST</a></li>
+        <li><a href="#ch5-sgst-cgst-igst">SGST, CGST, IGST</a></li>
+        <li><a href="#ch5-create-godowns">Create - Godowns</a></li>
+        <li><a href="#ch5-create-stock-item-stock-group-unit-of-measure">Create - Stock Item, Stock Group, Unit of measure</a></li>
+        <li><a href="#ch5-create-cost-category-cost-centre">Create - Cost Category, Cost Centre</a></li>
+        <li><a href="#ch5-trading-organization-general-entry-12-months">Trading organization General Entry 12 Months</a></li>
+        <li><a href="#ch5-discounts-interest">Discounts, Interest</a></li>
+        <li><a href="#ch5-purchase-returns-sales-returns">Purchase returns, Sales Returns</a></li>
+        <li><a href="#ch5-credit-note-debit-note-voucher">Credit Note, Debit Note - Voucher</a></li>
+        <li><a href="#ch5-inventory-reports-stock-summary-tax-report">Inventory Reports, Stock Summary, Tax Report</a></li>
+        <li><a href="#ch5-closing-opening-balance">Closing & Opening Balance</a></li>
+        <li><a href="#ch5-exercise-with-solution">Exercise With Solution</a></li>
+        <li><a href="#ch8-advance-level">Advance Level</a></li>
+        <li><a href="#ch8-service-organization-with-gst">Service Organization With GST</a></li>
+        <li><a href="#ch8-manufacturing-with-gst">Manufacturing with GST</a></li>
+        <li><a href="#ch8-payroll-management">Payroll Management</a></li>
+        <li><a href="https://tallysolutions.com/download/" target="_blank" rel="noopener">Download and Install Tally (Official Site)</a></li>
+        <li><a href="https://help.tallysolutions.com/" target="_blank" rel="noopener">Tally Help Documentation</a></li>
+    </ul>
+</div>
+<div class="visual-grid" style="margin-top:12px;">
+    <div class="visual-card">
+        <h3>Classification of Accounts Chart</h3>
+        <svg viewBox="0 0 760 280" role="img" aria-label="Classification of accounts chart">
+            <rect x="280" y="20" width="200" height="48" rx="10" class="node"/>
+            <text x="380" y="49" text-anchor="middle">Accounts</text>
+
+            <rect x="50" y="120" width="190" height="56" rx="10" class="node"/>
+            <text x="145" y="146" text-anchor="middle">Personal Account</text>
+            <text x="145" y="166" text-anchor="middle">(person/entity)</text>
+
+            <rect x="285" y="120" width="190" height="56" rx="10" class="node"/>
+            <text x="380" y="146" text-anchor="middle">Real Account</text>
+            <text x="380" y="166" text-anchor="middle">(assets)</text>
+
+            <rect x="520" y="120" width="190" height="56" rx="10" class="node"/>
+            <text x="615" y="146" text-anchor="middle">Nominal Account</text>
+            <text x="615" y="166" text-anchor="middle">(income/expense)</text>
+
+            <line x1="340" y1="68" x2="180" y2="120" class="arrow"/>
+            <line x1="380" y1="68" x2="380" y2="120" class="arrow"/>
+            <line x1="420" y1="68" x2="580" y2="120" class="arrow"/>
+
+            <text x="60" y="232">Use this chart before deciding Dr/Cr in vouchers.</text>
+        </svg>
+    </div>
+    <div class="visual-card">
+        <h3>Golden Rules Quick Matrix</h3>
+        <table class="check-table">
+            <tr><th>Account Type</th><th>Debit Rule</th><th>Credit Rule</th></tr>
+            <tr><td>Personal</td><td>Receiver</td><td>Giver</td></tr>
+            <tr><td>Real</td><td>Comes In</td><td>Goes Out</td></tr>
+            <tr><td>Nominal</td><td>Expense/Loss</td><td>Income/Gain</td></tr>
+        </table>
+        <p>Student tip: identify account type first, then apply rule, then choose voucher type.</p>
+    </div>
+</div>
+<div class="visual-grid" style="margin-top:12px;">
+    <div class="visual-card">
+        <h3>Accounting Cycle Diagram</h3>
+        <svg viewBox="0 0 760 250" role="img" aria-label="Accounting cycle">
+            <rect x="20" y="90" width="120" height="50" rx="8" class="node"/><text x="80" y="120" text-anchor="middle">Source Doc</text>
+            <rect x="160" y="90" width="120" height="50" rx="8" class="node"/><text x="220" y="120" text-anchor="middle">Voucher</text>
+            <rect x="300" y="90" width="120" height="50" rx="8" class="node"/><text x="360" y="120" text-anchor="middle">Ledger</text>
+            <rect x="440" y="90" width="120" height="50" rx="8" class="node"/><text x="500" y="120" text-anchor="middle">Trial Balance</text>
+            <rect x="580" y="90" width="160" height="50" rx="8" class="node"/><text x="660" y="120" text-anchor="middle">P&amp;L + B/S</text>
+            <line x1="140" y1="115" x2="160" y2="115" class="arrow"/>
+            <line x1="280" y1="115" x2="300" y2="115" class="arrow"/>
+            <line x1="420" y1="115" x2="440" y2="115" class="arrow"/>
+            <line x1="560" y1="115" x2="580" y2="115" class="arrow"/>
+            <text x="24" y="36">Entry rule: Evidence -> Voucher -> Posting -> Verification -> Reporting</text>
+        </svg>
+    </div>
+    <div class="visual-card">
+        <h3>Voucher Selection Matrix</h3>
+        <table class="check-table">
+            <tr><th>Situation</th><th>Voucher</th><th>Key Shortcut</th></tr>
+            <tr><td>Cash to Bank transfer</td><td>Contra</td><td>F4</td></tr>
+            <tr><td>Money paid</td><td>Payment</td><td>F5</td></tr>
+            <tr><td>Money received</td><td>Receipt</td><td>F6</td></tr>
+            <tr><td>Adjustment/Provision</td><td>Journal</td><td>F7</td></tr>
+            <tr><td>Sales bill</td><td>Sales</td><td>F8</td></tr>
+            <tr><td>Purchase bill</td><td>Purchase</td><td>F9</td></tr>
+        </table>
+    </div>
+</div>
+
+</section><section id="chapter-2" class="chapter">
+<div class="chapter-meta">Chapter 2</div>
+<h2>Notes</h2>
+<h3 id="ch2-what-is-tally">What is Tally:</h3>
+<p>Tally is business management and accounting software used by SMEs for bookkeeping, invoicing, inventory, taxation, reporting, and compliance.</p>
+<h3 id="ch2-short-summary">Short Summary:</h3>
+<ul>
+<li>- Tally is a complete accounting workflow tool from entry to reports.</li>
+</ul>
+<h3 id="ch2-what-is-accounts">What is Accounts:</h3>
+<p>Accounts is the systematic process of recording, classifying, summarizing, and reporting financial transactions of a business.</p>
+<h3 id="ch2-short-summary">Short Summary:</h3>
+<ul>
+<li>- Accounts answers what happened, why it happened, and what is the current financial position.</li>
+</ul>
+<h3 id="ch2-classification-of-accounts">Classification of Accounts:</h3>
+<ul>
+<li>1. Personal Accounts:</li>
+<li>- Natural person, artificial person, and representative accounts.</li>
+<li>2. Real Accounts:</li>
+<li>- Tangible and intangible assets.</li>
+<li>3. Nominal Accounts:</li>
+<li>- Expenses, losses, incomes, and gains.</li>
+</ul>
+<h3 id="ch2-short-summary">Short Summary:</h3>
+<ul>
+<li>- Every transaction must touch at least two accounts from these classifications.</li>
+</ul>
+<h3 id="ch2-terminology-of-accounting">Terminology of Accounting:</h3>
+<ul>
+<li>1. Capital: owner investment in business.</li>
+<li>2. Drawings: amount withdrawn by owner for personal use.</li>
+<li>3. Assets: resources owned by business.</li>
+<li>4. Liabilities: obligations payable by business.</li>
+<li>5. Revenue: income from operations.</li>
+<li>6. Expense: cost incurred to earn revenue.</li>
+<li>7. Debtor: customer who must pay business.</li>
+<li>8. Creditor: supplier to whom business must pay.</li>
+<li>9. Voucher: documentary evidence of transaction entry.</li>
+<li>10. Ledger: classified book of final entry.</li>
+</ul>
+<h3 id="ch2-short-summary">Short Summary:</h3>
+<ul>
+<li>- Without correct terminology, voucher posting errors increase.</li>
+</ul>
+<h3 id="ch2-core-concepts">Core concepts:</h3>
+<ul>
+<li>- Ledger: individual account head such as Cash, Sales, Purchase, Salary.</li>
+<li>- Group: category that controls report behavior.</li>
+<li>- Voucher: transaction entry format (Contra, Payment, Receipt, Journal, Sales, Purchase).</li>
+<li>- Stock Item and Unit: base entities for inventory accounting.</li>
+</ul>
+<h3 id="ch2-golden-rules-of-accounting">Golden Rules of Accounting:</h3>
+<ul>
+<li>1. Personal Account: Debit receiver, Credit giver.</li>
+<li>2. Real Account: Debit what comes in, Credit what goes out.</li>
+<li>3. Nominal Account: Debit expenses/losses, Credit incomes/gains.</li>
+</ul>
+<h3 id="ch2-short-summary">Short Summary:</h3>
+<ul>
+<li>- Golden rules are the fastest way to decide Dr/Cr in manual checks.</li>
+</ul>
+<h3 id="ch2-general-entry">General Entry:</h3>
+<ul>
+<li>1. Cash introduced by owner:</li>
+<li>- Cash A/c Dr</li>
+<li>- To Capital A/c</li>
+<li>2. Rent paid by bank:</li>
+<li>- Rent A/c Dr</li>
+<li>- To Bank A/c</li>
+<li>3. Credit sales to customer:</li>
+<li>- Customer A/c Dr</li>
+<li>- To Sales/Service Income A/c</li>
+</ul>
+<h3 id="ch2-example-set-for-practice">Example set for practice:</h3>
+<ul>
+<li>1. Salary paid 20,000 by bank.</li>
+<li>- Salary A/c Dr 20,000</li>
+<li>- To Bank A/c 20,000</li>
+<li>2. Received from customer 15,000 in cash.</li>
+<li>- Cash A/c Dr 15,000</li>
+<li>- To Customer A/c 15,000</li>
+</ul>
+<h3 id="ch2-pre-define-tally-group">Pre-Define Tally Group:</h3>
+<ul>
+<li>1. Capital Account</li>
+<li>2. Current Assets</li>
+<li>3. Current Liabilities</li>
+<li>4. Sundry Debtors</li>
+<li>5. Sundry Creditors</li>
+<li>6. Direct Incomes / Indirect Incomes</li>
+<li>7. Direct Expenses / Indirect Expenses</li>
+<li>8. Bank Accounts / Cash-in-Hand</li>
+</ul>
+<h3 id="ch2-short-summary">Short Summary:</h3>
+<ul>
+<li>- Correct group selection controls where values appear in reports.</li>
+</ul>
+<h3 id="ch2-types-of-voucher">Types of Voucher:</h3>
+<ul>
+<li>1. Contra (F4): cash-bank transfer.</li>
+<li>2. Payment (F5): money paid out.</li>
+<li>3. Receipt (F6): money received.</li>
+<li>4. Journal (F7): adjustment/non-cash entries.</li>
+<li>5. Sales (F8): sales invoice entries.</li>
+<li>6. Purchase (F9): purchase invoice entries.</li>
+<li>7. Credit Note: sales return.</li>
+<li>8. Debit Note: purchase return.</li>
+</ul>
+<h3 id="ch2-short-summary">Short Summary:</h3>
+<ul>
+<li>- Choose voucher type first, then post amount lines.</li>
+</ul>
+<h3 id="ch2-internet-reference-highlights">Internet reference highlights:</h3>
+<ul>
+<li>- Accounting in TallyPrime | TallyHelp. Accounting in TallyPrime enables managing your accounting entities, inventory movements, financial &amp; banking transactions, and provides real-time reports on all these. You also get the required options to handle your banking transactions and reconciliation, business projections, multiple currency handling, interest on outstandings, and accounts verification. TallyPrime classifies transactions as accounting or inventory based on the nature of the accounting entries and the accounts they affect. The generic category Accounting in TallyPrime includes the chart of accounts , journal entries, contra vouchers, and other vouchers used for checking the impact of</li>
+</ul>
+<p>New Student Onboarding: How to use Tally from zero</p>
+<ul>
+<li>1. First launch and company selection:</li>
+<li>- Open TallyPrime from desktop/start menu.</li>
+<li>- If no company exists, choose Create Company.</li>
+<li>- If company exists, choose Select Company.</li>
+<li>- Always verify date (F2) before posting entries.</li>
+<li>2. Understand main screen (Gateway of Tally):</li>
+<li>- Masters: where you create ledgers, groups, stock items, and units.</li>
+<li>- Transactions: where you post vouchers (purchase, sales, payment, receipt).</li>
+<li>- Reports: where you check Day Book, Trial Balance, P&amp;L, and Balance Sheet.</li>
+<li>- Bottom button bar: shows function key actions available on current screen.</li>
+<li>3. Keyboard-first usage (fast and accurate):</li>
+<li>- F2 change date.</li>
+<li>- F3 company menu.</li>
+<li>- Alt+G go to any report/screen.</li>
+<li>- F4 Contra, F5 Payment, F6 Receipt, F7 Journal, F8 Sales, F9 Purchase.</li>
+<li>- Ctrl+A save.</li>
+<li>4. First 30-minute student practice plan:</li>
+</ul>
+<p>Step A - Create company.</p>
+<p>Step B - Create 5 ledgers: Cash, Bank, Capital, Sales, Rent.</p>
+<h3 id="ch2-step-c-pass-4-vouchers">Step C - Pass 4 vouchers:</h3>
+<ul>
+<li>- Receipt for capital introduced.</li>
+<li>- Contra for cash deposit to bank.</li>
+<li>- Sales entry for invoice.</li>
+<li>- Payment entry for expense.</li>
+</ul>
+<p>Step D - Open reports and verify balances.</p>
+<ul>
+<li>5. Screen discipline students must follow:</li>
+<li>- Read voucher type title before entering amounts.</li>
+<li>- Confirm Dr/Cr side every line.</li>
+<li>- Add narration for every voucher.</li>
+<li>- Save only after checking party name, date, amount, and tax lines.</li>
+<li>6. Common beginner confusion and fix:</li>
+<li>- Cannot see expected field: press F12 Configure and enable detailed mode.</li>
+<li>- Wrong voucher screen opened: use Esc and press correct function key.</li>
+<li>- Entry saved with wrong date: Alter voucher immediately and correct date.</li>
+<li>- Report mismatch: open Day Book and inspect voucher one by one.</li>
+<li>7. Minimum daily routine for new students:</li>
+<li>- 10 minutes: create/alter masters.</li>
+<li>- 20 minutes: pass vouchers with keyboard only.</li>
+<li>- 10 minutes: verify Day Book and Trial Balance.</li>
+<li>- 5 minutes: write 3 mistakes and corrections in notebook.</li>
+</ul>
+<h3 id="ch2-accounting-cycle-detailed-summary">Accounting Cycle Detailed Summary:</h3>
+<ul>
+<li>1. Collect source document (invoice, receipt, payment proof).</li>
+<li>2. Choose correct voucher type in Tally.</li>
+<li>3. Pass entry with proper debit/credit and narration.</li>
+<li>4. Post impacts to ledger and verify day book.</li>
+<li>5. Check trial balance equality.</li>
+<li>6. Interpret P&amp;L and Balance Sheet for decisions.</li>
+</ul>
+<h3 id="ch2-student-error-control-checklist">Student Error-Control Checklist:</h3>
+<ul>
+<li>1. Is date correct (F2)?</li>
+<li>2. Is voucher type correct?</li>
+<li>3. Is amount posted on correct Dr/Cr side?</li>
+<li>4. Is ledger group correct?</li>
+<li>5. Is narration present?</li>
+<li>6. Does report match expected business result?</li>
+</ul>
+
+<div class="visual-grid">
+    <div class="visual-card">
+        <h3>Tally Screen: Daily Entry Flow</h3>
+        <div class="mock-screen">
+            <div class="screen-title">Gateway of Tally - Company: Practice Co.</div>
+            <pre>
+Display More Reports
+Books of Accounts
+Statement of Accounts
+Inventory Books
+
+Vouchers [Press: V]
+    F4 Contra    F5 Payment    F6 Receipt
+    F7 Journal   F8 Sales      F9 Purchase
+
+Quick path:
+Alt+G -> Type: Vouchers -> Enter
+            </pre>
+        </div>
+    </div>
+    <div class="visual-card">
+        <h3>Voucher Decision Chart</h3>
+        <svg viewBox="0 0 760 260" role="img" aria-label="Voucher decision chart">
+            <rect x="20" y="20" width="170" height="42" rx="8" class="node"/>
+            <text x="105" y="47" text-anchor="middle">Cash/Bank Transfer</text>
+
+            <rect x="220" y="20" width="130" height="42" rx="8" class="node"/>
+            <text x="285" y="47" text-anchor="middle">Contra</text>
+
+            <rect x="20" y="92" width="170" height="42" rx="8" class="node"/>
+            <text x="105" y="119" text-anchor="middle">Money Paid Out</text>
+
+            <rect x="220" y="92" width="130" height="42" rx="8" class="node"/>
+            <text x="285" y="119" text-anchor="middle">Payment</text>
+
+            <rect x="20" y="164" width="170" height="42" rx="8" class="node"/>
+            <text x="105" y="191" text-anchor="middle">Money Received</text>
+
+            <rect x="220" y="164" width="130" height="42" rx="8" class="node"/>
+            <text x="285" y="191" text-anchor="middle">Receipt</text>
+
+            <line x1="190" y1="41" x2="220" y2="41" class="arrow"/>
+            <line x1="190" y1="113" x2="220" y2="113" class="arrow"/>
+            <line x1="190" y1="185" x2="220" y2="185" class="arrow"/>
+
+            <rect x="400" y="20" width="160" height="42" rx="8" class="node"/>
+            <text x="480" y="47" text-anchor="middle">Goods Sold</text>
+            <rect x="590" y="20" width="130" height="42" rx="8" class="node"/>
+            <text x="655" y="47" text-anchor="middle">Sales</text>
+            <line x1="560" y1="41" x2="590" y2="41" class="arrow"/>
+
+            <rect x="400" y="92" width="160" height="42" rx="8" class="node"/>
+            <text x="480" y="119" text-anchor="middle">Goods Purchased</text>
+            <rect x="590" y="92" width="130" height="42" rx="8" class="node"/>
+            <text x="655" y="119" text-anchor="middle">Purchase</text>
+            <line x1="560" y1="113" x2="590" y2="113" class="arrow"/>
+
+            <rect x="400" y="164" width="160" height="42" rx="8" class="node"/>
+            <text x="480" y="191" text-anchor="middle">Adjustment Entry</text>
+            <rect x="590" y="164" width="130" height="42" rx="8" class="node"/>
+            <text x="655" y="191" text-anchor="middle">Journal</text>
+            <line x1="560" y1="185" x2="590" y2="185" class="arrow"/>
+        </svg>
+    </div>
+</div>
+<div class="visual-grid" style="margin-top:12px;">
+    <div class="visual-card">
+        <h3>Case 1 Month Plan Chart</h3>
+        <div class="mini-bars">
+            <div><label>Apr-Jun Setup</label><span style="--w:95%"></span></div>
+            <div><label>Jul-Sep Billing</label><span style="--w:88%"></span></div>
+            <div><label>Oct-Dec Controls</label><span style="--w:82%"></span></div>
+            <div><label>Jan-Mar Finalization</label><span style="--w:76%"></span></div>
+        </div>
+        <p>Practice each quarter with at least 20 voucher entries and one report review session.</p>
+    </div>
+    <div class="visual-card">
+        <h3>Case 1 Report Check Grid</h3>
+        <table class="check-table">
+            <tr><th>Report</th><th>What to Verify</th><th>Action if Error</th></tr>
+            <tr><td>Day Book</td><td>Date, voucher type, narration</td><td>Alter voucher immediately</td></tr>
+            <tr><td>Trial Balance</td><td>Debit equals Credit</td><td>Find wrong Dr/Cr line</td></tr>
+            <tr><td>P&amp;L</td><td>Income and expense grouping</td><td>Check ledger group mapping</td></tr>
+            <tr><td>Balance Sheet</td><td>Asset/liability correctness</td><td>Review opening and closing balances</td></tr>
+        </table>
+    </div>
+</div>
+
+</section><section id="chapter-3" class="chapter">
+<div class="chapter-meta">Chapter 3</div>
+<h2>Tally Workbook Case Study - 1</h2>
+<h3 id="ch3-accounting-case-study-1">Accounting (Case Study-1):</h3>
+<h3 id="ch3-financial-year-from-1-apr-2016-to-31-mar-2017">Financial Year from 1-Apr-2016 to 31-Mar-2017:</h3>
+<h3 id="ch3-coverage-required-in-this-case">Coverage required in this case:</h3>
+<ul>
+<li>1. Debit, Credit, By, and To logic.</li>
+<li>2. Voucher posting process.</li>
+<li>3. Create Group and Create Ledger under proper group.</li>
+<li>4. Service organization general entries for all 12 months.</li>
+<li>5. Day Book, Trial Balance, Profit and Loss Account, and Balance Sheet.</li>
+<li>6. Closing and Opening Balance.</li>
+<li>7. Exercise with Solution.</li>
+</ul>
+<h3 id="ch3-create-group">Create Group:</h3>
+<h3 id="ch3-step-1-create-group-and-ledgers">Step 1 - Create group and ledgers:</h3>
+<ul>
+<li>1. Create Group (if required): Direct Expenses, Indirect Expenses, Direct Income.</li>
+</ul>
+<h3 id="ch3-create-ledger-under-group">Create Ledger (Under Group):</h3>
+<ul>
+<li>2. Create ledgers under group:</li>
+<li>- Capital A/c (Capital Account)</li>
+<li>- Cash A/c (Cash-in-Hand)</li>
+<li>- Bank A/c (Bank Accounts)</li>
+<li>- Service Income (Direct Income)</li>
+<li>- Rent Expense (Indirect Expense)</li>
+<li>- Salary Expense (Indirect Expense)</li>
+<li>- Electricity Expense (Indirect Expense)</li>
+<li>- Customer A/c (Sundry Debtors)</li>
+</ul>
+<h3 id="ch3-debit-credit-by-to">Debit, Credit - By, To:</h3>
+<h3 id="ch3-step-2-understand-by-and-to-in-voucher">Step 2 - Understand By and To in voucher:</h3>
+<ul>
+<li>1. In payment-type style entry, expense is Dr and cash/bank is Cr.</li>
+<li>2. In receipt-type style entry, cash/bank is Dr and source ledger is Cr.</li>
+<li>3. For service invoice on credit, customer is Dr and service income is Cr.</li>
+</ul>
+<h3 id="ch3-service-organization-general-entry-12-months">Service organization General Entry 12 Months:</h3>
+<h3 id="ch3-step-3-monthly-entry-model-repeat-for-12-months">Step 3 - Monthly entry model (repeat for 12 months):</h3>
+<h3 id="ch3-month-starter-entries-example-april">Month starter entries (example April):</h3>
+<ul>
+<li>1. Capital introduced: 400,000.</li>
+<li>2. Cash deposited to bank: 250,000.</li>
+<li>3. Service invoice to customer: 60,000.</li>
+<li>4. Office rent paid: 18,000.</li>
+<li>5. Salary paid: 25,000.</li>
+<li>6. Electricity paid: 4,500.</li>
+<li>7. Partial receipt from customer: 30,000.</li>
+</ul>
+<h3 id="ch3-practice-rule">Practice rule:</h3>
+<ul>
+<li>1. Post same pattern for each month with changed invoice amount.</li>
+<li>2. Keep narration clear for every voucher.</li>
+<li>3. Keep date sequence strict to avoid report mismatch.</li>
+</ul>
+<h3 id="ch3-voucher">Voucher:</h3>
+<h3 id="ch3-step-4-voucher-types-used">Step 4 - Voucher types used:</h3>
+<ul>
+<li>1. Receipt (F6) for capital and customer collection.</li>
+<li>2. Contra (F4) for cash-to-bank transfer.</li>
+<li>3. Sales (F8) for service bill.</li>
+<li>4. Payment (F5) for expenses.</li>
+<li>5. Journal (F7) for adjustment entries if needed.</li>
+</ul>
+<h3 id="ch3-day-book-trail-balance">Day Book ,Trail Balance:</h3>
+<h3 id="ch3-step-5-report-checks-every-month">Step 5 - Report checks every month:</h3>
+<ul>
+<li>1. Day Book: all transactions visible with correct date.</li>
+<li>2. Trial Balance: Debit total equals Credit total.</li>
+</ul>
+<h3 id="ch3-profit-loss-accounting-balance-sheet">Profit &amp; Loss accounting, Balance Sheet:</h3>
+<ul>
+<li>3. Profit and Loss: income and expenses posted in right heads.</li>
+<li>4. Balance Sheet: cash, bank, receivables, and capital position valid.</li>
+</ul>
+<h3 id="ch3-closing-opening-balance">Closing &amp; Opening Balance:</h3>
+<h3 id="ch3-step-6-closing-and-opening-balance-flow">Step 6 - Closing and opening balance flow:</h3>
+<ul>
+<li>1. At year-end (31-Mar-2017), finalize books after checking all vouchers.</li>
+<li>2. Carry forward closing balances as opening balances of next year.</li>
+<li>3. Validate opening trial balance in next year before new entries.</li>
+</ul>
+<h3 id="ch3-exercise-with-solution">Exercise With Solution:</h3>
+<h3 id="ch3-exercise-with-solution-sample">Exercise with solution (sample):</h3>
+<h3 id="ch3-question">Question:</h3>
+<ul>
+<li>1. Service bill raised 75,000 on credit.</li>
+<li>2. Received 45,000 by bank.</li>
+<li>3. Paid rent 20,000 and salary 26,000.</li>
+</ul>
+<h3 id="ch3-expected-posting-logic">Expected posting logic:</h3>
+<ul>
+<li>1. Customer Dr 75,000 to Service Income Cr 75,000.</li>
+<li>2. Bank Dr 45,000 to Customer Cr 45,000.</li>
+<li>3. Rent Dr 20,000 to Bank Cr 20,000.</li>
+<li>4. Salary Dr 26,000 to Bank Cr 26,000.</li>
+</ul>
+<h3 id="ch3-submission-checklist">Submission checklist:</h3>
+<ul>
+<li>1. Group and ledger creation screenshots.</li>
+<li>2. One month Day Book screenshot.</li>
+<li>3. Trial Balance screenshot.</li>
+<li>4. Profit and Loss and Balance Sheet screenshot.</li>
+<li>5. One solved exercise screenshot with narration.</li>
+</ul>
+<h3 id="ch3-12-month-example-plan-quick-reference">12-Month Example Plan (quick reference):</h3>
+<ul>
+<li>1. Apr-Jun:</li>
+<li>- Focus on setup, basic service invoices, and expense posting.</li>
+<li>2. Jul-Sep:</li>
+<li>- Add debtor collections and bill-wise follow-up.</li>
+<li>3. Oct-Dec:</li>
+<li>- Add adjustments, provisions, and correction entries.</li>
+<li>4. Jan-Mar:</li>
+<li>- Finalization, closing checks, and opening balance carry-forward.</li>
+</ul>
+<h3 id="ch3-deep-summary-for-students">Deep Summary for Students:</h3>
+<ul>
+<li>1. Case Study 1 trains complete accounting flow in service business.</li>
+<li>2. If Day Book is correct but reports are wrong, group mapping is usually wrong.</li>
+<li>3. If Trial Balance mismatches, voucher line-side error is likely.</li>
+<li>4. Always verify before next month to avoid year-end correction burden.</li>
+</ul>
+
+<div class="visual-grid">
+    <div class="visual-card">
+        <h3>Case 1 Entry Sequence (Student Flow)</h3>
+        <div class="mock-screen">
+            <div class="screen-title">Gateway - Alt+G quick navigation</div>
+            <pre>
+1) Create Company
+2) Alter -> Enable GST + Bill-wise details
+3) Create Ledgers
+4) Open Vouchers (V)
+5) Pass Contra -> Sales -> Receipt -> Payment -> Journal
+6) Open Reports: Day Book, Trial Balance, P&amp;L, Balance Sheet
+
+Shortcut rhythm:
+F2 Date -> F4/F6/F8/F5/F7 -> Ctrl+A save
+            </pre>
+        </div>
+    </div>
+    <div class="visual-card">
+        <h3>Validation Check Diagram</h3>
+        <svg viewBox="0 0 700 260" role="img" aria-label="Case study validation flow">
+            <rect x="20" y="30" width="130" height="44" rx="8" class="node"/>
+            <text x="85" y="57" text-anchor="middle">Vouchers</text>
+
+            <rect x="190" y="30" width="130" height="44" rx="8" class="node"/>
+            <text x="255" y="57" text-anchor="middle">Day Book</text>
+
+            <rect x="360" y="30" width="130" height="44" rx="8" class="node"/>
+            <text x="425" y="57" text-anchor="middle">Trial Balance</text>
+
+            <rect x="530" y="30" width="150" height="44" rx="8" class="node"/>
+            <text x="605" y="57" text-anchor="middle">P&amp;L / B&amp;S</text>
+
+            <line x1="150" y1="52" x2="190" y2="52" class="arrow"/>
+            <line x1="320" y1="52" x2="360" y2="52" class="arrow"/>
+            <line x1="490" y1="52" x2="530" y2="52" class="arrow"/>
+
+            <rect x="120" y="130" width="220" height="92" rx="10" class="node"/>
+            <text x="230" y="155" text-anchor="middle">If mismatch:</text>
+            <text x="230" y="180" text-anchor="middle">Check date, ledger, Dr/Cr side,</text>
+            <text x="230" y="205" text-anchor="middle">GST ledger and voucher type</text>
+
+            <rect x="390" y="130" width="250" height="92" rx="10" class="node"/>
+            <text x="515" y="155" text-anchor="middle">If matched:</text>
+            <text x="515" y="180" text-anchor="middle">Export reports and submit</text>
+            <text x="515" y="205" text-anchor="middle">screenshots with narration</text>
+        </svg>
+    </div>
+</div>
+<div class="visual-grid" style="margin-top:12px;">
+    <div class="visual-card">
+        <h3>Navigation Map: From Startup to Reports</h3>
+        <svg viewBox="0 0 760 250" role="img" aria-label="Tally navigation map">
+            <rect x="20" y="90" width="140" height="50" rx="8" class="node"/><text x="90" y="120" text-anchor="middle">Open Company</text>
+            <rect x="180" y="90" width="140" height="50" rx="8" class="node"/><text x="250" y="120" text-anchor="middle">F11/F12 Setup</text>
+            <rect x="340" y="90" width="140" height="50" rx="8" class="node"/><text x="410" y="120" text-anchor="middle">Create Masters</text>
+            <rect x="500" y="90" width="120" height="50" rx="8" class="node"/><text x="560" y="120" text-anchor="middle">Vouchers</text>
+            <rect x="640" y="90" width="100" height="50" rx="8" class="node"/><text x="690" y="120" text-anchor="middle">Reports</text>
+            <line x1="160" y1="115" x2="180" y2="115" class="arrow"/>
+            <line x1="320" y1="115" x2="340" y2="115" class="arrow"/>
+            <line x1="480" y1="115" x2="500" y2="115" class="arrow"/>
+            <line x1="620" y1="115" x2="640" y2="115" class="arrow"/>
+        </svg>
+    </div>
+    <div class="visual-card">
+        <h3>Beginner Action Checklist</h3>
+        <table class="check-table">
+            <tr><th>Task</th><th>Target Time</th><th>Student Check</th></tr>
+            <tr><td>Create Company</td><td>5 min</td><td>FY and date correct</td></tr>
+            <tr><td>Create Core Ledgers</td><td>10 min</td><td>Group mapping correct</td></tr>
+            <tr><td>Pass 5 Vouchers</td><td>15 min</td><td>Dr/Cr accurate</td></tr>
+            <tr><td>Check Day Book</td><td>5 min</td><td>All entries visible</td></tr>
+            <tr><td>Check Trial Balance</td><td>5 min</td><td>Totals match</td></tr>
+        </table>
+    </div>
+</div>
+
+</section><section id="chapter-4" class="chapter">
+<div class="chapter-meta">Chapter 4</div>
+<h2>Tally Workbook Case Study - 2</h2>
+<h3 id="ch4-accounts-with-inventory-case-study-2">Accounts with Inventory (Case Study-2):</h3>
+<h3 id="ch4-financial-year-from-1-apr-2016-to-31-mar-2017">Financial year from 1-Apr-2016 to 31-Mar-2017:</h3>
+<h3 id="ch4-create-stock-item-stock-group-unit-of-measure">Create - Stock Item, Stock Group, Unit of measure:</h3>
+<ul>
+<li>1. Create unit of measure such as Nos, Box, Kg if required.</li>
+<li>2. Create stock groups to classify items by category.</li>
+<li>3. Create stock items with opening quantity and opening rate.</li>
+<li>4. Map items carefully so stock reports remain meaningful.</li>
+</ul>
+<h3 id="ch4-short-summary">Short Summary:</h3>
+<ul>
+<li>- This setup controls how inventory appears in invoices and stock summary.</li>
+</ul>
+<h3 id="ch4-trading-organization-general-entry-12-months">Trading organization General Entry 12 Months:</h3>
+<ul>
+<li>1. Use a monthly cycle of purchase, sales, collection, payment, return, and adjustment.</li>
+<li>2. Keep one realistic business story for the full year.</li>
+<li>3. For each month, check both accounting impact and stock impact.</li>
+</ul>
+<h3 id="ch4-example-monthly-cycle">Example monthly cycle:</h3>
+<ul>
+<li>1. Purchase goods from supplier.</li>
+<li>2. Sell goods to customer.</li>
+<li>3. Receive payment and pay freight.</li>
+<li>4. Adjust damages, shortage, or return if any.</li>
+</ul>
+<h3 id="ch4-purchase-sales-invoice">Purchase, Sales, Invoice:</h3>
+<ul>
+<li>1. Purchase invoice increases stock and creditor balance.</li>
+<li>2. Sales invoice reduces stock and increases customer/debtor balance.</li>
+<li>3. Invoice entry must include item, quantity, rate, and party.</li>
+<li>4. Narration should explain the business event.</li>
+</ul>
+<h3 id="ch4-provision-entry-depreciation-entry">Provision entry, Depreciation entry:</h3>
+<ul>
+<li>1. Provision entry records expected expense/liability before final payment.</li>
+<li>2. Depreciation entry records fixed-asset usage cost.</li>
+<li>3. These entries are generally passed through Journal voucher.</li>
+</ul>
+<h3 id="ch4-example">Example:</h3>
+<ul>
+<li>1. Depreciation A/c Dr 2,500</li>
+<li>2. To Furniture A/c 2,500</li>
+</ul>
+<h3 id="ch4-adjustment-entry-closing-entry">Adjustment entry, Closing entry:</h3>
+<ul>
+<li>1. Record outstanding expense adjustments.</li>
+<li>2. Record prepaid expense adjustments if applicable.</li>
+<li>3. Perform closing stock check and year-end transfer validation.</li>
+<li>4. Ensure all return vouchers are posted before closing reports.</li>
+</ul>
+<h3 id="ch4-inventory-reports-stock-summary">Inventory Reports, Stock Summary:</h3>
+<ul>
+<li>1. Stock Summary verifies quantity and value item-wise.</li>
+<li>2. Inventory books help students trace movement history.</li>
+<li>3. If stock quantity is wrong, check purchase/sales/return sequence first.</li>
+</ul>
+<h3 id="ch4-export-printing">Export &amp; Printing:</h3>
+<ul>
+<li>1. Export Stock Summary, Trial Balance, and invoice reports to PDF or Excel.</li>
+<li>2. Print one purchase invoice and one sales invoice for workbook submission.</li>
+<li>3. Use export preview to confirm layout before final save.</li>
+</ul>
+<h3 id="ch4-closing-opening-balance">Closing &amp; Opening Balance:</h3>
+<ul>
+<li>1. Finalize balances as on 31-Mar-2017.</li>
+<li>2. Carry forward closing stock and closing ledger balances to next year.</li>
+<li>3. Verify opening values before posting new-year vouchers.</li>
+</ul>
+<h3 id="ch4-exercise-with-solution">Exercise With Solution:</h3>
+<h3 id="ch4-question">Question:</h3>
+<ul>
+<li>1. Purchase 120 units at 500.</li>
+<li>2. Sales 70 units at 780.</li>
+<li>3. Purchase return 10 units.</li>
+<li>4. Sales return 5 units.</li>
+<li>5. Pass depreciation 2,500.</li>
+</ul>
+<h3 id="ch4-solution">Solution:</h3>
+<ul>
+<li>1. Net stock movement = Opening + Purchase - Sales - Purchase Return + Sales Return.</li>
+<li>2. Stock Summary must match the computed closing quantity.</li>
+<li>3. Purchase, Sales, Return, and Depreciation must reflect in reports.</li>
+<li>4. Trial Balance should remain matched after all entries.</li>
+</ul>
+<h3 id="ch4-deep-student-guidance">Deep Student Guidance:</h3>
+<ul>
+<li>1. Every inventory voucher changes both quantity and value behavior.</li>
+<li>2. Wrong unit or wrong stock item creates invisible report mistakes.</li>
+<li>3. Students should check stock after every major purchase/sales entry block.</li>
+</ul>
+<h3 id="ch4-submission-checklist">Submission checklist:</h3>
+<ul>
+<li>1. Item, group, and unit creation screenshots.</li>
+<li>2. Purchase and sales invoice screenshots.</li>
+<li>3. Stock Summary screenshot.</li>
+<li>4. Depreciation/provision journal screenshot.</li>
+<li>5. Exported report sample.</li>
+</ul>
+
+<div class="visual-grid">
+    <div class="visual-card">
+        <h3>Tally Screen: Inventory Voucher Entry</h3>
+        <div class="mock-screen">
+            <div class="screen-title">Gateway -> Vouchers -> Inventory Allocation</div>
+            <pre>
+Purchase (F9)
+Party: Bright Supply Co.
+Item: LED Bulb 12W
+Qty: 100 Nos   Rate: 500   Amount: 50,000
+Add: Freight Inward 2,000
+
+Sales (F8)
+Party: City Retail
+Item: LED Bulb 12W
+Qty: 35 Nos    Rate: 750   Amount: 26,250
+
+Return flow:
+Ctrl+F9 Debit Note (Purchase Return)
+Ctrl+F8 Credit Note (Sales Return)
+            </pre>
+        </div>
+    </div>
+    <div class="visual-card">
+        <h3>Stock Movement Chart (Case 2)</h3>
+        <svg viewBox="0 0 720 300" role="img" aria-label="Case 2 stock movement chart">
+            <rect x="50" y="180" width="70" height="80" class="node"/>
+            <text x="85" y="172" text-anchor="middle">Opening 20</text>
+
+            <rect x="170" y="60" width="70" height="200" class="node"/>
+            <text x="205" y="52" text-anchor="middle">Purchase +100</text>
+
+            <rect x="290" y="120" width="70" height="140" class="node"/>
+            <text x="325" y="112" text-anchor="middle">Sales -35</text>
+
+            <rect x="410" y="150" width="70" height="110" class="node"/>
+            <text x="445" y="142" text-anchor="middle">P.Return -5</text>
+
+            <rect x="530" y="140" width="70" height="120" class="node"/>
+            <text x="565" y="132" text-anchor="middle">S.Return +2</text>
+
+            <rect x="620" y="96" width="70" height="164" class="node"/>
+            <text x="655" y="88" text-anchor="middle">Closing 82</text>
+
+            <line x1="120" y1="220" x2="170" y2="220" class="arrow"/>
+            <line x1="240" y1="220" x2="290" y2="220" class="arrow"/>
+            <line x1="360" y1="220" x2="410" y2="220" class="arrow"/>
+            <line x1="480" y1="220" x2="530" y2="220" class="arrow"/>
+            <line x1="600" y1="220" x2="620" y2="220" class="arrow"/>
+
+            <line x1="40" y1="260" x2="700" y2="260" class="axis"/>
+        </svg>
+    </div>
+</div>
+
+</section><section id="chapter-5" class="chapter">
+<div class="chapter-meta">Chapter 5</div>
+<h2>Tally Workbook Case Study - 3</h2>
+<h3 id="ch5-inventory-management-with-gst-case-study-3">Inventory Management with GST (Case Study-3):</h3>
+<h3 id="ch5-financial-year-from-1-apr-2017-to-31-mar-2018">Financial year from 1-Apr-2017 to 31-Mar-2018:</h3>
+<h3 id="ch5-taxation-system-gst">Taxation System GST:</h3>
+<ul>
+<li>1. GST is applied through correct tax setup, state configuration, and voucher posting.</li>
+<li>2. Students must understand taxable value, tax amount, and final invoice value.</li>
+<li>3. GST affects both reports and legal compliance checks.</li>
+</ul>
+<h3 id="ch5-sgst-cgst-igst">SGST, CGST, IGST:</h3>
+<ul>
+<li>1. SGST and CGST are used for intra-state transactions.</li>
+<li>2. IGST is used for inter-state transactions.</li>
+<li>3. Always confirm customer or supplier state before invoice posting.</li>
+</ul>
+<h3 id="ch5-short-summary">Short Summary:</h3>
+<ul>
+<li>- Wrong tax type is one of the most common student mistakes in GST chapters.</li>
+</ul>
+<h3 id="ch5-create-godowns">Create - Godowns:</h3>
+<ul>
+<li>1. Create Main, Transit, and Returns godowns.</li>
+<li>2. Use godowns to track where stock is physically located.</li>
+<li>3. Godown-wise reporting helps in internal control.</li>
+</ul>
+<h3 id="ch5-create-stock-item-stock-group-unit-of-measure">Create - Stock Item, Stock Group, Unit of measure:</h3>
+<ul>
+<li>1. Create groups for product classes.</li>
+<li>2. Create items with GST rate, UOM, and opening stock.</li>
+<li>3. Use correct rate and quantity to avoid report mismatch.</li>
+</ul>
+<h3 id="ch5-create-cost-category-cost-centre">Create - Cost Category, Cost Centre:</h3>
+<ul>
+<li>1. Use cost categories when comparing multiple business dimensions.</li>
+<li>2. Use cost centres for branch, department, or project tracking.</li>
+<li>3. This helps advanced students analyze profitability beyond basic books.</li>
+</ul>
+<h3 id="ch5-trading-organization-general-entry-12-months">Trading organization General Entry 12 Months:</h3>
+<ul>
+<li>1. Run one full year of purchase, sales, return, discount, and interest entries.</li>
+<li>2. Keep local and inter-state transactions mixed to practice tax decisions.</li>
+<li>3. Reconcile month-end stock and GST before the next month starts.</li>
+</ul>
+<h3 id="ch5-discounts-interest">Discounts, Interest:</h3>
+<ul>
+<li>1. Record trade discount as per invoice treatment in workbook method.</li>
+<li>2. Record interest on overdue receivable/payable through journal or invoice-linked flow.</li>
+<li>3. Check whether discount changes taxable value as per workbook assumption.</li>
+</ul>
+<h3 id="ch5-purchase-returns-sales-returns">Purchase returns, Sales Returns:</h3>
+<ul>
+<li>1. Purchase return reverses stock inward and supplier liability.</li>
+<li>2. Sales return reverses stock outward and customer billing.</li>
+<li>3. Always use proper return voucher type and party reference.</li>
+</ul>
+<h3 id="ch5-credit-note-debit-note-voucher">Credit Note, Debit Note - Voucher:</h3>
+<ul>
+<li>1. Credit Note is generally used for sales return.</li>
+<li>2. Debit Note is generally used for purchase return.</li>
+<li>3. These vouchers must reflect both tax and stock corrections where applicable.</li>
+</ul>
+<h3 id="ch5-inventory-reports-stock-summary-tax-report">Inventory Reports, Stock Summary, Tax Report:</h3>
+<ul>
+<li>1. Stock Summary validates physical and book quantity.</li>
+<li>2. Inventory reports show item movement details.</li>
+<li>3. Tax report validates GST amounts and taxable turnover.</li>
+<li>4. Students should compare tax ledgers with GST summary monthly.</li>
+</ul>
+<h3 id="ch5-closing-opening-balance">Closing &amp; Opening Balance:</h3>
+<ul>
+<li>1. Close books on 31-Mar-2018 after report validation.</li>
+<li>2. Carry forward stock, tax, and ledger balances correctly.</li>
+<li>3. Verify next-year opening values before new vouchers.</li>
+</ul>
+<h3 id="ch5-exercise-with-solution">Exercise With Solution:</h3>
+<h3 id="ch5-question">Question:</h3>
+<ul>
+<li>1. Local purchase 150,000 with 18% GST.</li>
+<li>2. Inter-state sales 110,000 with 18% IGST.</li>
+<li>3. Sales return 10,000 and purchase return 8,000.</li>
+<li>4. Interest charged to debtor 1,500.</li>
+</ul>
+<h3 id="ch5-solution">Solution:</h3>
+<ul>
+<li>1. Apply CGST+SGST to local purchase and IGST to inter-state sales.</li>
+<li>2. Post return vouchers through Credit Note and Debit Note.</li>
+<li>3. Recheck stock and tax impact after returns.</li>
+<li>4. Confirm GST summary and stock summary reflect corrected values.</li>
+</ul>
+<h3 id="ch5-deep-student-guidance">Deep Student Guidance:</h3>
+<ul>
+<li>1. This case teaches tax logic, stock control, and error correction together.</li>
+<li>2. Students should not move to reports before checking voucher tax lines.</li>
+<li>3. Godown and cost-centre setup become useful only when entries are posted consistently.</li>
+</ul>
+<h3 id="ch5-submission-checklist">Submission checklist:</h3>
+<ul>
+<li>1. GST configuration screenshots.</li>
+<li>2. Godown and cost centre setup screenshots.</li>
+<li>3. Sales and purchase voucher screenshots with tax.</li>
+<li>4. Credit Note and Debit Note screenshots.</li>
+<li>5. Stock Summary and Tax Report screenshots.</li>
+</ul>
+
+<div class="visual-grid">
+    <div class="visual-card">
+        <h3>Tally Screen: GST Voucher Pattern</h3>
+        <div class="mock-screen">
+            <div class="screen-title">Sales Voucher - Tax Classification</div>
+            <pre>
+Local Sales (Intra-state)
+  Sales Value: 140,000
+  Output CGST 9%: 12,600
+  Output SGST 9%: 12,600
+
+Outside State Sales (Inter-state)
+  Sales Value: 80,000
+  Output IGST 18%: 14,400
+
+Quick check:
+If buyer state == company state -> CGST+SGST
+Else -> IGST
+            </pre>
+        </div>
+    </div>
+    <div class="visual-card">
+        <h3>GST Flow Diagram</h3>
+        <svg viewBox="0 0 760 300" role="img" aria-label="GST input output flow">
+            <rect x="40" y="40" width="240" height="70" rx="10" class="node"/>
+            <text x="160" y="70" text-anchor="middle">Input Tax (Purchases)</text>
+            <text x="160" y="95" text-anchor="middle">CGST 9,000 + SGST 9,000</text>
+
+            <rect x="40" y="170" width="240" height="80" rx="10" class="node"/>
+            <text x="160" y="200" text-anchor="middle">Output Tax (Sales)</text>
+            <text x="160" y="225" text-anchor="middle">CGST 12,600 + SGST 12,600</text>
+
+            <rect x="330" y="105" width="170" height="80" rx="10" class="node"/>
+            <text x="415" y="137" text-anchor="middle">Net Local GST</text>
+            <text x="415" y="162" text-anchor="middle">3,600 + 3,600</text>
+
+            <rect x="550" y="105" width="170" height="80" rx="10" class="node"/>
+            <text x="635" y="137" text-anchor="middle">IGST Payable</text>
+            <text x="635" y="162" text-anchor="middle">14,400</text>
+
+            <line x1="280" y1="75" x2="330" y2="130" class="arrow"/>
+            <line x1="280" y1="210" x2="330" y2="160" class="arrow"/>
+            <line x1="500" y1="145" x2="550" y2="145" class="arrow"/>
+        </svg>
+    </div>
+</div>
+
+</section><section id="chapter-6" class="chapter">
+<div class="chapter-meta">Chapter 6</div>
+<h2>Tally Workbook Case Study - 4</h2>
+<p>Scenario: Service company receivables and follow-up management.</p>
+<h3 id="ch6-objective">Objective:</h3>
+<ul>
+<li>- Track dues customer-wise with bill references.</li>
+<li>- Record partial payments and settlement discounts.</li>
+<li>- Use ageing report for collection priority.</li>
+</ul>
+<h3 id="ch6-practice-dataset">Practice dataset:</h3>
+<ul>
+<li>- Invoice A: 60,000 on 02-Apr, due in 15 days.</li>
+<li>- Invoice B: 40,000 on 05-Apr, due in 30 days.</li>
+<li>- Receipt against Invoice A: 35,000 on 14-Apr.</li>
+<li>- Receipt against Invoice B: 38,000 with 2,000 discount on 28-Apr.</li>
+</ul>
+<h3 id="ch6-step-0-configuration">Step 0 - Configuration:</h3>
+<ul>
+<li>1. Enable bill-wise details in F11.</li>
+<li>2. Ensure customer ledger is set to maintain balances bill-by-bill.</li>
+</ul>
+<h3 id="ch6-step-1-create-ledgers">Step 1 - Create ledgers:</h3>
+<ul>
+<li>1. Customer: MNO Services (Sundry Debtor, bill-wise Yes).</li>
+<li>2. Service Income.</li>
+<li>3. Bank A/c.</li>
+<li>4. Discount Allowed.</li>
+</ul>
+<h3 id="ch6-step-2-pass-invoices">Step 2 - Pass invoices:</h3>
+<p>Transaction 1 (02-Apr): Invoice A.</p>
+<ul>
+<li>1. Sales voucher (F8).</li>
+<li>2. Debit MNO Services 60,000.</li>
+<li>3. Credit Service Income 60,000.</li>
+<li>4. Bill reference: INV-A, due date +15 days.</li>
+</ul>
+<p>Transaction 2 (05-Apr): Invoice B.</p>
+<ul>
+<li>1. Sales voucher (F8).</li>
+<li>2. Debit MNO Services 40,000.</li>
+<li>3. Credit Service Income 40,000.</li>
+<li>4. Bill reference: INV-B, due date +30 days.</li>
+</ul>
+<h3 id="ch6-step-3-pass-receipts-and-discount">Step 3 - Pass receipts and discount:</h3>
+<p>Transaction 3 (14-Apr): Partial receipt for INV-A.</p>
+<ul>
+<li>1. Receipt voucher (F6).</li>
+<li>2. Debit Bank A/c 35,000.</li>
+<li>3. Credit MNO Services 35,000.</li>
+<li>4. Link against INV-A.</li>
+</ul>
+<p>Transaction 4 (28-Apr): Settlement of INV-B with discount.</p>
+<ul>
+<li>1. Receipt voucher (F6) or Journal + Receipt based on institute method.</li>
+<li>2. Debit Bank A/c 38,000.</li>
+<li>3. Debit Discount Allowed 2,000.</li>
+<li>4. Credit MNO Services 40,000.</li>
+<li>5. Link against INV-B as full settlement.</li>
+</ul>
+<h3 id="ch6-step-4-outstanding-and-ageing-validation">Step 4 - Outstanding and ageing validation:</h3>
+<ul>
+<li>1. INV-A pending should be 25,000 (60,000 - 35,000).</li>
+<li>2. INV-B should be fully closed.</li>
+<li>3. Open Bills Receivable report:</li>
+<li>- Check bill references and due dates.</li>
+<li>4. Open Ageing report:</li>
+<li>- Confirm pending amount appears in correct ageing bucket.</li>
+</ul>
+<h3 id="ch6-step-5-management-interpretation">Step 5 - Management interpretation:</h3>
+<ul>
+<li>1. If multiple pending bills are overdue, prioritize oldest first.</li>
+<li>2. Compare discount policy vs faster collections.</li>
+<li>3. Track monthly DSO trend if asked in workbook.</li>
+</ul>
+<h3 id="ch6-common-mistakes-and-fixes">Common mistakes and fixes:</h3>
+<ul>
+<li>1. Receipt not linked to bill reference.</li>
+<li>- Alter voucher and mark against correct invoice.</li>
+<li>2. Discount posted as expense but bill not closed.</li>
+<li>- Ensure receipt entry includes both bank and discount against same bill.</li>
+<li>3. Wrong due date in invoice.</li>
+<li>- Alter bill credit period and recheck ageing bucket.</li>
+</ul>
+<h3 id="ch6-submission-checklist">Submission checklist:</h3>
+<ul>
+<li>1. Invoice A and Invoice B screenshots.</li>
+<li>2. Receipt entries screenshot.</li>
+<li>3. Bill-wise outstanding report screenshot.</li>
+<li>4. Ageing analysis screenshot.</li>
+<li>5. Short collection strategy note (5 lines).</li>
+</ul>
+<h3 id="ch6-practice-extension">Practice extension:</h3>
+<ul>
+<li>1. Add one new customer invoice and one overdue follow-up receipt.</li>
+<li>2. Re-run ageing and identify top overdue customer.</li>
+<li>3. Draft a collection action list for next week.</li>
+</ul>
+
+<div class="visual-grid">
+    <div class="visual-card">
+        <h3>Tally Screen: Bill-wise Receipt Adjustment</h3>
+        <div class="mock-screen">
+            <div class="screen-title">Receipt Voucher (F6) - Against References</div>
+            <pre>
+Party: MNO Services
+
+Pending Bills:
+  INV-A    60,000    Due: 17-Apr
+  INV-B    40,000    Due: 05-May
+
+Receipt Entry 14-Apr:
+  Bank A/c Dr 35,000
+  MNO Services Cr 35,000
+  Against: INV-A (Part)
+
+Settlement 28-Apr:
+  Bank A/c Dr 38,000
+  Discount Allowed Dr 2,000
+  MNO Services Cr 40,000
+  Against: INV-B (Full)
+            </pre>
+        </div>
+    </div>
+    <div class="visual-card">
+        <h3>Receivables Ageing Snapshot</h3>
+        <div class="mini-bars">
+            <div><label>Current</label><span style="--w:20%"></span></div>
+            <div><label>1-15 Days</label><span style="--w:45%"></span></div>
+            <div><label>16-30 Days</label><span style="--w:65%"></span></div>
+            <div><label>31-45 Days</label><span style="--w:30%"></span></div>
+            <div><label>46+ Days</label><span style="--w:12%"></span></div>
+        </div>
+        <p>Use this view to prioritize follow-up calls: highest bucket first, then oldest invoice first.</p>
+    </div>
+</div>
+
+</section><section id="chapter-7" class="chapter">
+<div class="chapter-meta">Chapter 7</div>
+<h2>Tally Workbook Case Study - 5</h2>
+<p>Detailed Practice Workbook (Advanced Trading + Controls).</p>
+<h3 id="ch7-objective">Objective:</h3>
+<ul>
+<li>- Execute realistic high-volume monthly cycle.</li>
+<li>- Combine inventory, receivables, payables, tax, and bank controls.</li>
+<li>- Produce management-ready reports with cross-validation.</li>
+</ul>
+<h3 id="ch7-business-story">Business story:</h3>
+<p>A wholesaler handles electronics inventory with monthly purchase cycles, credit sales, returns, and bank reconciliation.</p>
+<h3 id="ch7-dataset-blueprint">Dataset blueprint:</h3>
+<ul>
+<li>1. Opening stock:</li>
+<li>- 4 SKUs x 50 units each.</li>
+<li>2. Purchases:</li>
+<li>- Weekly purchase bills from 3 suppliers.</li>
+<li>- Include transport and occasional purchase discount.</li>
+<li>3. Sales:</li>
+<li>- Credit sales to 10 customers.</li>
+<li>- Different credit periods (15/30/45 days).</li>
+<li>4. Returns and adjustments:</li>
+<li>- 2 damaged stock returns from customers.</li>
+<li>- 1 supplier replacement entry.</li>
+</ul>
+<h3 id="ch7-step-0-master-readiness">Step 0 - Master readiness:</h3>
+<ul>
+<li>1. Create stock groups:</li>
+<li>- Mobile Accessories, Audio, Networking, Office Devices.</li>
+<li>2. Create 12 stock items with UQC and GST mapping.</li>
+<li>3. Create godowns: Main and Transit.</li>
+<li>4. Create party ledgers with bill-wise details.</li>
+</ul>
+<h3 id="ch7-step-1-purchase-cycle-execution">Step 1 - Purchase cycle execution:</h3>
+<ul>
+<li>1. Pass all weekly purchase vouchers.</li>
+<li>2. Allocate items to godown and include freight where applicable.</li>
+<li>3. Ensure GST auto-calculation on each bill.</li>
+</ul>
+<h3 id="ch7-step-2-sales-cycle-execution">Step 2 - Sales cycle execution:</h3>
+<ul>
+<li>1. Pass customer-wise sales vouchers.</li>
+<li>2. Apply pricing and discount policy from workbook.</li>
+<li>3. Maintain bill references for every credit invoice.</li>
+</ul>
+<h3 id="ch7-step-3-returns-and-replacement">Step 3 - Returns and replacement:</h3>
+<ul>
+<li>1. Customer returns via Credit Notes with item quantities.</li>
+<li>2. Supplier-side return/replacement via Debit Note and receipt entry.</li>
+<li>3. Confirm stock movement is balanced across godowns.</li>
+</ul>
+<h3 id="ch7-step-4-cash-and-bank-discipline">Step 4 - Cash and bank discipline:</h3>
+<ul>
+<li>1. Enter receipts/payments against references.</li>
+<li>2. Perform bank reconciliation at week-end and month-end.</li>
+<li>3. Identify unreconciled lines and add notes.</li>
+</ul>
+<h3 id="ch7-step-5-control-checks">Step 5 - Control checks:</h3>
+<ul>
+<li>1. Stock movement vs invoice movement must align item-wise.</li>
+<li>2. Supplier outstanding must match pending purchase references.</li>
+<li>3. Debtor ageing must match due-date logic.</li>
+<li>4. GST summary totals must match tax ledgers.</li>
+</ul>
+<h3 id="ch7-expected-analytical-outputs">Expected analytical outputs:</h3>
+<ul>
+<li>1. Trial Balance (matched).</li>
+<li>2. Stock Summary by godown with high/low movers.</li>
+<li>3. Debtors ageing with top overdue 5 customers.</li>
+<li>4. GST monthly summary.</li>
+<li>5. Bank reconciliation statement.</li>
+</ul>
+<h3 id="ch7-common-mistakes-and-fixes">Common mistakes and fixes:</h3>
+<ul>
+<li>1. Stock negative due to wrong date sequence.</li>
+<li>- Reorder voucher dates and repost in chronological order.</li>
+<li>2. Wrong godown selected.</li>
+<li>- Alter voucher inventory allocation and revalidate stock summary.</li>
+<li>3. Returns without reference linking.</li>
+<li>- Link to original bill for correct ageing and profitability impact.</li>
+</ul>
+<h3 id="ch7-submission-checklist">Submission checklist:</h3>
+<ul>
+<li>1. Masters report (items, ledgers, godowns).</li>
+<li>2. Purchase/sales sample vouchers.</li>
+<li>3. Return voucher set.</li>
+<li>4. Stock Summary and GST Summary screenshots.</li>
+<li>5. Reconciliation note with 3 observations.</li>
+</ul>
+<h3 id="ch7-practice-extension">Practice extension:</h3>
+<ul>
+<li>1. Introduce one slow-moving item and apply discount campaign.</li>
+<li>2. Measure impact on sales and margin.</li>
+<li>3. Present before/after insights in 8 lines.</li>
+</ul>
+
+<div class="visual-grid">
+    <div class="visual-card">
+        <h3>Case 5 Workflow (Practice Path)</h3>
+        <ol class="step-list">
+            <li>Create masters: ledger, stock group, stock items, units.</li>
+            <li>Enter purchase vouchers with tax and transport values.</li>
+            <li>Enter sales vouchers and apply bill-wise references.</li>
+            <li>Post returns using Credit Note and Debit Note.</li>
+            <li>Run stock summary, ageing, and GST summary checks.</li>
+        </ol>
+    </div>
+    <div class="visual-card">
+        <h3>Practice Progress Chart</h3>
+        <div class="mini-bars">
+            <div><label>Master Setup</label><span style="--w:95%"></span></div>
+            <div><label>Purchase Cycle</label><span style="--w:88%"></span></div>
+            <div><label>Sales Cycle</label><span style="--w:90%"></span></div>
+            <div><label>Returns</label><span style="--w:75%"></span></div>
+            <div><label>Reconciliation</label><span style="--w:70%"></span></div>
+        </div>
+    </div>
+</div>
+
+</section><section id="chapter-8" class="chapter">
+<div class="chapter-meta">Chapter 8</div>
+<h2>Tally Workbook Case Study - 6</h2>
+<h3 id="ch8-advance-level">Advance Level:</h3>
+<h3 id="ch8-service-organization-with-gst">Service Organization With GST:</h3>
+<ul>
+<li>1. Practice taxable service billing with debtor tracking and GST ledgers.</li>
+<li>2. Combine service invoice, receipt, adjustment, and GST reconciliation.</li>
+<li>3. Check service income, output tax, and receivable ageing together.</li>
+</ul>
+<h3 id="ch8-manufacturing-with-gst">Manufacturing with GST:</h3>
+<ul>
+<li>1. Track raw material purchase, production usage, and finished-goods output.</li>
+<li>2. Understand how stock movement and tax interact in a manufacturing case.</li>
+<li>3. Validate consumption, production, and sales impact through reports.</li>
+</ul>
+<h3 id="ch8-payroll-management">Payroll Management:</h3>
+<ul>
+<li>1. Create salary ledgers and employee-related payable ledgers.</li>
+<li>2. Record gross salary, deductions, and net salary payment.</li>
+<li>3. Review payroll cost impact in Profit and Loss.</li>
+</ul>
+<p>Detailed Practice Workbook (Year-end Closure + MIS Review).</p>
+<h3 id="ch8-objective">Objective:</h3>
+<ul>
+<li>- Perform year-end accounting adjustments with confidence.</li>
+<li>- Prepare audit-supporting books and control evidence.</li>
+<li>- Generate MIS insights from finalized books.</li>
+</ul>
+<h3 id="ch8-advance-level-mapping">Advance Level Mapping:</h3>
+<ul>
+<li>1. Service Organization with GST:</li>
+<li>- Mixed taxable services, receivable tracking, and GST reconciliation.</li>
+<li>2. Manufacturing with GST:</li>
+<li>- Raw material purchase, production consumption, finished-goods sale, and tax impact.</li>
+<li>3. Payroll Management:</li>
+<li>- Salary components, payable ledgers, payment voucher, and payroll-cost reporting.</li>
+</ul>
+<h3 id="ch8-business-story">Business story:</h3>
+<p>A distributor wants clean year-end books, category profitability, and audit-ready trails.</p>
+<h3 id="ch8-year-dataset-scope">Year dataset scope:</h3>
+<ul>
+<li>1. Full 12-month transactions:</li>
+<li>- Purchase, sales, direct/indirect expenses, collections, payments.</li>
+<li>2. Recurring adjustments:</li>
+<li>- Monthly depreciation.</li>
+<li>- Provision and accrual entries.</li>
+<li>3. Closure activities:</li>
+<li>- Final tax review.</li>
+<li>- Carry-forward checks.</li>
+</ul>
+<h3 id="ch8-step-0-pre-close-preparation">Step 0 - Pre-close preparation:</h3>
+<ul>
+<li>1. Freeze transaction cut-off date.</li>
+<li>2. Take data backup snapshot.</li>
+<li>3. Export trial balance draft for comparison.</li>
+</ul>
+<h3 id="ch8-step-1-pass-year-end-adjustments">Step 1 - Pass year-end adjustments:</h3>
+<ul>
+<li>1. Depreciation:</li>
+<li>- Debit Depreciation Expense, credit accumulated depreciation/fixed asset adjustment ledger.</li>
+<li>2. Outstanding expenses:</li>
+<li>- Debit relevant expense, credit outstanding liability.</li>
+<li>3. Prepaid expenses:</li>
+<li>- Credit expense and debit prepaid asset where applicable.</li>
+<li>4. Provision entries:</li>
+<li>- Create provision ledgers per workbook requirement.</li>
+</ul>
+<h3 id="ch8-step-2-verify-compliance-blocks">Step 2 - Verify compliance blocks:</h3>
+<ul>
+<li>1. Review GST ledgers and summary alignment.</li>
+<li>2. Confirm no unreconciled statutory entries.</li>
+<li>3. Check voucher narration quality for audit readability.</li>
+</ul>
+<h3 id="ch8-step-3-audit-pack-creation">Step 3 - Audit pack creation:</h3>
+<ul>
+<li>1. Export Day Book, Ledger extracts, Trial Balance, P&amp;L, Balance Sheet.</li>
+<li>2. Export party outstanding and ageing reports.</li>
+<li>3. Export stock summary and valuation detail.</li>
+</ul>
+<h3 id="ch8-step-4-period-control-and-governance">Step 4 - Period control and governance:</h3>
+<ul>
+<li>1. Lock previous period after validation.</li>
+<li>2. Define user rights for post-close changes.</li>
+<li>3. Maintain exception register for any reopening.</li>
+</ul>
+<h3 id="ch8-step-5-mis-preparation">Step 5 - MIS preparation:</h3>
+<ul>
+<li>1. Monthly gross margin trend.</li>
+<li>2. Top customer contribution analysis.</li>
+<li>3. Expense ratio and variance analysis.</li>
+<li>4. Category-wise profitability if item/account grouping exists.</li>
+</ul>
+<h3 id="ch8-practice-challenge-error-detection-lab">Practice challenge (error detection lab):</h3>
+<ul>
+<li>1. Identify 5 intentionally incorrect entries:</li>
+<li>- Wrong expense head.</li>
+<li>- Tax side swapped.</li>
+<li>- Missing bill reference.</li>
+<li>- Wrong period date.</li>
+<li>- Reversed debit-credit line.</li>
+<li>2. Correct all entries.</li>
+<li>3. Explain effect on P&amp;L, Balance Sheet, and tax output.</li>
+</ul>
+<h3 id="ch8-common-mistakes-and-fixes">Common mistakes and fixes:</h3>
+<ul>
+<li>1. Adjustments posted in next period.</li>
+<li>- Re-date to year-end and relock period.</li>
+<li>2. Depreciation posted to wrong group.</li>
+<li>- Move ledger to proper expense/asset mapping.</li>
+<li>3. Provision not reversed next cycle.</li>
+<li>- Add reversal schedule in opening month.</li>
+</ul>
+<h3 id="ch8-submission-checklist">Submission checklist:</h3>
+<ul>
+<li>1. Pre-close vs post-close Trial Balance comparison.</li>
+<li>2. Adjustment voucher bundle screenshot/PDF.</li>
+<li>3. Final P&amp;L and Balance Sheet screenshot.</li>
+<li>4. GST validation screenshot.</li>
+<li>5. MIS summary page with three key insights.</li>
+</ul>
+<h3 id="ch8-practice-extension">Practice extension:</h3>
+<ul>
+<li>1. Add one what-if scenario (sales down 10%, expenses up 5%).</li>
+<li>2. Recompute expected margin pressure.</li>
+<li>3. Suggest two management actions based on MIS.</li>
+</ul>
+
+<div class="visual-grid">
+    <div class="visual-card">
+        <h3>Year-End Checklist Board</h3>
+        <table class="check-table">
+            <tr><th>Task</th><th>Status</th><th>Why It Matters</th></tr>
+            <tr><td>Depreciation Entry</td><td>Required</td><td>Correct fixed asset value and P&amp;L impact</td></tr>
+            <tr><td>Outstanding Expenses</td><td>Required</td><td>Match expenses to period</td></tr>
+            <tr><td>GST Review</td><td>Required</td><td>Tax compliance and reconciliation</td></tr>
+            <tr><td>Ledger Scrutiny</td><td>Required</td><td>Remove posting errors before closure</td></tr>
+            <tr><td>Backup &amp; Lock Period</td><td>Required</td><td>Audit safety and data integrity</td></tr>
+        </table>
+    </div>
+    <div class="visual-card">
+        <h3>MIS View for Students</h3>
+        <svg viewBox="0 0 640 260" role="img" aria-label="MIS trend chart">
+            <polyline points="40,200 120,170 200,160 280,140 360,135 440,120 520,110 600,96" class="line-a"/>
+            <polyline points="40,220 120,210 200,205 280,188 360,178 440,172 520,164 600,158" class="line-b"/>
+            <line x1="40" y1="230" x2="610" y2="230" class="axis"/>
+            <line x1="40" y1="40" x2="40" y2="230" class="axis"/>
+            <text x="50" y="36">Monthly Trend: Gross Margin (A) vs Expense Ratio (B)</text>
+        </svg>
+    </div>
+</div>
+
+</section><section id="chapter-9" class="chapter">
+<div class="chapter-meta">Chapter 9</div>
+<h2>Tally.ERP  9 Keyboard Shortcuts</h2>
+<h3 id="ch9-keyboard-shortcuts-student-core-set">Keyboard Shortcuts (Student Core Set):</h3>
+<ul>
+<li>- F2: Change Date</li>
+<li>- F3: Company</li>
+<li>- F4: Contra</li>
+<li>- F5: Payment</li>
+<li>- F6: Receipt</li>
+<li>- F7: Journal</li>
+<li>- F8: Sales</li>
+<li>- F9: Purchase</li>
+<li>- Ctrl+A: Accept/Save</li>
+<li>- Alt+G: Go To</li>
+<li>- Alt+K: Company menu actions</li>
+</ul>
+<h3 id="ch9-tip">Tip:</h3>
+<p>Practice by entering one full day of vouchers using only keyboard.</p>
+</section><section id="chapter-10" class="chapter">
+<div class="chapter-meta">Chapter 10</div>
+<h2>Configuration</h2>
+<h3 id="ch10-overview-of-tally-erp-9">Overview of Tally.ERP 9:</h3>
+<p>This section teaches how to open software, configure it, and post first transactions correctly.</p>
+<h3 id="ch10-download-and-install">Download and Install:</h3>
+<ul>
+<li>1. Open official site and download supported installer.</li>
+<li>2. Run setup and complete installation wizard.</li>
+<li>3. Start Tally from desktop icon.</li>
+<li>4. Verify version in help/about screen.</li>
+</ul>
+<h3 id="ch10-short-summary">Short Summary:</h3>
+<ul>
+<li>- Install from trusted source and validate version before training.</li>
+</ul>
+<h3 id="ch10-create-company">Create Company:</h3>
+<ul>
+<li>1. Choose Create Company from startup screen.</li>
+<li>2. Enter company name, address, state, and currency.</li>
+<li>3. Set financial year and books beginning date.</li>
+<li>4. Save company and confirm on top bar.</li>
+</ul>
+<h3 id="ch10-short-summary">Short Summary:</h3>
+<ul>
+<li>- Company creation defines your accounting period and base identity.</li>
+</ul>
+<h3 id="ch10-configurations">Configurations:</h3>
+<ul>
+<li>1. Use F11 for feature-level configuration.</li>
+<li>2. Use F12 for screen behavior configuration.</li>
+<li>3. Set narration, voucher numbering, and optional settings.</li>
+<li>4. Configure backup location and security basics.</li>
+</ul>
+<h3 id="ch10-short-summary">Short Summary:</h3>
+<ul>
+<li>- Correct configuration reduces data-entry errors significantly.</li>
+</ul>
+<h3 id="ch10-basic-introduction-of-features">Basic Introduction of Features:</h3>
+<ul>
+<li>1. Accounting Features.</li>
+<li>2. Inventory Features.</li>
+<li>3. Statutory and Taxation Features (GST).</li>
+<li>4. Cost centres, bill-wise details, and controls.</li>
+</ul>
+<h3 id="ch10-short-summary">Short Summary:</h3>
+<ul>
+<li>- Enable only features needed for the current workbook case.</li>
+</ul>
+<h3 id="ch10-voucher-transaction-entry">Voucher Transaction Entry:</h3>
+<ul>
+<li>1. Open Vouchers screen from Gateway.</li>
+<li>2. Set date with F2.</li>
+<li>3. Choose voucher type (F4/F5/F6/F7/F8/F9).</li>
+<li>4. Enter Dr/Cr lines carefully.</li>
+<li>5. Add narration and save with Ctrl+A.</li>
+</ul>
+<h3 id="ch10-example">Example:</h3>
+<ul>
+<li>1. Rent paid from bank 18,000.</li>
+<li>- Rent A/c Dr 18,000</li>
+<li>- To Bank A/c 18,000</li>
+</ul>
+<h3 id="ch10-short-summary">Short Summary:</h3>
+<ul>
+<li>- Voucher type first, then amounts, then verification, then save.</li>
+</ul>
+<h3 id="ch10-view-reports">View Reports:</h3>
+<ul>
+<li>1. Day Book for daily verification.</li>
+<li>2. Trial Balance for Dr/Cr equality.</li>
+<li>3. Profit and Loss for performance.</li>
+<li>4. Balance Sheet for financial position.</li>
+</ul>
+<h3 id="ch10-short-summary">Short Summary:</h3>
+<ul>
+<li>- Enter, verify, analyze is the mandatory student loop.</li>
+</ul>
+<h3 id="ch10-new-student-screen-walkthrough-must-practice-once">New Student Screen Walkthrough (must practice once):</h3>
+<ul>
+<li>1. Open company:</li>
+<li>- Gateway -&gt; Company -&gt; Select Company.</li>
+<li>- Confirm active company name on top bar.</li>
+<li>2. Create masters screen path:</li>
+<li>- Alt+G -&gt; type Create Ledger.</li>
+<li>- Choose group correctly before saving.</li>
+<li>3. Open voucher screen path:</li>
+<li>- Gateway -&gt; Vouchers (or press V).</li>
+<li>- Use function keys to switch voucher type.</li>
+<li>4. Enter first transaction safely:</li>
+<li>- Press F2 and set date.</li>
+<li>- Select voucher type.</li>
+<li>- Enter debit and credit lines.</li>
+<li>- Add narration and press Ctrl+A.</li>
+<li>5. Check report immediately:</li>
+<li>- Alt+G -&gt; Day Book.</li>
+<li>- Open entered voucher and re-check Dr/Cr lines.</li>
+<li>- Then open Trial Balance.</li>
+<li>6. Exit and data safety:</li>
+<li>- Take backup after practice session.</li>
+<li>- Exit company from company menu.</li>
+<li>- Do not shut PC before save confirmation.</li>
+</ul>
+<h3 id="ch10-new-student-do-and-do-not">New student do and do not:</h3>
+<ul>
+<li>- Do use consistent ledger naming.</li>
+<li>- Do pass entries in date sequence.</li>
+<li>- Do verify reports daily.</li>
+<li>- Do not post without knowing voucher type.</li>
+<li>- Do not mix personal and business entries.</li>
+<li>- Do not skip narration.</li>
+</ul>
+
+<div class="visual-grid">
+    <div class="visual-card">
+        <h3>Tally Screen: Configuration Navigation</h3>
+        <div class="mock-screen">
+            <div class="screen-title">Gateway -> F11 Features -> Set/Alter</div>
+            <pre>
+F11 Features
+    Accounting Features
+        Maintain bill-wise details: Yes
+        Cost centres: As needed
+
+    Statutory &amp; Taxation
+        Enable GST: Yes
+        Set GST details: Yes
+
+F12 Configure
+    Show Narration: Yes
+    Use common narration: Optional
+            </pre>
+        </div>
+    </div>
+    <div class="visual-card">
+        <h3>Workbook Follow Diagram</h3>
+        <ol class="step-list">
+            <li>Read chapter concept.</li>
+            <li>Open Tally and configure prerequisites.</li>
+            <li>Enter sample transactions.</li>
+            <li>Validate with report checkpoints.</li>
+            <li>Repeat with your own dataset.</li>
+        </ol>
+    </div>
+</div>
+
+</section>
+
+    <section class="sources">
+      <h2>Internet Sources Used</h2>
+      <ul><li><a href="https://tallysolutions.com/" target="_blank" rel="noopener">TallyPrime Overview</a></li><li><a href="https://help.tallysolutions.com/" target="_blank" rel="noopener">Tally Help Home</a></li><li><a href="https://help.tallysolutions.com/quick-start-guide/" target="_blank" rel="noopener">Quick Start Guide</a></li><li><a href="https://help.tallysolutions.com/tally-prime/accounting/accounting-in-tally-prime/" target="_blank" rel="noopener">Accounting in TallyPrime</a></li><li><a href="https://help.tallysolutions.com/tally-prime/inventory/inventory-tally/" target="_blank" rel="noopener">Inventory in TallyPrime</a></li><li><a href="https://help.tallysolutions.com/tally-prime/sales-process-tally/sales-process-tally/" target="_blank" rel="noopener">Sales Process</a></li><li><a href="https://help.tallysolutions.com/tally-prime/purchase-process-tally/purchase-process-tally/" target="_blank" rel="noopener">Purchase Process</a></li><li><a href="https://en.wikipedia.org/wiki/Tally_Solutions" target="_blank" rel="noopener">Tally Solutions (Background)</a></li></ul>
+      <div class="callout"><strong>Note:</strong> This edition is student-focused and rewritten for practice clarity. Validate tax/legal rules against the latest official TallyHelp and government notifications before production use.</div>
+    </section>
+  </main>
+</div>
+</body>
+</html>
