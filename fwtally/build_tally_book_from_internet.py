@@ -18,6 +18,8 @@ SOURCES = {
     "Sales Process": "https://help.tallysolutions.com/tally-prime/sales-process-tally/sales-process-tally/",
     "Purchase Process": "https://help.tallysolutions.com/tally-prime/purchase-process-tally/purchase-process-tally/",
     "Tally Solutions (Background)": "https://en.wikipedia.org/wiki/Tally_Solutions",
+    "SSC Study Tally Course Outline": "https://sscstudy.com/tally-prime-book-pdf-free-download/",
+    "Mkuzak Tally Overview": "https://mkuzak.am/tally-prime-book-pdf-free-download/?lang=en",
 }
 
 ORDER = [
@@ -920,6 +922,12 @@ Student Error-Control Checklist:
 4. Is ledger group correct?
 5. Is narration present?
 6. Does report match expected business result?
+
+Supplementary Learning Themes from Public Course Pages:
+1. Many public Tally courses split learning into fundamentals, inventory, GST, payroll, and security modules.
+2. Students usually learn faster when theory notes are paired with bill-book style practice entries.
+3. A strong learning order is: concept, masters, sample voucher, report check, then repeat with variation.
+4. Public course outlines also emphasize short assignments, printable examples, and repeated keyboard practice.
 """
 
     case1 = """
@@ -1106,6 +1114,29 @@ Deep Student Guidance:
 2. Wrong unit or wrong stock item creates invisible report mistakes.
 3. Students should check stock after every major purchase/sales entry block.
 
+Supplementary Inventory Topics:
+1. Batch-wise inventory:
+- Useful for medicine, expiry-based goods, and packed items.
+- Students should understand when batch, manufacturing date, or expiry date affects stock control.
+2. Bill-book practice entries:
+- Repeated purchase and sales bill formats improve accuracy in invoice posting.
+3. Stock Journal and material transfer:
+- Internal movement and stock adjustment can be practiced separately from normal purchase/sales flow.
+4. Zero-value and actual-vs-billed quantity:
+- These cases help students understand quantity adjustments that do not always behave like normal sales values.
+5. Cost centre, order processing, and BOM:
+- These are natural extensions after the basic inventory chapter is understood.
+
+Practice Add-on Exercises:
+1. Create one item with assumed batch tracking.
+2. Record one stock transfer between two internal locations.
+3. Create one invoice with quantity difference explanation.
+4. Compare Stock Summary before and after adjustment.
+
+Further Reading Links:
+1. https://sscstudy.com/tally-prime-book-pdf-free-download/
+2. https://help.tallysolutions.com/tally-prime/inventory/inventory-tally/
+
 Submission checklist:
 1. Item, group, and unit creation screenshots.
 2. Purchase and sales invoice screenshots.
@@ -1193,6 +1224,31 @@ Deep Student Guidance:
 1. This case teaches tax logic, stock control, and error correction together.
 2. Students should not move to reports before checking voucher tax lines.
 3. Godown and cost-centre setup become useful only when entries are posted consistently.
+
+Supplementary GST Practice Topics:
+1. GST ledger discipline:
+- Separate purchase, sales, input tax, output tax, and party ledgers carefully.
+2. Bill book with GST:
+- Ready-made purchase and sales bill formats help students practice tax fields faster.
+3. Debit Note and Credit Note learning:
+- These should be practiced with both quantity reversal and tax effect awareness.
+4. Interest calculation on parties:
+- Overdue-interest scenarios are a useful extension after base GST learning.
+5. Multiple currencies:
+- Advanced students can later test foreign-currency purchase and sale behavior.
+6. Import/export and security:
+- XML/Excel export, backup, and access control are real business skills beyond entry posting.
+
+Practice Add-on Exercises:
+1. Create one local sale and one inter-state sale on the same date.
+2. Pass one sales return and verify GST reversal.
+3. Add one interest adjustment and check report effect.
+4. Export a GST-related report to PDF.
+
+Further Reading Links:
+1. https://sscstudy.com/tally-prime-book-pdf-free-download/
+2. https://help.tallysolutions.com/tally-prime/accounting/accounting-in-tally-prime/
+3. https://help.tallysolutions.com/tally-prime/inventory/inventory-tally/
 
 Submission checklist:
 1. GST configuration screenshots.
@@ -1394,6 +1450,18 @@ Payroll Management:
 1. Create salary ledgers and employee-related payable ledgers.
 2. Record gross salary, deductions, and net salary payment.
 3. Review payroll cost impact in Profit and Loss.
+4. Typical training modules also include employee groups, pay heads, attendance, and payroll vouchers.
+
+Supplementary Advance Practice Topics:
+1. Security of data and import/export:
+- Learn export to PDF/Excel/XML and safe backup habits.
+- Understand security control and restricted user access.
+2. Payroll structure examples:
+- Basic Pay, HRA, Transport Allowance, Bonus, PF, ESIC, and overtime are common training items.
+3. Manufacturing preparation:
+- BOM, raw material issue, finished goods, and cost tracking are common next-step topics.
+4. Assignment-based learning:
+- Public training outlines often pair each module with a practice transaction set.
 
 Detailed Practice Workbook (Year-end Closure + MIS Review).
 Objective:
