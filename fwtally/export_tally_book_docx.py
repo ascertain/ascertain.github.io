@@ -121,6 +121,7 @@ def handle_tag(doc: Document, tag: Tag, chapter_started: bool = False) -> None:
         return
 
     if tag.name == "h3":
+        doc.add_page_break()
         doc.add_heading(tag.get_text(" ", strip=True), level=2)
         return
 

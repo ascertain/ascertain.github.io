@@ -657,6 +657,355 @@ F12 Configure
     return ""
 
 
+def chapter_appendix_html(title: str) -> str:
+        title = title.strip()
+
+        if title == "Notes":
+                return """
+<div class="visual-card" style="margin-top:14px;">
+    <h3>Detailed Study Appendix: Accounting Foundations</h3>
+    <p>This appendix turns the theory chapter into a practical study notebook. Students should read one subsection, write the journal entry on paper, then repeat it in Tally.</p>
+    <table class="check-table">
+        <tr><th>Business Event</th><th>Debit</th><th>Credit</th><th>Rule Used</th></tr>
+        <tr><td>Owner brings cash</td><td>Cash A/c</td><td>Capital A/c</td><td>Real + Personal</td></tr>
+        <tr><td>Rent paid by bank</td><td>Rent A/c</td><td>Bank A/c</td><td>Nominal + Real</td></tr>
+        <tr><td>Furniture purchased in cash</td><td>Furniture A/c</td><td>Cash A/c</td><td>Real + Real</td></tr>
+        <tr><td>Goods sold on credit</td><td>Customer A/c</td><td>Sales A/c</td><td>Personal + Nominal</td></tr>
+        <tr><td>Salary outstanding</td><td>Salary A/c</td><td>Outstanding Salary A/c</td><td>Nominal + Personal</td></tr>
+        <tr><td>Commission received</td><td>Cash A/c</td><td>Commission A/c</td><td>Real + Nominal</td></tr>
+        <tr><td>Cash withdrawn for personal use</td><td>Drawings A/c</td><td>Cash A/c</td><td>Personal + Real</td></tr>
+        <tr><td>Bank deposit from cash</td><td>Bank A/c</td><td>Cash A/c</td><td>Real + Real</td></tr>
+        <tr><td>Purchase return</td><td>Creditor A/c</td><td>Purchase Return A/c</td><td>Personal + Nominal</td></tr>
+        <tr><td>Sales return</td><td>Sales Return A/c</td><td>Customer A/c</td><td>Nominal + Personal</td></tr>
+    </table>
+</div>
+<div class="visual-grid" style="margin-top:12px;">
+    <div class="visual-card">
+        <h3>20 Journal Drills for Self-Practice</h3>
+        <ol class="step-list">
+            <li>Started business with 500,000 cash.</li>
+            <li>Deposited 200,000 into bank.</li>
+            <li>Bought computer for office use.</li>
+            <li>Paid salary 28,000.</li>
+            <li>Paid electricity 6,400.</li>
+            <li>Received commission 7,500.</li>
+            <li>Issued credit invoice to customer.</li>
+            <li>Received amount from customer with discount.</li>
+            <li>Paid creditor partly by bank.</li>
+            <li>Purchased stationery on cash.</li>
+            <li>Recorded prepaid insurance.</li>
+            <li>Passed depreciation journal.</li>
+            <li>Outstanding rent adjustment.</li>
+            <li>Sales return from customer.</li>
+            <li>Purchase return to supplier.</li>
+            <li>Interest charged to debtor.</li>
+            <li>Interest allowed by creditor.</li>
+            <li>Cash withdrawn for personal use.</li>
+            <li>Accrued audit fees.</li>
+            <li>Closing stock adjustment entry.</li>
+        </ol>
+    </div>
+    <div class="visual-card">
+        <h3>Study Method for Beginners</h3>
+        <ol class="step-list">
+            <li>Read the transaction in plain English.</li>
+            <li>Find the two accounts involved.</li>
+            <li>Classify each account type.</li>
+            <li>Apply the golden rule.</li>
+            <li>Write the journal entry manually.</li>
+            <li>Choose the voucher in Tally.</li>
+            <li>Enter the transaction and save.</li>
+            <li>Open Day Book and confirm the result.</li>
+        </ol>
+        <p>Students who follow this cycle repeatedly usually become independent faster than students who only memorize shortcuts.</p>
+    </div>
+</div>
+"""
+
+        if title == "Tally Workbook Case Study - 1":
+                return """
+<div class="visual-card" style="margin-top:14px;">
+    <h3>12-Month Service Practice Register</h3>
+    <table class="check-table">
+        <tr><th>Month</th><th>Main Income Task</th><th>Main Expense Task</th><th>Report Check</th></tr>
+        <tr><td>April</td><td>Create first service invoices</td><td>Rent, salary, electricity</td><td>Day Book</td></tr>
+        <tr><td>May</td><td>Credit billing and receipt follow-up</td><td>Office expenses</td><td>Trial Balance</td></tr>
+        <tr><td>June</td><td>Repeat invoice cycle</td><td>Bank payments</td><td>P&amp;L</td></tr>
+        <tr><td>July</td><td>Customer ageing review</td><td>Expense narration discipline</td><td>Outstanding report</td></tr>
+        <tr><td>August</td><td>Bill-wise collection</td><td>Petty cash review</td><td>Cash/Bank book</td></tr>
+        <tr><td>September</td><td>Quarter-end review</td><td>Adjustment prep</td><td>Trial Balance</td></tr>
+        <tr><td>October</td><td>Higher volume voucher practice</td><td>Expense regrouping check</td><td>P&amp;L</td></tr>
+        <tr><td>November</td><td>Discount and collection</td><td>Bank reconciliation basics</td><td>Receivables</td></tr>
+        <tr><td>December</td><td>Service billing controls</td><td>Provision preparation</td><td>Balance Sheet</td></tr>
+        <tr><td>January</td><td>Year-end planning</td><td>Accrual review</td><td>Day Book</td></tr>
+        <tr><td>February</td><td>Correction entries</td><td>Depreciation check</td><td>Trial Balance</td></tr>
+        <tr><td>March</td><td>Final service report review</td><td>Closing entries</td><td>P&amp;L + B/S</td></tr>
+    </table>
+</div>
+<div class="visual-grid" style="margin-top:12px;">
+    <div class="visual-card">
+        <h3>Worked Example Set: Service Business</h3>
+        <ol class="step-list">
+            <li>Issued invoice for consulting services 95,000 on credit.</li>
+            <li>Received 60,000 by bank against that invoice.</li>
+            <li>Allowed 2,000 cash discount on final settlement.</li>
+            <li>Paid rent 18,000 and internet 2,400.</li>
+            <li>Passed depreciation 1,800 on office equipment.</li>
+        </ol>
+        <p>Student task: write all entries, pass them in Tally, and identify the closing debtor balance and expense total.</p>
+    </div>
+    <div class="visual-card">
+        <h3>Case 1 Troubleshooting Notebook</h3>
+        <table class="check-table">
+            <tr><th>Problem Seen</th><th>Likely Cause</th><th>Fix</th></tr>
+            <tr><td>Trial Balance mismatch</td><td>Wrong Dr/Cr side</td><td>Open voucher and correct line</td></tr>
+            <tr><td>Customer not showing outstanding</td><td>Bill-wise not enabled</td><td>Alter ledger and re-link bill</td></tr>
+            <tr><td>Expense missing in P&amp;L</td><td>Ledger group wrong</td><td>Alter group mapping</td></tr>
+            <tr><td>Bank lower than expected</td><td>Duplicate payment/contra</td><td>Check Day Book chronologically</td></tr>
+        </table>
+    </div>
+</div>
+"""
+
+        if title == "Tally Workbook Case Study - 2":
+                return """
+<div class="visual-card" style="margin-top:14px;">
+    <h3>Extended Inventory Workbook</h3>
+    <table class="check-table">
+        <tr><th>Module</th><th>What Student Learns</th><th>Deliverable</th></tr>
+        <tr><td>Item Setup</td><td>Unit, group, opening stock</td><td>Master list</td></tr>
+        <tr><td>Purchase Cycle</td><td>Stock inward, creditor effect</td><td>Purchase invoice</td></tr>
+        <tr><td>Sales Cycle</td><td>Stock outward, debtor effect</td><td>Sales invoice</td></tr>
+        <tr><td>Returns</td><td>Value and quantity reversal</td><td>Debit/Credit note</td></tr>
+        <tr><td>Adjustments</td><td>Provision, depreciation, closing</td><td>Journal set</td></tr>
+        <tr><td>Reports</td><td>Stock Summary and movement analysis</td><td>Exported report pack</td></tr>
+    </table>
+</div>
+<div class="visual-grid" style="margin-top:12px;">
+    <div class="visual-card">
+        <h3>Month-by-Month Trading Assignment</h3>
+        <ol class="step-list">
+            <li>April: create 3 items and enter opening stock.</li>
+            <li>May: purchase from 2 suppliers and post freight.</li>
+            <li>June: sales to 3 customers and receive part payment.</li>
+            <li>July: purchase return and sales return.</li>
+            <li>August: stock transfer or adjustment entry.</li>
+            <li>September: first quarter stock report review.</li>
+            <li>October: depreciation and provision drill.</li>
+            <li>November: invoice printing practice.</li>
+            <li>December: export Trial Balance and Stock Summary.</li>
+            <li>January to March: repeat with higher volume and year-end checks.</li>
+        </ol>
+    </div>
+    <div class="visual-card">
+        <h3>Inventory Interpretation Questions</h3>
+        <ol class="step-list">
+            <li>Which item is overstocked?</li>
+            <li>Which item has fastest outward movement?</li>
+            <li>Did returns change gross margin materially?</li>
+            <li>Does closing stock seem realistic versus sales volume?</li>
+            <li>Did freight get absorbed into the intended cost logic?</li>
+        </ol>
+        <p>Students should answer these after every practice month, not only at year-end.</p>
+    </div>
+</div>
+"""
+
+        if title == "Tally Workbook Case Study - 3":
+                return """
+<div class="visual-card" style="margin-top:14px;">
+    <h3>GST Scenario Workbook</h3>
+    <table class="check-table">
+        <tr><th>Scenario</th><th>Tax Type</th><th>Key Student Check</th></tr>
+        <tr><td>Local purchase</td><td>CGST + SGST</td><td>Party state and tax ledger</td></tr>
+        <tr><td>Local sales</td><td>CGST + SGST</td><td>Invoice tax split</td></tr>
+        <tr><td>Inter-state sales</td><td>IGST</td><td>Destination state</td></tr>
+        <tr><td>Sales return</td><td>Reverse output tax</td><td>Credit note values</td></tr>
+        <tr><td>Purchase return</td><td>Reverse input tax</td><td>Debit note values</td></tr>
+        <tr><td>Discount or interest</td><td>Depends on treatment</td><td>Taxable value logic</td></tr>
+    </table>
+</div>
+<div class="visual-grid" style="margin-top:12px;">
+    <div class="visual-card">
+        <h3>Monthly GST Review Routine</h3>
+        <ol class="step-list">
+            <li>Verify party state and GST details.</li>
+            <li>Review sales vouchers for correct tax split.</li>
+            <li>Review purchase vouchers for correct input claim.</li>
+            <li>Recheck all debit and credit notes.</li>
+            <li>Match tax ledger balances with GST summary.</li>
+            <li>Export tax report and save month-end file.</li>
+        </ol>
+    </div>
+    <div class="visual-card">
+        <h3>GST Error Notebook</h3>
+        <table class="check-table">
+            <tr><th>Error</th><th>Impact</th><th>Correction</th></tr>
+            <tr><td>Used IGST instead of CGST/SGST</td><td>Wrong liability split</td><td>Alter voucher</td></tr>
+            <tr><td>Party GST config missing</td><td>Tax line absent or wrong</td><td>Fix ledger and repost</td></tr>
+            <tr><td>Return voucher without tax reversal</td><td>Summary mismatch</td><td>Use proper note voucher</td></tr>
+            <tr><td>Wrong item GST rate</td><td>Invoice tax incorrect</td><td>Correct item master</td></tr>
+        </table>
+    </div>
+</div>
+"""
+
+        if title == "Tally Workbook Case Study - 4":
+                return """
+<div class="visual-card" style="margin-top:14px;">
+    <h3>Receivables Control Workbook</h3>
+    <table class="check-table">
+        <tr><th>Week</th><th>Student Action</th><th>Expected Output</th></tr>
+        <tr><td>Week 1</td><td>Create debtor and issue invoices</td><td>Bill-wise opening list</td></tr>
+        <tr><td>Week 2</td><td>Record partial receipts</td><td>Reduced outstanding</td></tr>
+        <tr><td>Week 3</td><td>Record settlement discount</td><td>Closed bill with discount</td></tr>
+        <tr><td>Week 4</td><td>Run ageing analysis</td><td>Overdue bucket review</td></tr>
+    </table>
+</div>
+<div class="visual-grid" style="margin-top:12px;">
+    <div class="visual-card">
+        <h3>Follow-Up Note Template</h3>
+        <div class="mock-screen">
+            <div class="screen-title">Collection log students can maintain outside Tally</div>
+            <pre>
+Invoice No:
+Due Date:
+Last Contact Date:
+Committed Payment Date:
+Discount Offered:
+Status: Open / Follow-up / Settled
+            </pre>
+        </div>
+    </div>
+    <div class="visual-card">
+        <h3>Ageing Interpretation Questions</h3>
+        <ol class="step-list">
+            <li>Which invoice is most overdue?</li>
+            <li>Which customer takes the highest collection time?</li>
+            <li>Was discount used to close a risky receivable?</li>
+            <li>How much is collectible in the next 7 days?</li>
+        </ol>
+    </div>
+</div>
+"""
+
+        if title == "Tally Workbook Case Study - 5":
+                return """
+<div class="visual-card" style="margin-top:14px;">
+    <h3>Advanced Trading Control Pack</h3>
+    <table class="check-table">
+        <tr><th>Control Area</th><th>Student Task</th><th>Evidence</th></tr>
+        <tr><td>Supplier control</td><td>Check bill-wise pending purchases</td><td>Creditors ageing</td></tr>
+        <tr><td>Customer control</td><td>Check overdue invoices</td><td>Debtors ageing</td></tr>
+        <tr><td>Inventory control</td><td>Review godown movement</td><td>Stock Summary by godown</td></tr>
+        <tr><td>Tax control</td><td>Verify GST ledgers</td><td>GST summary</td></tr>
+        <tr><td>Bank control</td><td>Match deposits and withdrawals</td><td>Bank reconciliation</td></tr>
+    </table>
+</div>
+<div class="visual-grid" style="margin-top:12px;">
+    <div class="visual-card">
+        <h3>Weekly Operations Schedule</h3>
+        <ol class="step-list">
+            <li>Week 1: master updates and opening stock review.</li>
+            <li>Week 2: purchase-heavy cycle and inward freight.</li>
+            <li>Week 3: sales-heavy cycle and collection follow-up.</li>
+            <li>Week 4: returns, reconciliation, and management review.</li>
+        </ol>
+    </div>
+    <div class="visual-card">
+        <h3>Management Review Questions</h3>
+        <ol class="step-list">
+            <li>Which godown holds slow-moving stock?</li>
+            <li>Which supplier has the highest pending payable?</li>
+            <li>Which customer is the top overdue risk?</li>
+            <li>Did GST totals match accounting totals?</li>
+            <li>Was there any negative stock situation?</li>
+        </ol>
+    </div>
+</div>
+"""
+
+        if title == "Tally Workbook Case Study - 6":
+                return """
+<div class="visual-card" style="margin-top:14px;">
+    <h3>Year-End Audit and Closing Calendar</h3>
+    <table class="check-table">
+        <tr><th>Stage</th><th>Task</th><th>Output</th></tr>
+        <tr><td>Pre-close</td><td>Backup and freeze cut-off</td><td>Safe working copy</td></tr>
+        <tr><td>Adjustment</td><td>Depreciation, accruals, prepaid entries</td><td>Adjusted trial balance</td></tr>
+        <tr><td>Verification</td><td>GST, ledgers, books scrutiny</td><td>Error list</td></tr>
+        <tr><td>Finalization</td><td>P&amp;L and Balance Sheet review</td><td>Final accounts</td></tr>
+        <tr><td>Carry-forward</td><td>Opening balance readiness</td><td>Next-year start pack</td></tr>
+    </table>
+</div>
+<div class="visual-grid" style="margin-top:12px;">
+    <div class="visual-card">
+        <h3>Manufacturing Mini-Case</h3>
+        <ol class="step-list">
+            <li>Purchase raw material.</li>
+            <li>Issue material for production.</li>
+            <li>Record finished goods output.</li>
+            <li>Sell finished goods with GST.</li>
+            <li>Review margin and stock cost impact.</li>
+        </ol>
+    </div>
+    <div class="visual-card">
+        <h3>Payroll Mini-Case</h3>
+        <ol class="step-list">
+            <li>Create employee group and pay heads.</li>
+            <li>Define Basic, HRA, TA, Bonus, PF, ESIC.</li>
+            <li>Record attendance or monthly payroll voucher.</li>
+            <li>Pay net salary by bank.</li>
+            <li>Review payroll cost in Profit and Loss.</li>
+        </ol>
+        <p>This gives students a bridge from accounting-only work into operational modules used by real businesses.</p>
+    </div>
+</div>
+"""
+
+        if title == "Configuration":
+                return """
+<div class="visual-card" style="margin-top:14px;">
+    <h3>Configuration Field-by-Field Guide</h3>
+    <table class="check-table">
+        <tr><th>Screen</th><th>Field</th><th>Student Purpose</th></tr>
+        <tr><td>Create Company</td><td>Financial Year Beginning</td><td>Sets reporting year</td></tr>
+        <tr><td>Create Company</td><td>Books Beginning From</td><td>Controls first voucher date</td></tr>
+        <tr><td>F11</td><td>Bill-wise details</td><td>Enables receivable tracking</td></tr>
+        <tr><td>F11</td><td>GST</td><td>Enables statutory behavior</td></tr>
+        <tr><td>F12</td><td>Narration</td><td>Improves entry clarity</td></tr>
+        <tr><td>Security</td><td>User Access Control</td><td>Protects data and processes</td></tr>
+    </table>
+</div>
+<div class="visual-grid" style="margin-top:12px;">
+    <div class="visual-card">
+        <h3>First-Week Practice Roadmap</h3>
+        <ol class="step-list">
+            <li>Day 1: install, create company, learn Gateway.</li>
+            <li>Day 2: create ledgers and groups.</li>
+            <li>Day 3: pass receipt, payment, contra.</li>
+            <li>Day 4: pass sales and purchase vouchers.</li>
+            <li>Day 5: check Day Book, Trial Balance, P&amp;L.</li>
+            <li>Day 6: inventory masters and stock summary.</li>
+            <li>Day 7: export and backup practice.</li>
+        </ol>
+    </div>
+    <div class="visual-card">
+        <h3>Setup Mistakes to Avoid</h3>
+        <ol class="step-list">
+            <li>Wrong financial year while creating company.</li>
+            <li>Posting vouchers before core ledgers are ready.</li>
+            <li>Skipping narration and later forgetting transaction purpose.</li>
+            <li>Enabling GST but not creating proper ledgers.</li>
+            <li>Ignoring backup discipline after major practice sessions.</li>
+        </ol>
+    </div>
+</div>
+"""
+
+        return ""
+
+
 def section_html(title: str, body: str, idx: int) -> str:
     sid = f"chapter-{idx}"
     lines = [x.strip() for x in body.strip().split("\n") if x.strip()]
@@ -691,6 +1040,10 @@ def section_html(title: str, body: str, idx: int) -> str:
     visuals = chapter_visuals(title)
     if visuals:
         out.append(visuals)
+
+    appendix = chapter_appendix_html(title)
+    if appendix:
+        out.append(appendix)
 
     out.append("</section>")
     return "\n".join(out)
